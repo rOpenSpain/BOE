@@ -2,6 +2,9 @@
 
 export(anuncio)
 export(disposicion)
+export(query_htm)
+export(query_pdf)
+export(query_xml)
 export(sumario_nbo)
 export(sumario_xml)
 importFrom(httr,modify_url)

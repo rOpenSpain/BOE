@@ -37,6 +37,13 @@ query_xml <- function(id) {
                      query = paste0("id=", id))
 }
 
+#' Build a query for the webpage
+#'
+#' @param id The id of the xml document you want.
+#' @export
+#' @examples
+#' id <- sumario_nbo("2017", "11117")
+#' query_htm(id)
 query_htm <- function(id) {
     force(base_url)
     httr::modify_url(base_url,

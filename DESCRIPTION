@@ -1,18 +1,25 @@
-Package: BOE
 Type: Package
+Package: BOE
 Title: Get the Boletin Oficial del Estado of Spain.
 Version: 0.1.0
-Authors@R: person(given = "Lluís",
-             family = "Revilla Sancho",
-             role = c("aut", "cre"),
-             email = "lluis.revilla@gmail.com",
-             comment = c(ORCID = "0000-0001-9747-2570"))
-Description: Queries the online site of the BOE for data. 
+Authors@R: 
+    person(given = "Lluís",
+           family = "Revilla Sancho",
+           role = c("aut", "cre"),
+           email = "lluis.revilla@gmail.com",
+           comment = c(ORCID = "0000-0001-9747-2570"))
+Description: Queries the online site of the BOE for data.
 License: GPL-3
-Encoding: UTF-8
-LazyData: true
-Suggests: 
-    testthat,
-    covr
 URL: https://github.com/llrs/BOE
 BugReports: https://github.com/llrs/BOE/issues
+Imports: 
+    glue,
+    httr (>= 1.4.1),
+    roxygen2,
+    xml2 (>= 1.2.2)
+Suggests: 
+    covr,
+    testthat
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.0

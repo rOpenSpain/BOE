@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF‐8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.boe.es/xsd" xmlns:tns="http://www.boe.es/xsd" elementFormDefault="qualified">
+    <complexType name="MetaType">
+        <annotation>
+            <documentation>MetaInformacion</documentation>
+        </annotation>
+        <sequence>
+            <element name="pub" type="string"/>
+            <element name="anno" type="string" maxOccurs="1" minOccurs="0"/>
+            <element name="fecha" type="string"/>
+            <element name="fechaInv" type="string" maxOccurs="1" minOccurs="0"/>
+            <element name="fechaAnt" type="string"/>
+            <element name="fechaAntAnt" type="string" maxOccurs="1" minOccurs="0"/>
+            <element name="fechaSig" type="string"/>
+            <element name="fechaPub" type="string" maxOccurs="1" minOccurs="0"/>
+            <element name="pubDate" type="string" maxOccurs="1" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    <complexType name="SumarioNboType">
+        <sequence>
+            <element name="urlPdf" type="tns:UrlPdfType"/>
+        </sequence>
+        <attribute name="id" type="string"/>
+    </complexType>
+    <complexType name="SeccionType">
+        <annotation>
+            <documentation>Informacion de la seccion</documentation>
+        </annotation>
+        <sequence>
+            <element name="departamento" type="tns:DepartamentoType" maxOccurs="unbounded" minOccurs="1"/>
+        </sequence>
+        <attribute name="num" type="string"/>
+        <attribute name="nombre" type="string"/>
+    </complexType>
+    <complexType name="DepartamentoType">
+        <annotation>
+            <documentation>Informacion del Departamento</documentation>
+        </annotation>
+        <choice>
+            <element name="epigrafe" type="tns:EpigrafeType" maxOccurs="unbounded" minOccurs="1"/>
+            <element name="item" type="tns:ItemType" maxOccurs="unbounded" minOccurs="1"/>
+        </choice>
+        <attribute name="nombre" type="string"/>
+    </complexType>
+    <complexType name="EpigrafeType">
+        <annotation>
+            <documentation>Informacion del Epigrafe</documentation>
+        </annotation>
+        <sequence>
+            <element name="item" type="tns:ItemType" maxOccurs="unbounded" minOccurs="1"/>
+        </sequence>
+        <attribute name="nombre" type="string"/>
+    </complexType>
+    <complexType name="ItemType">
+        <annotation>
+            <documentation>Informacion del Item</documentation>
+        </annotation>
+        <sequence>
+            <element name="titulo" type="string"/>
+            <element name="urlPdf" type="tns:UrlPdfType" maxOccurs="1" minOccurs="0"/>
+            <element name="urlHtm" type="string" maxOccurs="1" minOccurs="0"/>
+            <element name="urlXml" type="string" maxOccurs="1" minOccurs="0"/>
+            <element name="suplemento" type="tns:SuplementoType" maxOccurs="1" minOccurs="0"/>
+        </sequence>
+        <attribute name="id" type="string"/>
+    </complexType>
+    <complexType name="SuplementoType">
+        <annotation>
+            <documentation>Informacion de suplemento</documentation>
+        </annotation>
+        <sequence>
+            <element name="descripcion" type="string"/>
+            <element name="urlPdf" type="tns:UrlPdfType"/>
+        </sequence>
+    </complexType>
+    <complexType name="DiarioType">
+        <annotation>
+            <documentation>Informacion de un Diario</documentation>
+        </annotation>
+        <sequence>
+            <element name="sumario_nbo" type="tns:SumarioNboType"/>
+            <element name="seccion" type="tns:SeccionType" maxOccurs="unbounded" minOccurs="1"/>
+        </sequence>
+        <attribute name="nbo" type="string"/>
+    </complexType>
+    <complexType name="SumarioType">
+        <annotation>
+            <documentation>Sumario</documentation>
+        </annotation>
+            <sequence>
+                <element name="meta" type="tns:MetaType"/>
+                <element name="diario" type="tns:DiarioType" maxOccurs="unbounded" minOccurs="1"/>
+            </sequence>
+    </complexType>
+    <complexType name="UrlPdfType">
+        <annotation>
+            <documentation>Url del fichero pdf</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="string">
+                <attribute name="szBytes" type="string"/>
+                <attribute name="szKBytes" type="string"/>
+                <attribute name="numPag" type="string"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <complexType name="TituloType">
+        <annotation>
+            <documentation>Titulo del Item</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="string"/>
+        </simpleContent>
+    </complexType>
+    <complexType name="UrlHtmType">
+        <annotation>
+            <documentation>Url del fichero html</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="string"/>
+        </simpleContent>
+    </complexType>
+    <complexType name="UrlXmlType">
+        <annotation>
+            <documentation>Url del fichero xml</documentation>
+        </annotation>
+        <simpleContent>
+            <extension base="string"/>
+        </simpleContent>
+    </complexType>
+    <element name="sumario" type="tns:SumarioType">
+        <annotation>
+            <documentation>Elemento Raiz del sumario</documentation>
+        </annotation>
+    </element>
+</schema>

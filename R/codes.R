@@ -10,6 +10,8 @@ add <- function(x) {
 #' @param date Date of the sumario
 #' @return A character vector
 #' @seealso [sumario_nbo]
+#' @export
+#' @importFrom methods is
 #' @examples
 #' sumario_xml(Sys.Date())
 #' sumario_xml(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"))
@@ -29,6 +31,7 @@ sumario_xml <- function(date) {
 #' @param number Number of the summary in NNN format.
 #' @return A character vector
 #' @seealso [sumario_xml]
+#' @export
 #' @examples
 #' sumario_nbo(2019, 242)
 sumario_nbo <- function(year, number) {
@@ -60,14 +63,16 @@ elemento <- function(item = c("B", "A"), year, number) {
     paste0(journal, add(item), add(year), add(number))
 }
 
-#' @describeIn element Create the number of the diposicion
+#' @describeIn element Create the number of the diposicion.
+#' @export
 #' @examples
 #' disposicion(2019, 242)
 disposicion <- function(year, number) {
     elemento(item = "B", year = year, number = number)
 }
 
-#' @describeIn element Create the number of the anuncio
+#' @describeIn element Create the number of the anuncio.
+#' @export
 #' @examples
 #' anuncio(2019, 242)
 anuncio <- function(year, number) {
@@ -84,4 +89,16 @@ strs <- function(code) {
 
 len <- function(splits) {
     lapply(splits, nchar)
+}
+
+check_journal <- function(journal) {
+    if (sum(!grepl(paste0("^", journal))) >= 1) {
+        FALSE
+    }
+    TRUE
+}
+
+check_code <- function(x) {
+    check_journal(journal)
+
 }

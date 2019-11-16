@@ -38,5 +38,7 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library("BOE")
 ## basic example code
+sumario_xml(as.Date("2019/11/15"))
+anuncio("2012", "32498")
 ```
 

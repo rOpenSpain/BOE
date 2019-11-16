@@ -4,9 +4,10 @@
 \name{BOE-package}
 \alias{BOE}
 \alias{BOE-package}
-\title{BOE: Get the Boletin Oficial del Estado of Spain.}
+\title{BOE: Work with the Boletin Oficial del Estado of Spain}
 \description{
-Queries the online site of the BOE for data.
+Queries the online site of the Boletin Oficial del Estado (BOE) 
+    for data.
 }
 \seealso{
 Useful links:

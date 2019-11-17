@@ -1,5 +1,3 @@
-
-
 base_url <- "https://boe.es/"
 
 #' Build a query for an XML
@@ -56,12 +54,17 @@ query_pdf <- function(year, month, day, code) {
 #' @seealso query_xml
 #' @importFrom httr content
 #' @importFrom httr GET
+#' @importFrom httr user_agent
+#' @importFrom httr status_code
+#' @importFrom httr http_type
 #' @export
 #' @examples
 #' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
-#' get_xml(query_xml(id))
+#' url <- query_xml(id)
+#' \donttest{get_xml(url)}
 get_xml <- function(query) {
-    response <- GET(query)
+    user_agent <- user_agent("http://github.com/llrs/BOE")
+    response <- GET(query, user_agent)
     if (status_code(response) != 200) {
         stop("Could not retrieve the data.", call. = FALSE)
     }

@@ -14,7 +14,8 @@ Look up on the internet and get the content
 }
 \examples{
 id <- sumario_xml(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
-get_xml(query_xml(id))
+url <- query_xml(id)
+\donttest{get_xml(url)}
 }
 \seealso{
 query_xml

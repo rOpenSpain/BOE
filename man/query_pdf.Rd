@@ -2,7 +2,7 @@
 % Please edit documentation in R/queries.R
 \name{query_pdf}
 \alias{query_pdf}
-\title{Query pdf}
+\title{Query a pdf from the BOE}
 \usage{
 query_pdf(year, month, day, code)
 }
@@ -16,8 +16,8 @@ query_pdf(year, month, day, code)
 \item{code}{Code of the publication to query.}
 }
 \description{
-Query for a pdf. Remember you must know the code and the date it
-was published.
+To query a pdf you must know the number of the piece you are looking for and
+the date it was published.
 }
 \examples{
 code <- sumario_nbo("2017", "237")

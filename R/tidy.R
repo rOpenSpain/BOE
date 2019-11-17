@@ -26,6 +26,10 @@ tidy_sumario <- function(x) {
     Sumario_nbo <- xml_child(Diario, "sumario_nbo")
     sumario_nbo <- xml_attr(Sumario_nbo, "id")
     Publicaciones <- xml_find_all(x, "//item")
+
+    pages <- xml_find_all(x, ".//seccion//urlPdf")
+    pages <- xml_attr(pages, "numPag")
+
     publications_id <- xml_attr(Publicaciones, "id")
     publications_txt <- xml_text(xml_find_all(Publicaciones, "//item/titulo"))
 
@@ -33,11 +37,13 @@ tidy_sumario <- function(x) {
     publi <- vapply(Publicaciones, recover_publication, character(5L))
 
     m <- cbind(fechas, nbo, sumario_nbo, t(publi),
-               publications_txt, publications_id)
+               publications_txt, publications_id, pages)
     colnames(m) <- c("date", "sumario_nbo", "sumario_code", "section",
                      "section_number", "department", "department_etq",
-                     "epigraf", "text", "publication")
-    as.data.frame(m, stringsAsFactors = FALSE)
+                     "epigraf", "text", "publication", "pages")
+    m <- as.data.frame(m, stringsAsFactors = FALSE)
+    m$pages <- as.numeric(m$pages)
+    m
 }
 
 recover_publication <- function(x) {

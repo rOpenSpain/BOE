@@ -61,5 +61,15 @@ query_pdf <- function(year, month, day, code) {
 #' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
 #' get_xml(query_xml(id))
 get_xml <- function(query) {
-    content(GET(query))
+    response <- GET(query)
+    if (status_code(response) != 200) {
+        stop("Could not retrieve the data.", call. = FALSE)
+    }
+    if (http_type(response) != "application/xml") {
+        stop("API did not return xml.", call. = FALSE)
+    }
+    if (http_type(response) == "text/html") {
+        warning("Missing data.", call. = FALSE)
+    }
+    content(response)
 }

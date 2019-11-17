@@ -1,8 +1,12 @@
 journal <- "BOE"
 
-# Heleper function
+# Helper function
 add <- function(x) {
     paste0("-", x)
+}
+
+is_numeric <- function(x){
+    tryCatch(as.numeric(x), warning = function(w){FALSE}, finally = TRUE)
 }
 
 #' Create the id for sumario
@@ -77,28 +81,4 @@ disposicion <- function(year, number) {
 #' anuncio(2019, 242)
 anuncio <- function(year, number) {
     elemento(item = "A", year = year, number = number)
-}
-
-is_numeric <- function(x){
-    tryCatch(as.numeric(x), warning = function(w){FALSE}, finally = TRUE)
-}
-
-strs <- function(code) {
-    strsplit(code, "-", fixed = TRUE)
-}
-
-len <- function(splits) {
-    lapply(splits, nchar)
-}
-
-check_journal <- function(journal) {
-    if (sum(!grepl(paste0("^", journal))) >= 1) {
-        FALSE
-    }
-    TRUE
-}
-
-check_code <- function(x) {
-    check_journal(journal)
-
 }

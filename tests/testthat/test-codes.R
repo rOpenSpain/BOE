@@ -18,12 +18,12 @@ test_that("elemento works", {
 
 test_that("disposicion works", {
     s <- disposicion(year = 242, number = 242)
-    expect_equal(s, "BOE-B-242-242")
+    expect_equal(s, "BOE-A-242-242")
 })
 
 test_that("anuncio works", {
     s <- anuncio(year = 242, number = 242)
-    expect_equal(s, "BOE-A-242-242")
+    expect_equal(s, "BOE-B-242-242")
 })
 
 

@@ -72,7 +72,7 @@ elemento <- function(item = c("B", "A"), year, number) {
 #' @examples
 #' disposicion(2019, 242)
 disposicion <- function(year, number) {
-    elemento(item = "B", year = year, number = number)
+    elemento(item = "A", year = year, number = number)
 }
 
 #' @describeIn element Create the number of the anuncio.
@@ -80,5 +80,5 @@ disposicion <- function(year, number) {
 #' @examples
 #' anuncio(2019, 242)
 anuncio <- function(year, number) {
-    elemento(item = "A", year = year, number = number)
+    elemento(item = "B", year = year, number = number)
 }

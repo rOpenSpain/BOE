@@ -49,3 +49,17 @@ query_pdf <- function(year, month, day, code) {
     httr::modify_url(base_url, path = p)
 }
 
+#' Retrieve the XML content
+#'
+#' Look up on the internet and get the content
+#' @param query A query to BOE
+#' @seealso query_xml
+#' @importFrom httr content
+#' @importFrom httr GET
+#' @export
+#' @examples
+#' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
+#' get_xml(query_xml(id))
+get_xml <- function(query) {
+    content(GET(query))
+}

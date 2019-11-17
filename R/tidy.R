@@ -15,6 +15,7 @@
 #' @importFrom xml2 xml_find_all
 #' @importFrom xml2 xml_parent
 #' @importFrom xml2 xml_text
+#' @importFrom xml2 xml_attrs
 tidy_sumario <- function(x) {
     fechas <- xml_text(xml_find_all(x,  "./meta/fecha"))
     nbo <- xml_attr(xml_find_all(x,  "./diario"), "nbo")
@@ -29,26 +30,9 @@ tidy_sumario <- function(x) {
     publications_txt <- xml_text(xml_find_all(Publicaciones, "//item/titulo"))
 
     # Those that have epigrafe are recovered
-    # TODO, simplify to reduce the iterations!!
-    p_i <- lapply(Publicaciones, xml_parent)
-    is_epigrafe <- vapply(p_i, function(y) {
-        is.na(xml_attr(y, "etq"))}, logical(1L))
+    publi <- vapply(Publicaciones, recover_publication, character(5L))
 
-    epigrafe <- vapply(p_i[is_epigrafe], xml_attr, attr = "nombre", character(1L))
-    epigrafe[!is_epigrafe] <- NA
-    p_i[is_epigrafe] <- lapply(p_i[is_epigrafe], xml_parent)
-
-    Departamento <- p_i
-    departamento <- vapply(Departamento, xml_attrs, character(2L))
-    departamento <- t(departamento)
-    colnames(departamento) <- c("Nombre", "etq")
-
-    Seccion <- lapply(Departamento, xml_parent)
-    seccion <- vapply(Seccion, xml_attrs, character(2L))
-    seccion <- t(seccion)
-    colnames(seccion) <- c("Num", "nombre")
-
-    m <- cbind(fechas, nbo, sumario_nbo, seccion, departamento, epigrafe,
+    m <- cbind(fechas, nbo, sumario_nbo, t(publi),
                publications_txt, publications_id)
     colnames(m) <- c("date", "sumario_nbo", "sumario_code", "section",
                      "section_number", "department", "department_etq",

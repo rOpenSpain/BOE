@@ -18,5 +18,7 @@ Cleans in a tidy format the sumario file
 \examples{
 id <- sumario_xml(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
 sumario_file <- get_xml(query_xml(id))
-tidy_sumario(sumario_file)
+m <- tidy_sumario(sumario_file)
+head(m)
+tail(m)
 }

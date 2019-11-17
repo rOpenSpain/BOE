@@ -24,6 +24,12 @@ You can install the released version of BOE from
 install.packages("BOE")
 ```
 
+Or you can install it from github with:
+
+``` r
+devtools::install_github("llrs/BOE")
+```
+
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
@@ -31,4 +37,18 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library("BOE")
 ## basic example code
+sumario_xml(as.Date("2019/11/15"))
+#> [1] "BOE-S-20191115"
+anuncio("2012", "32498")
+#> [1] "BOE-A-2012-32498"
+```
+
+For instance you can download all the summaries available with:
+
+``` r
+s <- seq(from = as.Date("2009/01/01", "%Y/%m/%d"), to = Sys.Date(), by = 1)
+done <- vapply(s, function(x){
+    sumario <- sumario_xml(format(as.Date(x, "%Y/%m/%d"), "%Y%m%d"))
+    xml2::download_xml(httr::query_xml(sumario))
+})
 ```

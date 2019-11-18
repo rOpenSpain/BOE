@@ -39,20 +39,32 @@ devtools::install_github("llrs/BOE")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to solve find the identifiers of some elements.
+The most important data is the sumario (summary) which can be retrieved by the date:
 
 ```{r example}
 library("BOE")
-sumario_xml(as.Date("2019/11/15"))
-anuncio("2012", "32498")
+today <- Sys.Date() -1
+sumario_code <- sumario_xml(today) #Code needed to identify it online
+sumario_hoy <- tidy_sumario(get_xml(query_xml(sumario_code)))
+head(sumario_hoy)
+
+# Say we are interested on the first result:
+year <- format(today, "%Y")
+month <- format(today, "%m")
+day <- format(today, "%d")
+publication_code <- sumario_hoy[1, "publication"]
+pdf <- query_pdf(year, month, day, publication_code)
+pdf
+# And we can download it with download.file(pdf)
 ```
 
-For instance you can download all the summaries available with: 
-```{r eval=FALSE, include=TRUE}
-s <- seq(from = as.Date("2009/01/01", "%Y/%m/%d"), to = Sys.Date(), by = 1)
-done <- lapply(s, function(x){
-    sumario <- sumario_xml(format(as.Date(x, "%Y/%m/%d"), "%Y%m%d"))
-    xml2::download_xml(BOE::query_xml(sumario))
-})
+You can also build the publication code with:
+```{r}
+sumario_xml(as.Date("2019/11/15"))
+# The codes of publication is the year and the number of said publication
+sumario_nbo("2017", "275") 
+anuncio("2012", "32498") 
+disposicion("2012", "32498")
 ```
 

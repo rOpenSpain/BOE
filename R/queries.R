@@ -68,11 +68,11 @@ get_xml <- function(query) {
     if (status_code(response) != 200) {
         stop("Could not retrieve the data.", call. = FALSE)
     }
-    if (http_type(response) != "application/xml") {
-        stop("API did not return xml.", call. = FALSE)
-    }
     if (http_type(response) == "text/html") {
         warning("Missing data.", call. = FALSE)
+    }
+    if (http_type(response) != "application/xml") {
+        stop("API did not return xml.", call. = FALSE)
     }
     content(response)
 }

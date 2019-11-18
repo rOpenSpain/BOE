@@ -49,6 +49,6 @@ For instance you can download all the summaries available with:
 s <- seq(from = as.Date("2009/01/01", "%Y/%m/%d"), to = Sys.Date(), by = 1)
 done <- vapply(s, function(x){
     sumario <- sumario_xml(format(as.Date(x, "%Y/%m/%d"), "%Y%m%d"))
-    xml2::download_xml(httr::query_xml(sumario))
+    xml2::download_xml(BOE::query_xml(sumario))
 })
 ```

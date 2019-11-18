@@ -46,9 +46,18 @@ anuncio("2012", "32498")
 For instance you can download all the summaries available with:
 
 ``` r
-s <- seq(from = as.Date("2009/01/01", "%Y/%m/%d"), to = Sys.Date(), by = 1)
-done <- vapply(s, function(x){
+library(BOE)
+path = fs::dir_create("BOE_xml")
+# available from 2009/01/01
+s <- seq(from = as.Date("2019/10/01", "%Y/%m/%d"),
+         to = Sys.Date(),
+         by = 1)
+done <- purrr::map(s, function(x){
     sumario <- sumario_xml(format(as.Date(x, "%Y/%m/%d"), "%Y%m%d"))
-    xml2::download_xml(BOE::query_xml(sumario))
+    xml2::download_xml(url = BOE::query_xml(sumario),
+                       file = fs::path(path,
+                                       glue::glue("{x}.xml")))
 })
 ```
+
+

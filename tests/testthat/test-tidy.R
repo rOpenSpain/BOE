@@ -5,4 +5,6 @@ test_that("tidy_sumario works", {
     m <- tidy_sumario(sumario_file)
     expect_s3_class(m, "data.frame")
     expect_equivalent(ncol(m), 11)
+    expect_s3_class(m$date, "Date")
+    expect_true(is.numeric(m$pages))
 })

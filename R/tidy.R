@@ -17,7 +17,19 @@
 #' @importFrom xml2 xml_text
 #' @importFrom xml2 xml_attrs
 tidy_sumario <- function(x) {
+
     fechas <- xml_text(xml_find_all(x,  "./meta/fecha"))
+
+    # No content
+    col_names <- c("date", "sumario_nbo", "sumario_code", "section",
+                   "section_number", "departament", "departament_etq",
+                   "epigraph", "text", "publication", "pages")
+    if (length(fechas) == 0 ) {
+        warning("No data")
+        m <- matrix(NA, ncol = 11, nrow = 0)
+        colnames(m) <- col_names
+        return(as.data.frame(m))
+    }
     nbo <- xml_attr(xml_find_all(x,  "./diario"), "nbo")
 
     # Diario > seccion > Departamento > (Epígrafe?) > Publicacion
@@ -38,11 +50,10 @@ tidy_sumario <- function(x) {
 
     m <- cbind(fechas, nbo, sumario_nbo, t(publi),
                publications_txt, publications_id, pages)
-    colnames(m) <- c("date", "sumario_nbo", "sumario_code", "section",
-                     "section_number", "department", "department_etq",
-                     "epigraf", "text", "publication", "pages")
+    colnames(m) <- col_names
     m <- as.data.frame(m, stringsAsFactors = FALSE)
     m$pages <- as.numeric(m$pages)
+    m$date <- as.Date(m$date)
     m
 }
 

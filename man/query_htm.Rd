@@ -9,6 +9,9 @@ query_htm(id)
 \arguments{
 \item{id}{The id of the xml document you want.}
 }
+\value{
+A query url.
+}
 \description{
 Build a query for the webpage
 }

@@ -15,6 +15,9 @@ query_pdf(year, month, day, code)
 
 \item{code}{Code of the publication to query.}
 }
+\value{
+A link to the pdf.
+}
 \description{
 To query a pdf you must know the number of the piece you are looking for and
 the date it was published.

@@ -9,6 +9,9 @@ query_xml(id)
 \arguments{
 \item{id}{The id of the xml document you want.}
 }
+\value{
+A query for the xml`.
+}
 \description{
 Build a query for an XML
 }

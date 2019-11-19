@@ -38,52 +38,45 @@ identifiers of some elements. The most important data is the sumario
 
 ``` r
 library("BOE")
-today <- Sys.Date() -1
+today <- Sys.Date()
 sumario_code <- sumario_xml(today) #Code needed to identify it online
 sumario_hoy <- tidy_sumario(get_xml(query_xml(sumario_code)))
 head(sumario_hoy)
-#>       date sumario_nbo   sumario_code section
-#> 1 18-11-20         277 BOE-S-2019-277       1
-#> 2 18-11-20         277 BOE-S-2019-277       1
-#> 3 18-11-20         277 BOE-S-2019-277       1
-#> 4 18-11-20         277 BOE-S-2019-277      2A
-#> 5 18-11-20         277 BOE-S-2019-277      2A
-#> 6 18-11-20         277 BOE-S-2019-277      2A
-#>                                                              section_number
-#> 1                                                I. Disposiciones generales
-#> 2                                                I. Disposiciones generales
-#> 3                                                I. Disposiciones generales
-#> 4 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias
-#> 5 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias
-#> 6 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias
-#>                                       departament departament_etq
-#> 1         MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA            9566
-#> 2         MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA            9566
-#> 3                            COMUNITAT VALENCIANA            8162
-#> 4                           MINISTERIO DE FOMENTO            3210
-#> 5 MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN            3120
-#> 6                                   UNIVERSIDADES             310
-#>                                   epigraph
-#> 1          Productos petrolíferos. Precios
-#> 2          Productos petrolíferos. Precios
-#> 3 Espectáculos y establecimientos públicos
-#> 4                                 Destinos
-#> 5                                 Destinos
-#> 6                            Nombramientos
-#>                                                                                                                                                                                                                                                                                                                                                                                            text
-#> 1                                                                                                                                                                   Resolución de 11 de noviembre de 2019, de la Dirección General de Política Energética y Minas, por la que se publican los nuevos precios de venta, antes de impuestos, de los gases licuados del petróleo por canalización.
-#> 2 Resolución de 11 de noviembre de 2019, de la Dirección General de Política Energética y Minas, por la que se publican los nuevos precios máximos de venta, antes de impuestos, de los gases licuados del petróleo envasados, en envases de carga igual o superior a 8 kg., e inferior a 20 kg., excluidos los envases de mezcla para usos de los gases licuados del petróleo como carburante.
-#> 3                                                                                                                                                                                       Ley 7/2019, de 24 de octubre, por la que se deroga la Disposición adicional quinta de la Ley 14/2010, de 3 de diciembre, de espectáculos públicos, actividades recreativas y establecimientos públicos.
-#> 4                                                                                                                                                              Resolución de 11 de noviembre de 2019, de la Secretaría de Estado de Infraestructuras, Transporte y Vivienda, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 26 de septiembre de 2019.
-#> 5                                                                                                                                                                                                                 Resolución de 8 de noviembre de 2019, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 24 de septiembre de 2019.
-#> 6                                                                                                                                                                                                                                 Resolución de 28 de octubre de 2019, de la Universidad de Cantabria, por la que se nombra Catedrática de Universidad a doña María Concepción López Fernández.
+#>       date sumario_nbo   sumario_code section             section_number
+#> 1 19-11-20         278 BOE-S-2019-278       1 I. Disposiciones generales
+#> 2 19-11-20         278 BOE-S-2019-278       1 I. Disposiciones generales
+#> 3 19-11-20         278 BOE-S-2019-278       1 I. Disposiciones generales
+#> 4 19-11-20         278 BOE-S-2019-278       1 I. Disposiciones generales
+#> 5 19-11-20         278 BOE-S-2019-278       1 I. Disposiciones generales
+#> 6 19-11-20         278 BOE-S-2019-278       1 I. Disposiciones generales
+#>                                                          departament
+#> 1                                                JEFATURA DEL ESTADO
+#> 2                                            MINISTERIO DEL INTERIOR
+#> 3                    MINISTERIO DE EDUCACIÓN Y FORMACIÓN PROFESIONAL
+#> 4                        MINISTERIO DE INDUSTRIA, COMERCIO Y TURISMO
+#> 5 MINISTERIO DE LA PRESIDENCIA, RELACIONES CON LAS CORTES E IGUALDAD
+#> 6 MINISTERIO DE LA PRESIDENCIA, RELACIONES CON LAS CORTES E IGUALDAD
+#>   departament_etq                       epigraph
+#> 1            7723 Seguridad Social. Presupuestos
+#> 2            7320                   Subvenciones
+#> 3            9563                   Subvenciones
+#> 4            5250                   Subvenciones
+#> 5            9569          Formación profesional
+#> 6            9569          Formación profesional
+#>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          text
+#> 1                                                                                                                                                                                                                                                                                                                                                                                                Real Decreto-ley 16/2019, de 18 de noviembre, por el que se adoptan medidas relativas a la ejecución del presupuesto de la Seguridad Social.
+#> 2                                                                                                                                                                                                                                                                                                                                                                        Real Decreto 655/2019, de 18 de noviembre, por el que se regula la concesión directa de una subvención a la Fundación ANAR (Ayuda a Niños y Adolescentes en Riesgo).
+#> 3                                                                                                                                                                                                                                                                                                                       Real Decreto 656/2019, de 18 de noviembre, por el que se regula la concesión directa de diversas subvenciones en el ámbito del Ministerio de Educación y Formación Profesional para el ejercicio presupuestario 2019.
+#> 4                                                                                                                                                                                                                                                                                                                                                                           Real Decreto 657/2019, de 18 de noviembre, por el que se regula la concesión directa de subvenciones en materia de turismo para el ejercicio presupuestario 2019.
+#> 5 Corrección de errores del Real Decreto 502/2019, de 30 de agosto, por el que se crea como Centro de Referencia Nacional la Escuela de Formación en Artesanía, Restauración y Rehabilitación del Patrimonio Histórico, Artístico y Cultural Albayzín, en las áreas profesionales de Artesanía Tradicional, Recuperación, Reparación y Mantenimiento Artísticos, Fabricación y Mantenimiento de Instrumentos Musicales, y Vidrio y Cerámica Artesanal, de la familia profesional Artes y Artesanías en el ámbito de la formación profesional.
+#> 6                                                                                                                                                                                                                                      Corrección de errores del Real Decreto 503/2019, de 30 de agosto, por el que se crea como Centro de Referencia Nacional la Escuela del Mármol de Fines, Almería, en el área profesional de piedra natural, de la familia profesional Industrias Extractivas, en el ámbito de la formación profesional.
 #>        publication pages
-#> 1 BOE-A-2019-16519     3
-#> 2 BOE-A-2019-16520     2
-#> 3 BOE-A-2019-16521     2
-#> 4 BOE-A-2019-16522     2
-#> 5 BOE-A-2019-16523     2
-#> 6 BOE-A-2019-16524     1
+#> 1 BOE-A-2019-16562     5
+#> 2 BOE-A-2019-16563     5
+#> 3 BOE-A-2019-16564    16
+#> 4 BOE-A-2019-16565    18
+#> 5 BOE-A-2019-16566     1
+#> 6 BOE-A-2019-16567     1
 
 # Say we are interested on the first result:
 year <- format(today, "%Y")
@@ -92,7 +85,7 @@ day <- format(today, "%d")
 publication_code <- sumario_hoy[1, "publication"]
 pdf <- query_pdf(year, month, day, publication_code)
 pdf
-#> [1] "https://boe.es/boe/dias/2019/11/18/pdfs/BOE-A-2019-16519.pdf"
+#> [1] "https://boe.es/boe/dias/2019/11/19/pdfs/BOE-A-2019-16562.pdf"
 # And we can download it with download.file(pdf)
 ```
 

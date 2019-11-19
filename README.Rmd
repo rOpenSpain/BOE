@@ -44,7 +44,7 @@ The most important data is the sumario (summary) which can be retrieved by the d
 
 ```{r example}
 library("BOE")
-today <- Sys.Date() -1
+today <- Sys.Date()
 sumario_code <- sumario_xml(today) #Code needed to identify it online
 sumario_hoy <- tidy_sumario(get_xml(query_xml(sumario_code)))
 head(sumario_hoy)

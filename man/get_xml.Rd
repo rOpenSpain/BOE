@@ -7,7 +7,7 @@
 get_xml(query)
 }
 \arguments{
-\item{query}{A query to BOE}
+\item{query}{A query to BOE.}
 }
 \description{
 Look up on the internet and get the content
@@ -18,5 +18,5 @@ url <- query_xml(id)
 \donttest{get_xml(url)}
 }
 \seealso{
-query_xml
+\url{query_xml}
 }

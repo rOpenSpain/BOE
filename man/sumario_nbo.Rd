@@ -21,5 +21,5 @@ Create the number of the sumario
 sumario_nbo(2019, 242)
 }
 \seealso{
-[sumario_xml]
+\link{sumario_xml}
 }

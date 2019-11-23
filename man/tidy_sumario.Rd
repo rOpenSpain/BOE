@@ -7,10 +7,13 @@
 tidy_sumario(x)
 }
 \arguments{
-\item{x}{XML file}
+\item{x}{A XML file.}
 }
 \value{
-A data.frame with one line for each publication
+A data.frame with one line for each publication.
+Including date, \emph{sumario} number, section, section text,
+departament, departament number, epigraph, brief text,
+publication code and number of pages of the pdf.
 }
 \description{
 Cleans in a tidy format the sumario file

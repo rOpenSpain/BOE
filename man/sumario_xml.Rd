@@ -20,5 +20,5 @@ sumario_xml(Sys.Date())
 sumario_xml(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
 }
 \seealso{
-[sumario_nbo]
+\url{sumario_nbo}
 }

@@ -4,7 +4,7 @@
 \alias{element}
 \alias{disposicion}
 \alias{anuncio}
-\title{Elements: Disposición and anuncio}
+\title{Elements: \emph{disposición} and \emph{anuncio}}
 \usage{
 disposicion(year, number)
 
@@ -19,7 +19,7 @@ anuncio(year, number)
 A character vector
 }
 \description{
-Elements: Disposición and anuncio
+Elements: \emph{disposición} and \emph{anuncio}
 }
 \section{Functions}{
 \itemize{

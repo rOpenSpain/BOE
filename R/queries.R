@@ -53,8 +53,8 @@ query_pdf <- function(year, month, day, code) {
 #' Retrieve the XML content
 #'
 #' Look up on the internet and get the content
-#' @param query A query to BOE
-#' @seealso query_xml
+#' @param query A query to BOE.
+#' @seealso [query_xml](query_xml)
 #' @importFrom httr content
 #' @importFrom httr GET
 #' @importFrom httr user_agent

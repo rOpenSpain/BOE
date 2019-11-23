@@ -13,7 +13,7 @@ is_numeric <- function(x){
 #'
 #' @param date Date of the sumario
 #' @return A character vector
-#' @seealso [sumario_nbo]
+#' @seealso [sumario_nbo](sumario_nbo)
 #' @export
 #' @importFrom methods is
 #' @examples
@@ -49,7 +49,7 @@ sumario_nbo <- function(year, number) {
 }
 
 #' @name element
-#' @title Elements: Disposición and anuncio
+#' @title Elements: *disposición* and *anuncio*
 #'
 #' @param year Character or numeric value of the year of the element in YYYY format.
 #' @param number Character or numeric value of the element.

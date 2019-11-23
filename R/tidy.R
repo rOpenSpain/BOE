@@ -1,8 +1,11 @@
 #' Tidy sumario xml
 #'
 #' Cleans in a tidy format the sumario file
-#' @param x XML file
-#' @return A data.frame with one line for each publication
+#' @param x A XML file.
+#' @return A data.frame with one line for each publication.
+#'  Including date, _sumario_ number, section, section text,
+#'  departament, departament number, epigraph, brief text,
+#'  publication code and number of pages of the pdf.
 #' @export
 #' @examples
 #' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
@@ -53,7 +56,7 @@ tidy_sumario <- function(x) {
     colnames(m) <- col_names
     m <- as.data.frame(m, stringsAsFactors = FALSE)
     m$pages <- as.numeric(m$pages)
-    m$date <- as.Date(m$date)
+    m$date <- as.Date(m$date, format = "%d/%m/%Y")
     m
 }
 

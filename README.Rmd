@@ -44,7 +44,7 @@ The most important data is the sumario (summary) which can be retrieved by the d
 
 ```{r example}
 library("BOE")
-today <- Sys.Date()-1
+today <- Sys.Date()
 sumario_hoy <- retrieve_sumario(today)
 head(sumario_hoy)
 ```
@@ -54,7 +54,7 @@ If we are interested on a publication we can obtain the url of the publication w
 ```{r exampleC}
 # Say we are interested on the first result:
 pdfs <- url_publications(sumario_hoy[1, ])
-pdf # And we can download it with download.file(pdf)
+pdfs # And we can download it with download.file(pdfs)
 ```
 
 We can open the publication from R with:

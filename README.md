@@ -38,37 +38,44 @@ identifiers of some elements. The most important data is the sumario
 
 ``` r
 library("BOE")
-today <- Sys.Date()-1
+today <- Sys.Date()
 sumario_hoy <- retrieve_sumario(today)
 head(sumario_hoy)
 #>         date sumario_nbo   sumario_code section             section_number
-#> 1 2019-11-23         282 BOE-S-2019-282       1 I. Disposiciones generales
-#> 2 2019-11-23         282 BOE-S-2019-282       1 I. Disposiciones generales
-#> 3 2019-11-23         282 BOE-S-2019-282       1 I. Disposiciones generales
-#> 4 2019-11-23         282 BOE-S-2019-282       1 I. Disposiciones generales
-#> 5 2019-11-23         282 BOE-S-2019-282       1 I. Disposiciones generales
-#> 6 2019-11-23         282 BOE-S-2019-282       1 I. Disposiciones generales
-#>                       departament departament_etq         epigraph
-#> 1             JEFATURA DEL ESTADO            7723 Medidas urgentes
-#> 2          MINISTERIO DE HACIENDA            5140  Tabaco. Precios
-#> 3 MINISTERIO DE CULTURA Y DEPORTE            9570     Subvenciones
-#> 4 MINISTERIO DE CULTURA Y DEPORTE            9570     Subvenciones
-#> 5 MINISTERIO DE CULTURA Y DEPORTE            9570     Subvenciones
-#> 6 MINISTERIO DE CULTURA Y DEPORTE            9570     Subvenciones
-#>                                                                                                                                                                                                                                                                              text
-#> 1 Real Decreto-ley 17/2019, de 22 de noviembre, por el que se adoptan medidas urgentes para la necesaria adaptación de parámetros retributivos que afectan al sistema eléctrico y por el que se da respuesta al proceso de cese de actividad de centrales térmicas de generación.
-#> 2                       Resolución de 22 de noviembre de 2019, de la Presidencia del Comisionado para el Mercado de Tabacos, por la que se publican los precios de venta al público de determinadas labores de tabaco en Expendedurías de Tabaco y Timbre del Área del Monopolio.
-#> 3                                                             Real Decreto 673/2019, de 22 de noviembre, por el que se regula la concesión directa de subvenciones a determinadas entidades para la realización de actividades relacionadas con la cinematografía en el año 2019.
-#> 4                                                                Real Decreto 674/2019, de 22 de noviembre, por el que se regula la concesión directa de determinadas subvenciones para la promoción internacional del sector del libro y el desarrollo del sector bibliotecario.
-#> 5                                                                    Real Decreto 675/2019, de 22 de noviembre, por el que se regula la concesión directa de una subvención a la Real Academia de Bellas Artes de San Fernando para el desarrollo de sus actividades museísticas.
-#> 6                                                                             Real Decreto 676/2019, de 22 de noviembre, por el que se regula la concesión directa de subvenciones a determinadas entidades para su funcionamiento y el desarrollo de sus actividades culturales.
+#> 1 2019-11-28         286 BOE-S-2019-286       1 I. Disposiciones generales
+#> 2 2019-11-28         286 BOE-S-2019-286       1 I. Disposiciones generales
+#> 3 2019-11-28         286 BOE-S-2019-286       1 I. Disposiciones generales
+#> 4 2019-11-28         286 BOE-S-2019-286       1 I. Disposiciones generales
+#> 5 2019-11-28         286 BOE-S-2019-286       1 I. Disposiciones generales
+#> 6 2019-11-28         286 BOE-S-2019-286       1 I. Disposiciones generales
+#>                                                     departament departament_etq
+#> 1 MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN            9562
+#> 2 MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN            9562
+#> 3                                        MINISTERIO DE JUSTICIA            4810
+#> 4         MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL            9564
+#> 5                   MINISTERIO DE INDUSTRIA, COMERCIO Y TURISMO            5250
+#> 6                                COMUNIDAD AUTÓNOMA DE CATALUÑA            8070
+#>                               epigraph
+#> 1             Tratados internacionales
+#> 2             Tratados internacionales
+#> 3                      Juzgados de Paz
+#> 4 Formación profesional para el empleo
+#> 5                         Subvenciones
+#> 6                         Organización
+#>                                                                                                                                                                                                                                                                                                                                                                                                    text
+#> 1                                                                     Entrada en vigor del Tercer Protocolo adicional al Acuerdo por el que se establece una Asociación entre la Comunidad Europea, y sus Estados miembros, por una parte, y la República de Chile, por otra, para tener en cuenta la adhesión de la República de Croacia a la Unión Europea, hecho en Bruselas el 29 de junio de 2017.
+#> 2                                                                                                                                                                            Corrección de errores de la Resolución de 30 de octubre de 2019, de la Secretaría General Técnica, sobre aplicación del artículo 24.2 de la Ley 25/2014, de 27 de noviembre, de Tratados y otros Acuerdos Internacionales.
+#> 3                                 Orden JUS/1154/2019, de 25 de noviembre, por la que se publica el Acuerdo del Consejo de Ministros de 8 de noviembre de 2019, por el que se fija el módulo para la distribución del crédito que figura en los Presupuestos Generales del Estado para el año 2018 prorrogados para 2019, destinado a subvencionar los gastos de funcionamiento de los juzgados de paz.
+#> 4 Corrección de errores de la Orden TMS/369/2019, de 28 de marzo, por la que se regula el Registro Estatal de Entidades de Formación del sistema de formación profesional para el empleo en el ámbito laboral, así como los procesos comunes de acreditación e inscripción de las entidades de formación para impartir especialidades formativas incluidas en el Catálogo de Especialidades Formativas.
+#> 5                                                                                                       Real Decreto 671/2019, de 22 de noviembre, por el que se regula la concesión directa de una subvención a la Fundación Real Instituto Elcano de Estudios Internacionales y Estratégicos para la financiación de los gastos de funcionamiento y actividad en el marco de sus fines fundacionales.
+#> 6                                                                                                                                                                                                                   Ley 7/2019, de 14 de noviembre, de modificación de la Ley 2/2000, del Consejo del Audiovisual de Cataluña, y de la Ley 11/2007, de la Corporación Catalana de Medios Audiovisuales.
 #>        publication pages
-#> 1 BOE-A-2019-16862     8
-#> 2 BOE-A-2019-16863     2
-#> 3 BOE-A-2019-16864     8
-#> 4 BOE-A-2019-16865     8
-#> 5 BOE-A-2019-16866     6
-#> 6 BOE-A-2019-16867     6
+#> 1 BOE-A-2019-17093     1
+#> 2 BOE-A-2019-17094     1
+#> 3 BOE-A-2019-17095     2
+#> 4 BOE-A-2019-17096     2
+#> 5 BOE-A-2019-17097     5
+#> 6 BOE-A-2019-17098     8
 ```
 
 If we are interested on a publication we can obtain the url of the
@@ -77,95 +84,8 @@ publication with:
 ``` r
 # Say we are interested on the first result:
 pdfs <- url_publications(sumario_hoy[1, ])
-pdf # And we can download it with download.file(pdf)
-#> function (file = if (onefile) "Rplots.pdf" else "Rplot%03d.pdf", 
-#>     width, height, onefile, family, title, fonts, version, paper, 
-#>     encoding, bg, fg, pointsize, pagecentre, colormodel, useDingbats, 
-#>     useKerning, fillOddEven, compress) 
-#> {
-#>     initPSandPDFfonts()
-#>     new <- list()
-#>     if (!missing(width)) 
-#>         new$width <- width
-#>     if (!missing(height)) 
-#>         new$height <- height
-#>     if (!missing(onefile)) 
-#>         new$onefile <- onefile
-#>     if (!missing(title)) 
-#>         new$title <- title
-#>     if (!missing(fonts)) 
-#>         new$fonts <- fonts
-#>     if (!missing(version)) 
-#>         new$version <- version
-#>     if (!missing(paper)) 
-#>         new$paper <- paper
-#>     if (!missing(encoding)) 
-#>         new$encoding <- encoding
-#>     if (!missing(bg)) 
-#>         new$bg <- bg
-#>     if (!missing(fg)) 
-#>         new$fg <- fg
-#>     if (!missing(pointsize)) 
-#>         new$pointsize <- pointsize
-#>     if (!missing(pagecentre)) 
-#>         new$pagecentre <- pagecentre
-#>     if (!missing(colormodel)) 
-#>         new$colormodel <- colormodel
-#>     if (!missing(useDingbats)) 
-#>         new$useDingbats <- useDingbats
-#>     if (!missing(useKerning)) 
-#>         new$useKerning <- useKerning
-#>     if (!missing(fillOddEven)) 
-#>         new$fillOddEven <- fillOddEven
-#>     if (!missing(compress)) 
-#>         new$compress <- compress
-#>     old <- check.options(new, name.opt = ".PDF.Options", envir = .PSenv)
-#>     if (!missing(family) && (inherits(family, "Type1Font") || 
-#>         inherits(family, "CIDFont"))) {
-#>         enc <- family$encoding
-#>         if (inherits(family, "Type1Font") && !is.null(enc) && 
-#>             enc != "default" && (is.null(old$encoding) || old$encoding == 
-#>             "default")) 
-#>             old$encoding <- enc
-#>         family <- family$metrics
-#>     }
-#>     if (is.null(old$encoding) || old$encoding == "default") 
-#>         old$encoding <- guessEncoding()
-#>     if (!missing(family)) {
-#>         if (length(family) == 4L) {
-#>             family <- c(family, "Symbol.afm")
-#>         }
-#>         else if (length(family) == 5L) {
-#>         }
-#>         else if (length(family) == 1L) {
-#>             pf <- pdfFonts(family)[[1L]]
-#>             if (is.null(pf)) 
-#>                 stop(gettextf("unknown family '%s'", family), 
-#>                   domain = NA)
-#>             matchFont(pf, old$encoding)
-#>         }
-#>         else stop("invalid 'family' argument")
-#>         old$family <- family
-#>     }
-#>     version <- old$version
-#>     versions <- c("1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", 
-#>         "2.0")
-#>     if (version %in% versions) 
-#>         version <- as.integer(strsplit(version, "[.]")[[1L]])
-#>     else stop("invalid PDF version")
-#>     onefile <- old$onefile
-#>     if (!checkIntFormat(file)) 
-#>         stop(gettextf("invalid 'file' argument '%s'", file), 
-#>             domain = NA)
-#>     .External(C_PDF, file, old$paper, old$family, old$encoding, 
-#>         old$bg, old$fg, old$width, old$height, old$pointsize, 
-#>         onefile, old$pagecentre, old$title, old$fonts, version[1L], 
-#>         version[2L], old$colormodel, old$useDingbats, old$useKerning, 
-#>         old$fillOddEven, old$compress)
-#>     invisible()
-#> }
-#> <bytecode: 0x55dbce8574e0>
-#> <environment: namespace:grDevices>
+pdfs # And we can download it with download.file(pdfs)
+#> [1] "https://boe.es/boe/dias/2019/11/28/pdfs/BOE-A-2019-17093.pdf"
 ```
 
 We can open the publication from R with:

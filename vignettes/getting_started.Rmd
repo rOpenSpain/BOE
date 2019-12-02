@@ -47,3 +47,9 @@ Once you select those publications
 url_publications(sumario_hoy[1:5, ])
 ```
 
+# Session Info {-}
+
+```{r session_info}
+sessionInfo()
+```
+

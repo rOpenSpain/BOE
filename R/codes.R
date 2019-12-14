@@ -1,4 +1,3 @@
-journal <- "BOE"
 
 # Helper function
 add <- function(x) {
@@ -19,13 +18,15 @@ is_numeric <- function(x){
 #' @examples
 #' sumario_xml(Sys.Date())
 #' sumario_xml(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"))
-sumario_xml <- function(date) {
+sumario_xml <- function(date, journal = "BOE") {
     if (is(date, "Date")) {
         date <- format(date, "%Y%m%d")
     }
     if (nchar(date) != 8  & !is_numeric(date)) {
         stop("The date should be the in numeric YYYYMMDD format", call. = FALSE)
     }
+
+    journal <- match.arg(journal, c("BOE", "BORME"))
     paste0(journal, add("S"), add(date))
 }
 
@@ -38,13 +39,14 @@ sumario_xml <- function(date) {
 #' @export
 #' @examples
 #' sumario_nbo(2019, 242)
-sumario_nbo <- function(year, number) {
+sumario_nbo <- function(year, number, journal = "BOE") {
     if (nchar(year) != 4  & !is_numeric(year)) {
         stop("The year should be the in numeric YYYY format", call. = FALSE)
     }
     if (nchar(number) != 4  & !is_numeric(number)) {
         stop("The number should be the in numeric NNN format", call. = FALSE)
     }
+    journal <- match.arg(journal, c("BOE", "BORME"))
     paste0(journal, add("S"), add(year), add(number))
 }
 
@@ -56,7 +58,7 @@ sumario_nbo <- function(year, number) {
 #' @return A character vector
 NULL
 
-elemento <- function(item = c("B", "A"), year, number) {
+elemento <- function(item = c("B", "A"), year, number, journal = "BOE") {
     item <- match.arg(item, c("B", "A"))
     if (nchar(year) != 4  & !is_numeric(year)) {
         stop("The year should be in numeric YYYY format", call. = FALSE)
@@ -64,6 +66,7 @@ elemento <- function(item = c("B", "A"), year, number) {
     if (nchar(number) > 6  & !is_numeric(number)) {
         stop("The year should be in numeric XXXXXX format", call. = FALSE)
     }
+    journal <- match.arg(journal, c("BOE", "BORME"))
     paste0(journal, add(item), add(year), add(number))
 }
 
@@ -71,14 +74,14 @@ elemento <- function(item = c("B", "A"), year, number) {
 #' @export
 #' @examples
 #' disposicion(2019, 242)
-disposicion <- function(year, number) {
-    elemento(item = "A", year = year, number = number)
+disposicion <- function(year, number, journal = "BOE") {
+    elemento(item = "A", year = year, number = number, journal = journal)
 }
 
 #' @describeIn element Create the number of the anuncio.
 #' @export
 #' @examples
 #' anuncio(2019, 242)
-anuncio <- function(year, number) {
-    elemento(item = "B", year = year, number = number)
+anuncio <- function(year, number, journal = "BOE") {
+    elemento(item = "B", year = year, number = number, journal = journal)
 }

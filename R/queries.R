@@ -1,20 +1,27 @@
 base_url <- "https://boe.es/"
+journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
+
+
 
 #' Build a query for an XML
 #'
 #' @param id The id of the xml document you want.
+#' @journal Either BOE or BORME.
 #' @return A query for the xml`.
 #' @export
 #' @examples
 #' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
 #' query_xml(id)
 #' @importFrom httr modify_url
-query_xml <- function(id) {
+query_xml <- function(id, journal = "BOE") {
     force(base_url)
+    journal <- match.arg(journal, c("BOE", "BORME"))
     httr::modify_url(base_url,
-                     path = "diario_boe/xml.php",
+                     path = paste0(journal_url[journal], "/xml.php"),
                      query = paste0("id=", id))
 }
+
+
 
 #' Build a query for the webpage
 #'
@@ -24,10 +31,11 @@ query_xml <- function(id) {
 #' @examples
 #' id <- sumario_nbo("2017", "11117")
 #' query_htm(id)
-query_htm <- function(id) {
+query_htm <- function(id, journal = "BOE") {
     force(base_url)
+    journal <- match.arg(journal, c("BOE", "BORME"))
     httr::modify_url(base_url,
-                     path = "diario_boe/text.php",
+                     path = paste0(journal_url[journal], "/text.php"),
                      query = paste0("id=", id))
 }
 
@@ -46,7 +54,8 @@ query_htm <- function(id) {
 #' query_pdf("2017", "10", "02", code)
 query_pdf <- function(year, month, day, code) {
     force(base_url)
-    p <- paste("boe/dias", year, month, day, "pdfs", paste0(code, ".pdf"), sep = "/")
+    journal <- tolower(gsub("-.*", "", code))
+    p <- paste(journal, "dias", year, month, day, "pdfs", paste0(code, ".pdf"), sep = "/")
     paste0(base_url, path = p)
 }
 
@@ -66,7 +75,7 @@ query_pdf <- function(year, month, day, code) {
 #' url <- query_xml(id)
 #' \donttest{get_xml(url)}
 get_xml <- function(query) {
-    user_agent <- user_agent("http://github.com/llrs/BOE")
+    user_agent <- user_agent("https://github.com/llrs/BOE")
     response <- GET(query, user_agent)
     if (status_code(response) != 200) {
         stop("Could not retrieve the data.", call. = FALSE)

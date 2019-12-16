@@ -4,12 +4,14 @@
 \alias{sumario_nbo}
 \title{Create the number of the sumario}
 \usage{
-sumario_nbo(year, number)
+sumario_nbo(year, number, journal = "BOE")
 }
 \arguments{
 \item{year}{Character or numeric value of the year of the summary in YYYY format.}
 
 \item{number}{Number of the summary in NNN format.}
+
+\item{journal}{Either BOE or BORME.}
 }
 \value{
 A character vector

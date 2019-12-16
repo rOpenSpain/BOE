@@ -4,10 +4,12 @@
 \alias{sumario_xml}
 \title{Create the id for sumario}
 \usage{
-sumario_xml(date)
+sumario_xml(date, journal = "BOE")
 }
 \arguments{
 \item{date}{Date of the sumario}
+
+\item{journal}{Either BOE or BORME.}
 }
 \value{
 A character vector

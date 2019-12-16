@@ -10,7 +10,8 @@
 #' @examples
 #' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
 #' sumario_file <- get_xml(query_xml(id))
-#' m <- tidy_sumario(sumario_file)
+#' m <-
+#'
 #' head(m)
 #' tail(m)
 #' @importFrom xml2 xml_attr
@@ -35,16 +36,23 @@ tidy_sumario <- function(x) {
     }
     nbo <- xml_attr(xml_find_all(x,  "./diario"), "nbo")
 
-    # Diario > seccion > Departamento > (Epígrafe?) > Publicacion
+    # Diario > section > Departamento > Epígrafe > Publicacion
     Diario <- xml_find_all(x, "//diario")
 
     Sumario_nbo <- xml_child(Diario, "sumario_nbo")
     sumario_nbo <- xml_attr(Sumario_nbo, "id")
+    journal <- gsub("-.*", "", sumario_nbo)
+
+    # Change the colnames based on the journal
+    # Diario > section > Emisor > Publicacion
+    if (journal == "BORME") {
+        col_names[grepl("departament", col_names)] <- c("emisor", "emisor_etq")
+    }
+
     Publicaciones <- xml_find_all(x, "//item")
 
     pages <- xml_find_all(x, ".//seccion//urlPdf")
     pages <- xml_attr(pages, "numPag")
-
     publications_id <- xml_attr(Publicaciones, "id")
     publications_txt <- xml_text(xml_find_all(Publicaciones, "//item/titulo"))
 
@@ -57,7 +65,9 @@ tidy_sumario <- function(x) {
     m <- as.data.frame(m, stringsAsFactors = FALSE)
     m$pages <- as.numeric(m$pages)
     m$date <- as.Date(m$date, format = "%d/%m/%Y")
-    m
+    # For easier documentations
+    remove <- vapply(m, function(x){all(is.na(x))}, logical(1L))
+    m[, !remove]
 }
 
 recover_publication <- function(x) {
@@ -69,8 +79,11 @@ recover_publication <- function(x) {
         epigrafe <- NA
     }
 
-    departamento <- xml_attrs(parent)
+
+    departamento <- xml_attr(parent, "nombre")
+    departamento_etq <- xml_attr(parent, "etq")
+
     seccion <- xml_parent(parent)
     seccion <- xml_attrs(seccion)
-    c(seccion, departamento, epigrafe)
+    c(seccion, departamento, departamento_etq, epigrafe)
 }

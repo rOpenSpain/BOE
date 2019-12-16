@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of BOE is to provide tools to retrieve data from BOE.
+The goal of BOE is to provide tools to retrieve data from BOE either from the **Boletín Oficial del Estado** or from the BORME **Boletín Oficial del Registro Mercantil del Estado**. 
 
 ## Installation
 
@@ -44,7 +44,7 @@ The most important data is the sumario (summary) which can be retrieved by the d
 
 ```{r example}
 library("BOE")
-today <- Sys.Date()
+today <- Sys.Date() -1
 sumario_hoy <- retrieve_sumario(today)
 head(sumario_hoy)
 ```
@@ -67,8 +67,10 @@ If we need to know the BOE code of a publication we can do so with:
 
 ```{r}
 sumario_xml(as.Date("2019/11/15"))
+sumario_xml(as.Date("2019/11/15"), journal = "BORME")
 # The codes of publication is the year and the number of said publication
 sumario_nbo("2017", "275") 
+sumario_nbo("2017", "275", journal = "BORME") 
 anuncio("2012", "32498") 
 disposicion("2012", "32498")
 ```

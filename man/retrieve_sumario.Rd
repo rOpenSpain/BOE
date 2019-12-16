@@ -4,10 +4,12 @@
 \alias{retrieve_sumario}
 \title{Retrieve the sumario}
 \usage{
-retrieve_sumario(date)
+retrieve_sumario(date, journal = "BOE")
 }
 \arguments{
 \item{date}{A Date of the \emph{sumario}.}
+
+\item{journal}{Either BOE or BORME.}
 }
 \value{
 A data.frame with one line for each publication.

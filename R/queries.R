@@ -6,7 +6,7 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #' Build a query for an XML
 #'
 #' @param id The id of the xml document you want.
-#' @journal Either BOE or BORME.
+#' @param journal Either BOE or BORME.
 #' @return A query for the xml`.
 #' @export
 #' @examples
@@ -26,6 +26,7 @@ query_xml <- function(id, journal = "BOE") {
 #' Build a query for the webpage
 #'
 #' @param id The id of the xml document you want.
+#' @inheritParams retrieve_sumario
 #' @return  A query url.
 #' @export
 #' @examples

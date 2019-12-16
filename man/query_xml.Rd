@@ -4,10 +4,12 @@
 \alias{query_xml}
 \title{Build a query for an XML}
 \usage{
-query_xml(id)
+query_xml(id, journal = "BOE")
 }
 \arguments{
 \item{id}{The id of the xml document you want.}
+
+\item{journal}{Either BOE or BORME.}
 }
 \value{
 A query for the xml`.

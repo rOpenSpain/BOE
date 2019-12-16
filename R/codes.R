@@ -11,6 +11,7 @@ is_numeric <- function(x){
 #' Create the id for sumario
 #'
 #' @param date Date of the sumario
+#' @inheritParams retrieve_sumario
 #' @return A character vector
 #' @seealso [sumario_nbo](sumario_nbo)
 #' @export
@@ -34,6 +35,7 @@ sumario_xml <- function(date, journal = "BOE") {
 #'
 #' @param year Character or numeric value of the year of the summary in YYYY format.
 #' @param number Number of the summary in NNN format.
+#' @inheritParams retrieve_sumario
 #' @return A character vector
 #' @seealso [sumario_xml]
 #' @export
@@ -58,7 +60,7 @@ sumario_nbo <- function(year, number, journal = "BOE") {
 #' @return A character vector
 NULL
 
-elemento <- function(item = c("B", "A"), year, number, journal = "BOE") {
+elemento <- function(item = c("B", "A"), year, number) {
     item <- match.arg(item, c("B", "A"))
     if (nchar(year) != 4  & !is_numeric(year)) {
         stop("The year should be in numeric YYYY format", call. = FALSE)
@@ -66,22 +68,21 @@ elemento <- function(item = c("B", "A"), year, number, journal = "BOE") {
     if (nchar(number) > 6  & !is_numeric(number)) {
         stop("The year should be in numeric XXXXXX format", call. = FALSE)
     }
-    journal <- match.arg(journal, c("BOE", "BORME"))
-    paste0(journal, add(item), add(year), add(number))
+    paste0("BOE", add(item), add(year), add(number))
 }
 
 #' @describeIn element Create the number of the diposicion.
 #' @export
 #' @examples
 #' disposicion(2019, 242)
-disposicion <- function(year, number, journal = "BOE") {
-    elemento(item = "A", year = year, number = number, journal = journal)
+disposicion <- function(year, number) {
+    elemento(item = "A", year = year, number = number)
 }
 
 #' @describeIn element Create the number of the anuncio.
 #' @export
 #' @examples
 #' anuncio(2019, 242)
-anuncio <- function(year, number, journal = "BOE") {
-    elemento(item = "B", year = year, number = number, journal = journal)
+anuncio <- function(year, number) {
+    elemento(item = "B", year = year, number = number)
 }

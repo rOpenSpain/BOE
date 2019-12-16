@@ -2,18 +2,20 @@
 #'
 #' Obtain a sumario and tidy it in a table.
 #' @param date A Date of the *sumario*.
+#' @param journal Either BOE or BORME.
 #' @return A data.frame with one line for each publication.
 #' @export
 #' @seealso tidy_sumario to learn about the format of the output
 #' @examples
 #' \donttest{retrieve_sumario(Sys.Date())}
-retrieve_sumario <- function(date) {
+retrieve_sumario <- function(date, journal = "BOE") {
 
     if (!is(date, "Date") | (nchar(date) != 8  & !is_numeric(date))) {
         stop("The date should be the in numeric YYYYMMDD format", call. = FALSE)
     }
+    journal <- match.arg(journal, c("BOE", "BORME"))
 
-    tidy_sumario(get_xml(query_xml(sumario_xml(date))))
+    tidy_sumario(get_xml(query_xml(sumario_xml(date, journal))))
 }
 
 

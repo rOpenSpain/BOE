@@ -16,8 +16,8 @@ knitr::opts_chunk$set(
 # BOE
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/llrs/BOE.svg?branch=master)](https://travis-ci.org/llrs/BOE)
-[![Codecov test coverage](https://codecov.io/gh/llrs/BOE/branch/master/graph/badge.svg)](https://codecov.io/gh/llrs/BOE?branch=master)
+[![Travis build status](https://travis-ci.org/rOpenSpain/BOE.svg?branch=master)](https://travis-ci.org/rOpenSpain/BOE)
+[![Codecov test coverage](https://codecov.io/gh/rOpenSpain/BOE/branch/master/graph/badge.svg)](https://codecov.io/gh/rOpenSpain/BOE?branch=master)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
@@ -34,7 +34,7 @@ install.packages("BOE")
 Or you can install it from github with:
 
 ``` r
-devtools::install_github("llrs/BOE")
+devtools::install_github("rOpenSpain/BOE")
 ```
 
 ## Examples

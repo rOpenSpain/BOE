@@ -18,3 +18,8 @@ test_that("url_publications works", {
     urls <- url_publications(sumario)
     expect_length(urls, nrow(sumario))
 })
+
+test_that("Two summaries works", {
+    skip_if_offline()
+    expect_warning(retrieve_sumario(structure(18337, class = "Date")), NA)
+})

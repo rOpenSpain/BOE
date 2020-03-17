@@ -45,6 +45,9 @@ tidy_sumario <- function(x) {
 
     # Change the colnames based on the journal
     # Diario > section > Emisor > Publicacion
+    # In case there are two summaries on the same day
+    # This prevents a warning of condition has length > 1
+    journal <- unique(journal)
     if (journal == "BORME") {
         col_names[grepl("departament", col_names)] <- c("emisor", "emisor_etq")
     }

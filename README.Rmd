@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/rOpenSpain/BOE.svg?branch=master)](https://travis-ci.org/rOpenSpain/BOE)
 [![Codecov test coverage](https://codecov.io/gh/rOpenSpain/BOE/branch/master/graph/badge.svg)](https://codecov.io/gh/rOpenSpain/BOE?branch=master)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 <!-- badges: end -->
 
 The goal of BOE is to provide tools to retrieve data from BOE either from the **Boletín Oficial del Estado** or from the BORME **Boletín Oficial del Registro Mercantil del Estado**. 
@@ -44,7 +44,7 @@ The most important data is the sumario (summary) which can be retrieved by the d
 
 ```{r example}
 library("BOE")
-today <- Sys.Date() -1
+today <- Sys.Date()
 sumario_hoy <- retrieve_sumario(today)
 head(sumario_hoy)
 ```

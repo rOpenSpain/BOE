@@ -12,8 +12,8 @@ Queries the online site of the Boletin Oficial del Estado (BOE)
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/llrs/BOE}
-  \item Report bugs at \url{https://github.com/llrs/BOE/issues}
+  \item \url{https://github.com/rOpenSpain/BOE}
+  \item Report bugs at \url{https://github.com/llrs/rOpenSpain/issues}
 }
 
 }

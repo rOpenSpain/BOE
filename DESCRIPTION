@@ -1,7 +1,7 @@
 Type: Package
 Package: BOE
 Title: Work with the Boletin Oficial del Estado of Spain
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: 
     person(given = "Lluís",
            family = "Revilla Sancho",
@@ -14,7 +14,6 @@ License: GPL-3
 URL: https://github.com/rOpenSpain/BOE
 BugReports: https://github.com/llrs/rOpenSpain/issues
 Imports: 
-    glue,
     httr (>= 1.4.1),
     roxygen2,
     xml2 (>= 1.2.2),

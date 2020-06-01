@@ -23,15 +23,11 @@ knitr::opts_chunk$set(
 
 The goal of BOE is to provide tools to retrieve data from BOE either from the **Boletín Oficial del Estado** or from the BORME **Boletín Oficial del Registro Mercantil del Estado**. 
 
+You can see examples of what is cappable on the vignette or on this [webiste](https://llrs.github.io/BOE_historico/)
+
 ## Installation
 
-You can install the released version of BOE from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("BOE")
-```
-
-Or you can install it from github with:
+You can install it from github with:
 
 ``` r
 devtools::install_github("rOpenSpain/BOE")

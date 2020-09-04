@@ -10,7 +10,7 @@ Authors@R:
            comment = c(ORCID = "0000-0001-9747-2570"))
 Description: Queries the online site of the Boletin Oficial del Estado (BOE) 
     for data.
-License: GPL-3
+License: MIT + file LICENSE
 URL: https://github.com/rOpenSpain/BOE
 BugReports: https://github.com/llrs/rOpenSpain/issues
 Imports: 

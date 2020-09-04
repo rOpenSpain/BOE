@@ -21,7 +21,7 @@ retrieve_sumario <- function(date, journal = "BOE") {
 
 #' Url to the publications
 #'
-#' Transform the date and publication code to the urls to the publications.
+#' Transform the date and publication code to the urls to the publications on pdf format.
 #' @param sumario A tidy sumario.
 #' @seealso [`retrieve_sumario`](retrieve_sumario) to obtain *sumarios*, and [tidy_sumario](tidy_sumario)
 #' to know the expected input.

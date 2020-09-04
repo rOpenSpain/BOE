@@ -14,6 +14,7 @@ is_numeric <- function(x){
 #' @inheritParams retrieve_sumario
 #' @return A character vector
 #' @seealso [sumario_nbo](sumario_nbo)
+#' @family code generator
 #' @export
 #' @importFrom methods is
 #' @examples
@@ -37,7 +38,7 @@ sumario_xml <- function(date, journal = "BOE") {
 #' @param number Number of the summary in NNN format.
 #' @inheritParams retrieve_sumario
 #' @return A character vector
-#' @seealso [sumario_xml]
+#' @family code generator
 #' @export
 #' @examples
 #' sumario_nbo(2019, 242)
@@ -72,6 +73,7 @@ elemento <- function(item = c("B", "A"), year, number) {
 }
 
 #' @describeIn element Create the number of the diposicion.
+#' @family code generator
 #' @export
 #' @examples
 #' disposicion(2019, 242)
@@ -80,6 +82,7 @@ disposicion <- function(year, number) {
 }
 
 #' @describeIn element Create the number of the anuncio.
+#' @family code generator
 #' @export
 #' @examples
 #' anuncio(2019, 242)

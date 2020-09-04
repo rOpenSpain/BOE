@@ -7,7 +7,8 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #'
 #' @param id The id of the xml document you want.
 #' @param journal Either BOE or BORME.
-#' @return A query for the xml`.
+#' @return A query for the xml.
+#' @seealso [sumario_xml]
 #' @export
 #' @examples
 #' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))

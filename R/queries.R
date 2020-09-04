@@ -14,8 +14,9 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
 #' query_xml(id)
 #' @importFrom httr modify_url
-query_xml <- function(id, journal = "BOE") {
+query_xml <- function(id) {
     force(base_url)
+    journal <- unlist(strsplit(id, split = "-", fixed = TRUE), FALSE, FALSE)[1]
     journal <- match.arg(journal, c("BOE", "BORME"))
     httr::modify_url(base_url,
                      path = paste0(journal_url[journal], "/xml.php"),

@@ -2,7 +2,7 @@
 % Please edit documentation in R/retrieve.R
 \name{retrieve_sumario}
 \alias{retrieve_sumario}
-\title{Retrieve the sumario}
+\title{Retrieve the \emph{sumario}}
 \usage{
 retrieve_sumario(date, journal = "BOE")
 }
@@ -15,11 +15,15 @@ retrieve_sumario(date, journal = "BOE")
 A data.frame with one line for each publication.
 }
 \description{
-Obtain a sumario and tidy it in a table.
+Obtain a \emph{sumario} and tidy it in a table.
 }
 \examples{
 \donttest{retrieve_sumario(Sys.Date())}
 }
 \seealso{
-tidy_sumario to learn about the format of the output
+\link{tidy_sumario} to learn about the format of the output
+
+Other functions to retrieve documents: 
+\code{\link{retrieve_document}()}
 }
+\concept{functions to retrieve documents}

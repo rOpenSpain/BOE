@@ -13,7 +13,7 @@ url_publications(sumario)
 A character vector with the urls to get the publications in pdf format.
 }
 \description{
-Transform the date and publication code to the urls to the publications.
+Transform the date and publication code to the urls to the publications on pdf format.
 }
 \examples{
 \donttest{

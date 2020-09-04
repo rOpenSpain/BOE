@@ -2,7 +2,7 @@
 % Please edit documentation in R/codes.R
 \name{sumario_nbo}
 \alias{sumario_nbo}
-\title{Create the number of the sumario}
+\title{Create the number of the \emph{sumario}}
 \usage{
 sumario_nbo(year, number, journal = "BOE")
 }
@@ -17,11 +17,14 @@ sumario_nbo(year, number, journal = "BOE")
 A character vector
 }
 \description{
-Create the number of the sumario
+Create the number of the \emph{sumario}
 }
 \examples{
 sumario_nbo(2019, 242)
 }
 \seealso{
-\link{sumario_xml}
+Other code generator: 
+\code{\link{element}},
+\code{\link{sumario_xml}()}
 }
+\concept{code generator}

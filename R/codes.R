@@ -56,6 +56,7 @@ sumario_nbo <- function(year, number, journal = "BOE") {
 #' @param year Character or numeric value of the year of the element in YYYY format.
 #' @param number Character or numeric value of the element.
 #' @return A character vector
+#' @family code generator
 NULL
 
 elemento <- function(item = c("B", "A"), year, number) {
@@ -70,7 +71,6 @@ elemento <- function(item = c("B", "A"), year, number) {
 }
 
 #' @describeIn element Create the number of the diposicion.
-#' @family code generator
 #' @export
 #' @examples
 #' disposicion(2019, 242)
@@ -79,7 +79,6 @@ disposicion <- function(year, number) {
 }
 
 #' @describeIn element Create the number of the anuncio.
-#' @family code generator
 #' @export
 #' @examples
 #' anuncio(2019, 242)

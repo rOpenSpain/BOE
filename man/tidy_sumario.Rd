@@ -2,7 +2,7 @@
 % Please edit documentation in R/tidy.R
 \name{tidy_sumario}
 \alias{tidy_sumario}
-\title{Tidy sumario xml}
+\title{Tidy \emph{sumario} from xml file}
 \usage{
 tidy_sumario(x)
 }
@@ -16,7 +16,7 @@ departament, departament number, epigraph, brief text,
 publication code and number of pages of the pdf.
 }
 \description{
-Cleans in a tidy format the sumario file
+Cleans in a tidy format the \emph{sumario} file
 }
 \examples{
 id <- sumario_xml(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))

@@ -32,3 +32,9 @@ Elements: \emph{disposición} and \emph{anuncio}
 disposicion(2019, 242)
 anuncio(2019, 242)
 }
+\seealso{
+Other code generator: 
+\code{\link{sumario_nbo}()},
+\code{\link{sumario_xml}()}
+}
+\concept{code generator}

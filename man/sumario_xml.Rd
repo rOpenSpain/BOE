@@ -2,12 +2,12 @@
 % Please edit documentation in R/codes.R
 \name{sumario_xml}
 \alias{sumario_xml}
-\title{Create the id for sumario}
+\title{Create the id for \emph{sumario}}
 \usage{
 sumario_xml(date, journal = "BOE")
 }
 \arguments{
-\item{date}{Date of the sumario}
+\item{date}{Date of the \emph{sumario}}
 
 \item{journal}{Either BOE or BORME.}
 }
@@ -15,12 +15,17 @@ sumario_xml(date, journal = "BOE")
 A character vector
 }
 \description{
-Create the id for sumario
+Create the id for \emph{sumario}
 }
 \examples{
 sumario_xml(Sys.Date())
-sumario_xml(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
+sumario_xml(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"), journal = "BORME")
 }
 \seealso{
 \url{sumario_nbo}
+
+Other code generator: 
+\code{\link{element}},
+\code{\link{sumario_nbo}()}
 }
+\concept{code generator}

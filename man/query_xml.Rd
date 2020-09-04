@@ -4,7 +4,7 @@
 \alias{query_xml}
 \title{Build a query for an XML}
 \usage{
-query_xml(id, journal = "BOE")
+query_xml(id)
 }
 \arguments{
 \item{id}{The id of the xml document you want.}
@@ -12,7 +12,7 @@ query_xml(id, journal = "BOE")
 \item{journal}{Either BOE or BORME.}
 }
 \value{
-A query for the xml`.
+A query for the xml.
 }
 \description{
 Build a query for an XML
@@ -20,4 +20,7 @@ Build a query for an XML
 \examples{
 id <- sumario_xml(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
 query_xml(id)
+}
+\seealso{
+\link{sumario_xml}
 }

@@ -1,11 +1,12 @@
-#' Retrieve the sumario
+#' Retrieve the _sumario_
 #'
-#' Obtain a sumario and tidy it in a table.
-#' @param date A Date of the *sumario*.
+#' Obtain a _sumario_ and tidy it in a table.
+#' @param date A Date of the _sumario_.
 #' @param journal Either BOE or BORME.
 #' @return A data.frame with one line for each publication.
+#' @family functions to retrieve documents
 #' @export
-#' @seealso tidy_sumario to learn about the format of the output
+#' @seealso [tidy_sumario] to learn about the format of the output
 #' @examples
 #' \donttest{retrieve_sumario(Sys.Date())}
 retrieve_sumario <- function(date, journal = "BOE") {
@@ -15,9 +16,49 @@ retrieve_sumario <- function(date, journal = "BOE") {
     }
     journal <- match.arg(journal, c("BOE", "BORME"))
 
-    tidy_sumario(get_xml(query_xml(sumario_xml(date, journal), journal = journal)))
+    tidy_sumario(get_xml(query_xml(sumario_xml(date, journal))))
 }
 
+#' Retrieve information of a publication
+#' @family functions to retrieve documents
+#' @importFrom xml2 xml_find_all
+#' @examples
+#' xml  <- get_xml(query_xml("BOE-B-2017-5"))
+#' xml2 <- get_xml(query_xml("BOE-A-2017-5"))
+#' xml3 <- get_xml(query_xml("BOE-S-2017-5"))
+#' xml4 <- get_xml(query_xml("BORME-S-2020-108"))
+#' df <- retrieve_document(id)
+retrieve_document <- function(id) {
+    check_code(id)
+
+    # Use the id of the document to identify the journal and get it.
+    ids <- unlist(strsplit(id, "-", TRUE), FALSE, FALSE)
+    journal <- ids[1]
+    xml <- get_xml(query_xml(id))
+
+    # Only the sumarios do not have fecha_actualizacion
+    actualizado <- xml_attr(xml, "fecha_actualizacion")
+    if (is.na(actualizado)) {
+        element <- "summario"
+        return(tidy_sumario(xml))
+    }
+
+    # Data about the document itself
+    meta <- xml_find_all(xml, "./metadatos")
+    id2 <- xml_text(xml2::xml_find_first(meta, "./identificador"))
+    if (id != id2) {
+        stop("Document id queried and obtained do not match")
+    }
+
+    # We only have all the elements from the BOE for the moment, not the BORME
+    element <- switch(ids[2],
+                      "A" = "disposicion",
+                      "B" = "anuncio")
+
+
+    analysis <- xml_find_all(xml, "./analisis")
+    text <- xml_text(xml_find_all(xml, "./texto"))
+}
 
 #' Url to the publications
 #'

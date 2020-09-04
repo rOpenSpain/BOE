@@ -66,7 +66,7 @@ elemento <- function(item = c("B", "A"), year, number) {
     if (nchar(number) > 6  & !is_numeric(number)) {
         stop("The year should be in numeric XXXXXX format", call. = FALSE)
     }
-    paste0("BOE", item, year, number, sep  ="-")
+    paste("BOE", item, year, number, sep = "-")
 }
 
 #' @describeIn element Create the number of the diposicion.
@@ -85,4 +85,46 @@ disposicion <- function(year, number) {
 #' anuncio(2019, 242)
 anuncio <- function(year, number) {
     elemento(item = "B", year = year, number = number)
+}
+
+#' Check code of documents
+#'
+#' Given an id check if it is valid.
+#' @param id
+#' @return A logical value.
+#' @examples
+#' check_code("BOE-S-2014-242"))
+#' # Will fail:
+#' # check_code("BOE-S-2014")
+#' # check_code("BOE-S-20141221")
+check_code <- function(id) {
+    ids <- unlist(strsplit(id, "-", fixed = TRUE), FALSE, FALSE)
+    if (!ids[1] %in% c("BORME", "BOE")) {
+        stop("Journal does not match: got ", ids[1],
+             " should be either BORME or BOE.", call. = FALSE)
+    }
+    if (ids[1] == "BOE" & length(ids) > 4) {
+        stop("The code should have at most 3 '-' got more.", call. = FALSE)
+    }
+    if (ids[1] == "BOE" & length(ids) < 4) {
+        stop("The code should have at most 3 '-'.", call. = FALSE)
+    }
+
+    if (!ids[2] %in% c("B", "A", "S")) {
+        stop("The type of document does not match: got ", ids[2],
+             " should be either A, B or S.", call. = FALSE)
+    }
+    if (!is_numeric(paste0(ids[3:length(ids)], collapse = ""))) {
+        stop("After journal and type of document there only should be numbers.",
+             call. = FALSE)
+    }
+    if (ids[2] == "S" & nchar(ids[3]) > 4) {
+        stop("Got ", ids[3], " should be a year in numerical form.",
+             call. = FALSE)
+    }
+    if (ids[2] == "A" & ids[1] == "BORME" & length(ids) > 5) {
+        stop("Got ", ids[3], " should be a year in numerical.", call. = FALSE)
+    }
+
+    TRUE
 }

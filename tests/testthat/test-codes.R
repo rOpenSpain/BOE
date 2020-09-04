@@ -28,8 +28,7 @@ test_that("anuncio works", {
 
 
 test_that("PDF code is valid", {
-  # expect_true("BOE-S-2014-242")
-  # expect_false("BOE-S-0014-242")
-  # expect_false("BOE-S-2014")
-  # expect_false("BOE-S-20141221")
+  expect_true(check_code("BOE-S-2014-242"))
+  expect_error(check_code("BOE-S-2014"))
+  expect_error(check_code("BOE-S-20141221"))
 })

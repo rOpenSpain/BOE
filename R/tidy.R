@@ -1,6 +1,6 @@
-#' Tidy sumario xml
+#' Tidy _sumario_ from xml file
 #'
-#' Cleans in a tidy format the sumario file
+#' Cleans in a tidy format the _sumario_ file
 #' @param x A XML file.
 #' @return A data.frame with one line for each publication.
 #'  Including date, _sumario_ number, section, section text,

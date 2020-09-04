@@ -1,16 +1,12 @@
 
 # Helper function
-add <- function(x) {
-    paste0("-", x)
-}
-
 is_numeric <- function(x){
     tryCatch(as.numeric(x), warning = function(w){FALSE}, finally = TRUE)
 }
 
-#' Create the id for sumario
+#' Create the id for _sumario_
 #'
-#' @param date Date of the sumario
+#' @param date Date of the _sumario_
 #' @inheritParams retrieve_sumario
 #' @return A character vector
 #' @seealso [sumario_nbo](sumario_nbo)
@@ -19,7 +15,7 @@ is_numeric <- function(x){
 #' @importFrom methods is
 #' @examples
 #' sumario_xml(Sys.Date())
-#' sumario_xml(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"))
+#' sumario_xml(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"), journal = "BORME")
 sumario_xml <- function(date, journal = "BOE") {
     if (is(date, "Date")) {
         date <- format(date, "%Y%m%d")
@@ -29,10 +25,11 @@ sumario_xml <- function(date, journal = "BOE") {
     }
 
     journal <- match.arg(journal, c("BOE", "BORME"))
-    paste0(journal, add("S"), add(date))
+
+    paste(journal, "S", date, sep = "-")
 }
 
-#' Create the number of the sumario
+#' Create the number of the _sumario_
 #'
 #' @param year Character or numeric value of the year of the summary in YYYY format.
 #' @param number Number of the summary in NNN format.
@@ -50,11 +47,11 @@ sumario_nbo <- function(year, number, journal = "BOE") {
         stop("The number should be the in numeric NNN format", call. = FALSE)
     }
     journal <- match.arg(journal, c("BOE", "BORME"))
-    paste0(journal, add("S"), add(year), add(number))
+    paste(journal, "S", year, number, sep  ="-")
 }
 
 #' @name element
-#' @title Elements: *disposición* and *anuncio*
+#' @title Elements: _disposición_ and _anuncio_
 #'
 #' @param year Character or numeric value of the year of the element in YYYY format.
 #' @param number Character or numeric value of the element.
@@ -69,7 +66,7 @@ elemento <- function(item = c("B", "A"), year, number) {
     if (nchar(number) > 6  & !is_numeric(number)) {
         stop("The year should be in numeric XXXXXX format", call. = FALSE)
     }
-    paste0("BOE", add(item), add(year), add(number))
+    paste0("BOE", item, year, number, sep  ="-")
 }
 
 #' @describeIn element Create the number of the diposicion.

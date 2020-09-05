@@ -20,6 +20,9 @@ retrieve_sumario <- function(date, journal = "BOE") {
 }
 
 #' Retrieve information of a publication
+#'
+#' Tidy data from any document published on the BOE and BORME from the
+#' (boe.es)[https://boe.es].
 #' @family functions to retrieve documents
 #' @importFrom xml2 xml_find_all
 #' @examples
@@ -31,33 +34,17 @@ retrieve_sumario <- function(date, journal = "BOE") {
 retrieve_document <- function(id) {
     check_code(id)
 
-    # Use the id of the document to identify the journal and get it.
-    ids <- unlist(strsplit(id, "-", TRUE), FALSE, FALSE)
-    journal <- ids[1]
     xml <- get_xml(query_xml(id))
 
-    # Only the sumarios do not have fecha_actualizacion
-    actualizado <- xml_attr(xml, "fecha_actualizacion")
-    if (is.na(actualizado)) {
-        element <- "summario"
+    # Check if is a sumario
+    if (xml_name(xml) == "sumario") {
         return(tidy_sumario(xml))
     }
 
-    # Data about the document itself
-    meta <- xml_find_all(xml, "./metadatos")
-    id2 <- xml_text(xml2::xml_find_first(meta, "./identificador"))
-    if (id != id2) {
-        stop("Document id queried and obtained do not match")
-    }
-
     # We only have all the elements from the BOE for the moment, not the BORME
-    element <- switch(ids[2],
-                      "A" = "disposicion",
-                      "B" = "anuncio")
-
-
-    analysis <- xml_find_all(xml, "./analisis")
-    text <- xml_text(xml_find_all(xml, "./texto"))
+    switch(ids[2],
+           "A" = tidy_disposicion(xml),
+           "B" = tidy_anuncio(xml))
 }
 
 #' Url to the publications

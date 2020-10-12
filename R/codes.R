@@ -1,7 +1,7 @@
 
 # Helper function
 is_numeric <- function(x){
-    tryCatch(as.numeric(x), warning = function(w){FALSE}, finally = TRUE)
+    is.numeric(tryCatch(as.numeric(x), warning = function(w){FALSE}))
 }
 
 #' Create the id for _sumario_
@@ -20,7 +20,8 @@ sumario_xml <- function(date, journal = "BOE") {
     if (is(date, "Date")) {
         date <- format(date, "%Y%m%d")
     }
-    if (nchar(date) != 8  & !is_numeric(date)) {
+    if ((nchar(date) != 8  & is_numeric(date)) &
+        (is.numeric(date) >= 20090101)) { # Day that electronic BO[RM]E started
         stop("The date should be the in numeric YYYYMMDD format", call. = FALSE)
     }
 
@@ -40,11 +41,14 @@ sumario_xml <- function(date, journal = "BOE") {
 #' @examples
 #' sumario_nbo(2019, 242)
 sumario_nbo <- function(year, number, journal = "BOE") {
-    if (nchar(year) != 4  & !is_numeric(year)) {
-        stop("The year should be the in numeric YYYY format", call. = FALSE)
+    if (nchar(year) != 4  & !is_numeric(year) |
+        !(is.numeric(year) & year >= 2009)) {
+        stop("The year should be the in numeric YYYY format starting from 2009.",
+             call. = FALSE)
     }
-    if (nchar(number) != 4  & !is_numeric(number)) {
-        stop("The number should be the in numeric NNN format", call. = FALSE)
+    if ((nchar(number) != 3  & !is_numeric(number)) |
+        !(is.numeric(number) & number > 0 & number < 1000)) {
+        stop("The number should be the in numeric format above 1.", call. = FALSE)
     }
     journal <- match.arg(journal, c("BOE", "BORME"))
     paste(journal, "S", year, number, sep  ="-")
@@ -89,10 +93,11 @@ anuncio <- function(year, number) {
 #' Check code of documents
 #'
 #' Given an id check if it is valid.
-#' @param id
+#' @param id ID of the document (character).
 #' @return A logical value.
+#' @export
 #' @examples
-#' check_code("BOE-S-2014-242"))
+#' check_code("BOE-S-2014-242")
 #' # Will fail:
 #' # check_code("BOE-S-2014")
 #' # check_code("BOE-S-20141221")
@@ -106,7 +111,7 @@ check_code <- function(id) {
         stop("The code should have at most 3 '-' got more.", call. = FALSE)
     }
     if (ids[1] == "BOE" & length(ids) < 4) {
-        stop("The code should have at most 3 '-'.", call. = FALSE)
+        stop("The code should have three 3 '-'.", call. = FALSE)
     }
 
     if (!ids[2] %in% c("B", "A", "S")) {
@@ -122,8 +127,12 @@ check_code <- function(id) {
              call. = FALSE)
     }
     if (ids[2] == "A" & ids[1] == "BORME" & length(ids) > 5) {
-        stop("Got ", ids[3], " should be a year in numerical.", call. = FALSE)
+        stop("Got ", ids[3], " should be a numerical year.", call. = FALSE)
     }
 
+    if (as.numeric(ids[3]) < 2009) {
+        stop("Got ", ids[3], " should be a year in numbers starting from 2009.",
+             call. = FALSE)
+    }
     TRUE
 }

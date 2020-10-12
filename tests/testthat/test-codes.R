@@ -29,6 +29,21 @@ test_that("anuncio works", {
 
 test_that("PDF code is valid", {
   expect_true(check_code("BOE-S-2014-242"))
+  # Not sure about this there should be at most 366 summaries (one for each day)
+  expect_true(check_code("BOE-A-2009-1"))
+  expect_true(check_code("BOE-B-2009-1"))
+  expect_true(check_code("BOE-S-2009-1"))
+  expect_error(check_code("BOE-C-2009-1"))
+  expect_true(check_code("BOE-S-2014-2420"))
   expect_error(check_code("BOE-S-2014"))
+  expect_error(check_code("BOE-S-2008-1"))
   expect_error(check_code("BOE-S-20141221"))
+})
+
+
+test_that("sumario_nbo works", {
+  sumario_nbo(2019, 242)
+  expect_error(sumario_nbo(2019, 2424), "numeric format")
+  expect_error(sumario_nbo(2019, -1), "numeric format")
+  expect_error(sumario_nbo(1999, 1), "starting from 2009")
 })

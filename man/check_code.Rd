@@ -6,6 +6,9 @@
 \usage{
 check_code(id)
 }
+\arguments{
+\item{id}{ID of the document (character).}
+}
 \value{
 A logical value.
 }
@@ -13,7 +16,7 @@ A logical value.
 Given an id check if it is valid.
 }
 \examples{
-check_code("BOE-S-2014-242"))
+check_code("BOE-S-2014-242")
 # Will fail:
 # check_code("BOE-S-2014")
 # check_code("BOE-S-20141221")

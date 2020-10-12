@@ -14,8 +14,10 @@
 #'
 #' head(m)
 #' tail(m)
+#' @importFrom xml2 xml_name
 #' @importFrom xml2 xml_attr
 #' @importFrom xml2 xml_child
+#' @importFrom xml2 xml_children
 #' @importFrom xml2 xml_find_all
 #' @importFrom xml2 xml_parent
 #' @importFrom xml2 xml_text
@@ -89,4 +91,146 @@ recover_publication <- function(x) {
     seccion <- xml_parent(parent)
     seccion <- xml_attrs(seccion)
     c(seccion, departamento, departamento_etq, epigrafe)
+}
+
+# xml  <- get_xml(query_xml("BOE-B-2017-5"))
+# tidy_anuncio(xml)
+tidy_anuncio <- function(xml) {
+    fecha_actualizacion <- xml_attr(xml, "fecha_actualizacion")
+    fecha_actualizacion <- as.POSIXct(fecha_actualizacion,
+                                      format = "%Y%m%d%H%M%S", tz = "CET")
+    metadatos <- tidy_metadatos(xml_find_all(xml, "//metadatos"))
+    metadatos$fecha_actualizacion <- fecha_actualizacion
+
+    analysis <- tidy_analysis(xml_child(xml, "analisis"))
+    text <- xml_text(xml_find_all(xml, "./texto"))
+
+    if (is.null(analysis)) {
+        list(metadatos = metadatos, text = text)
+    } else {
+        list(metadatos = metadatos, analysis = analysis, text = text)
+    }
+}
+
+# xml  <- get_xml(query_xml("BOE-A-2017-5"))
+# xml  <- get_xml(query_xml("BOE-A-2020-5796"))
+# tidy_disposicion(xml)
+tidy_disposicion <- function(xml) {
+    fecha_actualizacion <- xml_attr(xml, "fecha_actualizacion")
+    fecha_actualizacion <- as.POSIXct(fecha_actualizacion,
+                                      format = "%Y%m%d%H%M%S", tz = "CET")
+    metadatos <- tidy_metadatos(xml_child(xml, "metadatos"))
+    metadatos$fecha_actualizacion <- fecha_actualizacion
+
+    analysis <- tidy_analysis(xml_child(xml, "analisis"))
+    text <- xml_text(xml_find_all(xml, "./texto"))
+
+    if (is.null(analysis)) {
+        list(metadatos = metadatos, text = text)
+    } else {
+        list(metadatos = metadatos, analysis = analysis, text = text)
+    }
+}
+
+tidy_metadatos <- function(meta) {
+    # Data about the document itself
+    text <- as.list(xml_text(meta))
+    names(text) <- xml_name(meta)
+    text[["diario"]] <- xml_attr(xml_find_all(meta, "//diario"), "codigo")
+    departamento <- xml_child(meta, "departamento")
+    text[["departamento_codigo"]] <- xml_attr(departamento, "codigo")
+
+    text[["fecha_publicacion"]] <- as.Date(text[["fecha_publicacion"]],
+                                           "%Y%m%d")
+    text
+}
+
+tidy_analysis <- function(analysis) {
+    analysis <- xml_children(analysis)
+    names <- xml_name(analysis)
+    if (length(names) == 0) {
+        return(NULL)
+    }
+    analisis <- vector("list", length = length(names))
+    names(analisis) <- names
+    if ("notas" %in% names) {
+        analisis[["notas"]] <- tidy_notas(xml_find_all(analysis, "//notas"))
+    }
+    if ("materias" %in% names) {
+        analisis[["materias"]] <- tidy_materias(
+            xml_find_all(analysis, "//materias"))
+    }
+    if ("alertas" %in% names) {
+        analisis[["alertas"]] <- tidy_alertas(
+            xml_find_all(analysis, "//alertas"))
+    }
+    if ("referencias" %in% names) {
+        analisis[["referencias"]] <- tidy_referencias(
+            xml_find_all(analysis, "//referencias"))
+    }
+    analisis
+}
+
+
+#' @importFrom xml2 xml_length
+tidy_notas <- function(notas) {
+    if (all(xml_length(notas) == 0 )) {
+        return(NULL)
+    }
+    m <- t(simplify2array(xml_attrs(notas), FALSE))
+    m <- cbind(m, text = xml_text(notas))
+    as.data.frame(m)
+}
+tidy_materias <- function(materias) {
+    if (all(xml_length(materias) == 0)) {
+        return(NULL)
+    }
+    m <- t(simplify2array(xml_attrs(materias), FALSE))
+    m <- cbind(m, text = xml_text(materias))
+    as.data.frame(m)
+}
+tidy_alertas <- function(alertas) {
+    if (all(xml_length(alertas) == 0)) {
+        return(NULL)
+    }
+    m <- t(simplify2array(xml_attrs(alertas), FALSE))
+    m <- cbind(m, text = xml_text(alertas))
+    as.data.frame(m)
+}
+
+tidy_referencias <- function(referencias) {
+    if (all(xml_length(referencias) == 0)) {
+        return(NULL)
+    }
+    child <- xml_children(referencias)
+    len <- xml_length(child)
+    l <- vector("list", length(len))
+    anterior <- xml_find_all(child, "//anterior")
+    posterior <- xml_find_all(child, "//posterior")
+    anterior <- lapply(anterior, ref)
+    posterior <- lapply(posterior, ref)
+    l2 <- list(anterior, posterior)
+    l[len != 0] <- l2[len != 0]
+    l <- lapply(l, simp)
+    names(l) <- xml_name(child)
+    l
+}
+
+
+simp <- function(x) {
+    if (!is.null(x)) {
+        t(simplify2array(x))
+    } else {
+        NULL
+    }
+}
+
+# For every anteriores there is one palabra and one texto
+ref <- function(x) {
+    attrs <- xml_attrs(x)
+    attrs <- c(attrs, unlist(xml_attrs(xml_children(x)), FALSE))
+    names <- xml_name(xml_children(x))
+    values <- xml_text(xml_children(x))
+    names(values) <- names
+    c(attrs, values)
 }

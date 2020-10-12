@@ -8,8 +8,6 @@ query_xml(id)
 }
 \arguments{
 \item{id}{The id of the xml document you want.}
-
-\item{journal}{Either BOE or BORME.}
 }
 \value{
 A query for the xml.

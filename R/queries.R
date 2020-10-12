@@ -6,7 +6,6 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #' Build a query for an XML
 #'
 #' @param id The id of the xml document you want.
-#' @param journal Either BOE or BORME.
 #' @return A query for the xml.
 #' @seealso [sumario_xml]
 #' @export
@@ -16,7 +15,7 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #' @importFrom httr modify_url
 query_xml <- function(id) {
     force(base_url)
-    journal <- unlist(strsplit(id, split = "-", fixed = TRUE), FALSE, FALSE)[1]
+    journal <- strsplit(id, split = "-", fixed = TRUE)[[1]][1]
     journal <- match.arg(journal, c("BOE", "BORME"))
     httr::modify_url(base_url,
                      path = paste0(journal_url[journal], "/xml.php"),

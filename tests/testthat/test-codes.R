@@ -42,8 +42,9 @@ test_that("PDF code is valid", {
 
 
 test_that("sumario_nbo works", {
-  sumario_nbo(2019, 242)
-  expect_error(sumario_nbo(2019, 2424), "numeric format")
+  expect_equal(sumario_nbo(2019, 242), "BOE-S-2019-242")
+  # There shouldn't be summaries/sumarios more than one each day.
+  expect_error(sumario_nbo(2019, 2424))
   expect_error(sumario_nbo(2019, -1), "numeric format")
   expect_error(sumario_nbo(1999, 1), "starting from 2009")
 })

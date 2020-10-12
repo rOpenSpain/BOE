@@ -41,14 +41,13 @@ sumario_xml <- function(date, journal = "BOE") {
 #' @examples
 #' sumario_nbo(2019, 242)
 sumario_nbo <- function(year, number, journal = "BOE") {
-    if (nchar(year) != 4  & !is_numeric(year) |
-        !(is.numeric(year) & year >= 2009)) {
+    if (as.numeric(year) < 2009) {
         stop("The year should be the in numeric YYYY format starting from 2009.",
              call. = FALSE)
     }
-    if ((nchar(number) != 3  & !is_numeric(number)) |
-        !(is.numeric(number) & number > 0 & number < 1000)) {
-        stop("The number should be the in numeric format above 1.", call. = FALSE)
+    if (as.numeric(number) < 0 | as.numeric(number) > 1000) {
+        stop("The number should be the in numeric format above 1.",
+             call. = FALSE)
     }
     journal <- match.arg(journal, c("BOE", "BORME"))
     paste(journal, "S", year, number, sep  ="-")

@@ -31,7 +31,7 @@ query_xml <- function(id) {
 #' @return  A query url.
 #' @export
 #' @examples
-#' id <- sumario_nbo("2017", "11117")
+#' id <- sumario_nbo("2017", "117")
 #' query_htm(id)
 query_htm <- function(id, journal = "BOE") {
     force(base_url)

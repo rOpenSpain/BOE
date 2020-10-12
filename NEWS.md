@@ -1,3 +1,7 @@
+# BOE (development version)
+
+* New `retrieve_document` to retrieve and tidy any document from BOE.
+
 # BOE 0.1.7
 
 * Change to permissive MIT license.

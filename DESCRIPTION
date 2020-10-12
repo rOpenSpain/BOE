@@ -15,7 +15,6 @@ URL: https://github.com/rOpenSpain/BOE
 BugReports: https://github.com/llrs/rOpenSpain/issues
 Imports: 
     httr (>= 1.4.1),
-    roxygen2,
     xml2 (>= 1.2.2),
     methods
 Suggests: 

@@ -11,7 +11,7 @@ retrieve_document(id)
 }
 \description{
 Tidy data from any document published on the BOE and BORME from the
-(boe.es)\link{https://boe.es}.
+\href{https://boe.es}{BOE}.
 }
 \examples{
 xml  <- get_xml(query_xml("BOE-B-2017-5"))

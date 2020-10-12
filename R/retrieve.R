@@ -24,7 +24,7 @@ retrieve_sumario <- function(date, journal = "BOE") {
 #' Retrieve information of a publication
 #'
 #' Tidy data from any document published on the BOE and BORME from the
-#' (boe.es)[https://boe.es].
+#' [BOE](https://boe.es).
 #' @param id Character with the code of the document.
 #' @family functions to retrieve documents
 #' @export

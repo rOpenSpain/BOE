@@ -18,6 +18,6 @@ A query url.
 Build a query for the webpage
 }
 \examples{
-id <- sumario_nbo("2017", "11117")
+id <- sumario_nbo("2017", "117")
 query_htm(id)
 }

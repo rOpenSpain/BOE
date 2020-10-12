@@ -11,8 +11,10 @@
 #' \donttest{retrieve_sumario(Sys.Date())}
 retrieve_sumario <- function(date, journal = "BOE") {
 
-    if (!is(date, "Date") | (nchar(date) != 8  & !is_numeric(date))) {
-        stop("The date should be the in numeric YYYYMMDD format", call. = FALSE)
+    if (!is(date, "Date") &
+        (nchar(date) != 8  & is_numeric(date)) &
+        (is.numeric(date) >= 20090101)) { # Day that electronic BOE started
+        stop("The date should be the in numeric 'YYYYMMDD' format", call. = FALSE)
     }
     journal <- match.arg(journal, c("BOE", "BORME"))
 
@@ -23,17 +25,19 @@ retrieve_sumario <- function(date, journal = "BOE") {
 #'
 #' Tidy data from any document published on the BOE and BORME from the
 #' (boe.es)[https://boe.es].
+#' @param id Character with the code of the document.
 #' @family functions to retrieve documents
-#' @importFrom xml2 xml_find_all
+#' @export
 #' @examples
 #' xml  <- get_xml(query_xml("BOE-B-2017-5"))
 #' xml2 <- get_xml(query_xml("BOE-A-2017-5"))
 #' xml3 <- get_xml(query_xml("BOE-S-2017-5"))
 #' xml4 <- get_xml(query_xml("BORME-S-2020-108"))
+#' id <- "BOE-A-2020-12109"
 #' df <- retrieve_document(id)
 retrieve_document <- function(id) {
     check_code(id)
-
+    ids <- strsplit(id, split = "-", fixed = TRUE)[[1]]
     xml <- get_xml(query_xml(id))
 
     # Check if is a sumario

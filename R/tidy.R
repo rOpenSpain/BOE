@@ -134,9 +134,10 @@ tidy_disposicion <- function(xml) {
 
 tidy_metadatos <- function(meta) {
     # Data about the document itself
-    text <- as.list(xml_text(meta))
-    names(text) <- xml_name(meta)
-    text[["diario"]] <- xml_attr(xml_find_all(meta, "//diario"), "codigo")
+    metas <- xml_children(meta)
+    text <- as.list(xml_text(metas))
+    names(text) <- xml_name(metas)
+    text[["diario"]] <- xml_attr(xml_find_all(metas, "//diario"), "codigo")
     departamento <- xml_child(meta, "departamento")
     text[["departamento_codigo"]] <- xml_attr(departamento, "codigo")
 
@@ -177,6 +178,7 @@ tidy_notas <- function(notas) {
     if (all(xml_length(notas) == 0 )) {
         return(NULL)
     }
+    notas <- xml_children(notas)
     m <- t(simplify2array(xml_attrs(notas), FALSE))
     m <- cbind(m, text = xml_text(notas))
     as.data.frame(m)
@@ -185,6 +187,7 @@ tidy_materias <- function(materias) {
     if (all(xml_length(materias) == 0)) {
         return(NULL)
     }
+    materias <- xml_children(materias)
     m <- t(simplify2array(xml_attrs(materias), FALSE))
     m <- cbind(m, text = xml_text(materias))
     as.data.frame(m)
@@ -193,6 +196,7 @@ tidy_alertas <- function(alertas) {
     if (all(xml_length(alertas) == 0)) {
         return(NULL)
     }
+    alertas <- xml_children(alertas)
     m <- t(simplify2array(xml_attrs(alertas), FALSE))
     m <- cbind(m, text = xml_text(alertas))
     as.data.frame(m)

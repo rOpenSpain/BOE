@@ -143,7 +143,7 @@ tidy_metadatos <- function(meta) {
 
     text[["fecha_publicacion"]] <- as.Date(text[["fecha_publicacion"]],
                                            "%Y%m%d")
-    text
+    as.data.frame(text)
 }
 
 tidy_analysis <- function(analysis) {

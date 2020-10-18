@@ -21,9 +21,18 @@ library(BOE)
 
 # Introduction
 
-The goal of BOE is to provide tools to retrieve data from BOE.
+The goal of BOE is to provide tools to retrieve data from [BOE](https://boe.es) the official gazette of Spain.
+Since 2009 the online documents have all the legal validation, but documents published before are accessible from the website too.
+
 The main point of this program is to access the summaries each day [BOE](https://boe.es) provides.
-It provides functions to tidy the *sumario* and retrieve the individual ".pdf" of each publication and summaries.
+It provides functions to tidy the *sumario* and retrieve the individual ".pdf" of each publication and summaries. 
+To retrieve a document we need the publication code.
+For summaries we can use two types of codes BOE-S-YYYYMMDD useful to retrieve a document of certain date or BOE-S-YYYY-NNN if we know in which summary was it published. 
+To check if a code is valid there is the [`check_code()`] function.
+
+At the same site we can access the [BORME](https://boe.es/diario_borme/) which is another journal to register of organizations commercial activity. 
+The summaries from this journal can also be retrieved using the option `journal = "BORME"`. 
+
 
 # Sumario
 

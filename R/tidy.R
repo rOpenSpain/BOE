@@ -101,15 +101,9 @@ tidy_anuncio <- function(xml) {
                                       format = "%Y%m%d%H%M%S", tz = "CET")
     metadatos <- tidy_metadatos(xml_find_all(xml, "//metadatos"))
     metadatos$fecha_actualizacion <- fecha_actualizacion
-
-    analysis <- tidy_analysis(xml_child(xml, "analisis"))
-    text <- xml_text(xml_find_all(xml, "./texto"))
-
-    if (is.null(analysis)) {
-        list(metadatos = metadatos, text = text)
-    } else {
-        list(metadatos = metadatos, analysis = analysis, text = text)
-    }
+    metadatos$analysis <- list(tidy_analysis(xml_child(xml, "analisis")))
+    metadatos$text <- xml_text(xml_find_all(xml, "./texto"))
+    metadatos
 }
 
 # xml  <- get_xml(query_xml("BOE-A-2017-5"))
@@ -121,15 +115,9 @@ tidy_disposicion <- function(xml) {
                                       format = "%Y%m%d%H%M%S", tz = "CET")
     metadatos <- tidy_metadatos(xml_child(xml, "metadatos"))
     metadatos$fecha_actualizacion <- fecha_actualizacion
-
-    analysis <- tidy_analysis(xml_child(xml, "analisis"))
-    text <- xml_text(xml_find_all(xml, "./texto"))
-
-    if (is.null(analysis)) {
-        list(metadatos = metadatos, text = text)
-    } else {
-        list(metadatos = metadatos, analysis = analysis, text = text)
-    }
+    metadatos$analysis <- list(tidy_analysis(xml_child(xml, "analisis")))
+    metadatos$text <- xml_text(xml_find_all(xml, "./texto"))
+    metadatos
 }
 
 tidy_metadatos <- function(meta) {
@@ -150,7 +138,7 @@ tidy_analysis <- function(analysis) {
     analysis <- xml_children(analysis)
     names <- xml_name(analysis)
     if (length(names) == 0) {
-        return(NULL)
+        return(NA)
     }
     analisis <- vector("list", length = length(names))
     names(analisis) <- names
@@ -176,7 +164,7 @@ tidy_analysis <- function(analysis) {
 #' @importFrom xml2 xml_length
 tidy_notas <- function(notas) {
     if (all(xml_length(notas) == 0 )) {
-        return(NULL)
+        return(NA)
     }
     notas <- xml_children(notas)
     m <- t(simplify2array(xml_attrs(notas), FALSE))
@@ -185,7 +173,7 @@ tidy_notas <- function(notas) {
 }
 tidy_materias <- function(materias) {
     if (all(xml_length(materias) == 0)) {
-        return(NULL)
+        return(NA)
     }
     materias <- xml_children(materias)
     m <- t(simplify2array(xml_attrs(materias), FALSE))
@@ -194,7 +182,7 @@ tidy_materias <- function(materias) {
 }
 tidy_alertas <- function(alertas) {
     if (all(xml_length(alertas) == 0)) {
-        return(NULL)
+        return(NA)
     }
     alertas <- xml_children(alertas)
     m <- t(simplify2array(xml_attrs(alertas), FALSE))
@@ -204,7 +192,7 @@ tidy_alertas <- function(alertas) {
 
 tidy_referencias <- function(referencias) {
     if (all(xml_length(referencias) == 0)) {
-        return(NULL)
+        return(NA)
     }
     child <- xml_children(referencias)
     len <- xml_length(child)
@@ -225,7 +213,7 @@ simp <- function(x) {
     if (!is.null(x)) {
         t(simplify2array(x))
     } else {
-        NULL
+        NA
     }
 }
 

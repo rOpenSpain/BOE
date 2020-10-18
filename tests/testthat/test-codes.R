@@ -33,11 +33,11 @@ test_that("PDF code is valid", {
   expect_true(check_code("BOE-A-2009-1"))
   expect_true(check_code("BOE-B-2009-1"))
   expect_true(check_code("BOE-S-2009-1"))
-  expect_error(check_code("BOE-C-2009-1"))
+  expect_true(check_code("BOE-S-20141221"))
   expect_true(check_code("BOE-S-2014-2420"))
+  expect_error(check_code("BOE-C-2009-1"))
   expect_error(check_code("BOE-S-2014"))
-  expect_error(check_code("BOE-S-2008-1"))
-  expect_error(check_code("BOE-S-20141221"))
+  expect_error(check_code(c("BOE-A-2009-1", "BOE-A-2009-1")))
 })
 
 
@@ -46,5 +46,5 @@ test_that("sumario_nbo works", {
   # There shouldn't be summaries/sumarios more than one each day.
   expect_error(sumario_nbo(2019, 2424))
   expect_error(sumario_nbo(2019, -1), "numeric format")
-  expect_error(sumario_nbo(1999, 1), "starting from 2009")
+  expect_equal(sumario_nbo(1999, 1), "BOE-S-1999-1")
 })

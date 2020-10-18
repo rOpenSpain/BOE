@@ -7,6 +7,7 @@ test_that("query_pdf works", {
     expect_true(endsWith(url, ".pdf"))
 
     urls <- query_pdf("2017", "10", "02", codes)
+    expect_length(urls, 2)
 })
 
 

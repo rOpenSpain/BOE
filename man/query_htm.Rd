@@ -4,12 +4,10 @@
 \alias{query_htm}
 \title{Build a query for the webpage}
 \usage{
-query_htm(id, journal = "BOE")
+query_htm(id)
 }
 \arguments{
 \item{id}{The id of the xml document you want.}
-
-\item{journal}{Either BOE or BORME.}
 }
 \value{
 A query url.

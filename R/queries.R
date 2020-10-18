@@ -14,6 +14,7 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #' query_xml(id)
 #' @importFrom httr modify_url
 query_xml <- function(id) {
+    check_code(id)
     force(base_url)
     journal <- strsplit(id, split = "-", fixed = TRUE)[[1]][1]
     journal <- match.arg(journal, c("BOE", "BORME"))
@@ -33,9 +34,11 @@ query_xml <- function(id) {
 #' @examples
 #' id <- sumario_nbo("2017", "117")
 #' query_htm(id)
-query_htm <- function(id, journal = "BOE") {
+query_htm <- function(id) {
+    check_code(id)
     force(base_url)
-    journal <- match.arg(journal, c("BOE", "BORME"))
+    force(journal_url)
+    journal <- strsplit(id, "-", fixed = TRUE)[[1]][1]
     httr::modify_url(base_url,
                      path = paste0(journal_url[journal], "/text.php"),
                      query = paste0("id=", id))
@@ -55,6 +58,7 @@ query_htm <- function(id, journal = "BOE") {
 #' code <- sumario_nbo("2017", "237")
 #' query_pdf("2017", "10", "02", code)
 query_pdf <- function(year, month, day, code) {
+    vapply(code, check_code, logical(1))
     force(base_url)
     journal <- tolower(gsub("-.*", "", code))
     p <- paste(journal, "dias", year, month, day, "pdfs", paste0(code, ".pdf"), sep = "/")
@@ -86,7 +90,7 @@ get_xml <- function(query) {
         warning("Missing data.", call. = FALSE)
     }
     if (http_type(response) != "application/xml") {
-        stop("API did not return xml.", call. = FALSE)
+        stop("API did not find the requested document.", call. = FALSE)
     }
     content(response)
 }

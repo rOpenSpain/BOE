@@ -28,7 +28,6 @@ query_xml <- function(id) {
 #' Build a query for the webpage
 #'
 #' @param id The id of the xml document you want.
-#' @inheritParams retrieve_sumario
 #' @return  A query url.
 #' @export
 #' @examples

@@ -11,15 +11,11 @@
 #' \donttest{retrieve_sumario(Sys.Date())}
 retrieve_sumario <- function(date, journal = "BOE") {
 
-    if (!is(date, "Date") &
-        (nchar(date) != 8  & is_numeric(date)) &
-        (is.numeric(date) >= 20090101)) { # Day that electronic BOE started
-        stop("The date should be the in numeric 'YYYYMMDD' format", call. = FALSE)
-    }
+    check_date(date)
     journal <- match.arg(journal, c("BOE", "BORME"))
-
     tidy_sumario(get_xml(query_xml(sumario_xml(date, journal))))
 }
+
 
 #' Retrieve information of a publication
 #'

@@ -16,8 +16,8 @@ A logical value.
 Given an id check if it is valid.
 }
 \examples{
-check_code("BOE-S-2014-242")
+check_code("BOE-S-20141006") # Normal way
+check_code("BOE-S-2014-242") # Also accepted but not documented
 # Will fail:
 # check_code("BOE-S-2014")
-# check_code("BOE-S-20141221")
 }

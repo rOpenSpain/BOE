@@ -32,6 +32,7 @@ test_that("PDF code is valid", {
   # Not sure about this there should be at most 366 summaries (one for each day)
   expect_true(check_code("BOE-A-2009-1"))
   expect_true(check_code("BOE-B-2009-1"))
+  expect_true(check_code("BORME-C-2020-6153"))
   expect_true(check_code("BOE-S-2009-1"))
   expect_true(check_code("BOE-S-20141221"))
   expect_true(check_code("BOE-S-2014-2420"))

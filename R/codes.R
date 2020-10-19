@@ -107,9 +107,13 @@ check_code <- function(id) {
     if (ids[1] == "BOE" && length(ids) > 4) {
         stop("The code should have at most 3 '-' got more.", call. = FALSE)
     }
-    if (!ids[2] %in% c("B", "A", "S")) {
+    if (ids[1] == "BOE" && !ids[2] %in% c("B", "A", "S")) {
         stop("The type of document does not match: got ", ids[2],
              " should be either A, B or S.", call. = FALSE)
+    }
+    if (ids[1] == "BORME" && !ids[2] %in% c("B", "A", "C", "S")) {
+        stop("The type of document does not match: got ", ids[2],
+             " should be either A, B, C or S.", call. = FALSE)
     }
     # BORME-S-2017-188 and BORME-S-20171002 are equivalent
     if (length(ids) < 4 && ids[2] != "S") {

@@ -24,15 +24,16 @@ library(BOE)
 The goal of BOE is to provide tools to retrieve data from [BOE](https://boe.es) the official gazette of Spain.
 Since 2009 the online documents have all the legal validation, but documents published before are accessible from the website too.
 
-The main point of this program is to access the summaries each day [BOE](https://boe.es) provides.
+The main purpose of this program is to make easily accessible the publications the [Agencia Estatal Boletín del Estado](https://boe.es) provides as the legal and valid source of law.
 It provides functions to tidy the *sumario* and retrieve the individual ".pdf" of each publication and summaries. 
 To retrieve a document we need the publication code.
-For summaries we can use two types of codes BOE-S-YYYYMMDD useful to retrieve a document of certain date or BOE-S-YYYY-NNN if we know in which summary was it published. 
-To check if a code is valid there is the [`check_code()`] function.
-
+For summaries we can use two types of codes `BOE-S-YYYYMMDD` and `BOE-S-YYYY-NNN`.
+The first one is useful to retrieve a document of certain date, while the second one is useful if we know in which summary was it published. Note at most there is one *sumario* per day, so 365 is the max, but usually none is published on Sundays. 
 At the same site we can access the [BORME](https://boe.es/diario_borme/) which is another journal to register of organizations commercial activity. 
 The summaries from this journal can also be retrieved using the option `journal = "BORME"`. 
 
+There is a mix of words in the package I left the document names as in Spanish but changed the verbs are in English.
+Hope it is easier this way for Spanish speaking people if it is not for you [open an issue](https://github.com/rOpenSci/BOE/issues/new) and let me know.  
 
 # Sumario
 
@@ -52,9 +53,19 @@ head(sumario_hoy)
 
 Once you select those publications
 
-```{r}
+```{r url-publications}
 url_publications(sumario_hoy[1:5, ])
 ```
+
+# Check codes
+
+Say you got a code of a BOE and you want to know if it is valid. Then you can use [`check_code()`]:
+
+```{r check-code}
+check_code("BOE-A-1968970")
+check_code("BOE-A-19-68970")
+```
+If you code is not valid it won't be requested to the website. 
 
 # Session Info {-}
 

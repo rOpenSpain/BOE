@@ -61,7 +61,7 @@ url_publications(sumario_hoy[1:5, ])
 
 Say you got a code of a BOE and you want to know if it is valid. Then you can use [`check_code()`]:
 
-```{r check-code}
+```{r check-code, error=TRUE}
 check_code("BOE-A-1968970")
 check_code("BOE-A-19-68970")
 ```

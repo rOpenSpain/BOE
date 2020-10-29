@@ -16,27 +16,26 @@ knitr::opts_chunk$set(
 # BOE
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/rOpenSpain/BOE.svg?branch=master)](https://travis-ci.org/rOpenSpain/BOE)
-[![Codecov test coverage](https://codecov.io/gh/rOpenSpain/BOE/branch/master/graph/badge.svg)](https://codecov.io/gh/rOpenSpain/BOE?branch=master)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
+[![R build status](https://github.com/rOpenSpain/BOE/workflows/R-CMD-check/badge.svg)](https://github.com/rOpenSpain/BOE/actions) [![Travis build status](https://travis-ci.org/rOpenSpain/BOE.svg?branch=master)](https://travis-ci.org/rOpenSpain/BOE) [![Codecov test coverage](https://codecov.io/gh/rOpenSpain/BOE/branch/master/graph/badge.svg)](https://codecov.io/gh/rOpenSpain/BOE?branch=master) [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
 <!-- badges: end -->
 
-The goal of BOE is to provide tools to retrieve data from BOE either from the **Boletín Oficial del Estado** or from the BORME **Boletín Oficial del Registro Mercantil del Estado**. 
+The goal of BOE is to provide tools to retrieve data from [BOE](https://boe.es) either from the **Boletín Oficial del Estado** or from the BORME **Boletín Oficial del Registro Mercantil del Estado**.
 
-You can see examples of what is cappable on the vignette or on this [webiste](https://llrs.github.io/BOE_historico/)
+You can see examples of what is capable on the vignette or on this [webiste](https://llrs.github.io/BOE_historico/)
 
 ## Installation
 
 You can install it from github with:
 
 ``` r
-devtools::install_github("rOpenSpain/BOE")
+remotes::install_github("rOpenSpain/BOE")
 ```
 
 ## Examples
 
-This is a basic example which shows you how to solve find the identifiers of some elements.
-The most important data is the sumario (summary) which can be retrieved by the date:
+This is a basic example which shows you how to solve find the identifiers of some elements. The most important data is the sumario (summary) which can be retrieved by the date:
 
 ```{r example}
 library("BOE")
@@ -61,7 +60,7 @@ open_publications(pdfs)
 
 If we need to know the BOE code of a publication we can do so with:
 
-```{r}
+```{r codes}
 sumario_xml(as.Date("2019/11/15"))
 sumario_xml(as.Date("2019/11/15"), journal = "BORME")
 # The codes of publication is the year and the number of said publication

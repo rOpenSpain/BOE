@@ -5,19 +5,22 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/rOpenSpain/BOE/workflows/R-CMD-check/badge.svg)](https://github.com/rOpenSpain/BOE/actions)
 [![Travis build
 status](https://travis-ci.org/rOpenSpain/BOE.svg?branch=master)](https://travis-ci.org/rOpenSpain/BOE)
 [![Codecov test
 coverage](https://codecov.io/gh/rOpenSpain/BOE/branch/master/graph/badge.svg)](https://codecov.io/gh/rOpenSpain/BOE?branch=master)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
 <!-- badges: end -->
 
-The goal of BOE is to provide tools to retrieve data from BOE either
-from the **Boletín Oficial del Estado** or from the BORME **Boletín
-Oficial del Registro Mercantil del Estado**.
+The goal of BOE is to provide tools to retrieve data from
+[BOE](https://boe.es) either from the **Boletín Oficial del Estado** or
+from the BORME **Boletín Oficial del Registro Mercantil del Estado**.
 
-You can see examples of what is cappable on the vignette or on this
+You can see examples of what is capable on the vignette or on this
 [webiste](https://llrs.github.io/BOE_historico/)
 
 ## Installation
@@ -25,7 +28,7 @@ You can see examples of what is cappable on the vignette or on this
 You can install it from github with:
 
 ``` r
-devtools::install_github("rOpenSpain/BOE")
+remotes::install_github("rOpenSpain/BOE")
 ```
 
 ## Examples
@@ -40,12 +43,12 @@ today <- Sys.Date()
 sumario_hoy <- retrieve_sumario(today)
 head(sumario_hoy)
 #>         date sumario_nbo   sumario_code section
-#> 1 2020-06-01         154 BOE-S-2020-154       1
-#> 2 2020-06-01         154 BOE-S-2020-154       1
-#> 3 2020-06-01         154 BOE-S-2020-154      2A
-#> 4 2020-06-01         154 BOE-S-2020-154      2A
-#> 5 2020-06-01         154 BOE-S-2020-154      2A
-#> 6 2020-06-01         154 BOE-S-2020-154      2A
+#> 1 2020-10-29         286 BOE-S-2020-286       1
+#> 2 2020-10-29         286 BOE-S-2020-286       1
+#> 3 2020-10-29         286 BOE-S-2020-286      2A
+#> 4 2020-10-29         286 BOE-S-2020-286      2A
+#> 5 2020-10-29         286 BOE-S-2020-286      2A
+#> 6 2020-10-29         286 BOE-S-2020-286      2A
 #>                                                              section_number
 #> 1                                                I. Disposiciones generales
 #> 2                                                I. Disposiciones generales
@@ -53,34 +56,34 @@ head(sumario_hoy)
 #> 4 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias
 #> 5 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias
 #> 6 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias
-#>                                            departament departament_etq
-#> 1                                  JEFATURA DEL ESTADO            7723
-#> 2 MINISTERIO DE TRANSPORTES, MOVILIDAD Y AGENDA URBANA            9572
-#> 3                               MINISTERIO DE JUSTICIA            4810
-#> 4                               MINISTERIO DE JUSTICIA            4810
-#> 5                               MINISTERIO DE JUSTICIA            4810
-#> 6                               MINISTERIO DE JUSTICIA            4810
-#>                     epigraph
-#> 1       Ingreso mínimo vital
-#> 2 Puertos de interés general
-#> 3                 Reingresos
-#> 4                Situaciones
-#> 5                Situaciones
-#> 6                Situaciones
-#>                                                                                                                                                                                                                                          text
-#> 1                                                                                                                                                   Real Decreto-ley 20/2020, de 29 de mayo, por el que se establece el ingreso mínimo vital.
-#> 2 Resolución de 8 de mayo de 2020, de Puertos del Estado, por la que se modifica el Anexo I de la Orden FOM/1194/2011, de 29 de abril, por la que se regula el procedimiento integrado de escala de buques en los puertos de interés general.
-#> 3                                                                                                      Orden JUS/468/2020, de 23 de abril, por la que se reingresa al servicio activo en la Carrera Fiscal a doña Elisabet Jiménez Cabestany.
-#> 4                                                                                             Orden JUS/469/2020, de 31 de marzo, por la que se declara en situación de excedencia voluntaria en la Carrera Fiscal a doña Emma Ruiz Martínez.
-#> 5                                                                                          Orden JUS/470/2020, de 31 de marzo, por la que se declara en situación de excedencia voluntaria en la Carrera Fiscal a doña Elena Martínez Castro.
-#> 6                                                                      Orden JUS/471/2020, de 7 de abril, por la que se declara en la situación administrativa de servicios especiales en la Carrera Fiscal a doña María de las Heras García.
-#>       publication pages
-#> 1 BOE-A-2020-5493    44
-#> 2 BOE-A-2020-5494     2
-#> 3 BOE-A-2020-5495     1
-#> 4 BOE-A-2020-5496     1
-#> 5 BOE-A-2020-5497     1
-#> 6 BOE-A-2020-5498     1
+#>                                                     departament departament_etq
+#> 1          MINISTERIO DE TRANSPORTES, MOVILIDAD Y AGENDA URBANA            9572
+#> 2          MINISTERIO DE POLÍTICA TERRITORIAL Y FUNCIÓN PÚBLICA            9561
+#> 3                            CONSEJO GENERAL DEL PODER JUDICIAL            1820
+#> 4                            CONSEJO GENERAL DEL PODER JUDICIAL            1820
+#> 5                            CONSEJO GENERAL DEL PODER JUDICIAL            1820
+#> 6 MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN            9562
+#>                   epigraph
+#> 1          Red ferroviaria
+#> 2 Oferta de empleo público
+#> 3            Nombramientos
+#> 4            Nombramientos
+#> 5            Nombramientos
+#> 6                 Destinos
+#>                                                                                                                                                                                                                                             text
+#> 1                                                                                                                                         Real Decreto 929/2020, de 27 de octubre, sobre seguridad operacional e interoperabilidad ferroviarias.
+#> 2                                                                                                                                   Real Decreto 936/2020, de 27 de octubre, por el que se aprueba la oferta de empleo público para el año 2020.
+#> 3   Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueces/zas sustitutos/as para el año judicial 2020/2021, en el ámbito del Tribunal Superior de la Región de Murcia.
+#> 4 Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueza sustituta para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Castilla-La Mancha.
+#> 5        Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Magistrado suplente para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Navarra.
+#> 6                                                                        Resolución de 19 de octubre de 2020, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 22 de julio de 2020.
+#>        publication pages
+#> 1 BOE-A-2020-13115   155
+#> 2 BOE-A-2020-13116    21
+#> 3 BOE-A-2020-13117     1
+#> 4 BOE-A-2020-13118     1
+#> 5 BOE-A-2020-13119     1
+#> 6 BOE-A-2020-13120     2
 ```
 
 If we are interested on a publication we can obtain the url of the
@@ -90,7 +93,7 @@ publication with:
 # Say we are interested on the first result:
 pdfs <- url_publications(sumario_hoy[1, ])
 pdfs # And we can download it with download.file(pdfs)
-#> [1] "https://boe.es/boe/dias/2020/06/01/pdfs/BOE-A-2020-5493.pdf"
+#> [1] "https://boe.es/boe/dias/2020/10/29/pdfs/BOE-A-2020-13115.pdf"
 ```
 
 We can open the publication from R with:

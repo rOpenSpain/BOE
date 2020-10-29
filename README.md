@@ -20,8 +20,8 @@ The goal of BOE is to provide tools to retrieve data from
 [BOE](https://boe.es) either from the **Boletín Oficial del Estado** or
 from the BORME **Boletín Oficial del Registro Mercantil del Estado**.
 
-You can see examples of what is capable on the vignette or on this
-[webiste](https://llrs.github.io/BOE_historico/)
+You can see examples of what is capable on the vignette and with more
+data this [website](https://llrs.github.io/BOE_historico/).
 
 ## Installation
 

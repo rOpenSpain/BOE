@@ -27,20 +27,20 @@ query_xml <- function(id) {
 
 #' Build a query for the webpage
 #'
-#' @param id The id of the xml document you want.
+#' @param cve The CVE of the document you want.
 #' @return  A query url.
 #' @export
 #' @examples
-#' id <- sumario_nbo("2017", "117")
-#' query_htm(id)
-query_htm <- function(id) {
-    check_code(id)
+#' cve <- sumario_cve("2017", "117")
+#' query_htm(cve)
+query_htm <- function(cve) {
+    check_code(cve)
     force(base_url)
     force(journal_url)
-    journal <- strsplit(id, "-", fixed = TRUE)[[1]][1]
+    journal <- strsplit(cve, "-", fixed = TRUE)[[1]][1]
     httr::modify_url(base_url,
                      path = paste0(journal_url[journal], "/text.php"),
-                     query = paste0("id=", id))
+                     query = paste0("id=", cve))
 }
 
 #' Query a pdf from the BOE
@@ -54,8 +54,8 @@ query_htm <- function(id) {
 #' @return A link to the pdf.
 #' @export
 #' @examples
-#' code <- sumario_nbo("2017", "237")
-#' query_pdf("2017", "10", "02", code)
+#' cve <- sumario_cve("2017", "237")
+#' query_pdf("2017", "10", "02", cve)
 query_pdf <- function(year, month, day, code) {
     vapply(code, check_code, logical(1))
     force(base_url)

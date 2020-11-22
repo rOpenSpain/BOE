@@ -4,10 +4,10 @@
 \alias{query_htm}
 \title{Build a query for the webpage}
 \usage{
-query_htm(id)
+query_htm(cve)
 }
 \arguments{
-\item{id}{The id of the xml document you want.}
+\item{cve}{The CVE of the document you want.}
 }
 \value{
 A query url.
@@ -16,6 +16,6 @@ A query url.
 Build a query for the webpage
 }
 \examples{
-id <- sumario_nbo("2017", "117")
-query_htm(id)
+cve <- sumario_cve("2017", "117")
+query_htm(cve)
 }

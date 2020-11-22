@@ -1,3 +1,9 @@
+# BOE development
+
+## Breaking changes: 
+
+ * If a function returns a valid CVE now it has an sufix `_cve`. This affects `anuncio`, `disposicion` and specially `sumario*`.
+
 # BOE 0.1.7
 
 * Change to permissive MIT license.

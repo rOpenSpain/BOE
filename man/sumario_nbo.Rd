@@ -2,9 +2,12 @@
 % Please edit documentation in R/codes.R
 \name{sumario_nbo}
 \alias{sumario_nbo}
+\alias{sumario_xml}
 \title{Create the number for \emph{sumario}}
 \usage{
 sumario_nbo(date, journal = "BOE")
+
+sumario_xml(date, journal = "BOE")
 }
 \arguments{
 \item{date}{Date of the \emph{sumario}}
@@ -15,17 +18,22 @@ sumario_nbo(date, journal = "BOE")
 A character vector
 }
 \description{
-Create the number for \emph{sumario}
+Creates the id for a \emph{sumario} by the date it was published.
 }
+\section{Functions}{
+\itemize{
+\item \code{sumario_xml}: For compatibility with previous version
+}}
+
 \examples{
 sumario_nbo(Sys.Date())
 sumario_nbo(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"), journal = "BORME")
 }
 \seealso{
-\code{\link[=sumario_cve]{sumario_cve()}}
+The id is different from the CVE, which can be created with \code{\link[=sumario_cve]{sumario_cve()}}.
 
-Other code generator: 
+Other code generators: 
 \code{\link{element}},
 \code{\link{sumario_cve}()}
 }
-\concept{code generator}
+\concept{code generators}

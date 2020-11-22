@@ -3,8 +3,10 @@ title: "Getting started"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Getting started}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r, include = FALSE}
@@ -25,23 +27,27 @@ The goal of BOE is to provide tools to retrieve data from [BOE](https://boe.es) 
 Since 2009 the online documents have all the legal validation, but documents published before are accessible from the website too.
 
 The main purpose of this program is to make easily accessible the publications the [Agencia Estatal Boletín del Estado](https://boe.es) provides as the legal and valid source of law.
-It provides functions to tidy the *sumario* and retrieve the individual ".pdf" of each publication and summaries. 
+It provides functions to tidy the _sumario_ and retrieve the individual ".pdf" of each publication and summaries. 
 To retrieve a document we need the publication code.
 For summaries we can use two types of codes `BOE-S-YYYYMMDD` and `BOE-S-YYYY-NNN`.
-The first one is useful to retrieve a document of certain date, while the second one is useful if we know in which summary was it published. Note at most there is one *sumario* per day, so 365 is the max, but usually none is published on Sundays. 
+The first one is useful to retrieve a document of certain date and can be created with [sumario_nbo()].
+The second one is the CVE the code that can be verified online, it can be created with [sumario_cve()]. 
+Note at most there is one _sumario_ per day, so 365 is the max, but usually none is published on Sundays. 
+
 At the same site we can access the [BORME](https://boe.es/diario_borme/) which is another journal to register of organizations commercial activity. 
 The summaries from this journal can also be retrieved using the option `journal = "BORME"`. 
+This journal publishes only from Monday to Saturday.
 
-There is a mix of words in the package I left the document names as in Spanish but changed the verbs are in English.
+There is a mix of words in the package I left the document names in Spanish but changed the verbs to English.
 Hope it is easier this way for Spanish speaking people if it is not for you [open an issue](https://github.com/rOpenSci/BOE/issues/new) and let me know.  
 
-# Sumario
+# _Sumario_
 
 It is a summary of the publications of the day with information about the 
-summary number, section, departament, epigraph, brief text of the publication, 
+summary number, section, department, epigraph, brief text of the publication, 
 publication's number of pages of the pdf.
 
-The easiest way to get a *sumario* is using [`retrieve_sumario()`]:
+The easiest way to get a _sumario_ is using [`retrieve_sumario()`]:
 
 ```{r sumario}
 today <- Sys.Date()
@@ -51,21 +57,39 @@ head(sumario_hoy)
 
 # Publications
 
-Once you select those publications
+Once you select those publications we can obtain the links for the pdf.
 
 ```{r url-publications}
 url_publications(sumario_hoy[1:5, ])
 ```
 
+Or you can also create the CVE and then look them up on the database:
+
+```{r publications}
+anuncio_cve("2019", 5)
+disposicion_cve("2010", 4565)
+```
+
+If you know the date of publication we can obtain the url for the pdf:
+
+```{r disposicion-url}
+cve <- disposicion_cve("2017", "11117")
+query_pdf("2017", "10", "02", cve)
+```
+
+Check it [here](`r query_pdf("2017", "10", "02", cve)`).
+
 # Check codes
 
-Say you got a code of a BOE and you want to know if it is valid. Then you can use [`check_code()`]:
+Before querying the BOE the codes submitted are checked to know if they are valid. 
+If you have some code and want to check it you can use [`check_code()`]:
 
 ```{r check-code, error=TRUE}
 check_code("BOE-A-1968970")
 check_code("BOE-A-19-68970")
 ```
-If you code is not valid it won't be requested to the website. 
+
+If you code is not valid it won't be requested to the website, and the error indicates what is wrong with the code.
 
 # Session Info {-}
 

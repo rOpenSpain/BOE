@@ -23,6 +23,6 @@ To query a pdf you must know the number of the piece you are looking for and
 the date it was published.
 }
 \examples{
-code <- sumario_nbo("2017", "237")
-query_pdf("2017", "10", "02", code)
+cve <- sumario_cve("2017", "237")
+query_pdf("2017", "10", "02", cve)
 }

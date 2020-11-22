@@ -6,11 +6,12 @@ is_numeric <- function(x){
 
 #' Create the number for _sumario_
 #'
+#' Creates the id for a _sumario_ by the date it was published.
 #' @param date Date of the _sumario_
 #' @inheritParams retrieve_sumario
 #' @return A character vector
-#' @seealso [sumario_cve()]
-#' @family code generator
+#' @seealso The id is different from the CVE, which can be created with [sumario_cve()].
+#' @family code generators
 #' @export
 #' @importFrom methods is
 #' @examples
@@ -25,13 +26,18 @@ sumario_nbo <- function(date, journal = "BOE") {
     paste(journal, "S", date, sep = "-")
 }
 
+#' @describeIn sumario_nbo For compatibility with previous version
+#' @export
+sumario_xml <- sumario_nbo
+
 #' Create the number of the _sumario_
 #'
 #' @param year Character or numeric value of the year of the summary in YYYY format.
 #' @param number Number of the summary in NNN format.
 #' @inheritParams retrieve_sumario
-#' @return A character vector
-#' @family code generator
+#' @return A character vector with the CVE of the _sumario_.
+#' @seealso [sumario_nbo()] if you want to retrieve the _sumario_ by date and don't know the CVE.
+#' @family code generators
 #' @export
 #' @examples
 #' sumario_cve(2019, 242)
@@ -47,13 +53,14 @@ sumario_cve <- function(year, number, journal = "BOE") {
     code
 }
 
-#' @name element
-#' @title Elements: _disposición_ and _anuncio_
+#' Elements: _disposición_ and _anuncio_
 #'
+#' Functions to create CVE codes for the documents published on the BOE.
+#' @name element
 #' @param year Character or numeric value of the year of the element in YYYY format.
 #' @param number Character or numeric value of the element.
 #' @return A character vector
-#' @family code generator
+#' @family code generators
 NULL
 
 elemento <- function(item = c("B", "A"), year, number) {
@@ -75,6 +82,10 @@ disposicion_cve <- function(year, number) {
     elemento(item = "A", year = year, number = number)
 }
 
+#' @describeIn element For compatibility with previous version
+#' @export
+disposicion <- disposicion_cve
+
 #' @describeIn element Create the CVE of the anuncio.
 #' @export
 #' @examples
@@ -82,6 +93,10 @@ disposicion_cve <- function(year, number) {
 anuncio_cve <- function(year, number) {
     elemento(item = "B", year = year, number = number)
 }
+
+#' @describeIn element For compatibility with previous version
+#' @export
+anuncio <- anuncio_cve
 
 #' Check id of documents
 #'
@@ -142,6 +157,11 @@ check_code <- function(id) {
 }
 
 check_date <- function(x) {
+
+    if (is.numeric(x)) {
+        x <- as.character(x)
+    }
+
     if (!is.na(as.Date(x, format = "%Y%m%d"))) {
         return(TRUE)
     }

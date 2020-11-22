@@ -2,15 +2,15 @@
 % Please edit documentation in R/codes.R
 \name{check_code}
 \alias{check_code}
-\title{Check code of documents}
+\title{Check id of documents}
 \usage{
 check_code(id)
 }
 \arguments{
-\item{id}{ID of the document (character).}
+\item{id}{ID or CVE of the document (character).}
 }
 \value{
-A logical value.
+A logical value if correct, errors if something is not right.
 }
 \description{
 Given an id check if it is valid.

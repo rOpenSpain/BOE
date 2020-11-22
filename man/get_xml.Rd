@@ -13,10 +13,10 @@ get_xml(query)
 Look up on the internet and get the content
 }
 \examples{
-id <- sumario_xml(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
+id <- sumario_nbo(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
 url <- query_xml(id)
 \donttest{get_xml(url)}
 }
 \seealso{
-\url{query_xml}
+\code{\link[=query_xml]{query_xml()}}
 }

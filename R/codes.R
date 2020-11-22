@@ -4,19 +4,19 @@ is_numeric <- function(x){
     is.numeric(tryCatch(as.numeric(x), warning = function(w){FALSE}))
 }
 
-#' Create the id for _sumario_
+#' Create the number for _sumario_
 #'
 #' @param date Date of the _sumario_
 #' @inheritParams retrieve_sumario
 #' @return A character vector
-#' @seealso [sumario_nbo](sumario_nbo)
+#' @seealso [sumario_cve()]
 #' @family code generator
 #' @export
 #' @importFrom methods is
 #' @examples
-#' sumario_xml(Sys.Date())
-#' sumario_xml(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"), journal = "BORME")
-sumario_xml <- function(date, journal = "BOE") {
+#' sumario_nbo(Sys.Date())
+#' sumario_nbo(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"), journal = "BORME")
+sumario_nbo <- function(date, journal = "BOE") {
     if (is(date, "Date")) {
         date <- format(date, "%Y%m%d")
     }
@@ -34,15 +34,15 @@ sumario_xml <- function(date, journal = "BOE") {
 #' @family code generator
 #' @export
 #' @examples
-#' sumario_nbo(2019, 242)
-sumario_nbo <- function(year, number, journal = "BOE") {
+#' sumario_cve(2019, 242)
+sumario_cve <- function(year, number, journal = "BOE") {
     # There are some sumarios from before 2009
     if (as.numeric(number) < 0 || as.numeric(number) > 1000) {
         stop("The number should be the in numeric format above 1.",
              call. = FALSE)
     }
     journal <- match.arg(journal, c("BOE", "BORME"))
-    code <- paste(journal, "S", year, number, sep  ="-")
+    code <- paste(journal, "S", year, number, sep = "-")
     check_code(code)
     code
 }
@@ -67,27 +67,27 @@ elemento <- function(item = c("B", "A"), year, number) {
     paste("BOE", item, year, number, sep = "-")
 }
 
-#' @describeIn element Create the number of the diposicion.
+#' @describeIn element Create the CVE of the diposicion.
 #' @export
 #' @examples
-#' disposicion(2019, 242)
-disposicion <- function(year, number) {
+#' disposicion_cve(2019, 242)
+disposicion_cve <- function(year, number) {
     elemento(item = "A", year = year, number = number)
 }
 
-#' @describeIn element Create the number of the anuncio.
+#' @describeIn element Create the CVE of the anuncio.
 #' @export
 #' @examples
-#' anuncio(2019, 242)
-anuncio <- function(year, number) {
+#' anuncio_cve(2019, 242)
+anuncio_cve <- function(year, number) {
     elemento(item = "B", year = year, number = number)
 }
 
-#' Check code of documents
+#' Check id of documents
 #'
 #' Given an id check if it is valid.
-#' @param id ID of the document (character).
-#' @return A logical value.
+#' @param id ID or CVE of the document (character).
+#' @return A logical value if correct, errors if something is not right.
 #' @export
 #' @examples
 #' check_code("BOE-S-20141006") # Normal way

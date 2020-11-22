@@ -13,7 +13,7 @@ retrieve_sumario <- function(date, journal = "BOE") {
 
     check_date(date)
     journal <- match.arg(journal, c("BOE", "BORME"))
-    tidy_sumario(get_xml(query_xml(sumario_xml(date, journal))))
+    tidy_sumario(get_xml(query_xml(sumario_nbo(date, journal))))
 }
 
 
@@ -21,7 +21,7 @@ retrieve_sumario <- function(date, journal = "BOE") {
 #'
 #' Tidy data from any document published on the BOE and BORME from the
 #' [BOE](https://boe.es).
-#' @param id Character with the code of the document.
+#' @param cve Character with the code of the document.
 #' @family functions to retrieve documents
 #' @export
 #' @examples
@@ -29,12 +29,12 @@ retrieve_sumario <- function(date, journal = "BOE") {
 #' xml2 <- get_xml(query_xml("BOE-A-2017-5"))
 #' xml3 <- get_xml(query_xml("BOE-S-2017-5"))
 #' xml4 <- get_xml(query_xml("BORME-S-2020-108"))
-#' id <- "BOE-A-2020-12109"
-#' df <- retrieve_document(id)
-retrieve_document <- function(id) {
-    check_code(id)
-    ids <- strsplit(id, split = "-", fixed = TRUE)[[1]]
-    xml <- get_xml(query_xml(id))
+#' cve <- "BOE-A-2020-12109"
+#' df <- retrieve_document(cve)
+retrieve_document <- function(cve) {
+    check_code(cve)
+    ids <- strsplit(cve, split = "-", fixed = TRUE)[[1]]
+    xml <- get_xml(query_xml(cve))
 
     # Check if is a sumario
     if (xml_name(xml) == "sumario") {

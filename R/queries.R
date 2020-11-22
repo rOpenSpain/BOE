@@ -7,10 +7,10 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #'
 #' @param id The id of the xml document you want.
 #' @return A query for the xml.
-#' @seealso [sumario_xml]
+#' @seealso [sumario_nbo()]
 #' @export
 #' @examples
-#' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
+#' id <- sumario_nbo(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
 #' query_xml(id)
 #' @importFrom httr modify_url
 query_xml <- function(id) {
@@ -68,7 +68,7 @@ query_pdf <- function(year, month, day, code) {
 #'
 #' Look up on the internet and get the content
 #' @param query A query to BOE.
-#' @seealso [query_xml](query_xml)
+#' @seealso [query_xml()]
 #' @importFrom httr content
 #' @importFrom httr GET
 #' @importFrom httr user_agent
@@ -76,7 +76,7 @@ query_pdf <- function(year, month, day, code) {
 #' @importFrom httr http_type
 #' @export
 #' @examples
-#' id <- sumario_xml(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
+#' id <- sumario_nbo(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
 #' url <- query_xml(id)
 #' \donttest{get_xml(url)}
 get_xml <- function(query) {

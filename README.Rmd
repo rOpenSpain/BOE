@@ -35,7 +35,7 @@ remotes::install_github("rOpenSpain/BOE")
 
 ## Examples
 
-This is a basic example which shows you how to solve find the identifiers of some elements. The most important data is the sumario (summary) which can be retrieved by the date:
+This is a basic example which shows you how to solve find the identifiers of some elements. The most important data is the _sumario_ (summary) which can be retrieved by the date:
 
 ```{r example}
 library("BOE")
@@ -61,13 +61,13 @@ open_publications(pdfs)
 If we need to know the BOE code of a publication we can do so with:
 
 ```{r codes}
-sumario_xml(as.Date("2019/11/15"))
-sumario_xml(as.Date("2019/11/15"), journal = "BORME")
+sumario_nbo(as.Date("2019/11/15"))
+sumario_nbo(as.Date("2019/11/15"), journal = "BORME")
 # The codes of publication is the year and the number of said publication
 sumario_nbo("2017", "275") 
-sumario_nbo("2017", "275", journal = "BORME") 
-anuncio("2012", "32498") 
-disposicion("2012", "32498")
+sumario_cve("2017", "275", journal = "BORME") 
+anuncio_cve("2012", "32498") 
+disposicion_cve("2012", "32498")
 ```
 
 ## Code of Conduct

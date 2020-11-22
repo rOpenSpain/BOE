@@ -2,13 +2,13 @@
 % Please edit documentation in R/codes.R
 \name{element}
 \alias{element}
-\alias{disposicion}
-\alias{anuncio}
+\alias{disposicion_cve}
+\alias{anuncio_cve}
 \title{Elements: \emph{disposición} and \emph{anuncio}}
 \usage{
-disposicion(year, number)
+disposicion_cve(year, number)
 
-anuncio(year, number)
+anuncio_cve(year, number)
 }
 \arguments{
 \item{year}{Character or numeric value of the year of the element in YYYY format.}
@@ -23,18 +23,18 @@ Elements: \emph{disposición} and \emph{anuncio}
 }
 \section{Functions}{
 \itemize{
-\item \code{disposicion}: Create the number of the diposicion.
+\item \code{disposicion_cve}: Create the CVE of the diposicion.
 
-\item \code{anuncio}: Create the number of the anuncio.
+\item \code{anuncio_cve}: Create the CVE of the anuncio.
 }}
 
 \examples{
-disposicion(2019, 242)
-anuncio(2019, 242)
+disposicion_cve(2019, 242)
+anuncio_cve(2019, 242)
 }
 \seealso{
 Other code generator: 
-\code{\link{sumario_nbo}()},
-\code{\link{sumario_xml}()}
+\code{\link{sumario_cve}()},
+\code{\link{sumario_nbo}()}
 }
 \concept{code generator}

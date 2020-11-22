@@ -2,14 +2,12 @@
 % Please edit documentation in R/codes.R
 \name{sumario_nbo}
 \alias{sumario_nbo}
-\title{Create the number of the \emph{sumario}}
+\title{Create the number for \emph{sumario}}
 \usage{
-sumario_nbo(year, number, journal = "BOE")
+sumario_nbo(date, journal = "BOE")
 }
 \arguments{
-\item{year}{Character or numeric value of the year of the summary in YYYY format.}
-
-\item{number}{Number of the summary in NNN format.}
+\item{date}{Date of the \emph{sumario}}
 
 \item{journal}{Either BOE or BORME.}
 }
@@ -17,14 +15,17 @@ sumario_nbo(year, number, journal = "BOE")
 A character vector
 }
 \description{
-Create the number of the \emph{sumario}
+Create the number for \emph{sumario}
 }
 \examples{
-sumario_nbo(2019, 242)
+sumario_nbo(Sys.Date())
+sumario_nbo(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"), journal = "BORME")
 }
 \seealso{
+\code{\link[=sumario_cve]{sumario_cve()}}
+
 Other code generator: 
 \code{\link{element}},
-\code{\link{sumario_xml}()}
+\code{\link{sumario_cve}()}
 }
 \concept{code generator}

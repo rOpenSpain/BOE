@@ -16,9 +16,9 @@ A query for the xml.
 Build a query for an XML
 }
 \examples{
-id <- sumario_xml(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
+id <- sumario_nbo(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
 query_xml(id)
 }
 \seealso{
-\link{sumario_xml}
+\code{\link[=sumario_nbo]{sumario_nbo()}}
 }

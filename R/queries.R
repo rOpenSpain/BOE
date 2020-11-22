@@ -11,7 +11,9 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #' @export
 #' @examples
 #' id <- sumario_nbo(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
+#' cve <- sumario_cve("2017", "237") # Same document but by the CVE
 #' query_xml(id)
+#' query_xml(cve)
 #' @importFrom httr modify_url
 query_xml <- function(id) {
     check_code(id)

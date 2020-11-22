@@ -228,3 +228,15 @@ ref <- function(x) {
     names(values) <- names
     c(attrs, values)
 }
+
+
+tidy_text <- function(x){
+    might_relevant <- nchar(xml_text(x)) < 15
+    lists <- grepl("^.{1-5})", xml_text(x))
+}
+
+id_list_starts <- function(y){
+    lists <- grepl("^.{1-5})", y)
+    w <- which(lists)
+    c(w[1], w[which(w[-length(w)] - w[-1] != -1) + 1])
+}

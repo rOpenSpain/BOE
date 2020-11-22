@@ -230,13 +230,34 @@ ref <- function(x) {
 }
 
 
-tidy_text <- function(x){
+tidy_text <- function(x) {
     might_relevant <- nchar(xml_text(x)) < 15
-    lists <- grepl("^.{1-5})", xml_text(x))
+    y <- xml_text(x)
+    listas <- id_list_starts(y)
+    centro_redonda <- xml_find_all(x, "//p[@class='centro_redonda']")
+    articulo <- xml_find_all(x, "//p[@class='articulo']")
+    articulos <- grep(pattern = "^Art[ií]culo|Disposici[oó]n", x = y)
+
+    if (length(articulo) != length(articulos)) {
+        warning("Differences on classes/articles")
+    }
+    apartados <- grep(pattern = "^[0-9]", y)
+    listas_articulos <- listas[listas > min(articulos)]
+    rel <- c(articulos, listas_articulos)
+    rel <- sort(rel)
+    resumen <- y[rel]
+    resumen[rel %in% listas_articulos] <- "\tlistado"
+    resumen
 }
 
-id_list_starts <- function(y){
+id_list_starts <- function(y) {
     lists <- grepl("^.{1-5})", y)
     w <- which(lists)
     c(w[1], w[which(w[-length(w)] - w[-1] != -1) + 1])
+}
+
+
+set_atttributes <- function(key, value) {
+    new_link <- paste0("a", seq_along(articulo))
+    names(new_link) <- rep("a", length(articulo))
 }

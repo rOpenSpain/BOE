@@ -17,7 +17,9 @@ Build a query for an XML
 }
 \examples{
 id <- sumario_nbo(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
+cve <- sumario_cve("2017", "237") # Same document but by the CVE
 query_xml(id)
+query_xml(cve)
 }
 \seealso{
 \code{\link[=sumario_nbo]{sumario_nbo()}}

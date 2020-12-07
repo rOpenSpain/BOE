@@ -31,6 +31,7 @@ query_xml <- function(id) {
 #'
 #' @param cve The CVE of the document you want.
 #' @return  A query url.
+#' @seealso query_consolidada
 #' @export
 #' @examples
 #' cve <- sumario_cve("2017", "117")
@@ -42,6 +43,30 @@ query_htm <- function(cve) {
     journal <- strsplit(cve, "-", fixed = TRUE)[[1]][1]
     httr::modify_url(base_url,
                      path = paste0(journal_url[journal], "/text.php"),
+                     query = paste0("id=", cve))
+}
+
+#' Build a query for the webpage
+#'
+#' Look for the consolidated law online
+#' @param cve The CVE of the document you want.
+#' @return  A query url.
+#' @examples
+#' cve <- disposicion_cve("2017", "117")
+#' query_consolidada(cve)
+query_consolidada <- function(cve) {
+    check_code(cve)
+    force(base_url)
+    ids <- strsplit(cve, "-", fixed = TRUE)[[1]]
+    if (ids[2] != "A") {
+        stop("Documents with BOE-A-*", call. = FALSE)
+    }
+
+    if (ids[1] != "BOE") {
+        stop("This is only for laws on the BOE.", call. = FALSE)
+    }
+    httr::modify_url(base_url,
+                     path = "buscar/act.php",
                      query = paste0("id=", cve))
 }
 

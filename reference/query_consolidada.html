@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Build a query for an XML — query_xml • BOE</title>
+<title>Build a query for the webpage — query_consolidada • BOE</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -54,8 +54,8 @@
 <!-- rOpenSpain -->
 <link href="../ropenspain.css" rel="stylesheet">
 
-<meta property="og:title" content="Build a query for an XML — query_xml" />
-<meta property="og:description" content="Build a query for an XML" />
+<meta property="og:title" content="Build a query for the webpage — query_consolidada" />
+<meta property="og:description" content="Look for the consolidated law online" />
 
 
 
@@ -133,39 +133,34 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Build a query for an XML</h1>
+    <h1>Build a query for the webpage</h1>
     <small class="dont-index">Source: <a href='https://github.com/llrs/rOpenSpain/blob/master/R/queries.R'><code>R/queries.R</code></a></small>
-    <div class="hidden name"><code>query_xml.Rd</code></div>
+    <div class="hidden name"><code>query_consolidada.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Build a query for an XML</p>
+    <p>Look for the consolidated law online</p>
     </div>
 
-    <pre class="usage"><span class='fu'>query_xml</span><span class='op'>(</span><span class='va'>id</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>query_consolidada</span><span class='op'>(</span><span class='va'>cve</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>id</th>
-      <td><p>The id of the xml document you want.</p></td>
+      <th>cve</th>
+      <td><p>The CVE of the document you want.</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A query for the xml.</p>
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p><code><a href='sumario_nbo.html'>sumario_nbo()</a></code></p></div>
+    <p>A query url.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='va'>id</span> <span class='op'>&lt;-</span> <span class='fu'><a href='sumario_nbo.html'>sumario_nbo</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/format.html'>format</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/as.Date.html'>as.Date</a></span><span class='op'>(</span><span class='st'>"2017/10/02"</span>, <span class='st'>"%Y/%m/%d"</span><span class='op'>)</span>, <span class='st'>"%Y%m%d"</span><span class='op'>)</span><span class='op'>)</span>
-<span class='va'>cve</span> <span class='op'>&lt;-</span> <span class='fu'><a href='sumario_cve.html'>sumario_cve</a></span><span class='op'>(</span><span class='st'>"2017"</span>, <span class='st'>"237"</span><span class='op'>)</span> <span class='co'># Same document but by the CVE</span>
-<span class='fu'>query_xml</span><span class='op'>(</span><span class='va'>id</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] "https://boe.es/diario_boe/xml.php?id=BOE-S-20171002"</div><div class='input'><span class='fu'>query_xml</span><span class='op'>(</span><span class='va'>cve</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] "https://boe.es/diario_boe/xml.php?id=BOE-S-2017-237"</div></pre>
+    <pre class="examples"><div class='input'><span class='va'>cve</span> <span class='op'>&lt;-</span> <span class='fu'><a href='element.html'>disposicion_cve</a></span><span class='op'>(</span><span class='st'>"2017"</span>, <span class='st'>"117"</span><span class='op'>)</span>
+<span class='fu'>query_consolidada</span><span class='op'>(</span><span class='va'>cve</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='error'>Error in query_consolidada(cve): could not find function "query_consolidada"</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

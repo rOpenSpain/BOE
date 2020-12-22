@@ -6,12 +6,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Work with the Boletin Oficial del Estado of Spain • BOE</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
+<!-- Google Fonts --><link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap" rel="stylesheet">
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Work with the Boletin Oficial del Estado of Spain">
+<script src="pkgdown.js"></script><!-- Hugo Universal --><link href="style.violet.css" rel="stylesheet">
+<!-- rOpenSpain --><link href="ropenspain.css" rel="stylesheet">
+<meta property="og:title" content="Work with the Boletin Oficial del Estado of Spain">
 <meta property="og:description" content="Queries the online site of the Boletin Oficial del Estado (BOE) 
     for data.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -24,23 +34,19 @@
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggle collapsed btn-template-main" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="fa fa-align-justify"></i>
       </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">BOE</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.6</span>
+      <span class="navbar-brand" id="ROS-navbar-brand">
+      <a class="navbar-link ROS-black" href="index.html"><img src="logo.png" alt="BOE-logo" id="ROS-navbar-logo">BOE</a> <span class="version label label-default hidden-xs" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
       </span>
     </div>
-
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -62,54 +68,55 @@
 <li>
   <a href="news/index.html">Changelog</a>
 </li>
-      </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
+        <li>
   <a href="https://github.com/llrs/rOpenSpain/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
       </ul>
-</div>
-<!--/.nav-collapse -->
+</div>  <!--/.nav-collapse -->
   </div>
 <!--/.container -->
 </div>
 <!--/.navbar -->
 
+
       
 
       </header><div class="row">
-  <div class="contents col-md-9">
+  <div class="contents col-md-9" id="home">
 <div id="boe" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#boe" class="anchor"></a>BOE</h1></div>
 <!-- badges: start -->
 
-<p>The goal of BOE is to provide tools to retrieve data from BOE either from the <strong>Boletín Oficial del Estado</strong> or from the BORME <strong>Boletín Oficial del Registro Mercantil del Estado</strong>.</p>
-<p>You can see examples of what is cappable on the vignette or on this <a href="https://llrs.github.io/BOE_historico/">webiste</a></p>
+<!-- badges: end -->
+<p>The goal of BOE is to provide tools to retrieve data from <a href="https://boe.es">BOE</a> either from the <strong>Boletín Oficial del Estado</strong> or from the BORME <strong>Boletín Oficial del Registro Mercantil del Estado</strong>.</p>
+<p>You can see examples of what is capable on the vignette and with more data this <a href="https://llrs.github.io/BOE_historico/">website</a>.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install it from github with:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_github</span>(<span class="st">"rOpenSpain/BOE"</span>)</pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"rOpenSpain/BOE"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="examples" class="section level2">
 <h2 class="hasAnchor">
 <a href="#examples" class="anchor"></a>Examples</h2>
 <p>This is a basic example which shows you how to solve find the identifiers of some elements. The most important data is the sumario (summary) which can be retrieved by the date:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st">"BOE"</span>)
-<span class="no">today</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span>()
-<span class="no">sumario_hoy</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/retrieve_sumario.html">retrieve_sumario</a></span>(<span class="no">today</span>)
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="no">sumario_hoy</span>)
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/rOpenSpain/BOE">"BOE"</a></span><span class="op">)</span>
+<span class="va">today</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>
+<span class="va">sumario_hoy</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/retrieve_sumario.html">retrieve_sumario</a></span><span class="op">(</span><span class="va">today</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">)</span>
 <span class="co">#&gt;         date sumario_nbo   sumario_code section</span>
-<span class="co">#&gt; 1 2020-06-01         154 BOE-S-2020-154       1</span>
-<span class="co">#&gt; 2 2020-06-01         154 BOE-S-2020-154       1</span>
-<span class="co">#&gt; 3 2020-06-01         154 BOE-S-2020-154      2A</span>
-<span class="co">#&gt; 4 2020-06-01         154 BOE-S-2020-154      2A</span>
-<span class="co">#&gt; 5 2020-06-01         154 BOE-S-2020-154      2A</span>
-<span class="co">#&gt; 6 2020-06-01         154 BOE-S-2020-154      2A</span>
+<span class="co">#&gt; 1 2020-10-29         286 BOE-S-2020-286       1</span>
+<span class="co">#&gt; 2 2020-10-29         286 BOE-S-2020-286       1</span>
+<span class="co">#&gt; 3 2020-10-29         286 BOE-S-2020-286      2A</span>
+<span class="co">#&gt; 4 2020-10-29         286 BOE-S-2020-286      2A</span>
+<span class="co">#&gt; 5 2020-10-29         286 BOE-S-2020-286      2A</span>
+<span class="co">#&gt; 6 2020-10-29         286 BOE-S-2020-286      2A</span>
 <span class="co">#&gt;                                                              section_number</span>
 <span class="co">#&gt; 1                                                I. Disposiciones generales</span>
 <span class="co">#&gt; 2                                                I. Disposiciones generales</span>
@@ -117,55 +124,58 @@
 <span class="co">#&gt; 4 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
 <span class="co">#&gt; 5 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
 <span class="co">#&gt; 6 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt;                                            departament departament_etq</span>
-<span class="co">#&gt; 1                                  JEFATURA DEL ESTADO            7723</span>
-<span class="co">#&gt; 2 MINISTERIO DE TRANSPORTES, MOVILIDAD Y AGENDA URBANA            9572</span>
-<span class="co">#&gt; 3                               MINISTERIO DE JUSTICIA            4810</span>
-<span class="co">#&gt; 4                               MINISTERIO DE JUSTICIA            4810</span>
-<span class="co">#&gt; 5                               MINISTERIO DE JUSTICIA            4810</span>
-<span class="co">#&gt; 6                               MINISTERIO DE JUSTICIA            4810</span>
-<span class="co">#&gt;                     epigraph</span>
-<span class="co">#&gt; 1       Ingreso mínimo vital</span>
-<span class="co">#&gt; 2 Puertos de interés general</span>
-<span class="co">#&gt; 3                 Reingresos</span>
-<span class="co">#&gt; 4                Situaciones</span>
-<span class="co">#&gt; 5                Situaciones</span>
-<span class="co">#&gt; 6                Situaciones</span>
-<span class="co">#&gt;                                                                                                                                                                                                                                          text</span>
-<span class="co">#&gt; 1                                                                                                                                                   Real Decreto-ley 20/2020, de 29 de mayo, por el que se establece el ingreso mínimo vital.</span>
-<span class="co">#&gt; 2 Resolución de 8 de mayo de 2020, de Puertos del Estado, por la que se modifica el Anexo I de la Orden FOM/1194/2011, de 29 de abril, por la que se regula el procedimiento integrado de escala de buques en los puertos de interés general.</span>
-<span class="co">#&gt; 3                                                                                                      Orden JUS/468/2020, de 23 de abril, por la que se reingresa al servicio activo en la Carrera Fiscal a doña Elisabet Jiménez Cabestany.</span>
-<span class="co">#&gt; 4                                                                                             Orden JUS/469/2020, de 31 de marzo, por la que se declara en situación de excedencia voluntaria en la Carrera Fiscal a doña Emma Ruiz Martínez.</span>
-<span class="co">#&gt; 5                                                                                          Orden JUS/470/2020, de 31 de marzo, por la que se declara en situación de excedencia voluntaria en la Carrera Fiscal a doña Elena Martínez Castro.</span>
-<span class="co">#&gt; 6                                                                      Orden JUS/471/2020, de 7 de abril, por la que se declara en la situación administrativa de servicios especiales en la Carrera Fiscal a doña María de las Heras García.</span>
-<span class="co">#&gt;       publication pages</span>
-<span class="co">#&gt; 1 BOE-A-2020-5493    44</span>
-<span class="co">#&gt; 2 BOE-A-2020-5494     2</span>
-<span class="co">#&gt; 3 BOE-A-2020-5495     1</span>
-<span class="co">#&gt; 4 BOE-A-2020-5496     1</span>
-<span class="co">#&gt; 5 BOE-A-2020-5497     1</span>
-<span class="co">#&gt; 6 BOE-A-2020-5498     1</span></pre></div>
+<span class="co">#&gt;                                                     departament departament_etq</span>
+<span class="co">#&gt; 1          MINISTERIO DE TRANSPORTES, MOVILIDAD Y AGENDA URBANA            9572</span>
+<span class="co">#&gt; 2          MINISTERIO DE POLÍTICA TERRITORIAL Y FUNCIÓN PÚBLICA            9561</span>
+<span class="co">#&gt; 3                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span>
+<span class="co">#&gt; 4                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span>
+<span class="co">#&gt; 5                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span>
+<span class="co">#&gt; 6 MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN            9562</span>
+<span class="co">#&gt;                   epigraph</span>
+<span class="co">#&gt; 1          Red ferroviaria</span>
+<span class="co">#&gt; 2 Oferta de empleo público</span>
+<span class="co">#&gt; 3            Nombramientos</span>
+<span class="co">#&gt; 4            Nombramientos</span>
+<span class="co">#&gt; 5            Nombramientos</span>
+<span class="co">#&gt; 6                 Destinos</span>
+<span class="co">#&gt;                                                                                                                                                                                                                                             text</span>
+<span class="co">#&gt; 1                                                                                                                                         Real Decreto 929/2020, de 27 de octubre, sobre seguridad operacional e interoperabilidad ferroviarias.</span>
+<span class="co">#&gt; 2                                                                                                                                   Real Decreto 936/2020, de 27 de octubre, por el que se aprueba la oferta de empleo público para el año 2020.</span>
+<span class="co">#&gt; 3   Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueces/zas sustitutos/as para el año judicial 2020/2021, en el ámbito del Tribunal Superior de la Región de Murcia.</span>
+<span class="co">#&gt; 4 Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueza sustituta para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Castilla-La Mancha.</span>
+<span class="co">#&gt; 5        Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Magistrado suplente para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Navarra.</span>
+<span class="co">#&gt; 6                                                                        Resolución de 19 de octubre de 2020, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 22 de julio de 2020.</span>
+<span class="co">#&gt;        publication pages</span>
+<span class="co">#&gt; 1 BOE-A-2020-13115   155</span>
+<span class="co">#&gt; 2 BOE-A-2020-13116    21</span>
+<span class="co">#&gt; 3 BOE-A-2020-13117     1</span>
+<span class="co">#&gt; 4 BOE-A-2020-13118     1</span>
+<span class="co">#&gt; 5 BOE-A-2020-13119     1</span>
+<span class="co">#&gt; 6 BOE-A-2020-13120     2</span></code></pre></div>
 <p>If we are interested on a publication we can obtain the url of the publication with:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="co"># Say we are interested on the first result:</span>
-<span class="no">pdfs</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/url_publications.html">url_publications</a></span>(<span class="no">sumario_hoy</span>[<span class="fl">1</span>, ])
-<span class="no">pdfs</span> <span class="co"># And we can download it with download.file(pdfs)</span>
-<span class="co">#&gt; [1] "https://boe.es/boe/dias/2020/06/01/pdfs/BOE-A-2020-5493.pdf"</span></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Say we are interested on the first result:</span>
+<span class="va">pdfs</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/url_publications.html">url_publications</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span><span class="op">)</span>
+<span class="va">pdfs</span> <span class="co"># And we can download it with download.file(pdfs)</span>
+<span class="co">#&gt; [1] "https://boe.es/boe/dias/2020/10/29/pdfs/BOE-A-2020-13115.pdf"</span></code></pre></div>
 <p>We can open the publication from R with:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="reference/open_publications.html">open_publications</a></span>(<span class="no">pdfs</span>)</pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="reference/open_publications.html">open_publications</a></span><span class="op">(</span><span class="va">pdfs</span><span class="op">)</span></code></pre></div>
 <p>If we need to know the BOE code of a publication we can do so with:</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="reference/sumario_xml.html">sumario_xml</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(<span class="st">"2019/11/15"</span>))
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="reference/sumario_nbo.html">sumario_xml</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span><span class="op">(</span><span class="st">"2019/11/15"</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt; [1] "BOE-S-20191115"</span>
-<span class="fu"><a href="reference/sumario_xml.html">sumario_xml</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(<span class="st">"2019/11/15"</span>), <span class="kw">journal</span> <span class="kw">=</span> <span class="st">"BORME"</span>)
+<span class="fu"><a href="reference/sumario_nbo.html">sumario_xml</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span><span class="op">(</span><span class="st">"2019/11/15"</span><span class="op">)</span>, journal <span class="op">=</span> <span class="st">"BORME"</span><span class="op">)</span>
 <span class="co">#&gt; [1] "BORME-S-20191115"</span>
 <span class="co"># The codes of publication is the year and the number of said publication</span>
-<span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span>(<span class="st">"2017"</span>, <span class="st">"275"</span>)
+<span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"275"</span><span class="op">)</span> 
 <span class="co">#&gt; [1] "BOE-S-2017-275"</span>
-<span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span>(<span class="st">"2017"</span>, <span class="st">"275"</span>, <span class="kw">journal</span> <span class="kw">=</span> <span class="st">"BORME"</span>)
+<span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"275"</span>, journal <span class="op">=</span> <span class="st">"BORME"</span><span class="op">)</span> 
 <span class="co">#&gt; [1] "BORME-S-2017-275"</span>
-<span class="fu"><a href="reference/element.html">anuncio</a></span>(<span class="st">"2012"</span>, <span class="st">"32498"</span>)
+<span class="fu"><a href="reference/element.html">anuncio</a></span><span class="op">(</span><span class="st">"2012"</span>, <span class="st">"32498"</span><span class="op">)</span> 
 <span class="co">#&gt; [1] "BOE-B-2012-32498"</span>
-<span class="fu"><a href="reference/element.html">disposicion</a></span>(<span class="st">"2012"</span>, <span class="st">"32498"</span>)
-<span class="co">#&gt; [1] "BOE-A-2012-32498"</span></pre></div>
+<span class="fu"><a href="reference/element.html">disposicion</a></span><span class="op">(</span><span class="st">"2012"</span>, <span class="st">"32498"</span><span class="op">)</span>
+<span class="co">#&gt; [1] "BOE-A-2012-32498"</span></code></pre></div>
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">
@@ -189,7 +199,7 @@
 <h2>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 <div class="community">
@@ -208,6 +218,7 @@
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
+<li><a href="https://github.com/rOpenSpain/BOE/actions"><img src="https://github.com/rOpenSpain/BOE/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
 <li><a href="https://travis-ci.org/rOpenSpain/BOE"><img src="https://travis-ci.org/rOpenSpain/BOE.svg?branch=master" alt="Travis build status"></a></li>
 <li><a href="https://codecov.io/gh/rOpenSpain/BOE?branch=master"><img src="https://codecov.io/gh/rOpenSpain/BOE/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://www.tidyverse.org/lifecycle/#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
@@ -216,18 +227,47 @@
 </div>
 </div>
 
+<script>
+  var home = document.getElementById("home");
+  var banner = document.createElement('div');
+  banner.innerHTML = '<a href="https://ropenspain.es/">' +
+      '<div id="ROS-heading-breadcrumbs">' +
+        '<div class="text-center" id="ROS-partof">' +
+          '<p>Part of <img src="ROS-logo.png" alt="ROpenSpain Logo" height="24"> ROpenSpain </p>' +
+        '</div></div></a>'
 
-      <footer><div class="copyright">
-  <p>Developed by Lluís Revilla Sancho.</p>
+  home.insertBefore(banner,home.firstChild);
+</script><footer id="footer"><div class="container">
+		<div class="col-md-3 col-sm-6 col-md-offset-1">
+			<h4 data-toc-skip>About BOE</h4>
+			Developed by Lluís Revilla Sancho, part of the <span class="ROS-light">rOpenSpain</span> project.
+			<hr class="hidden-md hidden-lg hidden-sm">
+</div>
+		<div class="col-md-3 col-sm-6 col-md-offset-4">
+			<h4 data-toc-skip>About <img src="ROS-logo.png" alt="ROpenSpain Logo" height="24"><span class="ROS-light"> rOpenSpain</span>
+</h4>
+			<a href="https://ropenspain.es/"><span class="ROS-light">rOpenSpain</span></a> is a community of R enthusiasts whose ultimate goal is to create high-quality R packages for data mining public spanish open sources.
+			<hr class="hidden-md hidden-lg hidden-sm">
+</div>
+	</div>
+</footer><div id="copyright">
+	<div class="container">
+		<div class="col-md-12">
+			<p class="pull-left">
+			Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.
+			</p>
+			<p class="pull-right">
+			Template by <a href="https://bootstrapious.com/snippets">Bootstrapious </a>.
+			Ported to pkgdown by <a href="https://github.com/dieghernan/">dieghernan</a>.
+			</p>
+		</div>
+	</div>
 </div>
 
-<div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+<!-- ropenspain -->
+<script src="ropenspain.js"></script>
 </div>
-
-      </footer>
-</div>
-
+   
   
 
 

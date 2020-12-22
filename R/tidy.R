@@ -118,7 +118,7 @@ tidy_disposicion <- function(xml) {
     metadatos$fecha_actualizacion <- fecha_actualizacion
     metadatos$analysis <- list(tidy_analysis(xml_child(xml, "analisis")))
     metadatos$text <- xml_text(xml_find_all(xml, "./texto"))
-    metadatos$text_xml <- xml_children(xml_find_all(xml, "./texto"))
+    metadatos$text_xml <- xml_find_all(xml, "./texto")
     metadatos
 }
 

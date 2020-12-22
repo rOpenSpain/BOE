@@ -51,6 +51,7 @@ query_htm <- function(cve) {
 #' Look for the consolidated law online
 #' @param cve The CVE of the document you want.
 #' @return  A query url.
+#' @export
 #' @examples
 #' cve <- disposicion_cve("2017", "117")
 #' query_consolidada(cve)

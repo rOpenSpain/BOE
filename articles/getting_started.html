@@ -96,13 +96,11 @@
 
     
     
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/rOpenSpain/BOE">BOE</a></span><span class="op">)</span></code></pre></div>
 <div id="introduction" class="section level1">
 <h1 class="hasAnchor">
 <a href="#introduction" class="anchor"></a>Introduction</h1>
 <p>The goal of BOE is to provide tools to retrieve data from <a href="https://boe.es">BOE</a> the official gazette of Spain. Since 2009 the online documents have all the legal validation, but documents published before are accessible from the website too.</p>
-<p>The main purpose of this program is to make easily accessible the publications the <a href="https://boe.es">Agencia Estatal Boletín del Estado</a> provides as the legal and valid source of law. It provides functions to tidy the <em>sumario</em> and retrieve the individual “.pdf” of each publication and summaries. To retrieve a document we need the publication code. For summaries we can use two types of codes <code>BOE-S-YYYYMMDD</code> and <code>BOE-S-YYYY-NNN</code>. The first one is useful to retrieve a document of certain date and can be created with [sumario_nbo()]. The second one is the CVE the code that can be verified online, it can be created with [sumario_cve()]. Note at most there is one <em>sumario</em> per day, so 365 is the max, but usually none is published on Sundays.</p>
+<p>The main purpose of this program is to make easily accessible the publications the <a href="https://boe.es">Agencia Estatal Boletín del Estado</a> provides as the legal and valid source of law. It provides functions to tidy the <em>sumario</em> and retrieve the individual “.pdf” of each publication and summaries. To retrieve a document we need the publication code. For summaries we can use two types of codes <code>BOE-S-YYYYMMDD</code> and <code>BOE-S-YYYY-NNN</code>. The first one is useful to retrieve a document of certain date and can be created with <code><a href="../reference/sumario_nbo.html">sumario_nbo()</a></code>. The second one is the CVE the code that can be verified online, it can be created with <code><a href="../reference/sumario_cve.html">sumario_cve()</a></code>. Note at most there is one <em>sumario</em> per day, so 365 is the max, but usually none is published on Sundays.</p>
 <p>At the same site we can access the <a href="https://boe.es/diario_borme/">BORME</a> which is another journal to register of organizations commercial activity. The summaries from this journal can also be retrieved using the option <code>journal = "BORME"</code>. This journal publishes only from Monday to Saturday.</p>
 <p>There is a mix of words in the package I left the document names in Spanish but changed the verbs to English. Hope it is easier this way for Spanish speaking people if it is not for you <a href="https://github.com/rOpenSci/BOE/issues/new">open an issue</a> and let me know.</p>
 </div>
@@ -111,9 +109,10 @@
 <a href="#sumario" class="anchor"></a><em>Sumario</em>
 </h1>
 <p>It is a summary of the publications of the day with information about the summary number, section, department, epigraph, brief text of the publication, publication’s number of pages of the pdf.</p>
-<p>The easiest way to get a <em>sumario</em> is using [<code><a href="../reference/retrieve_sumario.html">retrieve_sumario()</a></code>]:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">today</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>
+<p>The easiest way to get a <em>sumario</em> is using <code><a href="../reference/retrieve_sumario.html">retrieve_sumario()</a></code>:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/rOpenSpain/BOE">"BOE"</a></span><span class="op">)</span>
+<span class="va">today</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>
 <span class="va">sumario_hoy</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/retrieve_sumario.html">retrieve_sumario</a></span><span class="op">(</span><span class="va">today</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">)</span>
 <span class="co">#&gt;         date sumario_nbo   sumario_code section             section_number</span>
@@ -156,7 +155,7 @@
 <h1 class="hasAnchor">
 <a href="#publications" class="anchor"></a>Publications</h1>
 <p>Once you select those publications we can obtain the links for the pdf.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/url_publications.html">url_publications</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="op">]</span><span class="op">)</span>
 <span class="co">#&gt; [1] "https://boe.es/boe/dias/2020/12/22/pdfs/BOE-A-2020-16670.pdf"</span>
 <span class="co">#&gt; [2] "https://boe.es/boe/dias/2020/12/22/pdfs/BOE-A-2020-16671.pdf"</span>
@@ -164,13 +163,13 @@
 <span class="co">#&gt; [4] "https://boe.es/boe/dias/2020/12/22/pdfs/BOE-A-2020-16673.pdf"</span>
 <span class="co">#&gt; [5] "https://boe.es/boe/dias/2020/12/22/pdfs/BOE-A-2020-16674.pdf"</span></code></pre></div>
 <p>Or you can also create the CVE and then look them up on the database:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/element.html">anuncio_cve</a></span><span class="op">(</span><span class="st">"2019"</span>, <span class="fl">5</span><span class="op">)</span>
 <span class="co">#&gt; [1] "BOE-B-2019-5"</span>
 <span class="fu"><a href="../reference/element.html">disposicion_cve</a></span><span class="op">(</span><span class="st">"2010"</span>, <span class="fl">4565</span><span class="op">)</span>
 <span class="co">#&gt; [1] "BOE-A-2010-4565"</span></code></pre></div>
 <p>If you know the date of publication we can obtain the url for the pdf:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">cve</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/element.html">disposicion_cve</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"11117"</span><span class="op">)</span>
 <span class="fu"><a href="../reference/query_pdf.html">query_pdf</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"10"</span>, <span class="st">"02"</span>, <span class="va">cve</span><span class="op">)</span>
 <span class="co">#&gt; [1] "https://boe.es/boe/dias/2017/10/02/pdfs/BOE-A-2017-11117.pdf"</span></code></pre></div>
@@ -179,8 +178,8 @@
 <div id="check-codes" class="section level1">
 <h1 class="hasAnchor">
 <a href="#check-codes" class="anchor"></a>Check codes</h1>
-<p>Before querying the BOE the codes submitted are checked to know if they are valid. If you have some code and want to check it you can use [<code><a href="../reference/check_code.html">check_code()</a></code>]:</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<p>Before querying the BOE the codes submitted are checked to know if they are valid. If you have some code and want to check it you can use <code><a href="../reference/check_code.html">check_code()</a></code>:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/check_code.html">check_code</a></span><span class="op">(</span><span class="st">"BOE-A-1968970"</span><span class="op">)</span>
 <span class="co">#&gt; Error: The code should have three 3 '-'.</span>
 <span class="fu"><a href="../reference/check_code.html">check_code</a></span><span class="op">(</span><span class="st">"BOE-A-19-68970"</span><span class="op">)</span>
@@ -190,7 +189,7 @@
 <div id="session-info" class="section level1 unnumbered">
 <h1 class="hasAnchor">
 <a href="#session-info" class="anchor"></a>Session Info</h1>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/sessionInfo.html">sessionInfo</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co">#&gt; R version 4.0.3 (2020-10-10)</span>
 <span class="co">#&gt; Platform: x86_64-apple-darwin17.0 (64-bit)</span>

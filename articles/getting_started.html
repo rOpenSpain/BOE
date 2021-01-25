@@ -115,41 +115,48 @@
 <span class="va">today</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>
 <span class="va">sumario_hoy</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/retrieve_sumario.html">retrieve_sumario</a></span><span class="op">(</span><span class="va">today</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">)</span>
-<span class="co">#&gt;         date sumario_nbo   sumario_code section             section_number</span>
-<span class="co">#&gt; 1 2020-12-23         334 BOE-S-2020-334       1 I. Disposiciones generales</span>
-<span class="co">#&gt; 2 2020-12-23         334 BOE-S-2020-334       1 I. Disposiciones generales</span>
-<span class="co">#&gt; 3 2020-12-23         334 BOE-S-2020-334       1 I. Disposiciones generales</span>
-<span class="co">#&gt; 4 2020-12-23         334 BOE-S-2020-334       1 I. Disposiciones generales</span>
-<span class="co">#&gt; 5 2020-12-23         334 BOE-S-2020-334       1 I. Disposiciones generales</span>
-<span class="co">#&gt; 6 2020-12-23         334 BOE-S-2020-334       1 I. Disposiciones generales</span>
-<span class="co">#&gt;                                                     departament departament_etq</span>
-<span class="co">#&gt; 1                                           JEFATURA DEL ESTADO            7723</span>
-<span class="co">#&gt; 2                                           JEFATURA DEL ESTADO            7723</span>
-<span class="co">#&gt; 3                                              CORTES GENERALES            1220</span>
-<span class="co">#&gt; 4 MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN            9562</span>
-<span class="co">#&gt; 5                                        MINISTERIO DE HACIENDA            5140</span>
-<span class="co">#&gt; 6                                        MINISTERIO DE HACIENDA            5140</span>
-<span class="co">#&gt;                   epigraph</span>
-<span class="co">#&gt; 1         Medidas urgentes</span>
-<span class="co">#&gt; 2         Medidas urgentes</span>
-<span class="co">#&gt; 3         Medidas urgentes</span>
-<span class="co">#&gt; 4 Tratados internacionales</span>
-<span class="co">#&gt; 5             Organización</span>
-<span class="co">#&gt; 6    Incentivos regionales</span>
-<span class="co">#&gt;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 text</span>
-<span class="co">#&gt; 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Real Decreto-ley 35/2020, de 22 de diciembre, de medidas urgentes de apoyo al sector turístico, la hostelería y el comercio y en materia tributaria.</span>
-<span class="co">#&gt; 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Real Decreto-ley 37/2020, de 22 de diciembre, de medidas urgentes para hacer frente a las situaciones de vulnerabilidad social y económica en el ámbito de la vivienda y en materia de transportes.</span>
-<span class="co">#&gt; 3                                                                                                                                                                                                                                                                                                                                                                                                                                                  Resolución de 17 de diciembre de 2020, del Congreso de los Diputados, por la que se ordena la publicación del Acuerdo de convalidación del Real Decreto-ley 34/2020, de 17 de noviembre, de medidas urgentes de apoyo a la solvencia empresarial y al sector energético, y en materia tributaria.</span>
-<span class="co">#&gt; 4                                                                                                                                                                                                                                                                                                                                                                                                                                   Textos enmendados aprobados en París el 15 de noviembre de 2020 del Anexo I, Listas de sustancias y métodos prohibidos, y del Anexo II, Estándar Internacional para autorizaciones de uso terapéutico, de la Convención Internacional contra el dopaje en el deporte, hecha en París el 18 de noviembre de 2005.</span>
-<span class="co">#&gt; 5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Orden HAC/1238/2020, de 17 de noviembre de 2020, por la que se crean y regulan la Junta y la Mesa de Contratación de los Servicios Centrales en el Ministerio de Hacienda.</span>
-<span class="co">#&gt; 6 Orden HAC/1239/2020, de 21 de diciembre, por la que se publica el Acuerdo de la Comisión Delegada del Gobierno para Asuntos Económicos por el que se prorroga el plazo de vigencia de los Reales Decretos de delimitación de las Zonas de Promoción Económica de la Comunidad Autónoma de Galicia, Andalucía, Principado de Asturias, Comunidad Autónoma de Cantabria, Comunidad Autónoma de la Región de Murcia, Comunitat Valenciana, Aragón, Comunidad Autónoma de Castilla-La Mancha, Canarias, Comunidad Autónoma de Extremadura, Comunidad de Castilla y León, Comunidad Autónoma de La Rioja, Comunidad Autónoma de las Illes Balears, Ciudad de Ceuta y Ciudad de Melilla, a los efectos de solicitar las ayudas de incentivos regionales.</span>
-<span class="co">#&gt;        publication pages</span>
-<span class="co">#&gt; 1 BOE-A-2020-16823    30</span>
-<span class="co">#&gt; 2 BOE-A-2020-16824    19</span>
-<span class="co">#&gt; 3 BOE-A-2020-16825     1</span>
-<span class="co">#&gt; 4 BOE-A-2020-16826    28</span>
-<span class="co">#&gt; 5 BOE-A-2020-16827     5</span>
-<span class="co">#&gt; 6 BOE-A-2020-16828     2</span></code></pre></div>
+<span class="co">#&gt;         date sumario_nbo  sumario_code section</span>
+<span class="co">#&gt; 1 2021-01-25          21 BOE-S-2021-21      2A</span>
+<span class="co">#&gt; 2 2021-01-25          21 BOE-S-2021-21      2A</span>
+<span class="co">#&gt; 3 2021-01-25          21 BOE-S-2021-21      2A</span>
+<span class="co">#&gt; 4 2021-01-25          21 BOE-S-2021-21      2A</span>
+<span class="co">#&gt; 5 2021-01-25          21 BOE-S-2021-21      2B</span>
+<span class="co">#&gt; 6 2021-01-25          21 BOE-S-2021-21      2B</span>
+<span class="co">#&gt;                                                              section_number</span>
+<span class="co">#&gt; 1 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
+<span class="co">#&gt; 2 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
+<span class="co">#&gt; 3 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
+<span class="co">#&gt; 4 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
+<span class="co">#&gt; 5                  II. Autoridades y personal. - B. Oposiciones y concursos</span>
+<span class="co">#&gt; 6                  II. Autoridades y personal. - B. Oposiciones y concursos</span>
+<span class="co">#&gt;              departament departament_etq</span>
+<span class="co">#&gt; 1 MINISTERIO DE JUSTICIA            4810</span>
+<span class="co">#&gt; 2 MINISTERIO DE JUSTICIA            4810</span>
+<span class="co">#&gt; 3 MINISTERIO DE JUSTICIA            4810</span>
+<span class="co">#&gt; 4          UNIVERSIDADES             310</span>
+<span class="co">#&gt; 5 MINISTERIO DE JUSTICIA            4810</span>
+<span class="co">#&gt; 6  MINISTERIO DE DEFENSA            6110</span>
+<span class="co">#&gt;                                                                                                                          epigraph</span>
+<span class="co">#&gt; 1                                                                                                                      Reingresos</span>
+<span class="co">#&gt; 2                                                                                                                     Situaciones</span>
+<span class="co">#&gt; 3                                                                                                                     Situaciones</span>
+<span class="co">#&gt; 4                                                                                                                   Integraciones</span>
+<span class="co">#&gt; 5 Cuerpos y escalas de Gestión Procesal y Administrativa y Tramitación Procesal y Administrativa de la Administración de Justicia</span>
+<span class="co">#&gt; 6                                                                                                  Militares de tropa y marinería</span>
+<span class="co">#&gt;                                                                                                                                                                                                                                                                          text</span>
+<span class="co">#&gt; 1                                                                                                                                              Orden JUS/31/2021, de 15 de enero, por la que se reingresa al servicio activo en la Carrera Fiscal a doña Olga Matencio López.</span>
+<span class="co">#&gt; 2                                                                                    Resolución de 22 de diciembre de 2020, de la Dirección General de Seguridad Jurídica y Fe Pública, por la que se dispone la jubilación del notario de Elche don Luis Alonso Olagüe Ruiz.</span>
+<span class="co">#&gt; 3                                                                                               Resolución de 19 de enero de 2021, de la Dirección General para el Servicio Público de Justicia, por la que se declara la jubilación del Fiscal don José María Álvarez Anllo.</span>
+<span class="co">#&gt; 4                                    Resolución de 1 de enero de 2021, de la Universidad de Las Palmas de Gran Canaria, por la que se integra en el Cuerpo de Profesores Titulares de Universidad a funcionarios del Cuerpo de Profesores Titulares de Escuela Universitaria.</span>
+<span class="co">#&gt; 5 Orden JUS/32/2021, de 11 de enero, por la que se convoca concurso de traslado entre funcionarios de los Cuerpos y Escalas de Gestión Procesal y Administrativa y Tramitación Procesal y Administrativa de la Administración de Justicia, en la Mutualidad General Judicial.</span>
+<span class="co">#&gt; 6                                          Resolución 452/38007/2021, de 21 de enero, de la Subsecretaría, por la que se aprueba el proceso de selección para el ingreso en los centros docentes militares de formación para incorporarse a las escalas de tropa y marinería.</span>
+<span class="co">#&gt;       publication pages</span>
+<span class="co">#&gt; 1 BOE-A-2021-1013     1</span>
+<span class="co">#&gt; 2 BOE-A-2021-1014     1</span>
+<span class="co">#&gt; 3 BOE-A-2021-1015     1</span>
+<span class="co">#&gt; 4 BOE-A-2021-1016     1</span>
+<span class="co">#&gt; 5 BOE-A-2021-1017     4</span>
+<span class="co">#&gt; 6 BOE-A-2021-1018    72</span></code></pre></div>
 </div>
 <div id="publications" class="section level1">
 <h1 class="hasAnchor">
@@ -157,11 +164,11 @@
 <p>Once you select those publications we can obtain the links for the pdf.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/url_publications.html">url_publications</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="op">]</span><span class="op">)</span>
-<span class="co">#&gt; [1] "https://boe.es/boe/dias/2020/12/23/pdfs/BOE-A-2020-16823.pdf"</span>
-<span class="co">#&gt; [2] "https://boe.es/boe/dias/2020/12/23/pdfs/BOE-A-2020-16824.pdf"</span>
-<span class="co">#&gt; [3] "https://boe.es/boe/dias/2020/12/23/pdfs/BOE-A-2020-16825.pdf"</span>
-<span class="co">#&gt; [4] "https://boe.es/boe/dias/2020/12/23/pdfs/BOE-A-2020-16826.pdf"</span>
-<span class="co">#&gt; [5] "https://boe.es/boe/dias/2020/12/23/pdfs/BOE-A-2020-16827.pdf"</span></code></pre></div>
+<span class="co">#&gt; [1] "https://boe.es/boe/dias/2021/01/25/pdfs/BOE-A-2021-1013.pdf"</span>
+<span class="co">#&gt; [2] "https://boe.es/boe/dias/2021/01/25/pdfs/BOE-A-2021-1014.pdf"</span>
+<span class="co">#&gt; [3] "https://boe.es/boe/dias/2021/01/25/pdfs/BOE-A-2021-1015.pdf"</span>
+<span class="co">#&gt; [4] "https://boe.es/boe/dias/2021/01/25/pdfs/BOE-A-2021-1016.pdf"</span>
+<span class="co">#&gt; [5] "https://boe.es/boe/dias/2021/01/25/pdfs/BOE-A-2021-1017.pdf"</span></code></pre></div>
 <p>Or you can also create the CVE and then look them up on the database:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/element.html">anuncio_cve</a></span><span class="op">(</span><span class="st">"2019"</span>, <span class="fl">5</span><span class="op">)</span>
@@ -211,11 +218,11 @@
 <span class="co">#&gt; loaded via a namespace (and not attached):</span>
 <span class="co">#&gt;  [1] digest_0.6.27     crayon_1.3.4      rprojroot_2.0.2   assertthat_0.2.1 </span>
 <span class="co">#&gt;  [5] R6_2.5.0          magrittr_2.0.1    evaluate_0.14     httr_1.4.2       </span>
-<span class="co">#&gt;  [9] stringi_1.5.3     rlang_0.4.9       curl_4.3          fs_1.5.0         </span>
+<span class="co">#&gt;  [9] stringi_1.5.3     rlang_0.4.10      curl_4.3          fs_1.5.0         </span>
 <span class="co">#&gt; [13] xml2_1.3.2        ragg_0.4.0        rmarkdown_2.6     pkgdown_1.6.1    </span>
 <span class="co">#&gt; [17] textshaping_0.2.1 desc_1.2.0        tools_4.0.3       stringr_1.4.0    </span>
-<span class="co">#&gt; [21] yaml_2.2.1        xfun_0.19         compiler_4.0.3    systemfonts_0.3.2</span>
-<span class="co">#&gt; [25] memoise_1.1.0     htmltools_0.5.0   knitr_1.30</span></code></pre></div>
+<span class="co">#&gt; [21] yaml_2.2.1        xfun_0.20         compiler_4.0.3    systemfonts_0.3.2</span>
+<span class="co">#&gt; [25] memoise_1.1.0     htmltools_0.5.1.1 knitr_1.30</span></code></pre></div>
 </div>
   </div>
 

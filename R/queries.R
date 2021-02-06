@@ -1,5 +1,5 @@
-base_url <- "https://boe.es/"
-journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
+BASE_URL <- "https://boe.es/"
+JOURNAL_URL <- c(BORME = "diario_borme", BOE = "diario_boe")
 
 
 
@@ -17,11 +17,12 @@ journal_url <- c(BORME = "diario_borme", BOE = "diario_boe")
 #' @importFrom httr modify_url
 query_xml <- function(id) {
     check_code(id)
-    force(base_url)
+    force(BASE_URL)
+    force(JOURNAL_URL)
     journal <- strsplit(id, split = "-", fixed = TRUE)[[1]][1]
     journal <- match.arg(journal, c("BOE", "BORME"))
-    httr::modify_url(base_url,
-                     path = paste0(journal_url[journal], "/xml.php"),
+    httr::modify_url(BASE_URL,
+                     path = paste0(JOURNAL_URL[journal], "/xml.php"),
                      query = paste0("id=", id))
 }
 
@@ -38,11 +39,11 @@ query_xml <- function(id) {
 #' query_htm(cve)
 query_htm <- function(cve) {
     check_code(cve)
-    force(base_url)
-    force(journal_url)
+    force(BASE_URL)
+    force(JOURNAL_URL)
     journal <- strsplit(cve, "-", fixed = TRUE)[[1]][1]
-    httr::modify_url(base_url,
-                     path = paste0(journal_url[journal], "/text.php"),
+    httr::modify_url(BASE_URL,
+                     path = paste0(JOURNAL_URL[journal], "/text.php"),
                      query = paste0("id=", cve))
 }
 
@@ -57,7 +58,7 @@ query_htm <- function(cve) {
 #' query_consolidada(cve)
 query_consolidada <- function(cve) {
     check_code(cve)
-    force(base_url)
+    force(BASE_URL)
     ids <- strsplit(cve, "-", fixed = TRUE)[[1]]
     if (ids[2] != "A") {
         stop("Documents with BOE-A-*", call. = FALSE)
@@ -66,7 +67,7 @@ query_consolidada <- function(cve) {
     if (ids[1] != "BOE") {
         stop("This is only for laws on the BOE.", call. = FALSE)
     }
-    httr::modify_url(base_url,
+    httr::modify_url(BASE_URL,
                      path = "buscar/act.php",
                      query = paste0("id=", cve))
 }
@@ -86,10 +87,10 @@ query_consolidada <- function(cve) {
 #' query_pdf("2017", "10", "02", cve)
 query_pdf <- function(year, month, day, code) {
     vapply(code, check_code, logical(1))
-    force(base_url)
+    force(BASE_URL)
     journal <- tolower(gsub("-.*", "", code))
     p <- paste(journal, "dias", year, month, day, "pdfs", paste0(code, ".pdf"), sep = "/")
-    paste0(base_url, path = p)
+    paste0(BASE_URL, path = p)
 }
 
 #' Retrieve the XML content

@@ -1,0 +1,436 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://boe.es/diario_borme/xml.php?id=BORME-S-2017-5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Sun, 21 Feb 2021 11:43:43 GMT
+      server: Apache
+      x-frame-options: SAMEORIGIN
+      x-robots-tag: noindex
+      content-security-policy: 'default-src ''none''; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' ; connect-src ''self'' ; img-src ''self'' eur-lex.europa.eu
+        data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ; font-src ''self''
+        ; child-src ''self''  www.youtube.com afirma: ; object-src ''self'' ; media-src
+        ''self'''
+      content-type: application/xml; charset=utf-8
+      x-varnish: '62509495'
+      age: '0'
+      via: 1.1 varnish-v4
+      transfer-encoding: chunked
+      accept-ranges: bytes
+    body:
+      encoding: UTF-8
+      file: no
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <sumario>
+          <meta>
+            <pub>BORME</pub>
+            <anno>2017</anno>
+            <fecha>09/01/2017</fecha>
+            <fechaInv>2017/01/09</fechaInv>
+            <fechaAnt>05/01/2017</fechaAnt>
+            <fechaAntAnt>04/01/2017</fechaAntAnt>
+            <fechaSig>10/01/2017</fechaSig>
+            <fechaPub>lunes 9 de enero de 2017</fechaPub>
+            <pubDate>Mon, 09 Jan 2017 00:00:00 +0100</pubDate>
+          </meta>
+          <diario nbo="5">
+            <sumario_nbo id="BORME-S-2017-5">
+              <urlPdf szBytes="206247" szKBytes="201">/borme/dias/2017/01/09/pdfs/BORME-S-2017-5.pdf</urlPdf>
+            </sumario_nbo>
+            <seccion num="A" nombre="SECCIÓN PRIMERA. Empresarios">
+              <emisor nombre="Actos inscritos" etq="a1">
+                <item id="BORME-A-2017-5-03">
+                  <titulo>ALICANTE</titulo>
+                  <urlPdf szBytes="211969" szKBytes="207">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-03.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-06">
+                  <titulo>BADAJOZ</titulo>
+                  <urlPdf szBytes="161913" szKBytes="158">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-06.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-08">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="253760" szKBytes="248">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-08.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-09">
+                  <titulo>BURGOS</titulo>
+                  <urlPdf szBytes="147152" szKBytes="144">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-09.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-10">
+                  <titulo>CÁCERES</titulo>
+                  <urlPdf szBytes="177457" szKBytes="173">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-10.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-13">
+                  <titulo>CIUDAD REAL</titulo>
+                  <urlPdf szBytes="172802" szKBytes="169">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-13.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-14">
+                  <titulo>CÓRDOBA</titulo>
+                  <urlPdf szBytes="161280" szKBytes="158">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-14.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-15">
+                  <titulo>A CORUÑA</titulo>
+                  <urlPdf szBytes="202203" szKBytes="197">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-15.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-17">
+                  <titulo>GIRONA</titulo>
+                  <urlPdf szBytes="172379" szKBytes="168">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-17.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-19">
+                  <titulo>GUADALAJARA</titulo>
+                  <urlPdf szBytes="171185" szKBytes="167">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-19.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-24">
+                  <titulo>LEÓN</titulo>
+                  <urlPdf szBytes="149026" szKBytes="146">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-24.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-25">
+                  <titulo>LLEIDA</titulo>
+                  <urlPdf szBytes="171489" szKBytes="167">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-25.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-26">
+                  <titulo>LA RIOJA</titulo>
+                  <urlPdf szBytes="180056" szKBytes="176">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-26.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-27">
+                  <titulo>LUGO</titulo>
+                  <urlPdf szBytes="161553" szKBytes="158">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-27.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-28">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="372670" szKBytes="364">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-28.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-30">
+                  <titulo>MURCIA</titulo>
+                  <urlPdf szBytes="191559" szKBytes="187">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-30.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-31">
+                  <titulo>NAVARRA</titulo>
+                  <urlPdf szBytes="171791" szKBytes="168">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-31.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-32">
+                  <titulo>OURENSE</titulo>
+                  <urlPdf szBytes="166029" szKBytes="162">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-32.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-33">
+                  <titulo>ASTURIAS</titulo>
+                  <urlPdf szBytes="198853" szKBytes="194">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-33.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-35">
+                  <titulo>LAS PALMAS</titulo>
+                  <urlPdf szBytes="174923" szKBytes="171">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-35.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-36">
+                  <titulo>PONTEVEDRA</titulo>
+                  <urlPdf szBytes="172765" szKBytes="169">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-36.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-38">
+                  <titulo>SANTA CRUZ DE TENERIFE</titulo>
+                  <urlPdf szBytes="201213" szKBytes="196">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-38.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-43">
+                  <titulo>TARRAGONA</titulo>
+                  <urlPdf szBytes="172953" szKBytes="169">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-43.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-46">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="224128" szKBytes="219">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-46.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-51">
+                  <titulo>CEUTA</titulo>
+                  <urlPdf szBytes="158487" szKBytes="155">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-51.pdf</urlPdf>
+                </item>
+                <item id="BORME-A-2017-5-99">
+                  <titulo>ÍNDICE ALFABÉTICO DE SOCIEDADES</titulo>
+                  <urlPdf szBytes="828666" szKBytes="809">/borme/dias/2017/01/09/pdfs/BORME-A-2017-5-99.pdf</urlPdf>
+                </item>
+              </emisor>
+            </seccion>
+            <seccion num="B" nombre="SECCIÓN PRIMERA. Empresarios">
+              <emisor nombre="Otros actos publicados en el Registro Mercantil" etq="a2">
+                <item id="BORME-B-2017-5-08">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="154879" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-B-2017-5-08.pdf</urlPdf>
+                </item>
+              </emisor>
+            </seccion>
+            <seccion num="C" nombre="SECCIÓN SEGUNDA. Anuncios y avisos legales">
+              <emisor nombre="ANUNCIOS DEL REGISTRO MERCANTIL CENTRAL" etq="012">
+                <item id="BORME-C-2017-83">
+                  <titulo>ARQUE BATEA, SOCIEDAD LIMITADA.</titulo>
+                  <urlPdf szBytes="151419" szKBytes="148">/borme/dias/2017/01/09/pdfs/BORME-C-2017-83.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-83</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-83</urlXml>
+                </item>
+              </emisor>
+              <emisor nombre="BALANCES" etq="001">
+                <item id="BORME-C-2017-84">
+                  <titulo>TERAPIA CPAP USUARIOS, S.A.</titulo>
+                  <urlPdf szBytes="155685" szKBytes="152">/borme/dias/2017/01/09/pdfs/BORME-C-2017-84.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-84</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-84</urlXml>
+                </item>
+              </emisor>
+              <emisor nombre="CONVOCATORIAS DE JUNTAS" etq="002">
+                <item id="BORME-C-2017-85">
+                  <titulo>ALMACENES FRIGORÍFICOS IBARZ, S.A.</titulo>
+                  <urlPdf szBytes="155464" szKBytes="152">/borme/dias/2017/01/09/pdfs/BORME-C-2017-85.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-85</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-85</urlXml>
+                </item>
+                <item id="BORME-C-2017-86">
+                  <titulo>BODEGAS VINOS DE LEÓN - VILE, S.A.</titulo>
+                  <urlPdf szBytes="154192" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-86.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-86</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-86</urlXml>
+                </item>
+                <item id="BORME-C-2017-87">
+                  <titulo>BV PROINVAL, S.A.</titulo>
+                  <urlPdf szBytes="159082" szKBytes="155">/borme/dias/2017/01/09/pdfs/BORME-C-2017-87.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-87</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-87</urlXml>
+                </item>
+                <item id="BORME-C-2017-88">
+                  <titulo>CABALLOS ESPAÑOLES, S.A.</titulo>
+                  <urlPdf szBytes="156143" szKBytes="152">/borme/dias/2017/01/09/pdfs/BORME-C-2017-88.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-88</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-88</urlXml>
+                </item>
+                <item id="BORME-C-2017-89">
+                  <titulo>CENTRO MÉDICO EL CASTRO VIGO, S.A.</titulo>
+                  <urlPdf szBytes="154205" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-89.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-89</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-89</urlXml>
+                </item>
+                <item id="BORME-C-2017-90">
+                  <titulo>ERAIN, SOCIEDAD ANÓNIMA</titulo>
+                  <urlPdf szBytes="152813" szKBytes="149">/borme/dias/2017/01/09/pdfs/BORME-C-2017-90.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-90</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-90</urlXml>
+                </item>
+                <item id="BORME-C-2017-91">
+                  <titulo>FERTIBERIA, S.A.</titulo>
+                  <urlPdf szBytes="152047" szKBytes="148">/borme/dias/2017/01/09/pdfs/BORME-C-2017-91.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-91</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-91</urlXml>
+                </item>
+                <item id="BORME-C-2017-92">
+                  <titulo>GALITO PINSOS, S.L.</titulo>
+                  <urlPdf szBytes="152998" szKBytes="149">/borme/dias/2017/01/09/pdfs/BORME-C-2017-92.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-92</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-92</urlXml>
+                </item>
+                <item id="BORME-C-2017-93">
+                  <titulo>INMUFAMI, S.L.</titulo>
+                  <urlPdf szBytes="154248" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-93.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-93</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-93</urlXml>
+                </item>
+                <item id="BORME-C-2017-94">
+                  <titulo>MOSTOS INTERNACIONALES, S.A.</titulo>
+                  <urlPdf szBytes="152678" szKBytes="149">/borme/dias/2017/01/09/pdfs/BORME-C-2017-94.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-94</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-94</urlXml>
+                </item>
+                <item id="BORME-C-2017-95">
+                  <titulo>PISE, S.A.</titulo>
+                  <urlPdf szBytes="152786" szKBytes="149">/borme/dias/2017/01/09/pdfs/BORME-C-2017-95.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-95</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-95</urlXml>
+                </item>
+                <item id="BORME-C-2017-96">
+                  <titulo>SUMAROIL, SOCIEDAD ANONIMA</titulo>
+                  <urlPdf szBytes="151436" szKBytes="148">/borme/dias/2017/01/09/pdfs/BORME-C-2017-96.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-96</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-96</urlXml>
+                </item>
+              </emisor>
+              <emisor nombre="FUSIONES Y ABSORCIONES DE EMPRESAS" etq="003">
+                <item id="BORME-C-2017-97">
+                  <titulo>ABERSAND CAPITAL SICAV, S.A. &#13;
+        (SOCIEDAD ABSORBENTE) &#13;
+        PERCAPITAL SICAV, S.A. &#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="154350" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-97.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-97</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-97</urlXml>
+                </item>
+                <item id="BORME-C-2017-98">
+                  <titulo>AVÍCOLA MORALEJA, SA&#13;
+        (SOCIEDAD ABSORBENTE)&#13;
+        RANCHOS PECUARIOS, SAU&#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="153119" szKBytes="150">/borme/dias/2017/01/09/pdfs/BORME-C-2017-98.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-98</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-98</urlXml>
+                </item>
+                <item id="BORME-C-2017-99">
+                  <titulo>GESTORA DE PRODUCTOS AGROPECUARIOS, SOCIEDAD LIMITADA &#13;
+        (SOCIEDAD ABSORBENTE) &#13;
+        GLOBAL AGRI SOLUTIONS, SOCIEDAD LIMITADA &#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="154346" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-99.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-99</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-99</urlXml>
+                </item>
+                <item id="BORME-C-2017-100">
+                  <titulo>GETINSA-PAYMA, S.L. &#13;
+        (SOCIEDAD ABSORBENTE) &#13;
+        EUROESTUDIOS, S.L. &#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="155171" szKBytes="152">/borme/dias/2017/01/09/pdfs/BORME-C-2017-100.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-100</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-100</urlXml>
+                </item>
+                <item id="BORME-C-2017-101">
+                  <titulo>GRUPO ATAR SPENTA, S.L.&#13;
+        (SOCIEDAD ABSORBENTE)&#13;
+        VEROBROKER CORREDURÍA DE SEGUROS, S.L.&#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="154271" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-101.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-101</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-101</urlXml>
+                </item>
+                <item id="BORME-C-2017-102">
+                  <titulo>NW BIHAKBAT, S.L.U. &#13;
+        (SOCIEDAD ABSORBENTE) &#13;
+        NETWORK ASESORES, S.L.U. &#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="154466" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-102.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-102</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-102</urlXml>
+                </item>
+                <item id="BORME-C-2017-103">
+                  <titulo>SETCO, SOCIEDAD ANÓNIMA &#13;
+        (SOCIEDAD ABSORBENTE) &#13;
+        MICROKEY, SOCIEDAD LIMITADA UNIPERSONAL &#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="156837" szKBytes="153">/borme/dias/2017/01/09/pdfs/BORME-C-2017-103.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-103</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-103</urlXml>
+                </item>
+                <item id="BORME-C-2017-104">
+                  <titulo>SUMCAB SPECIALCABLE GROUP, S.L. &#13;
+        (SOCIEDAD ABSORBENTE) &#13;
+        COVERTRADE, S.L. &#13;
+        (SOCIEDAD ABSORBIDA)</titulo>
+                  <urlPdf szBytes="154036" szKBytes="150">/borme/dias/2017/01/09/pdfs/BORME-C-2017-104.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-104</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-104</urlXml>
+                </item>
+              </emisor>
+              <emisor nombre="ESCISIÓN DE EMPRESAS" etq="004">
+                <item id="BORME-C-2017-105">
+                  <titulo>CAMPING Y BUNGALOWS SITGES, S.L. &#13;
+        (SOCIEDAD ESCINDIDA PARCIALMENTE) &#13;
+         SUBURRIBERA, S.L. &#13;
+        (SOCIEDAD BENEFICIARIA DE NUEVA CREACIÓN)</titulo>
+                  <urlPdf szBytes="159752" szKBytes="156">/borme/dias/2017/01/09/pdfs/BORME-C-2017-105.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-105</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-105</urlXml>
+                </item>
+                <item id="BORME-C-2017-106">
+                  <titulo>FERNANDO BORREGO E HIJOS S.L. &#13;
+        (SOCIEDAD ESCINDIDA) &#13;
+        EXPLOTACIONES AGRICOLAS SANTA TERESA S.L. &#13;
+        ARBOPAL AGRICOLA S.L. &#13;
+        AGRICOLA CARRAMOLAR S.L. &#13;
+        (SOCIEDADES BENEFICIARIAS DE NUEVA CREACION)</titulo>
+                  <urlPdf szBytes="154591" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-106.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-106</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-106</urlXml>
+                </item>
+                <item id="BORME-C-2017-107">
+                  <titulo>ILUSTRARTE S.L. &#13;
+        (SOCIEDAD ESCINDIDA) &#13;
+        VISUALMENTE S.L. &#13;
+        (SOCIEDAD BENEFICIARIA)</titulo>
+                  <urlPdf szBytes="152753" szKBytes="149">/borme/dias/2017/01/09/pdfs/BORME-C-2017-107.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-107</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-107</urlXml>
+                </item>
+                <item id="BORME-C-2017-108">
+                  <titulo>MONTCORO IBÉRICA 2000, S.L. &#13;
+        (SOCIEDAD ESCINDIDA) &#13;
+        MONTCORO CW, S.L. &#13;
+        MONTCORO INVESTMENTS, S.L. &#13;
+        (SOCIEDADES BENEFICIARIAS)</titulo>
+                  <urlPdf szBytes="153900" szKBytes="150">/borme/dias/2017/01/09/pdfs/BORME-C-2017-108.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-108</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-108</urlXml>
+                </item>
+              </emisor>
+              <emisor nombre="CESIÓN DE EMPRESAS" etq="007">
+                <item id="BORME-C-2017-109">
+                  <titulo>AMARRE Y DESAMARRE DE PUERTOS DE LAS PALMAS, S.L. (EN LIQUIDACION) &#13;
+        (SOCIEDAD CEDENTE) &#13;
+        SERVICIOS PORTUARIOS CANARIOS, S. L. &#13;
+        (SOCIEDAD CESIONARIA)</titulo>
+                  <urlPdf szBytes="153075" szKBytes="149">/borme/dias/2017/01/09/pdfs/BORME-C-2017-109.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-109</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-109</urlXml>
+                </item>
+              </emisor>
+              <emisor nombre="TRANSFORMACIÓN DE EMPRESAS" etq="009">
+                <item id="BORME-C-2017-110">
+                  <titulo>CONFECCIONES LA ESPERANZA SA</titulo>
+                  <urlPdf szBytes="149645" szKBytes="146">/borme/dias/2017/01/09/pdfs/BORME-C-2017-110.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-110</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-110</urlXml>
+                </item>
+                <item id="BORME-C-2017-111">
+                  <titulo>MUTS, S.C.</titulo>
+                  <urlPdf szBytes="149235" szKBytes="146">/borme/dias/2017/01/09/pdfs/BORME-C-2017-111.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-111</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-111</urlXml>
+                </item>
+                <item id="BORME-C-2017-112">
+                  <titulo>NÉMESIS TERCER MILENIO, SICAV, S.A.</titulo>
+                  <urlPdf szBytes="154999" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-112.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-112</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-112</urlXml>
+                </item>
+                <item id="BORME-C-2017-113">
+                  <titulo>TOSAL INVERSIONES SICAV S.A.</titulo>
+                  <urlPdf szBytes="154213" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-113.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-113</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-113</urlXml>
+                </item>
+                <item id="BORME-C-2017-114">
+                  <titulo>TURIAGEST GLOBAL SICAV, S.A.</titulo>
+                  <urlPdf szBytes="155124" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-114.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-114</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-114</urlXml>
+                </item>
+              </emisor>
+              <emisor nombre="OTROS ANUNCIOS Y AVISOS LEGALES" etq="099">
+                <item id="BORME-C-2017-115">
+                  <titulo>NIGOY INVERSIONES SICAV, S.A.</titulo>
+                  <urlPdf szBytes="154270" szKBytes="151">/borme/dias/2017/01/09/pdfs/BORME-C-2017-115.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-115</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-115</urlXml>
+                </item>
+                <item id="BORME-C-2017-116">
+                  <titulo>VIALES Y OBRAS PÚBLICAS, S.A.</titulo>
+                  <urlPdf szBytes="162725" szKBytes="159">/borme/dias/2017/01/09/pdfs/BORME-C-2017-116.pdf</urlPdf>
+                  <urlHtm>/diario_borme/txt.php?id=BORME-C-2017-116</urlHtm>
+                  <urlXml>/diario_borme/xml.php?id=BORME-C-2017-116</urlXml>
+                </item>
+              </emisor>
+            </seccion>
+          </diario>
+        </sumario>
+  recorded_at: 2021-02-21 11:43:43 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

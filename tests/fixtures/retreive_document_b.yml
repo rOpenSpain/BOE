@@ -1,0 +1,60 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-B-2017-5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Sun, 21 Feb 2021 11:43:43 GMT
+      server: Apache
+      x-frame-options: SAMEORIGIN
+      x-robots-tag: noindex
+      content-security-policy: 'default-src ''none''; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' ; connect-src ''self'' ; img-src ''self'' eur-lex.europa.eu
+        data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ; font-src ''self''
+        ; child-src ''self''  www.youtube.com afirma: ; object-src ''self'' ; media-src
+        ''self'''
+      content-length: '1096'
+      content-type: application/xml; charset=utf-8
+      x-varnish: '171032107'
+      age: '0'
+      via: 1.1 varnish-v4
+      accept-ranges: bytes
+    body:
+      encoding: UTF-8
+      file: no
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <documento fecha_actualizacion="20181107130555">
+          <metadatos>
+            <identificador>BOE-B-2017-5</identificador>
+            <titulo>ALCOBENDAS</titulo>
+            <diario codigo="BOE">Boletín Oficial del Estado</diario>
+            <diario_numero>1</diario_numero>
+            <seccion>4</seccion>
+            <departamento codigo="">JUZGADOS DE PRIMERA INSTANCIA E INSTRUCCIÓN</departamento>
+            <numero_anuncio>A160094945</numero_anuncio>
+            <fecha_publicacion>20170102</fecha_publicacion>
+            <letra_imagen>B</letra_imagen>
+            <pagina_inicial>5</pagina_inicial>
+            <pagina_final>5</pagina_final>
+            <url_pdf>/boe/dias/2017/01/02/pdfs/BOE-B-2017-5.pdf</url_pdf>
+          </metadatos>
+          <analisis/>
+          <texto>
+            <p class="parrafo">JUZGADO 1ª INSTANCIA 4.- Anuncio de subasta judicial en vía de apremio con número de identificación 2348000000054614. </p>
+            <p class="parrafo">Dirección electrónica: https://subastas.boe.es/ds.php?id=SUB-JA-2016-35773</p>
+            <p class="parrafo_2">Alcobendas, 26 de octubre de 2016.- El Letrado de la Administración de Justicia</p>
+          </texto>
+        </documento>
+  recorded_at: 2021-02-21 11:43:43 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

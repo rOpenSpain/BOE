@@ -1,0 +1,100 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-A-2017-5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Sun, 21 Feb 2021 11:43:43 GMT
+      server: Apache
+      x-frame-options: SAMEORIGIN
+      x-robots-tag: noindex
+      content-security-policy: 'default-src ''none''; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' ; connect-src ''self'' ; img-src ''self'' eur-lex.europa.eu
+        data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ; font-src ''self''
+        ; child-src ''self''  www.youtube.com afirma: ; object-src ''self'' ; media-src
+        ''self'''
+      content-length: '6218'
+      content-type: application/xml; charset=utf-8
+      x-varnish: '62475566'
+      age: '0'
+      via: 1.1 varnish-v4
+      accept-ranges: bytes
+    body:
+      encoding: UTF-8
+      file: no
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <documento fecha_actualizacion="20181107130555">
+          <metadatos>
+            <identificador>BOE-A-2017-5</identificador>
+            <titulo>Resolución de 14 de diciembre de 2016, de la Dirección General de la Función Pública, por la que se publica convocatoria para la provisión de puesto de trabajo reservado a funcionarios de administración local con habilitación de carácter nacional por el sistema de libre designación.</titulo>
+            <diario codigo="BOE">Boletín Oficial del Estado</diario>
+            <diario_numero>1</diario_numero>
+            <seccion>2</seccion>
+            <subseccion>B</subseccion>
+            <departamento codigo="9279">Ministerio de Hacienda y Función Pública</departamento>
+            <rango codigo="1370">Resolución</rango>
+            <numero_oficial/>
+            <fecha_disposicion>20161214</fecha_disposicion>
+            <fecha_publicacion>20170102</fecha_publicacion>
+            <fecha_vigencia/>
+            <fecha_derogacion/>
+            <letra_imagen>A</letra_imagen>
+            <pagina_inicial>28</pagina_inicial>
+            <pagina_final>29</pagina_final>
+            <suplemento_letra_imagen/>
+            <suplemento_pagina_inicial/>
+            <suplemento_pagina_final/>
+            <estatus_legislativo/>
+            <origen_legislativo codigo="1">Estatal</origen_legislativo>
+            <estado_consolidacion codigo=""/>
+            <judicialmente_anulada>N</judicialmente_anulada>
+            <vigencia_agotada>N</vigencia_agotada>
+            <estatus_derogacion>N</estatus_derogacion>
+            <url_epub/>
+            <url_pdf>/boe/dias/2017/01/02/pdfs/BOE-A-2017-5.pdf</url_pdf>
+            <url_pdf_catalan/>
+            <url_pdf_euskera/>
+            <url_pdf_gallego/>
+            <url_pdf_valenciano/>
+          </metadatos>
+          <analisis>
+            <notas/>
+            <materias/>
+            <alertas/>
+            <referencias>
+              <anteriores/>
+              <posteriores/>
+            </referencias>
+          </analisis>
+          <texto>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">De conformidad con lo dispuesto en el apartado veinticinco del artículo primero de la Ley 27/2013, de 27 de diciembre, de racionalización y sostenibilidad de la Administración Local, así como del artículo 28.2 del Real Decreto 1732/1994, de 29 de julio, según la modificación efectuada por el Real Decreto 834/2003, de 27 de junio, y en uso de las competencias conferidas en el Real Decreto 424/2016, de 11 de noviembre, por el que se desarrolla la estructura orgánica básica del Ministerio de Hacienda y Función Pública, esta Dirección General acuerda publicar, en extracto, la convocatoria para la provisión por el sistema de libre designación del puesto de Intervención de clase primera, de la Diputación Provincial de Cuenca, reservado a funcionarios de Administración Local con habilitación de carácter nacional y relacionado en el anexo, con arreglo a las siguientes bases:</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="articulo">Primera.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">El puesto de trabajo que se anuncia podrá ser solicitado por los funcionarios de Administración Local con habilitación de carácter nacional, pertenecientes a la Subescala, y en su caso categoría, a que está reservado.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">No podrán concurrir a la convocatoria los funcionarios que se encuentren en las situaciones previstas en el artículo 18.3 a), b) y c) del Real Decreto 1732/1994 de 29 de julio, sobre provisión de puestos de trabajo reservados a funcionarios de Administración Local con habilitación de carácter nacional.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="articulo">Segunda.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">Los interesados dirigirán sus solicitudes a la Corporación convocante, dentro de los quince días hábiles a partir del siguiente al de la publicación de la presente Resolución en el «Boletín Oficial del Estado», acompañando a la solicitud la documentación acreditativa de reunir los requisitos para su desempeño, en los términos que figuren en la convocatoria.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="articulo">Tercera.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">Los aspirantes deberán sujetarse a las bases de la convocatoria publicadas íntegramente en el diario oficial indicado en el anexo.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo_2">Contra la presente resolución, que pone fin a la vía administrativa, podrá interponerse potestativamente, recurso de reposición, en el plazo de un mes, ante esta Dirección General, o recurso contencioso-administrativo en el plazo de dos meses ante el Tribunal Superior de Justicia de Madrid, de conformidad con lo dispuesto en los artículos 123 y 124 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, así como en los artículos 10.1 i) y 14.2 de la Ley 29/1998, de 13 de julio, Reguladora de la Jurisdicción Contencioso-Administrativa, y sin perjuicio de cualquier otro recurso que se pudiera interponer.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo_2">Madrid, 14 de diciembre de 2016.–El Director General de la Función Pública, Javier Pérez Medina.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="anexo">ANEXO</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo_2">Corporación: Diputación Provincial de Cuenca.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">Denominación del puesto: Intervención de clase primera.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">Complemento específico anual: 32.509,98 euros.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">Requisitos de los aspirantes: Pertenecer a la subescala de Intervención-Tesorería, categoría superior.</p>
+            <p xmlns:xhtml="http://www.w3.org/1999/xhtml" class="parrafo">Publicación íntegra de la convocatoria: Resolución de 18 de noviembre de 2016, de la Viceconsejería de Administración Local y Coordinación Administrativa de la Junta de Comunidades de Castilla- La Mancha (publicada en el Diario Oficial de Castilla-La Mancha núm. 234, de 1 de diciembre de 2016).</p>
+          </texto>
+        </documento>
+  recorded_at: 2021-02-21 11:43:43 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

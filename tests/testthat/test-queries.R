@@ -22,6 +22,8 @@ test_that("query_htm works", {
 test_that("get_xml works" , {
     skip_if_offline()
     id <- sumario_nbo(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
-    xml <- get_xml(query_xml(id))
+    vcr::use_cassette("get_xml", {
+        xml <- get_xml(query_xml(id))
+    })
     expect_s3_class(xml, "xml_document")
 })

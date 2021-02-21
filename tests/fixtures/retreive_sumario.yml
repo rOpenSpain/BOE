@@ -1,0 +1,1950 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-S-20191202
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Sun, 21 Feb 2021 11:43:42 GMT
+      server: Apache
+      x-frame-options: SAMEORIGIN
+      x-robots-tag: noindex
+      content-security-policy: 'default-src ''none''; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' ; connect-src ''self'' ; img-src ''self'' eur-lex.europa.eu
+        data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ; font-src ''self''
+        ; child-src ''self''  www.youtube.com afirma: ; object-src ''self'' ; media-src
+        ''self'''
+      content-type: application/xml; charset=utf-8
+      x-varnish: '171225214'
+      age: '0'
+      via: 1.1 varnish-v4
+      transfer-encoding: chunked
+      accept-ranges: bytes
+    body:
+      encoding: UTF-8
+      file: no
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <sumario>
+          <meta>
+            <pub>BOE</pub>
+            <anno>2019</anno>
+            <fecha>02/12/2019</fecha>
+            <fechaInv>2019/12/02</fechaInv>
+            <fechaAnt>30/11/2019</fechaAnt>
+            <fechaAntAnt>29/11/2019</fechaAntAnt>
+            <fechaSig>03/12/2019</fechaSig>
+            <fechaPub>lunes 2 de diciembre de 2019</fechaPub>
+            <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
+          </meta>
+          <diario nbo="289">
+            <sumario_nbo id="BOE-S-2019-289">
+              <urlPdf szBytes="476595" szKBytes="465">/boe/dias/2019/12/02/pdfs/BOE-S-2019-289.pdf</urlPdf>
+            </sumario_nbo>
+            <seccion num="1" nombre="I. Disposiciones generales">
+              <departamento nombre="BANCO DE ESPAÑA" etq="1020">
+                <epigrafe nombre="Entidades de crédito">
+                  <item id="BOE-A-2019-17286" control="2019/17419">
+                    <titulo>Circular 4/2019, de 26 de noviembre, del Banco de España, a establecimientos financieros de crédito, sobre normas de información financiera pública y reservada, y modelos de estados financieros.</titulo>
+                    <urlPdf szBytes="326748" szKBytes="319" numPag="16">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17286.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17286</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17286</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="COMISIÓN NACIONAL DE LOS MERCADOS Y LA COMPETENCIA" etq="9534">
+                <epigrafe nombre="Energía eléctrica">
+                  <item id="BOE-A-2019-17287" control="2019/17339">
+                    <titulo>Circular 3/2019, de 20 de noviembre, de la Comisión Nacional de los Mercados y la Competencia, por la que se establecen las metodologías que regulan el funcionamiento del mercado mayorista de electricidad y la gestión de la operación del sistema.</titulo>
+                    <urlPdf szBytes="317220" szKBytes="310" numPag="18">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17287.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17287</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17287</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="2A" nombre="II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias">
+              <departamento nombre="CONSEJO GENERAL DEL PODER JUDICIAL" etq="1820">
+                <epigrafe nombre="Nombramientos">
+                  <item id="BOE-A-2019-17288" control="2019/17230">
+                    <titulo>Real Decreto 646/2019, de 8 de noviembre, por el que se nombra a doña Reyes Goenaga Olaizola, Presidenta de la Audiencia Provincial de Bizkaia.</titulo>
+                    <urlPdf szBytes="216695" szKBytes="212" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17288.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17288</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17288</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE SANIDAD, CONSUMO Y BIENESTAR SOCIAL" etq="9568">
+                <epigrafe nombre="Destinos">
+                  <item id="BOE-A-2019-17289" control="2019/17486">
+                    <titulo>Resolución de 29 de noviembre de 2019, de la Subsecretaría, por la que se resuelve parcialmente la convocatoria de libre designación, efectuada por Resolución de 8 de octubre de 2019, en el Instituto de Mayores y Servicios Sociales.</titulo>
+                    <urlPdf szBytes="244009" szKBytes="238" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17289.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17289</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17289</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="UNIVERSIDADES" etq="310">
+                <epigrafe nombre="Nombramientos">
+                  <item id="BOE-A-2019-17290" control="2019/17009">
+                    <titulo>Resolución de 11 de noviembre de 2019, de la Universidad de Murcia, por la que se nombra Catedrático de Universidad a don Juan Manuel Bueno García.</titulo>
+                    <urlPdf szBytes="215171" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17290.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17290</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17290</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17291" control="2019/16925">
+                    <titulo>Resolución de 12 de noviembre de 2019, de la Universidad Pública de Navarra, por la que nombra Profesor Titular de Universidad a don Jorge Santiago López Martínez.</titulo>
+                    <urlPdf szBytes="220749" szKBytes="216" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17291.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17291</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17291</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17292" control="2019/17010">
+                    <titulo>Resolución de 12 de noviembre de 2019, de la Universidad del País Vasco/Euskal Herriko Unibertsitatea, por la que se nombra Catedrática de Universidad a doña María Dolores Virto Lecuona.</titulo>
+                    <urlPdf szBytes="217736" szKBytes="213" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17292.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17292</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17292</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17293" control="2019/17262">
+                    <titulo>Resolución de 13 de noviembre de 2019, conjunta de la Universidad de Oviedo y el Servicio de Salud del Principado de Asturias, por la que se nombra Profesor Titular de Universidad con plaza vinculada a don Julián Rodríguez Suárez.</titulo>
+                    <urlPdf szBytes="220362" szKBytes="215" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17293.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17293</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17293</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17294" control="2019/17264">
+                    <titulo>Resolución de 13 de noviembre de 2019, de la Universidad de Burgos, por la que se nombra Profesora Titular de Universidad a doña María Asunción Muñoz Santamaría.</titulo>
+                    <urlPdf szBytes="221851" szKBytes="217" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17294.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17294</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17294</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17295" control="2019/17074">
+                    <titulo>Resolución de 15 de noviembre de 2019, de la Universidad de A Coruña, por la que se nombra Catedrático de Universidad a don José Antonio Seoane Rodríguez.</titulo>
+                    <urlPdf szBytes="218575" szKBytes="213" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17295.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17295</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17295</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17296" control="2019/17075">
+                    <titulo>Resolución de 15 de noviembre de 2019, de la Universidad de A Coruña, por la que se nombra Catedrático de Universidad a don Rafael Martín Acero.</titulo>
+                    <urlPdf szBytes="218694" szKBytes="214" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17296.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17296</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17296</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17297" control="2019/17160">
+                    <titulo>Resolución de 15 de noviembre de 2019, de la Universidad de A Coruña, por la que se nombra Catedrática de Universidad a doña María del Rocío Quintáns Eiras.</titulo>
+                    <urlPdf szBytes="219318" szKBytes="214" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17297.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17297</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17297</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17298" control="2019/17076">
+                    <titulo>Resolución de 19 de noviembre de 2019, de la Universidad de Cantabria, por la que se nombra Catedrático de Universidad a don Ángel Alberto Valle Gutiérrez.</titulo>
+                    <urlPdf szBytes="219061" szKBytes="214" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17298.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17298</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17298</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17299" control="2019/17077">
+                    <titulo>Resolución de 19 de noviembre de 2019, de la Universidad de Cantabria, por la que se nombra Profesora Titular de Universidad a doña María Dolores Frías Domínguez.</titulo>
+                    <urlPdf szBytes="218372" szKBytes="213" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17299.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17299</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17299</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17300" control="2019/17161">
+                    <titulo>Resolución de 19 de noviembre de 2019, de la Universidad Pompeu Fabra, por la que se nombra Catedrática de Universidad a doña Mireia Trenchs Parera.</titulo>
+                    <urlPdf szBytes="218508" szKBytes="213" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17300.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17300</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17300</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17301" control="2019/17162">
+                    <titulo>Resolución de 19 de noviembre de 2019, de la Universidad Pompeu Fabra, por la que se nombran Catedráticos de Universidad.</titulo>
+                    <urlPdf szBytes="217629" szKBytes="213" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17301.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17301</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17301</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="2B" nombre="II. Autoridades y personal. - B. Oposiciones y concursos">
+              <departamento nombre="MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN" etq="9562">
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17302" control="2019/17164">
+                    <titulo>Resolución de 21 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="285216" szKBytes="279" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17302.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17302</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17302</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17303" control="2019/17165">
+                    <titulo>Resolución de 22 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="277212" szKBytes="271" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17303.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17303</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17303</urlXml>
+                  </item>
+                </epigrafe>
+                <epigrafe nombre="Funcionarios de las Administraciones Públicas">
+                  <item id="BOE-A-2019-17304" control="2019/17487">
+                    <titulo>Resolución de 28 de noviembre de 2019, de la Dirección de la Agencia Española de Cooperación Internacional para el Desarrollo, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="237940" szKBytes="232" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17304.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17304</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17304</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE DEFENSA" etq="6110">
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17305" control="2019/17442">
+                    <titulo>Resolución 430/38349/2019, de 28 de noviembre, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="227606" szKBytes="222" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17305.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17305</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17305</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE HACIENDA" etq="5140">
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17306" control="2019/17488">
+                    <titulo>Resolución de 29 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="249311" szKBytes="243" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17306.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17306</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17306</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DEL INTERIOR" etq="7320">
+                <epigrafe nombre="Funcionarios de las Administraciones Públicas">
+                  <item id="BOE-A-2019-17307" control="2019/17080">
+                    <titulo>Resolución de 13 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="236794" szKBytes="231" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17307.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17307</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17307</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE EDUCACIÓN Y FORMACIÓN PROFESIONAL" etq="9563">
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17308" control="2019/17168">
+                    <titulo>Resolución de 20 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="221305" szKBytes="216" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17308.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17308</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17308</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17309" control="2019/17282">
+                    <titulo>Resolución de 25 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="213468" szKBytes="208" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17309.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17309</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17309</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL" etq="9564">
+                <epigrafe nombre="Personal laboral">
+                  <item id="BOE-A-2019-17310" control="2019/17489">
+                    <titulo>Resolución de 28 de noviembre de 2019, de la Subsecretaría, por la que se aprueba la relación provisional de admitidos y excluidos y se anuncia fecha, hora y lugar de celebración del primer ejercicio del proceso selectivo para ingreso como personal laboral fijo de los buques "Esperanza del Mar" y "Juan de la Cosa", del Instituto Social de la Marina, convocado por Resolución de 13 de septiembre de 2019.</titulo>
+                    <urlPdf szBytes="289532" szKBytes="283" numPag="5">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17310.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17310</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17310</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN" etq="3120">
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17311" control="2019/17283">
+                    <titulo>Resolución de 25 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="240098" szKBytes="234" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17311.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17311</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17311</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE POLÍTICA TERRITORIAL Y FUNCIÓN PÚBLICA" etq="9561">
+                <epigrafe nombre="Funcionarios de administración local con habilitación de carácter nacional">
+                  <item id="BOE-A-2019-17312" control="2019/16935">
+                    <titulo>Resolución de 19 de noviembre de 2019, de la Dirección General de la Función Pública, por la que se publica la convocatoria para la provisión de puesto de trabajo reservado a funcionarios de administración local con habilitación de carácter nacional por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="223076" szKBytes="218" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17312.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17312</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17312</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17313" control="2019/16936">
+                    <titulo>Resolución de 19 de noviembre de 2019, de la Dirección General de la Función Pública, por la que se publica la convocatoria para la provisión de puesto de trabajo reservado a funcionarios de administración local con habilitación de carácter nacional por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="224374" szKBytes="219" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17313.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17313</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17313</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17314" control="2019/17081">
+                    <titulo>Resolución de 20 de noviembre de 2019, de la Dirección General de la Función Pública, por la que se publica la convocatoria para la provisión de puesto de trabajo reservado a funcionarios de administración local con habilitación de carácter nacional por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="224593" szKBytes="219" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17314.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17314</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17314</urlXml>
+                  </item>
+                </epigrafe>
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17316" control="2019/17349">
+                    <titulo>Resolución de 22 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="289435" szKBytes="283" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17316.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17316</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17316</urlXml>
+                  </item>
+                </epigrafe>
+                <epigrafe nombre="Funcionarios de las Administraciones Públicas">
+                  <item id="BOE-A-2019-17315" control="2019/17170">
+                    <titulo>Resolución de 21 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="300125" szKBytes="293" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17315.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17315</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17315</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE CULTURA Y DEPORTE" etq="9570">
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17317" control="2019/17491">
+                    <titulo>Resolución de 25 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="229750" szKBytes="224" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17317.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17317</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17317</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES" etq="9565">
+                <epigrafe nombre="Escala de Profesores de Investigación de los Organismos Públicos de Investigación">
+                  <item id="BOE-A-2019-17319" control="2019/17284">
+                    <titulo>Resolución de 21 de noviembre de 2019, de la Subsecretaría, por la que se convoca proceso selectivo para ingreso, por el sistema general de acceso libre, en la Escala de Profesores de Investigación de los Organismos Públicos de Investigación.</titulo>
+                    <urlPdf szBytes="319880" szKBytes="312" numPag="15">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17319.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17319</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17319</urlXml>
+                  </item>
+                </epigrafe>
+                <epigrafe nombre="Funcionarios de las Administraciones Públicas">
+                  <item id="BOE-A-2019-17318" control="2019/17082">
+                    <titulo>Resolución de 18 de noviembre de 2019, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación, en el Instituto de Salud Carlos III.</titulo>
+                    <urlPdf szBytes="245632" szKBytes="240" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17318.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17318</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17318</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="CONSEJO DE SEGURIDAD NUCLEAR" etq="1840">
+                <epigrafe nombre="Funcionarios de la Administración del Estado">
+                  <item id="BOE-A-2019-17320" control="2019/17492">
+                    <titulo>Resolución de 22 de noviembre de 2019, del Consejo de Seguridad Nuclear, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="252380" szKBytes="246" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17320.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17320</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17320</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="COMUNIDAD AUTÓNOMA DE ANDALUCÍA" etq="8010">
+                <epigrafe nombre="Cuerpo de Médicos Forenses">
+                  <item id="BOE-A-2019-17321" control="2019/17083">
+                    <titulo>Resolución de 25 de octubre de 2019, de la Delegación Territorial de Turismo, Regeneración, Justicia y Administración Local en Málaga, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="225999" szKBytes="221" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17321.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17321</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17321</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="ADMINISTRACIÓN LOCAL" etq="9525">
+                <epigrafe nombre="Personal funcionario">
+                  <item id="BOE-A-2019-17322" control="2019/17174">
+                    <titulo>Resolución de 11 de noviembre de 2019, del Ayuntamiento de L'Hospitalet de Llobregat (Barcelona), referente a la convocatoria para proveer puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="215465" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17322.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17322</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17322</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17323" control="2019/16862">
+                    <titulo>Resolución de 14 de noviembre de 2019, de la Diputación Provincial de Cádiz, referente a la convocatoria para proveer puestos de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="213557" szKBytes="209" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17323.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17323</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17323</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17324" control="2019/16869">
+                    <titulo>Resolución de 18 de noviembre de 2019, de la Diputación Provincial de Valencia, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="214125" szKBytes="209" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17324.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17324</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17324</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17326" control="2019/17181">
+                    <titulo>Resolución de 20 de noviembre de 2019, del Ayuntamiento de Aljaraque (Huelva), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="215033" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17326.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17326</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17326</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17327" control="2019/17355">
+                    <titulo>Resolución de 21 de noviembre de 2019, del Ayuntamiento de Las Palmas de Gran Canaria (Las Palmas), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="214388" szKBytes="209" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17327.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17327</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17327</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17328" control="2019/17356">
+                    <titulo>Resolución de 21 de noviembre de 2019, del Ayuntamiento de Las Palmas de Gran Canaria (Las Palmas), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="214725" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17328.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17328</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17328</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17332" control="2019/17298">
+                    <titulo>Resolución de 25 de noviembre de 2019, del Ayuntamiento de Santa Cruz de Tenerife, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="214957" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17332.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17332</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17332</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17333" control="2019/17299">
+                    <titulo>Resolución de 25 de noviembre de 2019, del Ayuntamiento de Santa Cruz de Tenerife, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="215134" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17333.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17333</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17333</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17334" control="2019/17359">
+                    <titulo>Resolución de 25 de noviembre de 2019, del Ayuntamiento de Pozuelo de Alarcón (Madrid), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="215567" szKBytes="211" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17334.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17334</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17334</urlXml>
+                  </item>
+                </epigrafe>
+                <epigrafe nombre="Personal funcionario y laboral">
+                  <item id="BOE-A-2019-17325" control="2019/17351">
+                    <titulo>Resolución de 18 de noviembre de 2019, del Ayuntamiento de Benaguasil (Valencia), referente a la convocatoria para proveer varias plazas.</titulo>
+                    <urlPdf szBytes="214120" szKBytes="209" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17325.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17325</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17325</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17329" control="2019/17446">
+                    <titulo>Resolución de 21 de noviembre de 2019, del Ayuntamiento de Úbeda (Jaén), referente a la convocatoria para proveer varias plazas.</titulo>
+                    <urlPdf szBytes="214643" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17329.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17329</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17329</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17330" control="2019/17447">
+                    <titulo>Resolución de 21 de noviembre de 2019, del Ayuntamiento de Úbeda (Jaén), referente a la convocatoria para proveer varias plazas.</titulo>
+                    <urlPdf szBytes="213977" szKBytes="209" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17330.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17330</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17330</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17331" control="2019/17358">
+                    <titulo>Resolución de 23 de noviembre de 2019, del Ayuntamiento de Algarrobo (Málaga), referente a la convocatoria para proveer una plaza.</titulo>
+                    <urlPdf szBytes="219766" szKBytes="215" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17331.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17331</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17331</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17335" control="2019/17191">
+                    <titulo>Resolución de 25 de noviembre de 2019, del Ayuntamiento de Es Mercadal (Illes Balears), referente a la convocatoria para proveer una plaza.</titulo>
+                    <urlPdf szBytes="214136" szKBytes="209" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17335.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17335</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17335</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="UNIVERSIDADES" etq="310">
+                <epigrafe nombre="Funcionarios de las Administraciones Públicas">
+                  <item id="BOE-A-2019-17336" control="2019/17309">
+                    <titulo>Resolución de 19 de noviembre de 2019, de la Universidad Nacional de Educación a Distancia, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.</titulo>
+                    <urlPdf szBytes="225731" szKBytes="220" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17336.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17336</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17336</urlXml>
+                  </item>
+                </epigrafe>
+                <epigrafe nombre="Personal de administración y servicios">
+                  <item id="BOE-A-2019-17337" control="2019/17368">
+                    <titulo>Resolución de 20 de noviembre de 2019, de la Universidad Pública de Navarra, por la que se convocan pruebas selectivas para la provisión de plazas de Técnico Auxiliar Archivos y Bibliotecas.</titulo>
+                    <urlPdf szBytes="286629" szKBytes="280" numPag="12">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17337.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17337</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17337</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="3" nombre="III. Otras disposiciones">
+              <departamento nombre="CONSEJO GENERAL DEL PODER JUDICIAL" etq="1820">
+                <epigrafe nombre="Tribunales Superiores de Justicia">
+                  <item id="BOE-A-2019-17338" control="2019/17455">
+                    <titulo>Acuerdo de 27 de noviembre de 2019, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se publica el Acuerdo de la Sala de Gobierno del Tribunal Superior de Justicia de Madrid de 12 de noviembre de 2019, relativo a la modificación de las normas de reparto de la Sala de lo Civil y Penal.</titulo>
+                    <urlPdf szBytes="224235" szKBytes="219" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17338.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17338</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17338</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN" etq="9562">
+                <epigrafe nombre="Convenios">
+                  <item id="BOE-A-2019-17339" control="2019/17098">
+                    <titulo>Resolución de 19 de noviembre de 2019, del Instituto Cervantes, por la que se publica el Convenio con la Universidad Pontificia de Comillas, para la realización de prácticas académicas externas de sus estudiantes.</titulo>
+                    <urlPdf szBytes="274195" szKBytes="268" numPag="8">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17339.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17339</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17339</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17340" control="2019/17099">
+                    <titulo>Resolución de 19 de noviembre de 2019, del Instituto Cervantes, por la que se publica el Convenio con la Universidad San Pablo CEU, para la realización de prácticas académicas externas de sus estudiantes.</titulo>
+                    <urlPdf szBytes="276386" szKBytes="270" numPag="8">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17340.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17340</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17340</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE JUSTICIA" etq="4810">
+                <epigrafe nombre="Nacionalidad española">
+                  <item id="BOE-A-2019-17341" control="2019/17493">
+                    <titulo>Real Decreto 666/2019, de 18 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a don Emre Eroglu.</titulo>
+                    <urlPdf szBytes="214192" szKBytes="209" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17341.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17341</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17341</urlXml>
+                  </item>
+                  <item id="BOE-A-2019-17342" control="2019/17494">
+                    <titulo>Real Decreto 667/2019, de 18 de noviembre, por el que se concede la nacionalidad española por carta de naturaleza a doña Johanna Carolina Chávez Aragón.</titulo>
+                    <urlPdf szBytes="215226" szKBytes="210" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17342.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17342</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17342</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="MINISTERIO DE ECONOMÍA Y EMPRESA" etq="9567">
+                <epigrafe nombre="Deuda del Estado">
+                  <item id="BOE-A-2019-17343" control="2019/17496">
+                    <titulo>Resolución de 29 de noviembre de 2019, de la Dirección General del Tesoro y Política Financiera, por la que se disponen determinadas emisiones de Bonos y Obligaciones del Estado en el mes de diciembre de 2019 y se convocan las correspondientes subastas.</titulo>
+                    <urlPdf szBytes="334517" szKBytes="327" numPag="7">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17343.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17343</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17343</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="JUNTA ELECTORAL CENTRAL" etq="1310">
+                <epigrafe nombre="Elecciones generales. Resultados">
+                  <item id="BOE-A-2019-17344" control="2019/17497">
+                    <titulo>Resolución de 29 de noviembre de 2019, de la Presidencia de la Junta Electoral Central, por la que se publica el resumen de los resultados de las elecciones al Congreso de los Diputados y al Senado convocadas por Real Decreto 551/2019, de 24 de septiembre, y celebradas el 10 de noviembre de 2019, conforme a las actas de escrutinio general y de proclamación de electos remitidas por las correspondientes Juntas Electorales Provinciales y por las Juntas Electorales de Ceuta y de Melilla.</titulo>
+                    <urlPdf szBytes="1488999" szKBytes="1454" numPag="69">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17344.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17344</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17344</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="UNIVERSIDADES" etq="310">
+                <epigrafe nombre="Planes de estudios">
+                  <item id="BOE-A-2019-17345" control="2019/17212">
+                    <titulo>Resolución de 7 de noviembre de 2019, de la Universidad de Huelva, por la que se publica la modificación del Plan de Estudios de Máster en Acceso a la Abogacía.</titulo>
+                    <urlPdf szBytes="255075" szKBytes="249" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-A-2019-17345.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2019-17345</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2019-17345</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="4" nombre="IV. Administración de Justicia">
+              <departamento nombre="JUZGADOS DE PRIMERA INSTANCIA E INSTRUCCIÓN" etq="9546">
+                <item id="BOE-B-2019-51926">
+                  <titulo>ALCALA DE GUADAIRA</titulo>
+                  <urlPdf szBytes="162636" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51926.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51926</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51926</urlXml>
+                </item>
+                <item id="BOE-B-2019-51927">
+                  <titulo>ALCALA REAL</titulo>
+                  <urlPdf szBytes="161757" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51927.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51927</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51927</urlXml>
+                </item>
+                <item id="BOE-B-2019-51928">
+                  <titulo>ALGECIRAS</titulo>
+                  <urlPdf szBytes="162167" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51928.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51928</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51928</urlXml>
+                </item>
+                <item id="BOE-B-2019-51929">
+                  <titulo>ALICANTE</titulo>
+                  <urlPdf szBytes="166133" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51929.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51929</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51929</urlXml>
+                </item>
+                <item id="BOE-B-2019-51930">
+                  <titulo>ALMANSA</titulo>
+                  <urlPdf szBytes="162382" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51930.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51930</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51930</urlXml>
+                </item>
+                <item id="BOE-B-2019-51931">
+                  <titulo>ALMERIA</titulo>
+                  <urlPdf szBytes="161790" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51931.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51931</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51931</urlXml>
+                </item>
+                <item id="BOE-B-2019-51932">
+                  <titulo>ALMERIA</titulo>
+                  <urlPdf szBytes="161760" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51932.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51932</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51932</urlXml>
+                </item>
+                <item id="BOE-B-2019-51933">
+                  <titulo>ANTEQUERA</titulo>
+                  <urlPdf szBytes="162750" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51933.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51933</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51933</urlXml>
+                </item>
+                <item id="BOE-B-2019-51934">
+                  <titulo>BADAJOZ</titulo>
+                  <urlPdf szBytes="162165" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51934.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51934</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51934</urlXml>
+                </item>
+                <item id="BOE-B-2019-51935">
+                  <titulo>BALAGUER</titulo>
+                  <urlPdf szBytes="162260" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51935.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51935</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51935</urlXml>
+                </item>
+                <item id="BOE-B-2019-51936">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="162752" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51936.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51936</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51936</urlXml>
+                </item>
+                <item id="BOE-B-2019-51937">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="167841" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51937.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51937</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51937</urlXml>
+                </item>
+                <item id="BOE-B-2019-51938">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="162589" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51938.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51938</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51938</urlXml>
+                </item>
+                <item id="BOE-B-2019-51939">
+                  <titulo>BILBAO</titulo>
+                  <urlPdf szBytes="161064" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51939.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51939</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51939</urlXml>
+                </item>
+                <item id="BOE-B-2019-51940">
+                  <titulo>BURGOS</titulo>
+                  <urlPdf szBytes="162322" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51940.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51940</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51940</urlXml>
+                </item>
+                <item id="BOE-B-2019-51941">
+                  <titulo>CALATAYUD</titulo>
+                  <urlPdf szBytes="162909" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51941.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51941</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51941</urlXml>
+                </item>
+                <item id="BOE-B-2019-51942">
+                  <titulo>CANGAS-CANGAS</titulo>
+                  <urlPdf szBytes="162298" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51942.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51942</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51942</urlXml>
+                </item>
+                <item id="BOE-B-2019-51943">
+                  <titulo>CAROLINA</titulo>
+                  <urlPdf szBytes="162616" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51943.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51943</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51943</urlXml>
+                </item>
+                <item id="BOE-B-2019-51944">
+                  <titulo>CASTELLON DE LA PLANA</titulo>
+                  <urlPdf szBytes="162746" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51944.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51944</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51944</urlXml>
+                </item>
+                <item id="BOE-B-2019-51945">
+                  <titulo>CEUTA</titulo>
+                  <urlPdf szBytes="161551" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51945.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51945</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51945</urlXml>
+                </item>
+                <item id="BOE-B-2019-51946">
+                  <titulo>CHICLANA DE LA FRONTERA</titulo>
+                  <urlPdf szBytes="162948" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51946.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51946</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51946</urlXml>
+                </item>
+                <item id="BOE-B-2019-51947">
+                  <titulo>COLLADO VILLALBA</titulo>
+                  <urlPdf szBytes="162726" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51947.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51947</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51947</urlXml>
+                </item>
+                <item id="BOE-B-2019-51948">
+                  <titulo>CORIA</titulo>
+                  <urlPdf szBytes="161931" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51948.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51948</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51948</urlXml>
+                </item>
+                <item id="BOE-B-2019-51949">
+                  <titulo>DENIA</titulo>
+                  <urlPdf szBytes="161497" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51949.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51949</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51949</urlXml>
+                </item>
+                <item id="BOE-B-2019-51950">
+                  <titulo>EL VENDRELL</titulo>
+                  <urlPdf szBytes="162232" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51950.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51950</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51950</urlXml>
+                </item>
+                <item id="BOE-B-2019-51951">
+                  <titulo>FERROL</titulo>
+                  <urlPdf szBytes="190048" szKBytes="186" numPag="5">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51951.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51951</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51951</urlXml>
+                </item>
+                <item id="BOE-B-2019-51952">
+                  <titulo>GETAFE</titulo>
+                  <urlPdf szBytes="161569" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51952.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51952</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51952</urlXml>
+                </item>
+                <item id="BOE-B-2019-51953">
+                  <titulo>GIJON/XIXON-GIJON</titulo>
+                  <urlPdf szBytes="162482" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51953.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51953</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51953</urlXml>
+                </item>
+                <item id="BOE-B-2019-51954">
+                  <titulo>GRANADA</titulo>
+                  <urlPdf szBytes="161595" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51954.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51954</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51954</urlXml>
+                </item>
+                <item id="BOE-B-2019-51955">
+                  <titulo>GRANOLLERS</titulo>
+                  <urlPdf szBytes="161928" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51955.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51955</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51955</urlXml>
+                </item>
+                <item id="BOE-B-2019-51956">
+                  <titulo>HUELVA</titulo>
+                  <urlPdf szBytes="161522" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51956.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51956</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51956</urlXml>
+                </item>
+                <item id="BOE-B-2019-51957">
+                  <titulo>HUELVA</titulo>
+                  <urlPdf szBytes="161140" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51957.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51957</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51957</urlXml>
+                </item>
+                <item id="BOE-B-2019-51958">
+                  <titulo>ILLESCAS</titulo>
+                  <urlPdf szBytes="161672" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51958.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51958</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51958</urlXml>
+                </item>
+                <item id="BOE-B-2019-51959">
+                  <titulo>LAS PALMAS DE GRAN CANARIA</titulo>
+                  <urlPdf szBytes="163352" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51959.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51959</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51959</urlXml>
+                </item>
+                <item id="BOE-B-2019-51960">
+                  <titulo>LLIRIA</titulo>
+                  <urlPdf szBytes="161393" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51960.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51960</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51960</urlXml>
+                </item>
+                <item id="BOE-B-2019-51961">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="161367" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51961.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51961</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51961</urlXml>
+                </item>
+                <item id="BOE-B-2019-51962">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="161358" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51962.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51962</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51962</urlXml>
+                </item>
+                <item id="BOE-B-2019-51963">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="161742" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51963.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51963</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51963</urlXml>
+                </item>
+                <item id="BOE-B-2019-51964">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="161563" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51964.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51964</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51964</urlXml>
+                </item>
+                <item id="BOE-B-2019-51965">
+                  <titulo>MALAGA</titulo>
+                  <urlPdf szBytes="161834" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51965.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51965</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51965</urlXml>
+                </item>
+                <item id="BOE-B-2019-51966">
+                  <titulo>OCAÑA</titulo>
+                  <urlPdf szBytes="162101" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51966.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51966</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51966</urlXml>
+                </item>
+                <item id="BOE-B-2019-51967">
+                  <titulo>OLOT</titulo>
+                  <urlPdf szBytes="161105" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51967.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51967</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51967</urlXml>
+                </item>
+                <item id="BOE-B-2019-51968">
+                  <titulo>PADRON</titulo>
+                  <urlPdf szBytes="161848" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51968.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51968</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51968</urlXml>
+                </item>
+                <item id="BOE-B-2019-51969">
+                  <titulo>PALMA CONDADO</titulo>
+                  <urlPdf szBytes="162645" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51969.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51969</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51969</urlXml>
+                </item>
+                <item id="BOE-B-2019-51970">
+                  <titulo>REUS</titulo>
+                  <urlPdf szBytes="161652" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51970.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51970</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51970</urlXml>
+                </item>
+                <item id="BOE-B-2019-51971">
+                  <titulo>SABADELL</titulo>
+                  <urlPdf szBytes="167087" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51971.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51971</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51971</urlXml>
+                </item>
+                <item id="BOE-B-2019-51972">
+                  <titulo>SAN CRISTOBAL DE LA LAGUNA</titulo>
+                  <urlPdf szBytes="164240" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51972.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51972</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51972</urlXml>
+                </item>
+                <item id="BOE-B-2019-51973">
+                  <titulo>SAN LORENZO DE EL ESCORIAL</titulo>
+                  <urlPdf szBytes="163987" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51973.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51973</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51973</urlXml>
+                </item>
+                <item id="BOE-B-2019-51974">
+                  <titulo>SAN ROQUE</titulo>
+                  <urlPdf szBytes="163266" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51974.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51974</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51974</urlXml>
+                </item>
+                <item id="BOE-B-2019-51975">
+                  <titulo>SANT FELIU DE LLOBREGAT</titulo>
+                  <urlPdf szBytes="164086" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51975.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51975</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51975</urlXml>
+                </item>
+                <item id="BOE-B-2019-51976">
+                  <titulo>SANTANDER</titulo>
+                  <urlPdf szBytes="165412" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51976.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51976</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51976</urlXml>
+                </item>
+                <item id="BOE-B-2019-51977">
+                  <titulo>SEVILLA</titulo>
+                  <urlPdf szBytes="161366" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51977.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51977</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51977</urlXml>
+                </item>
+                <item id="BOE-B-2019-51978">
+                  <titulo>SEVILLA</titulo>
+                  <urlPdf szBytes="161228" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51978.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51978</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51978</urlXml>
+                </item>
+                <item id="BOE-B-2019-51979">
+                  <titulo>SEVILLA</titulo>
+                  <urlPdf szBytes="161376" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51979.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51979</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51979</urlXml>
+                </item>
+                <item id="BOE-B-2019-51980">
+                  <titulo>TALAVERA DE LA REINA</titulo>
+                  <urlPdf szBytes="162457" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51980.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51980</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51980</urlXml>
+                </item>
+                <item id="BOE-B-2019-51981">
+                  <titulo>TARRAGONA</titulo>
+                  <urlPdf szBytes="162165" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51981.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51981</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51981</urlXml>
+                </item>
+                <item id="BOE-B-2019-51982">
+                  <titulo>TORREJON DE ARDOZ</titulo>
+                  <urlPdf szBytes="162741" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51982.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51982</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51982</urlXml>
+                </item>
+                <item id="BOE-B-2019-51983">
+                  <titulo>TORREJON DE ARDOZ</titulo>
+                  <urlPdf szBytes="162970" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51983.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51983</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51983</urlXml>
+                </item>
+                <item id="BOE-B-2019-51984">
+                  <titulo>TORTOSA</titulo>
+                  <urlPdf szBytes="161852" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51984.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51984</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51984</urlXml>
+                </item>
+                <item id="BOE-B-2019-51985">
+                  <titulo>TREMP</titulo>
+                  <urlPdf szBytes="161995" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51985.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51985</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51985</urlXml>
+                </item>
+                <item id="BOE-B-2019-51986">
+                  <titulo>TUDELA</titulo>
+                  <urlPdf szBytes="168511" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51986.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51986</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51986</urlXml>
+                </item>
+                <item id="BOE-B-2019-51987">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="166784" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51987.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51987</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51987</urlXml>
+                </item>
+                <item id="BOE-B-2019-51988">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="165974" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51988.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51988</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51988</urlXml>
+                </item>
+                <item id="BOE-B-2019-51989">
+                  <titulo>VALLADOLID</titulo>
+                  <urlPdf szBytes="161612" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51989.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51989</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51989</urlXml>
+                </item>
+                <item id="BOE-B-2019-51990">
+                  <titulo>VIGO</titulo>
+                  <urlPdf szBytes="167385" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51990.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51990</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51990</urlXml>
+                </item>
+                <item id="BOE-B-2019-51991">
+                  <titulo>VILLANUEVA DE LA SERENA</titulo>
+                  <urlPdf szBytes="167895" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51991.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51991</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51991</urlXml>
+                </item>
+                <item id="BOE-B-2019-51992">
+                  <titulo>VITORIA GASTEIZ</titulo>
+                  <urlPdf szBytes="162988" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51992.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51992</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51992</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="JUZGADOS DE LO MERCANTIL" etq="9547">
+                <item id="BOE-B-2019-51993">
+                  <titulo>A CORUÑA</titulo>
+                  <urlPdf szBytes="172477" szKBytes="168" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51993.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51993</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51993</urlXml>
+                </item>
+                <item id="BOE-B-2019-51994">
+                  <titulo>ALICANTE</titulo>
+                  <urlPdf szBytes="167813" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51994.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51994</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51994</urlXml>
+                </item>
+                <item id="BOE-B-2019-51995">
+                  <titulo>ALICANTE</titulo>
+                  <urlPdf szBytes="167961" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51995.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51995</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51995</urlXml>
+                </item>
+                <item id="BOE-B-2019-51996">
+                  <titulo>ALICANTE</titulo>
+                  <urlPdf szBytes="166218" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51996.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51996</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51996</urlXml>
+                </item>
+                <item id="BOE-B-2019-51997">
+                  <titulo>ALICANTE</titulo>
+                  <urlPdf szBytes="166753" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51997.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51997</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51997</urlXml>
+                </item>
+                <item id="BOE-B-2019-51998">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="169239" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51998.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51998</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51998</urlXml>
+                </item>
+                <item id="BOE-B-2019-51999">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="164469" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-51999.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-51999</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-51999</urlXml>
+                </item>
+                <item id="BOE-B-2019-52000">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="161474" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52000.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52000</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52000</urlXml>
+                </item>
+                <item id="BOE-B-2019-52001">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="163929" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52001.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52001</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52001</urlXml>
+                </item>
+                <item id="BOE-B-2019-52002">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="168284" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52002.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52002</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52002</urlXml>
+                </item>
+                <item id="BOE-B-2019-52003">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="168799" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52003.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52003</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52003</urlXml>
+                </item>
+                <item id="BOE-B-2019-52004">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="163510" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52004.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52004</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52004</urlXml>
+                </item>
+                <item id="BOE-B-2019-52005">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="168430" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52005.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52005</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52005</urlXml>
+                </item>
+                <item id="BOE-B-2019-52006">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="169172" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52006.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52006</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52006</urlXml>
+                </item>
+                <item id="BOE-B-2019-52007">
+                  <titulo>BARCELONA</titulo>
+                  <urlPdf szBytes="172534" szKBytes="168" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52007.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52007</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52007</urlXml>
+                </item>
+                <item id="BOE-B-2019-52008">
+                  <titulo>BILBAO</titulo>
+                  <urlPdf szBytes="167719" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52008.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52008</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52008</urlXml>
+                </item>
+                <item id="BOE-B-2019-52009">
+                  <titulo>BURGOS</titulo>
+                  <urlPdf szBytes="166819" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52009.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52009</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52009</urlXml>
+                </item>
+                <item id="BOE-B-2019-52010">
+                  <titulo>CÁDIZ</titulo>
+                  <urlPdf szBytes="171190" szKBytes="167" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52010.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52010</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52010</urlXml>
+                </item>
+                <item id="BOE-B-2019-52011">
+                  <titulo>CASTELLÓN DE LA PLANA</titulo>
+                  <urlPdf szBytes="170099" szKBytes="166" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52011.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52011</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52011</urlXml>
+                </item>
+                <item id="BOE-B-2019-52012">
+                  <titulo>CASTELLÓN DE LA PLANA</titulo>
+                  <urlPdf szBytes="168316" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52012.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52012</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52012</urlXml>
+                </item>
+                <item id="BOE-B-2019-52013">
+                  <titulo>CASTELLÓN DE LA PLANA</titulo>
+                  <urlPdf szBytes="168947" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52013.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52013</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52013</urlXml>
+                </item>
+                <item id="BOE-B-2019-52014">
+                  <titulo>GIRONA</titulo>
+                  <urlPdf szBytes="164338" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52014.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52014</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52014</urlXml>
+                </item>
+                <item id="BOE-B-2019-52015">
+                  <titulo>HUESCA</titulo>
+                  <urlPdf szBytes="167064" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52015.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52015</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52015</urlXml>
+                </item>
+                <item id="BOE-B-2019-52016">
+                  <titulo>LLEIDA</titulo>
+                  <urlPdf szBytes="166548" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52016.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52016</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52016</urlXml>
+                </item>
+                <item id="BOE-B-2019-52017">
+                  <titulo>LOGROÑO</titulo>
+                  <urlPdf szBytes="166683" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52017.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52017</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52017</urlXml>
+                </item>
+                <item id="BOE-B-2019-52018">
+                  <titulo>LOGROÑO</titulo>
+                  <urlPdf szBytes="166064" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52018.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52018</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52018</urlXml>
+                </item>
+                <item id="BOE-B-2019-52019">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="164292" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52019.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52019</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52019</urlXml>
+                </item>
+                <item id="BOE-B-2019-52020">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="163538" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52020.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52020</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52020</urlXml>
+                </item>
+                <item id="BOE-B-2019-52021">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="164258" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52021.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52021</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52021</urlXml>
+                </item>
+                <item id="BOE-B-2019-52022">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="164745" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52022.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52022</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52022</urlXml>
+                </item>
+                <item id="BOE-B-2019-52023">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="165293" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52023.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52023</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52023</urlXml>
+                </item>
+                <item id="BOE-B-2019-52024">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="164049" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52024.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52024</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52024</urlXml>
+                </item>
+                <item id="BOE-B-2019-52025">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="163937" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52025.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52025</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52025</urlXml>
+                </item>
+                <item id="BOE-B-2019-52026">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="164927" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52026.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52026</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52026</urlXml>
+                </item>
+                <item id="BOE-B-2019-52027">
+                  <titulo>MÁLAGA</titulo>
+                  <urlPdf szBytes="166813" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52027.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52027</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52027</urlXml>
+                </item>
+                <item id="BOE-B-2019-52028">
+                  <titulo>MURCIA</titulo>
+                  <urlPdf szBytes="163632" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52028.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52028</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52028</urlXml>
+                </item>
+                <item id="BOE-B-2019-52029">
+                  <titulo>MURCIA</titulo>
+                  <urlPdf szBytes="166510" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52029.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52029</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52029</urlXml>
+                </item>
+                <item id="BOE-B-2019-52030">
+                  <titulo>OURENSE</titulo>
+                  <urlPdf szBytes="165236" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52030.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52030</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52030</urlXml>
+                </item>
+                <item id="BOE-B-2019-52031">
+                  <titulo>OVIEDO</titulo>
+                  <urlPdf szBytes="166333" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52031.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52031</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52031</urlXml>
+                </item>
+                <item id="BOE-B-2019-52032">
+                  <titulo>PALMA DE MALLORCA</titulo>
+                  <urlPdf szBytes="162850" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52032.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52032</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52032</urlXml>
+                </item>
+                <item id="BOE-B-2019-52033">
+                  <titulo>PALMA DE MALLORCA</titulo>
+                  <urlPdf szBytes="163393" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52033.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52033</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52033</urlXml>
+                </item>
+                <item id="BOE-B-2019-52034">
+                  <titulo>PALMA DE MALLORCA</titulo>
+                  <urlPdf szBytes="172484" szKBytes="168" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52034.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52034</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52034</urlXml>
+                </item>
+                <item id="BOE-B-2019-52035">
+                  <titulo>PALMA DE MALLORCA</titulo>
+                  <urlPdf szBytes="165223" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52035.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52035</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52035</urlXml>
+                </item>
+                <item id="BOE-B-2019-52036">
+                  <titulo>PALMA DE MALLORCA</titulo>
+                  <urlPdf szBytes="165638" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52036.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52036</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52036</urlXml>
+                </item>
+                <item id="BOE-B-2019-52037">
+                  <titulo>PONTEVEDRA</titulo>
+                  <urlPdf szBytes="168475" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52037.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52037</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52037</urlXml>
+                </item>
+                <item id="BOE-B-2019-52038">
+                  <titulo>SALAMANCA</titulo>
+                  <urlPdf szBytes="168429" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52038.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52038</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52038</urlXml>
+                </item>
+                <item id="BOE-B-2019-52039">
+                  <titulo>SALAMANCA</titulo>
+                  <urlPdf szBytes="168036" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52039.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52039</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52039</urlXml>
+                </item>
+                <item id="BOE-B-2019-52040">
+                  <titulo>SEVILLA</titulo>
+                  <urlPdf szBytes="166373" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52040.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52040</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52040</urlXml>
+                </item>
+                <item id="BOE-B-2019-52041">
+                  <titulo>SEVILLA</titulo>
+                  <urlPdf szBytes="166473" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52041.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52041</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52041</urlXml>
+                </item>
+                <item id="BOE-B-2019-52042">
+                  <titulo>TERUEL</titulo>
+                  <urlPdf szBytes="165871" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52042.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52042</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52042</urlXml>
+                </item>
+                <item id="BOE-B-2019-52043">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="166147" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52043.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52043</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52043</urlXml>
+                </item>
+                <item id="BOE-B-2019-52044">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="164762" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52044.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52044</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52044</urlXml>
+                </item>
+                <item id="BOE-B-2019-52045">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="168635" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52045.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52045</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52045</urlXml>
+                </item>
+                <item id="BOE-B-2019-52046">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="168687" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52046.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52046</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52046</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="SERVICIOS COMUNES PROCESALES" etq="9571">
+                <item id="BOE-B-2019-52047">
+                  <titulo>MURCIA</titulo>
+                  <urlPdf szBytes="161034" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52047.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52047</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52047</urlXml>
+                </item>
+                <item id="BOE-B-2019-52048">
+                  <titulo>MURCIA</titulo>
+                  <urlPdf szBytes="160717" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52048.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52048</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52048</urlXml>
+                </item>
+                <item id="BOE-B-2019-52049">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="160953" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52049.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52049</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52049</urlXml>
+                </item>
+                <item id="BOE-B-2019-52050">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="161326" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52050.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52050</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52050</urlXml>
+                </item>
+                <item id="BOE-B-2019-52051">
+                  <titulo>VALENCIA</titulo>
+                  <urlPdf szBytes="161354" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52051.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52051</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52051</urlXml>
+                </item>
+              </departamento>
+            </seccion>
+            <seccion num="5A" nombre="V. Anuncios. - A. Contratación del Sector Público">
+              <departamento nombre="MINISTERIO DE DEFENSA" etq="6110">
+                <item id="BOE-B-2019-52052">
+                  <titulo>Anuncio de formalización de contratos de: Intendencia de Madrid. Objeto: Reparación del vallado perimetral en Polvorines E.R. Bermeja. Expediente: 38124/19/0107/00 (2019/AR21U/00000758).</titulo>
+                  <urlPdf szBytes="183502" szKBytes="179" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52052.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52052</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52052</urlXml>
+                </item>
+                <item id="BOE-B-2019-52053">
+                  <titulo>Anuncio de formalización de contratos de: Dirección de Adquisiciones del Mando de Apoyo Logístico del Ejército del Aire. Objeto: 20192101 Adquisición de accesorios, dispositivos de seguridad y equipos paracaidistas para la EMP, EZAPAC, EADA y PAPEA. Expediente: 4023019009700.</titulo>
+                  <urlPdf szBytes="201714" szKBytes="197" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52053.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52053</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52053</urlXml>
+                </item>
+                <item id="BOE-B-2019-52054">
+                  <titulo>Anuncio de formalización de contratos de: Sección de Asuntos Económicos de la Jefatura Sistemas de Información, Telecomunicaciones y Asistencia Técnica. Objeto: Mejora de la red LAN de la academia de ingenieros del Ejército. Expediente: 2090419019500.</titulo>
+                  <urlPdf szBytes="184335" szKBytes="180" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52054.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52054</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52054</urlXml>
+                </item>
+                <item id="BOE-B-2019-52055">
+                  <titulo>Anuncio de licitación de: Jefatura de Asuntos Económicos del Mando de Personal. Objeto: Concesión del servicio de explotación de actividades deportivas, recreativas y culturales en el CDSCM "Santa Bárbara" de León. Expediente: 2093319022100.</titulo>
+                  <urlPdf szBytes="176170" szKBytes="172" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52055.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52055</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52055</urlXml>
+                </item>
+                <item id="BOE-B-2019-52056">
+                  <titulo>Anuncio de formalización de contratos de: Dirección de Adquisiciones del Mando de Apoyo Logístico del Ejército del Aire. Objeto: Sostenimiento sistemas de representación visual del sistema de armas C.15. Expediente: 4023019023300.</titulo>
+                  <urlPdf szBytes="190750" szKBytes="186" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52056.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52056</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52056</urlXml>
+                </item>
+                <item id="BOE-B-2019-52057">
+                  <titulo>Anuncio de formalización de contratos de: Intendencia de Madrid. Objeto: Adquisición de aceites lubricantes y otros productos químicos de gestión local (JESAT).-Tramitación anticipada. Expediente: 2019/AR21U/00000888 (38124 19 0127 00) .</titulo>
+                  <urlPdf szBytes="184573" szKBytes="180" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52057.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52057</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52057</urlXml>
+                </item>
+                <item id="BOE-B-2019-52058">
+                  <titulo>Anuncio de licitación de: Jefatura de Asuntos Económicos del Mando de Personal. Objeto: Suministro de alimentación y cama para caballos CDSCM "Melilla". Expediente: 2093319021200.</titulo>
+                  <urlPdf szBytes="190994" szKBytes="187" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52058.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52058</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52058</urlXml>
+                </item>
+                <item id="BOE-B-2019-52059">
+                  <titulo>Anuncio de formalización de contratos de: Dirección General del INTA M.P. Objeto: Adquisición de retroexcavadora, barredora y carretilla elevadora. Expediente: 500089046500.</titulo>
+                  <urlPdf szBytes="192764" szKBytes="188" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52059.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52059</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52059</urlXml>
+                </item>
+                <item id="BOE-B-2019-52060">
+                  <titulo>Anuncio de formalización de contratos de: Jefatura de Asuntos Económicos del Estado Mayor de la Defensa. Objeto: Adquisición de diodos de datos con transferencia Payload UDP para la capacidad de inteligencia, vigilancia y reconocimiento conjuntos para RPAS. Expediente: 10013190390.</titulo>
+                  <urlPdf szBytes="184180" szKBytes="180" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52060.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52060</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52060</urlXml>
+                </item>
+                <item id="BOE-B-2019-52061">
+                  <titulo>Anuncio de formalización de contratos de: Jefatura de Asuntos Económicos del Mando de Personal. Objeto: Servicio de Actividades Deportivas y Culturales del CDSCM "Campolongo" - Pontevedra. Expediente: 2093319009400.</titulo>
+                  <urlPdf szBytes="178673" szKBytes="174" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52061.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52061</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52061</urlXml>
+                </item>
+                <item id="BOE-B-2019-52062">
+                  <titulo>Anuncio de formalización de contratos de: Sección de Asuntos Económicos de la División San Marcial. Objeto: PROF LA ING Adquisición de materiales construcción para adecuación de PCZURB a VCI-CC en el CMT Cerro Muriano (Córdoba). Expediente: 20438190034.</titulo>
+                  <urlPdf szBytes="200154" szKBytes="195" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52062.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52062</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52062</urlXml>
+                </item>
+                <item id="BOE-B-2019-52063">
+                  <titulo>Anuncio de formalización de contratos de: Dirección General del INTA M.P. Objeto: Suministro de gases industriales INTA. Expediente: 500089011900.</titulo>
+                  <urlPdf szBytes="192237" szKBytes="188" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52063.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52063</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52063</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE HACIENDA" etq="5140">
+                <item id="BOE-B-2019-52064">
+                  <titulo>Anuncio de formalización de contratos de: Dirección General del Catastro. Objeto: Suministro de licencias Tibco Spotfire. Expediente: 080120190015 M14/19.</titulo>
+                  <urlPdf szBytes="186435" szKBytes="182" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52064.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52064</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52064</urlXml>
+                </item>
+                <item id="BOE-B-2019-52065">
+                  <titulo>Anuncio de formalización de contratos de: Dirección del Servicio de Gestión Económica de la Agencia Estatal de la Administración Tributaria. Objeto: Servicio de mantenimiento y soporte Premier de Oracle de Sistemas Exadata y bases de datos Oracle, con destino al Departamento de Informática Tributaria. Expediente: 19840080400.</titulo>
+                  <urlPdf szBytes="187508" szKBytes="183" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52065.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52065</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52065</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DEL INTERIOR" etq="7320">
+                <item id="BOE-B-2019-52066">
+                  <titulo>Anuncio de licitación de: Subdirección General de Servicios Penitenciarios. Objeto: Servicio de transporte de personal al Centro Penitenciario de Villabona (Asturias) dependiente de la Secretaría General de Instituciones Penitenciarias. Expediente: 020120190225.</titulo>
+                  <urlPdf szBytes="190027" szKBytes="186" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52066.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52066</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52066</urlXml>
+                </item>
+                <item id="BOE-B-2019-52067">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Suministro de Odefsey a los Centros Penitenciarios dependientes de la Secretaría General de Instituciones Penitenciarias. Expediente: 020120190126.</titulo>
+                  <urlPdf szBytes="184981" szKBytes="181" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52067.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52067</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52067</urlXml>
+                </item>
+                <item id="BOE-B-2019-52068">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Servicio de transporte de personal al Centro Penitenciario de Madrid VII - Estremera dependiente de la Secretaría General de Instituciones Penitenciarias. Expediente: 020120190144.</titulo>
+                  <urlPdf szBytes="186897" szKBytes="183" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52068.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52068</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52068</urlXml>
+                </item>
+                <item id="BOE-B-2019-52069">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Suministro de BIKTARVY para los Centros Penitenciarios dependientes de la Secretaría General de Instituciones Penitenciarias. Expediente: 020120190124.</titulo>
+                  <urlPdf szBytes="188319" szKBytes="184" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52069.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52069</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52069</urlXml>
+                </item>
+                <item id="BOE-B-2019-52070">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Obra para la mejora energética del Centro Penitenciario de Madrid IV. Expediente: 020020180156.</titulo>
+                  <urlPdf szBytes="183016" szKBytes="179" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52070.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52070</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52070</urlXml>
+                </item>
+                <item id="BOE-B-2019-52071">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Contrato de obras para la remodelación de la red de agua caliente sanitaria del Centro Penitenciario de Valladolid. Expediente: 020020180158.</titulo>
+                  <urlPdf szBytes="179087" szKBytes="175" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52071.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52071</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52071</urlXml>
+                </item>
+                <item id="BOE-B-2019-52072">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Obra para la mejora energética del Centro Penitenciario de Cáceres. Expediente: 020020190160.</titulo>
+                  <urlPdf szBytes="181624" szKBytes="177" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52072.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52072</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52072</urlXml>
+                </item>
+                <item id="BOE-B-2019-52073">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Obra para la mejora energética y adaptación de la instalación de ACS a la normativa contra legionella en el C.I.S. Evaristo Martín Nieto de Málaga. Expediente: 020020190032.</titulo>
+                  <urlPdf szBytes="184455" szKBytes="180" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52073.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52073</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52073</urlXml>
+                </item>
+                <item id="BOE-B-2019-52074">
+                  <titulo>Anuncio de formalización de contratos de: Subdirección General de Servicios Penitenciarios. Objeto: Obra para la instalación de extinción manual de incendios en el Centro Penitenciario de Burgos. Expediente: 020020190076.</titulo>
+                  <urlPdf szBytes="182454" szKBytes="178" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52074.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52074</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52074</urlXml>
+                </item>
+                <item id="BOE-B-2019-52075">
+                  <titulo>Anuncio de formalización de contratos de: División Económica y Técnica (Cuerpo Nacional de Policía). Objeto: Adquisición de un mínimo de 1200 chalecos anti-trauma con pelvis para los años 2019 y 2020. Expediente: 013/19/AR/01.</titulo>
+                  <urlPdf szBytes="188851" szKBytes="184" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52075.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52075</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52075</urlXml>
+                </item>
+                <item id="BOE-B-2019-52076">
+                  <titulo>Anuncio de licitación de: División Económica y Técnica (Cuerpo Nacional de Policía). Objeto: Mantenimiento preventivo-programado y correctivo de los helicópteros y aeronaves de ala fija de la flota del Servicio de Medios Aéreos de la Dirección General de la Policía. Para 2020 y 2021. Expediente: 001/20/MA/01.</titulo>
+                  <urlPdf szBytes="209296" szKBytes="204" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52076.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52076</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52076</urlXml>
+                </item>
+                <item id="BOE-B-2019-52077">
+                  <titulo>Anuncio de corrección de errores de: División Económica y Técnica (Cuerpo Nacional de Policía). Objeto: Adquisición de un mínimo de 1.010 licencias de Microsoft Office Home para la DGP. Expediente: 06/20/IN/02M.</titulo>
+                  <urlPdf szBytes="170621" szKBytes="167" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52077.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52077</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52077</urlXml>
+                </item>
+                <item id="BOE-B-2019-52078">
+                  <titulo>Anuncio de formalización de contratos de: Dirección General de Tráfico. Objeto: Servicio para ejecución de operaciones de conservación, adecuación y explotación de instalaciones ITS en carreteras gestionadas desde los Centros de Gestión de la D.G.T. 3 lotes. Expediente: 3DGT00000253.</titulo>
+                  <urlPdf szBytes="190763" szKBytes="186" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52078.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52078</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52078</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE FOMENTO" etq="3210">
+                <item id="BOE-B-2019-52079">
+                  <titulo>Anuncio de formalización de contratos de: Presidencia de la Sociedad de Salvamento y Seguridad Marítima. Objeto: Suministro de dos embarcaciones de intervención rápida destinadas al salvamento y rescate de vidas y bienes en la mar. Expediente: EM19-607.</titulo>
+                  <urlPdf szBytes="189014" szKBytes="185" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52079.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52079</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52079</urlXml>
+                </item>
+                <item id="BOE-B-2019-52080">
+                  <titulo>Anuncio de licitación de: Presidencia de la Autoridad Portuaria de Baleares. Objeto: Asistencia técnica para la elaboración e implantación del Plan Estratégico 2020-2024 de Desarrollo Tecnológico en la Autoridad Portuaria de Baleares. Expediente: P.O.70.19.</titulo>
+                  <urlPdf szBytes="189048" szKBytes="185" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52080.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52080</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52080</urlXml>
+                </item>
+                <item id="BOE-B-2019-52081">
+                  <titulo>Anuncio de formalización de contratos de: ADIF - Presidencia. Objeto: Servicio de mantenimiento de las puertas automáticas de las estaciones de camp de tarragona, reus, tarragona, lleida pirinéus, cambrils-salou y l'hospitalet de l'infant. Expediente: 2.19/30108.0109.</titulo>
+                  <urlPdf szBytes="180926" szKBytes="177" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52081.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52081</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52081</urlXml>
+                </item>
+                <item id="BOE-B-2019-52082">
+                  <titulo>Anuncio de formalización de contratos de: Dirección General de Arquitectura, Vivienda y Suelo. Objeto: Obras de restauración de la Escalinata y la Cripta del Obradoiro de la Catedral de Santiago de Compostela (A Coruña). Expediente: 201900000002.</titulo>
+                  <urlPdf szBytes="185517" szKBytes="181" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52082.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52082</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52082</urlXml>
+                </item>
+                <item id="BOE-B-2019-52083">
+                  <titulo>Anuncio de la La Entidad Pública Empresarial Administrador de Infraestructuras Ferroviarias (ADIF), por el que se aplazan las fechas de presentación de ofertas y de apertura de ofertas económicas del procedimiento de contratación "servicios de consultoría y asistencia técnica para la redacción de los proyectos de construcción necesarios para la mejora de las condiciones de evacuación y ventilación en caso de incendio de las Estaciones Subterráneas de Cercanías de Embajadores, Getafe Centro y Parla". (Expediente: 3.19/05110.0137 - P 013/19).</titulo>
+                  <urlPdf szBytes="170311" szKBytes="166" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52083.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52083</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52083</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL" etq="9564">
+                <item id="BOE-B-2019-52084">
+                  <titulo>Anuncio de licitación de: TGSS-Dirección provincial de Almería. Objeto: Servicio de vigilancia y seguridad sin armas, de determinados Centros pertenecientes a la Dirección Provincial de la Tesorería General de la Seguridad Social de Almería. Expediente: 17/2019T.</titulo>
+                  <urlPdf szBytes="178050" szKBytes="174" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52084.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52084</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52084</urlXml>
+                </item>
+                <item id="BOE-B-2019-52085">
+                  <titulo>Anuncio de formalización de contratos de: INSS-Dirección provincial de Alicante. Objeto: Mantenimiento de sistemas contra incendios y retimbrado sistemas gas FE13 de la Dirección Provincial del Instituto Nacional de la Seguridad Social de Alicante en 2020. Expediente: 03/VC-02/20.</titulo>
+                  <urlPdf szBytes="186695" szKBytes="182" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52085.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52085</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52085</urlXml>
+                </item>
+                <item id="BOE-B-2019-52086">
+                  <titulo>Anuncio de formalización de contratos de: TGSS-Dirección provincial de Cantabria. Objeto: Servicios de mantenimiento integral de sistemas e instalaciones de la DP TGSS-INSS en Santander, OO.II. en N. Montaña y Torrelavega, Admón de Laredo, e inmuebles arrendados, durante 12 meses. Expediente: 39/VC-01/20.</titulo>
+                  <urlPdf szBytes="189791" szKBytes="185" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52086.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52086</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52086</urlXml>
+                </item>
+                <item id="BOE-B-2019-52087">
+                  <titulo>Anuncio de formalización de contratos de: INSS-Dirección provincial de Jaén. Objeto: Servicios de conservación y mantenimiento del ascensor instalado en la Unidad Médica del Equipo de Valoración de Incapacidades (U.M.E.V.I.), ubicada en Ctra. de Madrid nº 17 de Jaén, para el periodo 1 de enero de 2020 a 31 de diciembre de 2020. Expediente: 23/VC-91/20.</titulo>
+                  <urlPdf szBytes="186853" szKBytes="182" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52087.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52087</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52087</urlXml>
+                </item>
+                <item id="BOE-B-2019-52088">
+                  <titulo>Anuncio de la Dirección Provincial del Instituto Social de la Marina en Cantabria de formalización del contrato de extinción de plagas en el Buque Juan de la Cosa, de 1 de enero a 31 de diciembre de 2020. expdte 392019PA1012.</titulo>
+                  <urlPdf szBytes="182089" szKBytes="178" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52088.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52088</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52088</urlXml>
+                </item>
+                <item id="BOE-B-2019-52089">
+                  <titulo>Anuncio de formalización de contratos de: Dirección del Organismo Estatal Inspección de Trabajo y Seguridad Social. Objeto: Servicio de vigilancia, seguridad y control del edificio ocupado por la Inspección Provincial de Trabajo y Seguridad Social de Soria y por un periodo 12 meses, desde el 1 de octubre de 2019 o desde la formalización del contrato si este fuese posterior. Expediente: 841/2019.</titulo>
+                  <urlPdf szBytes="179308" szKBytes="175" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52089.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52089</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52089</urlXml>
+                </item>
+                <item id="BOE-B-2019-52090">
+                  <titulo>Anuncio de formalización de contratos de: INSS-Dirección provincial de Lugo. Objeto: Construcción del edificio donde se ubicará en Centro de Atención e Información de la Seguridad Social en Viveiro (Lugo). Expediente: 27UC2/19O.</titulo>
+                  <urlPdf szBytes="184316" szKBytes="180" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52090.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52090</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52090</urlXml>
+                </item>
+                <item id="BOE-B-2019-52091">
+                  <titulo>Anuncio de licitación de: Dirección del Organismo Estatal Inspección de Trabajo y Seguridad Social. Objeto: Servicio de limpieza en los locales ocupados por la Inspección Provincial de Trabajo y Seguridad Social en Melilla por un periodo de 24 meses. Expediente: 1195/2019.</titulo>
+                  <urlPdf szBytes="195363" szKBytes="191" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52091.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52091</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52091</urlXml>
+                </item>
+                <item id="BOE-B-2019-52092">
+                  <titulo>Anuncio de formalización de contratos de: Dirección Provincial del Servicio Público de Empleo Estatal en Murcia. Objeto: Servicio de Limpieza DP SEPE MURCIA y archivo Alcantarilla años 2020 y 2021. Expediente: PAS-2/2019.</titulo>
+                  <urlPdf szBytes="187986" szKBytes="184" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52092.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52092</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52092</urlXml>
+                </item>
+                <item id="BOE-B-2019-52093">
+                  <titulo>Anuncio de formalización de contratos de: INSS-Dirección provincial de Albacete. Objeto: Reconocimientos médicos de salud general y otorrinolaringológicos para 2019. Expediente: 02/UC-0108/19.</titulo>
+                  <urlPdf szBytes="180404" szKBytes="176" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52093.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52093</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52093</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE INDUSTRIA, COMERCIO Y TURISMO" etq="5250">
+                <item id="BOE-B-2019-52094">
+                  <titulo>Anuncio de formalización de contratos de: Oficina Española de Patentes y Marcas, O.A. Objeto: Contratación de los servicios bancarios para la Oficina Española de Patentes y Marcas, O.A. Expediente: C86/19.</titulo>
+                  <urlPdf szBytes="185780" szKBytes="181" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52094.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52094</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52094</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN" etq="3120">
+                <item id="BOE-B-2019-52095">
+                  <titulo>Anuncio de formalización de contratos de: Junta de Contratación del Ministerio de Agricultura, Alimentación y Medio Ambiente. Objeto: Suministro de gas natural en seis puntos de suministro denominados CUPS (Código Universal del Punto de Suministro), todos pertenecientes a inmuebles del MAPA. Expediente: 20190000024M.</titulo>
+                  <urlPdf szBytes="187678" szKBytes="183" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52095.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52095</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52095</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE POLÍTICA TERRITORIAL Y FUNCIÓN PÚBLICA" etq="9561">
+                <item id="BOE-B-2019-52096">
+                  <titulo>Anuncio de licitación de: Subdelegación del Gobierno en Cádiz. Objeto: S.G. Cádiz. Servicio de limpieza de los inmuebles de la Subdelegación del Gobierno en Cádiz. Expediente: 201911000023.</titulo>
+                  <urlPdf szBytes="194035" szKBytes="189" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52096.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52096</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52096</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE CULTURA Y DEPORTE" etq="9570">
+                <item id="BOE-B-2019-52097">
+                  <titulo>Anuncio de corrección de errores de: Dirección del Museo Nacional del Prado. Objeto: Servicio de mantenimiento de los sistemas de protección contra incendios de la red de seguridad que comprende el campus del Museo Nacional del Prado. Expediente: 19AA0507.</titulo>
+                  <urlPdf szBytes="172519" szKBytes="168" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52097.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52097</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52097</urlXml>
+                </item>
+                <item id="BOE-B-2019-52098">
+                  <titulo>Anuncio de licitación de: Dirección del Museo Nacional del Prado. Objeto: Transporte de la exposición temporal "Pasiones mitológicas". Expediente: 19CA0508.</titulo>
+                  <urlPdf szBytes="195320" szKBytes="191" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52098.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52098</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52098</urlXml>
+                </item>
+                <item id="BOE-B-2019-52099">
+                  <titulo>Anuncio de formalización de contratos de: Dirección General del Instituto Nacional de las Artes Escénicas y de la Música. Objeto: Contratación del suministro de publicaciones impresas para el Centro Nacional de Difusión Musical (CNDM). Expediente: MS190056.</titulo>
+                  <urlPdf szBytes="183618" szKBytes="179" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52099.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52099</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52099</urlXml>
+                </item>
+                <item id="BOE-B-2019-52100">
+                  <titulo>Anuncio de formalización de contratos de: Dirección General del Instituto Nacional de las Artes Escénicas y de la Música. Objeto: Actuaciones de los conjuntos de música;Les Arts Florissants; Vox Luminis; Capella Mediterranea; Il Pomo D'oro. Expediente: 2019AC000252.</titulo>
+                  <urlPdf szBytes="179113" szKBytes="175" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52100.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52100</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52100</urlXml>
+                </item>
+                <item id="BOE-B-2019-52101">
+                  <titulo>Anuncio de licitación de: Gerencia del Museo Nacional Centro de Arte Reina Sofía. Objeto: Servicio de difusión y promoción de las exposiciones y otras actividades del Museo Nacional Centro de Arte Reina Sofía a través de los medios de comunicación nacionales e internacionales. Expediente: 201900000447.</titulo>
+                  <urlPdf szBytes="191856" szKBytes="187" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52101.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52101</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52101</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE SANIDAD, CONSUMO Y BIENESTAR SOCIAL" etq="9568">
+                <item id="BOE-B-2019-52102">
+                  <titulo>Anuncio de formalización de contratos de: Dirección del Instituto Nacional de Gestión Sanitaria (INGESA). Objeto: Asistencia técnica y mantenimiento de un SAI (Sistema de Alimentación Ininterrumpida), modelo NXC 30kVA y número de serie 12542090008, con destino a los servicios centrales del Instituto Nacional de Gestión Sanitaria (INGESA). Expediente: PN 2019/046.</titulo>
+                  <urlPdf szBytes="188814" szKBytes="184" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52102.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52102</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52102</urlXml>
+                </item>
+                <item id="BOE-B-2019-52103">
+                  <titulo>Anuncio de licitación de: Subdirección General de Análisis Presupuestario y Gestión Financiera del Instituto de Mayores y Servicios Sociales . Objeto: Suministro de gasóleo de calefacción para el Centro de Promoción de la Autonomía Personal de Bergondo (A Coruña). Expediente: 896/2019.</titulo>
+                  <urlPdf szBytes="197610" szKBytes="193" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52103.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52103</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52103</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES" etq="9565">
+                <item id="BOE-B-2019-52104">
+                  <titulo>Anuncio de licitación de: Subsecretaría de Ciencia, Innovación y Universidades. Objeto: Contrato de servicios de limpieza integral de la sede del Museo Nacional de Ciencia y Tecnología (MUNCYT) en A Coruña. Expediente: 201900000145.</titulo>
+                  <urlPdf szBytes="197399" szKBytes="193" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52104.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52104</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52104</urlXml>
+                </item>
+                <item id="BOE-B-2019-52105">
+                  <titulo>Anuncio de formalización de contratos de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Suministro periódico de gas natural. Expediente: LOT03/20.</titulo>
+                  <urlPdf szBytes="209027" szKBytes="204" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52105.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52105</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52105</urlXml>
+                </item>
+                <item id="BOE-B-2019-52106">
+                  <titulo>Anuncio de formalización de contratos de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Suministro e instalación de diversos instrumentos para la renovación del Laboratorio de Contaje de Partículas. Expediente: LOT48/19.</titulo>
+                  <urlPdf szBytes="196925" szKBytes="192" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52106.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52106</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52106</urlXml>
+                </item>
+                <item id="BOE-B-2019-52107">
+                  <titulo>Anuncio de formalización de contratos de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Suministro e instalación (sustitución) de una máquina enfriadora con bomba de calor con destino al Instituto Mediterraneo de Estudios Avanzados. Expediente: 1236/19.</titulo>
+                  <urlPdf szBytes="187471" szKBytes="183" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52107.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52107</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52107</urlXml>
+                </item>
+                <item id="BOE-B-2019-52108">
+                  <titulo>Anuncio de licitación de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Servicio de gestión de los acuerdos de licencia sobre obtenciones y variedades vegetales de albaricoquero y almendro del Centro de Edafología y Biología Aplicada del Segura, y de la Inspección y Control del Fraude en el uso no autorizado de las mismas. Expediente: 1842/20.</titulo>
+                  <urlPdf szBytes="198364" szKBytes="194" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52108.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52108</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52108</urlXml>
+                </item>
+                <item id="BOE-B-2019-52109">
+                  <titulo>Anuncio de licitación de: Dirección del Instituto Geológico y Minero de España. Objeto: Servicio de pago por uso del licenciamiento de los productos Microsoft del IGME. Expediente: 13066/2019.</titulo>
+                  <urlPdf szBytes="188430" szKBytes="184" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52109.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52109</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52109</urlXml>
+                </item>
+                <item id="BOE-B-2019-52110">
+                  <titulo>Anuncio de formalización de contratos de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Suministro e instalacion de equipamiento para la actualización y mejora del laboratorio de isótopos estables (LIE-MOSS). Ayudas a infraestructura y equipamientos de I+D+i en el ámbito del PAIDI 2020, actuación cofinanciada con Fondos FEDER (expediente 1152175) con destino al Instituto de Recursos Naturales y Agrobiologia de Sevilla. Expediente: 1383/19.</titulo>
+                  <urlPdf szBytes="190411" szKBytes="186" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52110.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52110</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52110</urlXml>
+                </item>
+                <item id="BOE-B-2019-52111">
+                  <titulo>Anuncio de licitación de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Suministro e instalación de un microcalorímetro de titulación isotérmica destinado a la Estación Experimental del Zaidin. Expediente: 1859/20.</titulo>
+                  <urlPdf szBytes="199341" szKBytes="195" numPag="3">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52111.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52111</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52111</urlXml>
+                </item>
+                <item id="BOE-B-2019-52112">
+                  <titulo>Anuncio de formalización de contratos de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Suministro e instalación de diversos instrumentos para la renovación del Laboratorio de Contaje de Partículas. Expediente: LOT48/19.</titulo>
+                  <urlPdf szBytes="193633" szKBytes="189" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52112.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52112</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52112</urlXml>
+                </item>
+                <item id="BOE-B-2019-52113">
+                  <titulo>Anuncio de formalización de contratos de: Secretaría General de la Agencia Estatal Consejo Superior de Investigaciones Científicas, M.P. Objeto: Suministro periódico de material fungible para la preparación y secuenciación de librerías de última generación "ngs" mediante tecnología de secuenciación por síntesis, destinado a la Unidad de Genómica de Tuberculosis del Instituto de Biomedicina de Valencia. Expediente: 1110/19.</titulo>
+                  <urlPdf szBytes="189051" szKBytes="185" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52113.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52113</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52113</urlXml>
+                </item>
+                <item id="BOE-B-2019-52114">
+                  <titulo>Anuncio de formalización de contratos de: Dirección del Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA). Objeto: Servicio reparación Horno Incinerador del CISA del INIA. Expediente: PN 19/053.</titulo>
+                  <urlPdf szBytes="186140" szKBytes="182" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52114.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52114</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52114</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="OTROS PODERES ADJUDICADORES" etq="9207">
+                <item id="BOE-B-2019-52115">
+                  <titulo>Anuncio de licitación de: Subdirección de Compras de la Sociedad Estatal Correos y Telégrafos S.A. Objeto: Mantenimiento de equipos auxiliares para la contenerización de los objetos postales y de paquetería. Expediente: MT190006.</titulo>
+                  <urlPdf szBytes="186316" szKBytes="182" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52115.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52115</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52115</urlXml>
+                </item>
+                <item id="BOE-B-2019-52116">
+                  <titulo>Anuncio de licitación de: Gerencia de la Fundación ENAIRE F.S.P. Objeto: Obras de rehabilitación y reforma con adecuación museográfica de La Arqueria de Nuevos Ministerios en Madrid . Expediente: PA FE-02/2019.</titulo>
+                  <urlPdf szBytes="189029" szKBytes="185" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52116.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52116</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52116</urlXml>
+                </item>
+                <item id="BOE-B-2019-52117">
+                  <titulo>Anuncio de licitación de: Consejo de Administración de Transportes Interurbanos de Tenerife, S.A. Objeto: Servicio de transporte de fondos de TITSA, y el suministro en régimen de arrendamiento de TRES (3) máquinas back-office. Expediente: T-SER 09/102019.</titulo>
+                  <urlPdf szBytes="183712" szKBytes="179" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52117.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52117</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52117</urlXml>
+                </item>
+                <item id="BOE-B-2019-52118">
+                  <titulo>Anuncio de licitación de: Consejo de Administración de Transportes Interurbanos de Tenerife S.A. Objeto: Acuerdo Marco para la prestación de los servicios de publicidad y servicios de investigación de mercado, estudio y encuestas de opinión pública. Expediente: T-SER 10/102019.</titulo>
+                  <urlPdf szBytes="183159" szKBytes="179" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52118.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52118</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52118</urlXml>
+                </item>
+              </departamento>
+            </seccion>
+            <seccion num="5B" nombre="V. Anuncios. - B. Otros anuncios oficiales">
+              <departamento nombre="MINISTERIO DE JUSTICIA" etq="4810">
+                <item id="BOE-B-2019-52119">
+                  <titulo>Resolución de la Secretaría General de la Administración de Justicia sobre prescripción por abandono de depósitos y consignaciones judiciales.</titulo>
+                  <urlPdf szBytes="498144" szKBytes="486" numPag="67">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52119.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52119</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52119</urlXml>
+                </item>
+                <item id="BOE-B-2019-52120">
+                  <titulo>Resolución de la Secretaría General de la Administración de Justicia sobre la prescripción por abandono de depósitos y consignaciones judiciales.</titulo>
+                  <urlPdf szBytes="471124" szKBytes="460" numPag="61">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52120.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52120</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52120</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE HACIENDA" etq="5140">
+                <item id="BOE-B-2019-52121">
+                  <titulo>U.R. SUBASTAS MURCIA</titulo>
+                  <urlPdf szBytes="162042" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52121.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52121</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52121</urlXml>
+                </item>
+                <item id="BOE-B-2019-52122">
+                  <titulo>U.R. SUBASTAS MURCIA</titulo>
+                  <urlPdf szBytes="162042" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52122.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52122</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52122</urlXml>
+                </item>
+                <item id="BOE-B-2019-52123">
+                  <titulo>U.R. SUBASTAS CASTILLA-MANCHA</titulo>
+                  <urlPdf szBytes="162919" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52123.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52123</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52123</urlXml>
+                </item>
+                <item id="BOE-B-2019-52124">
+                  <titulo>U.R. SUBASTAS CASTILLA-MANCHA</titulo>
+                  <urlPdf szBytes="163141" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52124.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52124</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52124</urlXml>
+                </item>
+                <item id="BOE-B-2019-52125">
+                  <titulo>U.R. SUBASTAS CASTILLA-MANCHA</titulo>
+                  <urlPdf szBytes="162890" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52125.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52125</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52125</urlXml>
+                </item>
+                <item id="BOE-B-2019-52126">
+                  <titulo>U.R. SUBASTAS CASTILLA-MANCHA</titulo>
+                  <urlPdf szBytes="163142" szKBytes="159" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52126.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52126</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52126</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE FOMENTO" etq="3210">
+                <item id="BOE-B-2019-52127">
+                  <titulo>Anuncio de la Demarcación de Carreteras del Estado en Castilla-La Mancha sobre Resolución del Ministerio de Fomento por la que se aprueba el expediente de Información Pública y aprobación definitiva del Proyecto de Trazado: " Adecuación de la intersección de la N-502, en el p.k. 92+700 con la carretera TO-1291 a Parrillas y Navalcan ". Provincia de Toledo. Clave: 33-TO-4440.</titulo>
+                  <urlPdf szBytes="176359" szKBytes="172" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52127.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52127</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52127</urlXml>
+                </item>
+                <item id="BOE-B-2019-52128">
+                  <titulo>Anuncio de la Demarcación de Carreteras del Estado en Extremadura por la que se aprueba provisionalmente el documento para Información Pública del Proyecto "Acondicionamiento. Reordenación y mejora en accesos N-432, de Badajoz a Granada. Tramo: Acceso Sur a Badajoz. PP.KK. 1+500 al 10+500. Provincia de Badajoz". Clave: 33-BA-3600.</titulo>
+                  <urlPdf szBytes="220999" szKBytes="216" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52128.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52128</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52128</urlXml>
+                </item>
+                <item id="BOE-B-2019-52129">
+                  <titulo>Anuncio de la Demarcación de Carreteras del Estado en Extremadura por el que se publica la Información pública previa a la declaración de urgente ocupación de los bienes y derechos afectados por la ejecución del proyecto de construcción: "Variante de Zafra". Provincia de Badajoz. Clave 23-BA-4110.</titulo>
+                  <urlPdf szBytes="382055" szKBytes="373" numPag="4">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52129.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52129</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52129</urlXml>
+                </item>
+                <item id="BOE-B-2019-52130">
+                  <titulo>Resolución de la Autoridad Portuaria de la Bahía de Algeciras por la que se anuncia otorgamiento de licencia para la prestación de servicio portuario otorgado por su Consejo de Administración.</titulo>
+                  <urlPdf szBytes="168801" szKBytes="165" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52130.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52130</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52130</urlXml>
+                </item>
+                <item id="BOE-B-2019-52131">
+                  <titulo>Anuncio de la Demarcación de Carreteras del Estado en Castilla-La Mancha sobre Resolución del Ministerio de Fomento por la que se aprueba el expediente de Información Pública y aprobación definitiva del Proyecto de Trazado: "Acondicionamiento de las intersecciones de la N-502, en los pp.kk. 104,75 y 105,50 mediante la construcción de un enlace en el p.k. 105,170. Carretera N-502, de Ávila a Córdoba". Provincia de Toledo. Clave: 33-TO-4210".</titulo>
+                  <urlPdf szBytes="181178" szKBytes="177" numPag="2">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52131.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52131</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52131</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO PARA LA TRANSICIÓN ECOLÓGICA" etq="9566">
+                <item id="BOE-B-2019-52132">
+                  <titulo>Anuncio de la Confederación Hidrográfica del Guadalquivir de acuerdo con la anulación de oficio del procedimiento en régimen de concurrencia para el otorgamiento de Concesión demanial de aprovechamiento de olivar de 22,1263 ha, parajes de Cesna, La Laguna y Arroyo el Tejar, en el polígono 9, parcelas 261, 266, 267, 268, 269, 270, 274, 287, 293, 9009 y 9018 del t.m. de Algarinejo, Granada, embalse de Iznájar. (EXPEDIENTE SAP-2019-AYC-141).</titulo>
+                  <urlPdf szBytes="174019" szKBytes="170" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52132.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52132</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52132</urlXml>
+                </item>
+                <item id="BOE-B-2019-52133">
+                  <titulo>Anuncio de la Confederación Hidrográfica del Guadiana relativo a la información pública de las obras comprendidas en el anteproyecto de saneamiento y depuración en Villafranca de los Barros (Badajoz). Clave 04.306.0591/2101.</titulo>
+                  <urlPdf szBytes="371552" szKBytes="363" numPag="6">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52133.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52133</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52133</urlXml>
+                </item>
+                <item id="BOE-B-2019-52134">
+                  <titulo>Anuncio de la Confederación Hidrográfica del Guadiana relativo a la información pública de las obras comprendidas en el anteproyecto de saneamiento y depuración en Medina de Las Torres, Torre de Miguel Sesmero, La Morera y La Parra. Entorno del Guadajira (Badajoz). Clave: 04.306-0605/2101.</titulo>
+                  <urlPdf szBytes="615099" szKBytes="601" numPag="8">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52134.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52134</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52134</urlXml>
+                </item>
+                <item id="BOE-B-2019-52135">
+                  <titulo>Anuncio de la Demarcación de Costas de Galicia de Información Pública sobre solicitud de autorización al Ayuntamiento de Muros para actuaciones de mejora de la accesibilidad a las playas de A Vouga y Bornalle, t. m de Muros (A Coruña).</titulo>
+                  <urlPdf szBytes="170390" szKBytes="166" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52135.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52135</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52135</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="COMUNIDAD DE MADRID" etq="8131">
+                <item id="BOE-B-2019-52136">
+                  <titulo>SUBDIRECCIÓN GENERAL DE RECAUDACIÓN. DIRECCIÓN GENERAL DE TRIBUTOS</titulo>
+                  <urlPdf szBytes="162262" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52136.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52136</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52136</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="UNIVERSIDADES" etq="310">
+                <item id="BOE-B-2019-52137">
+                  <titulo>Anuncio de la Facultad de Biología de la Universidad de Murcia sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="166489" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52137.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52137</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52137</urlXml>
+                </item>
+                <item id="BOE-B-2019-52138">
+                  <titulo>Anuncio de la Escuela Técnica Superior de Ingeniería y Diseño Industrial de la Universidad Politécnica de Madrid sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="167911" szKBytes="164" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52138.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52138</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52138</urlXml>
+                </item>
+                <item id="BOE-B-2019-52139">
+                  <titulo>Anuncio de la Facultad de Medicina y Ciencias de la Salud de la Universidad Católica de Valencia San Vicente Mártir sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="165648" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52139.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52139</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52139</urlXml>
+                </item>
+                <item id="BOE-B-2019-52140">
+                  <titulo>Anuncio de la Facultad de Psicología de la Universidad de Sevilla sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="164045" szKBytes="160" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52140.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52140</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52140</urlXml>
+                </item>
+                <item id="BOE-B-2019-52141">
+                  <titulo>Anuncio de la Facultad de Biología de la Universidad de Barcelona sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="164529" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52141.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52141</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52141</urlXml>
+                </item>
+                <item id="BOE-B-2019-52142">
+                  <titulo>Anuncio de la Secretaría General de la Universidad de Málaga sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="166248" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52142.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52142</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52142</urlXml>
+                </item>
+                <item id="BOE-B-2019-52143">
+                  <titulo>Anuncio de la Facultad de Enfermería, Fsisioterapia y Podología de la Universidad Complutense de Madrid sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="166810" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52143.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52143</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52143</urlXml>
+                </item>
+                <item id="BOE-B-2019-52144">
+                  <titulo>Anuncio de la Sección de Títulos de la Universidad de Alcalá sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="165581" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52144.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52144</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52144</urlXml>
+                </item>
+                <item id="BOE-B-2019-52145">
+                  <titulo>Anuncio de la Facultad de Medicina de la Universitat Autònoma de Barcelona sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="165351" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52145.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52145</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52145</urlXml>
+                </item>
+                <item id="BOE-B-2019-52146">
+                  <titulo>Anuncio de la Facultad de Ciencias de la Universidad de La Laguna sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="164817" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52146.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52146</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52146</urlXml>
+                </item>
+                <item id="BOE-B-2019-52147">
+                  <titulo>Anuncio de la Facultad de Trabajo Social de la Universidad de Granada sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="166078" szKBytes="162" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52147.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52147</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52147</urlXml>
+                </item>
+                <item id="BOE-B-2019-52148">
+                  <titulo>Anuncio de la Facultad de Humanidades de la Universidad de La Laguna sobre extravío de título universitario.</titulo>
+                  <urlPdf szBytes="164623" szKBytes="161" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52148.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52148</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52148</urlXml>
+                </item>
+              </departamento>
+            </seccion>
+            <seccion num="5C" nombre="V. Anuncios. - C. Anuncios particulares">
+              <departamento nombre="ANUNCIOS PARTICULARES" etq="9202">
+                <item id="BOE-B-2019-52149">
+                  <titulo>FUNDACIÓN BANCARIA "LA CAIXA".</titulo>
+                  <urlPdf szBytes="166565" szKBytes="163" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52149.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52149</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52149</urlXml>
+                </item>
+                <item id="BOE-B-2019-52150">
+                  <titulo>NOTARÍA DE JUAN MANUEL PALACIOS GIL DE ANTUÑANO</titulo>
+                  <urlPdf szBytes="161704" szKBytes="158" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52150.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52150</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52150</urlXml>
+                </item>
+                <item id="BOE-B-2019-52151">
+                  <titulo>NOTARÍA DE MARÍA MERCEDES MARTÍNEZ PARRA</titulo>
+                  <urlPdf szBytes="160677" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52151.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52151</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52151</urlXml>
+                </item>
+                <item id="BOE-B-2019-52152">
+                  <titulo>NOTARÍA DE VICTOR JOSÉ PEÓN RAMA</titulo>
+                  <urlPdf szBytes="160867" szKBytes="157" numPag="1">/boe/dias/2019/12/02/pdfs/BOE-B-2019-52152.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2019-52152</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2019-52152</urlXml>
+                </item>
+              </departamento>
+            </seccion>
+          </diario>
+        </sumario>
+  recorded_at: 2021-02-21 11:43:42 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

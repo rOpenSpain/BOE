@@ -1,0 +1,366 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-S-2017-5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Sun, 21 Feb 2021 11:43:43 GMT
+      server: Apache
+      x-frame-options: SAMEORIGIN
+      x-robots-tag: noindex
+      content-security-policy: 'default-src ''none''; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' ; connect-src ''self'' ; img-src ''self'' eur-lex.europa.eu
+        data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ; font-src ''self''
+        ; child-src ''self''  www.youtube.com afirma: ; object-src ''self'' ; media-src
+        ''self'''
+      content-type: application/xml; charset=utf-8
+      x-varnish: '62180508'
+      age: '0'
+      via: 1.1 varnish-v4
+      content-length: '26481'
+      accept-ranges: bytes
+    body:
+      encoding: UTF-8
+      file: no
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <sumario>
+          <meta>
+            <pub>BOE</pub>
+            <anno>2017</anno>
+            <fecha>06/01/2017</fecha>
+            <fechaInv>2017/01/06</fechaInv>
+            <fechaAnt>05/01/2017</fechaAnt>
+            <fechaAntAnt>04/01/2017</fechaAntAnt>
+            <fechaSig>07/01/2017</fechaSig>
+            <fechaPub>viernes 6 de enero de 2017</fechaPub>
+            <pubDate>Fri, 06 Jan 2017 00:00:00 +0100</pubDate>
+          </meta>
+          <diario nbo="5">
+            <sumario_nbo id="BOE-S-2017-5">
+              <urlPdf szBytes="224297" szKBytes="219">/boe/dias/2017/01/06/pdfs/BOE-S-2017-5.pdf</urlPdf>
+            </sumario_nbo>
+            <seccion num="1" nombre="I. Disposiciones generales">
+              <departamento nombre="MINISTERIO DE HACIENDA Y FUNCIÓN PÚBLICA" etq="9279">
+                <epigrafe nombre="Tabaco. Precios">
+                  <item id="BOE-A-2017-202" control="2017/130">
+                    <titulo>Resolución de 5 de enero de 2017, de la Presidencia del Comisionado para el Mercado de Tabacos, por la que se publican los precios de venta al público de determinadas labores de tabaco en Expendedurías de Tabaco y Timbre de la Península e Illes Balears.</titulo>
+                    <urlPdf szBytes="199212" szKBytes="195" numPag="3">/boe/dias/2017/01/06/pdfs/BOE-A-2017-202.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-202</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-202</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="2A" nombre="II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias">
+              <departamento nombre="MINISTERIO DE JUSTICIA" etq="4810">
+                <epigrafe nombre="Reingresos">
+                  <item id="BOE-A-2017-203" control="2017/111">
+                    <titulo>Orden JUS/2009/2016, de 23 de diciembre, por la que se reingresa al servicio activo en la Carrera Fiscal a doña Montserrat Palma Carazo.</titulo>
+                    <urlPdf szBytes="152455" szKBytes="149" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-A-2017-203.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-203</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-203</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="2B" nombre="II. Autoridades y personal. - B. Oposiciones y concursos">
+              <departamento nombre="UNIVERSIDADES" etq="310">
+                <epigrafe nombre="Cuerpos docentes universitarios">
+                  <item id="BOE-A-2017-204" control="2017/79">
+                    <titulo>Resolución de 22 de diciembre de 2016, de la Universidad de Barcelona, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.</titulo>
+                    <urlPdf szBytes="241950" szKBytes="236" numPag="11">/boe/dias/2017/01/06/pdfs/BOE-A-2017-204.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-204</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-204</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="3" nombre="III. Otras disposiciones">
+              <departamento nombre="BANCO DE ESPAÑA" etq="1020">
+                <epigrafe nombre="Entidades de crédito">
+                  <item id="BOE-A-2017-205" control="2017/41">
+                    <titulo>Resolución de 23 de diciembre de 2016, del Banco de España, por la que se publica la baja en el Registro de Entidades de Crédito de Caja Rural de La Carlota, Sdad. Coop. Andaluza Cto. Ltda.</titulo>
+                    <urlPdf szBytes="148363" szKBytes="145" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-A-2017-205.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-205</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-205</urlXml>
+                  </item>
+                </epigrafe>
+                <epigrafe nombre="Mercado de divisas">
+                  <item id="BOE-A-2017-206" control="2017/133">
+                    <titulo>Resolución de 5 de enero de 2017, del Banco de España, por la que se publican los cambios del euro correspondientes al día 5 de enero de 2017, publicados por el Banco Central Europeo, que tendrán la consideración de cambios oficiales, de acuerdo con lo dispuesto en el artículo 36 de la Ley 46/1998, de 17 de diciembre, sobre la Introducción del Euro.</titulo>
+                    <urlPdf szBytes="184488" szKBytes="180" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-A-2017-206.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-206</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-206</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+              <departamento nombre="COMUNIDAD AUTÓNOMA DE CATALUÑA" etq="8070">
+                <epigrafe nombre="Entidades de inspección y control">
+                  <item id="BOE-A-2017-207" control="2016/18598">
+                    <titulo>Resolución de 19 de octubre de 2016, de la Dirección General de Energía, Minas y Seguridad Industrial del Departamento de Empresa y Conocimiento, por la que se designa a Laboratorio de Ensayos Metrológicos, SL, como organismo notificado de instrumentos de pesaje de funcionamiento automático, en los módulos de evaluación de la conformidad F y F1.</titulo>
+                    <urlPdf szBytes="167056" szKBytes="163" numPag="3">/boe/dias/2017/01/06/pdfs/BOE-A-2017-207.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-207</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-207</urlXml>
+                  </item>
+                  <item id="BOE-A-2017-208" control="2016/18599">
+                    <titulo>Resolución de 19 de octubre de 2016, de la Dirección General de Energía, Minas y Seguridad Industrial del Departamento de Empresa y Conocimiento, por la que se designa a Laboratorio de Ensayos Metrológicos, SL, como organismo notificado de instrumentos de pesaje de funcionamiento no automático, en los módulos de evaluación de la conformidad F, F1 y G.</titulo>
+                    <urlPdf szBytes="167611" szKBytes="164" numPag="3">/boe/dias/2017/01/06/pdfs/BOE-A-2017-208.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-208</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-208</urlXml>
+                  </item>
+                  <item id="BOE-A-2017-209" control="2016/18600">
+                    <titulo>Resolución de 29 de noviembre de 2016, de la Dirección General de Energía, Minas y Seguridad Industrial del Departamento de Empresa y Conocimiento, por la que se designa a Lgai Technological Center, SA, como organismo autorizado de verificación metrológica de instrumentos de medida sometidos al control metrológico del Estado.</titulo>
+                    <urlPdf szBytes="198015" szKBytes="193" numPag="4">/boe/dias/2017/01/06/pdfs/BOE-A-2017-209.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-209</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-209</urlXml>
+                  </item>
+                  <item id="BOE-A-2017-210" control="2016/18601">
+                    <titulo>Resolución de 29 de noviembre de 2016, de la Dirección General de Energía, Minas y Seguridad Industrial del Departamento de Empresa y Conocimiento, por la que se designa a Laboratorio de Ensayos Metrológicos, SL, como organismo autorizado de verificación metrológica de instrumentos de medida sometidos al control metrológico del Estado.</titulo>
+                    <urlPdf szBytes="192170" szKBytes="188" numPag="3">/boe/dias/2017/01/06/pdfs/BOE-A-2017-210.pdf</urlPdf>
+                    <urlHtm>/diario_boe/txt.php?id=BOE-A-2017-210</urlHtm>
+                    <urlXml>/diario_boe/xml.php?id=BOE-A-2017-210</urlXml>
+                  </item>
+                </epigrafe>
+              </departamento>
+            </seccion>
+            <seccion num="4" nombre="IV. Administración de Justicia">
+              <departamento nombre="JUZGADOS DE PRIMERA INSTANCIA E INSTRUCCIÓN" etq="9546">
+                <item id="BOE-B-2017-709">
+                  <titulo>A ESTRADA</titulo>
+                  <urlPdf szBytes="164209" szKBytes="160" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-709.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-709</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-709</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="JUZGADOS DE LO MERCANTIL" etq="9547">
+                <item id="BOE-B-2017-710">
+                  <titulo>BURGOS</titulo>
+                  <urlPdf szBytes="165636" szKBytes="162" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-710.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-710</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-710</urlXml>
+                </item>
+                <item id="BOE-B-2017-711">
+                  <titulo>MADRID</titulo>
+                  <urlPdf szBytes="163530" szKBytes="160" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-711.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-711</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-711</urlXml>
+                </item>
+              </departamento>
+            </seccion>
+            <seccion num="5A" nombre="V. Anuncios. - A. Contratación del Sector Público">
+              <departamento nombre="MINISTERIO DE JUSTICIA" etq="4810">
+                <item id="BOE-B-2017-712">
+                  <titulo>Anuncio de licitación de: Junta de Contratación del Ministerio de Justicia. Objeto: Limpieza en edificios administrativos y sedes judiciales adscritos a las Gerencias Territoriales del Ministerio de Justicia. Expediente: ASE/2016/141.</titulo>
+                  <urlPdf szBytes="182415" szKBytes="178" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-712.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-712</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-712</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE DEFENSA" etq="6110">
+                <item id="BOE-B-2017-713">
+                  <titulo>Anuncio de formalización de contratos de: Jefatura de Administración Económica del Estado Mayor de la Defensa. Objeto: Mantenimiento del Sistema MSCOP, perteneciente al Sistema Santiago. Expediente: 10013160601.</titulo>
+                  <urlPdf szBytes="173918" szKBytes="170" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-713.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-713</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-713</urlXml>
+                </item>
+                <item id="BOE-B-2017-714">
+                  <titulo>Resolucion de la Mesa de Contratacion del Ejercito de Tierra por la que se anuncia licitacion para la contratacion publica de :Apoyo al mantenimiento familia IVECO/PEGASO del E.T.</titulo>
+                  <urlPdf szBytes="182324" szKBytes="178" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-714.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-714</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-714</urlXml>
+                </item>
+                <item id="BOE-B-2017-715">
+                  <titulo>Anuncio de formalización de contratos de: Jefatura de Administración Económica del Estado Mayor de la Defensa. Objeto: Mantenimiento de forma unificada (CUM) de los centros del sistema de integración global Siglo, perteneciente al Sistema Conjunto Santiago. Expediente: 10013160596.</titulo>
+                  <urlPdf szBytes="175035" szKBytes="171" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-715.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-715</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-715</urlXml>
+                </item>
+                <item id="BOE-B-2017-716">
+                  <titulo>Resolución de la Dirección de Adquisiciones del Mando de Apoyo Logístico del Ejército del Aire, por la que se convoca licitación para la obra "Urbanización para la instalación JFAC temporal en la Base Aérea de Torrejón".</titulo>
+                  <urlPdf szBytes="175617" szKBytes="172" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-716.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-716</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-716</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE HACIENDA Y ADMINISTRACIONES PÚBLICAS" etq="9216">
+                <item id="BOE-B-2017-717">
+                  <titulo>Anuncio de formalización de contratos de: Delegación del Gobierno en la Comunidad Valenciana. Objeto: Servicio de limpieza de la Sede de la Delegación del Gobierno y edificios dependientes de la Delegación del Gobierno en la Comunidad Valenciana. Expediente: DGCV12017.</titulo>
+                  <urlPdf szBytes="174109" szKBytes="170" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-717.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-717</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-717</urlXml>
+                </item>
+                <item id="BOE-B-2017-718">
+                  <titulo>Anuncio de formalización de contratos de: Delegación Especial de la Agencia Tributaria en Galicia. Objeto: Limpieza edificios Delegación y Administraciones AEAT en Ourense. Expediente: 16320106700.</titulo>
+                  <urlPdf szBytes="174674" szKBytes="171" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-718.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-718</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-718</urlXml>
+                </item>
+                <item id="BOE-B-2017-719">
+                  <titulo>Anuncio de formalización de contratos de: Dirección del Servicio de Gestión Económica de la Agencia Estatal de la Administración Tributaria. Objeto: Servicio de soporte y mantenimiento del SGI - ALCATRAZ. Expediente: 16710121200.</titulo>
+                  <urlPdf szBytes="175573" szKBytes="171" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-719.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-719</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-719</urlXml>
+                </item>
+                <item id="BOE-B-2017-720">
+                  <titulo>Anuncio de formalización de contratos de: Dirección del Servicio de Gestión Económica de la Agencia Estatal de la Administración Tributaria. Objeto: Servicio de soporte y mantenimiento del SGI - ALCATRAZ. Expediente: 16710121200.</titulo>
+                  <urlPdf szBytes="175489" szKBytes="171" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-720.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-720</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-720</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="MINISTERIO DE AGRICULTURA Y PESCA, ALIMENTACIÓN Y MEDIO AMBIENTE" etq="9280">
+                <item id="BOE-B-2017-721">
+                  <titulo>Corrección de errores de la Resolución del Fondo Español de Garantía Agraria por la que se convoca Subasta Pública para la enajenación de Unidades de Almacenamiento (Silos) de su propiedad en Valladolid.</titulo>
+                  <urlPdf szBytes="171048" szKBytes="167" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-721.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-721</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-721</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="COMUNITAT VALENCIANA" etq="8162">
+                <item id="BOE-B-2017-722">
+                  <titulo>Anuncio de licitación de: Dirección General de Recursos Humanos y Económicos de la Consellería de Sanidad y Salud Pública . Objeto: servicios de evolución tecnológica y funcional así como los servicios de soporte técnico asociados del sistema de información ALUMBRA. Expediente: 7/2017.</titulo>
+                  <urlPdf szBytes="185462" szKBytes="181" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-722.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-722</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-722</urlXml>
+                </item>
+                <item id="BOE-B-2017-723">
+                  <titulo>Anuncio de la Dirección General de Recursos Humanos y Económicos de la Conselleria de Sanidad y Salud Pública por la que se convoca licitación pública para los servicios de evolución técnica, funcional y soporte de los sistemas de información Concerts y Capro.</titulo>
+                  <urlPdf szBytes="179630" szKBytes="175" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-723.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-723</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-723</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="COMUNIDAD AUTÓNOMA DE CASTILLA-LA MANCHA" etq="8060">
+                <item id="BOE-B-2017-724">
+                  <titulo>Anuncio de formalización de contratos de: Gerencia de Atención Integrada de Cuenca. Objeto: Servicio de Asistencia Técnica Integral de Centros de Salud y Consultorios dependientes de la Gerencia de Atención Integrada de Cuenca (61033000CU16SER00002). Expediente: 2016/001070.</titulo>
+                  <urlPdf szBytes="175267" szKBytes="171" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-724.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-724</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-724</urlXml>
+                </item>
+                <item id="BOE-B-2017-725">
+                  <titulo>Anuncio de formalización de contratos de: Consejería de Fomento de la Junta de Comunidades de Castilla-La Mancha. Objeto: Desarrollo de nuevas funcionalidades y mantenimiento evolutivo de la plataforma de gestion de la Formacion Profesional para el Empleo (FOCO) de la Consejeria de Economia, Empresas y Empleo (1702TO16SER00033). Expediente: 2016/001489.</titulo>
+                  <urlPdf szBytes="177667" szKBytes="174" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-725.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-725</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-725</urlXml>
+                </item>
+                <item id="BOE-B-2017-726">
+                  <titulo>Anuncio de formalización de contratos de: Consejería de Fomento de la Junta de Comunidades de Castilla-La Mancha. Objeto: CR-CR-16-294 Contrato de servicios para la prestacion de medios de apoyo a las operaciones de conservacion de carreteras con medios propios en la provincia de Ciudad Real (1701TO16SER00003). Expediente: 2016/002000.</titulo>
+                  <urlPdf szBytes="176650" szKBytes="173" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-726.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-726</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-726</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="COMUNIDAD DE MADRID" etq="8131">
+                <item id="BOE-B-2017-727">
+                  <titulo>Anuncio de la Dirección Gerencia del Hospital Universitario "La Paz", por la que se hace pública la formalización del contrato de suministro de implantes auditivos.</titulo>
+                  <urlPdf szBytes="173412" szKBytes="169" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-727.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-727</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-727</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="COMUNIDAD DE CASTILLA Y LEÓN" etq="9531">
+                <item id="BOE-B-2017-728">
+                  <titulo>Resolución de la Gerencia del Complejo Asistencial Universitario de Salamanca, por la que se anuncia licitación para la contratación del servicio de gestión y custodia del archivo central externo de historias clínicas (activo y pasivo) del Complejo Asistencial Universitario de Salamanca.</titulo>
+                  <urlPdf szBytes="185367" szKBytes="181" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-728.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-728</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-728</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="ADMINISTRACIÓN LOCAL" etq="9525">
+                <item id="BOE-B-2017-729">
+                  <titulo>Anuncio de la Resolución del Ayuntamiento de Madrid, por la que se hace pública la formalización del contrato de servicios denominado "Seguro por riesgos de responsabilidad civil/patrimonial, seguro de transporte terrestre de la custodia de plata y seguro de daños en los bienes del Ayuntamiento de Madrid".</titulo>
+                  <urlPdf szBytes="179705" szKBytes="175" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-729.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-729</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-729</urlXml>
+                </item>
+                <item id="BOE-B-2017-730">
+                  <titulo>Anuncio de licitación de: Pleno del Ayuntamiento de Tuineje. Objeto: Asistencia Técnica y Colaboración con el Ayuntamiento de Tuineje en la Gestión, Liquidación, Inspección,Notificación y Recaudación de tributos y otros ingresos municipales. Expediente: 2016/000996.</titulo>
+                  <urlPdf szBytes="183294" szKBytes="179" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-730.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-730</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-730</urlXml>
+                </item>
+                <item id="BOE-B-2017-731">
+                  <titulo>Anuncio de licitación de: Junta General de la Mancomunidad Lea Artibai. Objeto: Contratación de los servicios de pre-recogida, recogida y transporte de los residuos urbanos generados en los municipios miembros de la Mancomunidad Lea Artibai. Expediente: RU-2017/01.</titulo>
+                  <urlPdf szBytes="181858" szKBytes="178" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-731.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-731</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-731</urlXml>
+                </item>
+                <item id="BOE-B-2017-732">
+                  <titulo>Anuncio de formalización de contratos de: Pleno del Ayuntamiento de Peñíscola. Objeto: Contrato de Gestión del servicio público de recogida y transporte de residuos sólidos urbanos y selectiva. Expediente: 35/2015.</titulo>
+                  <urlPdf szBytes="174904" szKBytes="171" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-732.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-732</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-732</urlXml>
+                </item>
+                <item id="BOE-B-2017-733">
+                  <titulo>Anuncio del Ayuntamiento de Marbella, por el que se convoca la licitación del "Servicio para el desarrollo e impartición de los cursos, talleres y actividades de ocio de los centros de participación activa para personas mayores del Excmo. Ayuntamiento de Marbella ejercicios 2017-2020".</titulo>
+                  <urlPdf szBytes="182131" szKBytes="178" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-733.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-733</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-733</urlXml>
+                </item>
+                <item id="BOE-B-2017-734">
+                  <titulo>Anuncio de la Comarca del Bajo Martín por la que se licita el contrato de servicios de operación y mantenimiento de la Estación de Tratamiento de Agua Potable.</titulo>
+                  <urlPdf szBytes="181277" szKBytes="177" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-734.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-734</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-734</urlXml>
+                </item>
+                <item id="BOE-B-2017-735">
+                  <titulo>Anuncio del Ayuntamiento de Basauri de formalización de contrato de suministro de energía eléctrica, en baja tensión y alta tensión para las instalaciones cuyo titular es el Ayuntamiento de Basauri y/o Sociedades Públicas o Fundaciones vinculadas al mismo.</titulo>
+                  <urlPdf szBytes="172515" szKBytes="168" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-735.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-735</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-735</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="UNIVERSIDADES" etq="310">
+                <item id="BOE-B-2017-736">
+                  <titulo>Anuncio de formalización de contratos de: Rectorado de la Universidad de Valladolid. Objeto: Servicio de limpieza de los centros de la Universidad de Valladolid ubicados en Palencia, Segovia, Soria y Valladolid. Expediente: 2016/S00117.</titulo>
+                  <urlPdf szBytes="173481" szKBytes="169" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-736.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-736</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-736</urlXml>
+                </item>
+                <item id="BOE-B-2017-737">
+                  <titulo>Anuncio de formalización de contratos de: Rectorado de la Universidad de Valladolid. Objeto: Servicio de limpieza de los centros de la Universidad de Valladolid ubicados en Palencia, Segovia, Soria y Valladolid. Expediente: 2016/S00117.</titulo>
+                  <urlPdf szBytes="173380" szKBytes="169" numPag="1">/boe/dias/2017/01/06/pdfs/BOE-B-2017-737.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-737</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-737</urlXml>
+                </item>
+              </departamento>
+              <departamento nombre="OTROS PODERES ADJUDICADORES" etq="9207">
+                <item id="BOE-B-2017-738">
+                  <titulo>Anuncio de licitación de la Empresa Municipal de Transportes de Madrid, S.A., para el "Servicio de limpieza de edificios y dependencias de la Empresa Municipal de Transportes de Madrid, S.A.</titulo>
+                  <urlPdf szBytes="184121" szKBytes="180" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-738.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-738</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-738</urlXml>
+                </item>
+                <item id="BOE-B-2017-739">
+                  <titulo>Resolución de Aena, S.A., por la que se convoca licitación para la "Integración tecnológica digital en Aena" (Expediente DTC 671/2016).</titulo>
+                  <urlPdf szBytes="176875" szKBytes="173" numPag="2">/boe/dias/2017/01/06/pdfs/BOE-B-2017-739.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-739</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-739</urlXml>
+                </item>
+              </departamento>
+            </seccion>
+            <seccion num="5B" nombre="V. Anuncios. - B. Otros anuncios oficiales">
+              <departamento nombre="ADMINISTRACIÓN LOCAL" etq="9525">
+                <item id="BOE-B-2017-740">
+                  <titulo>Edicto del Ayuntamiento de Llagostera de citación para extender las actas previas a la ocupación de fincas.</titulo>
+                  <urlPdf szBytes="194388" szKBytes="190" numPag="4">/boe/dias/2017/01/06/pdfs/BOE-B-2017-740.pdf</urlPdf>
+                  <urlHtm>/diario_boe/txt.php?id=BOE-B-2017-740</urlHtm>
+                  <urlXml>/diario_boe/xml.php?id=BOE-B-2017-740</urlXml>
+                </item>
+              </departamento>
+            </seccion>
+          </diario>
+        </sumario>
+  recorded_at: 2021-02-21 11:43:43 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

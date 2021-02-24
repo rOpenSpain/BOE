@@ -103,6 +103,7 @@ query_pdf <- function(year, month, day, code) {
 #' @importFrom httr user_agent
 #' @importFrom httr status_code
 #' @importFrom httr http_type
+#' @importFrom httr stop_for_status
 #' @export
 #' @examples
 #' id <- sumario_nbo(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
@@ -111,6 +112,7 @@ query_pdf <- function(year, month, day, code) {
 get_xml <- function(query) {
     user_agent <- user_agent("https://github.com/llrs/BOE")
     response <- GET(query, user_agent)
+    httr::stop_for_status(response)
     if (status_code(response) != 200) {
         stop("Could not retrieve the data.", call. = FALSE)
     }

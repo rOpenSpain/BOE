@@ -17,6 +17,11 @@ This function opens urls in your browser.
 }
 \examples{
 \donttest{
-sumario <- retrieve_sumario(Sys.Date())
+today <- Sys.Date()
+# On Sunday there is not BOE
+if (weekdays(today) == "Sunday") {
+    today <- today - 1
+}
+sumario <- retrieve_sumario(today)
 url_publications(sumario[1:10, ])}
 }

@@ -14,6 +14,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+Sys.setlocale(locale = "C")
 ```
 
 # Introduction
@@ -45,6 +46,11 @@ The easiest way to get a *sumario* is using `retrieve_sumario()`:
 ```{r sumario}
 library("BOE")
 today <- Sys.Date()
+# On Sunday there is not BOE unless there is an extraodinary publication
+if (weekdays(today) == "Sunday") {
+    today <- today - 1
+}
+
 sumario_hoy <- retrieve_sumario(today)
 head(sumario_hoy)
 ```

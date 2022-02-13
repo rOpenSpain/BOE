@@ -85,8 +85,13 @@ url_publications <- function(sumario) {
 #' @export
 #' @importFrom utils browseURL
 #' @examples
-#' \donttest{
-#' sumario <- retrieve_sumario(Sys.Date())
+#' \dontrun{
+#' today <- Sys.Date()
+#' # On Sunday there is not BOE
+#' if (weekdays(today) == "Sunday") {
+#'     today <- today - 1
+#' }
+#' sumario <- retrieve_sumario(today)
 #' url_publications(sumario[1:10, ])}
 open_publications <- function(sumario) {
     urls <- url_publications(sumario)

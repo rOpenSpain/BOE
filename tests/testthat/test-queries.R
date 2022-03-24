@@ -27,3 +27,11 @@ test_that("get_xml works" , {
     })
     expect_s3_class(xml, "xml_document")
 })
+
+test_that("query_consolidada works", {
+    skip_if_offline()
+    cve <- disposicion_cve("2017", "117")
+    q <- query_consolidada(cve)
+    expect_true(endsWith(q, cve))
+    expect_true(startsWith(q, "https://boe.es/buscar/act.php?id="))
+})

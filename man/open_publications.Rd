@@ -16,7 +16,7 @@ A tab should open on your default browser with the pdf of the publications.
 This function opens urls in your browser.
 }
 \examples{
-\donttest{
+\dontrun{
 today <- Sys.Date()
 # On Sunday there is not BOE
 if (weekdays(today) == "Sunday") {

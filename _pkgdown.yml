@@ -1,8 +1,14 @@
-destination: docs
+url: 'https://ropenspain.github.io/boe'
+
 template:
   package: rostemplate
   bootstrap: 5
   opengraph:
     twitter:
+      site: '@rOpenSpain'
       creator: "@Lluis_Revilla"
       card: summary_large_image
+
+authors:
+  Lluís Revilla Sancho:
+    href: https://llrs.dev

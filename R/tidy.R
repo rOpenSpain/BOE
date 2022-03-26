@@ -133,6 +133,10 @@ tidy_metadatos <- function(meta) {
 
     text[["fecha_publicacion"]] <- as.Date(text[["fecha_publicacion"]],
                                            "%Y%m%d")
+    if (!is.null(text[["fecha_disposicion"]])) {
+        text[["fecha_disposicion"]] <- as.Date(text[["fecha_disposicion"]],
+                                               "%Y%m%d")
+    }
     as.data.frame(text)
 }
 

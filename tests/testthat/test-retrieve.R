@@ -52,3 +52,16 @@ test_that("retrieve_docment BORME", {
     })
     expect_s3_class(sumario, "data.frame")
 })
+
+test_that("check dates", {
+    vcr::use_cassette("retreive_document_dates", {
+        rd <- retrieve_document("BOE-A-2009-100")
+    })
+    expect_s3_class(rd$fecha_disposicion, "Date")
+    expect_s3_class(rd$fecha_publicacion, "Date")
+    expect_equal(rd$fecha_vigencia, "")
+    expect_equal(rd$fecha_derogacion, "")
+    expect_s3_class(rd$fecha_actualizacion, "POSIXct")
+})
+
+

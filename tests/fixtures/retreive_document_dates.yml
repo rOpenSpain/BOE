@@ -1,0 +1,286 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-A-2009-100
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Sat, 26 Mar 2022 21:22:58 GMT
+      server: Apache
+      x-frame-options: SAMEORIGIN
+      x-robots-tag: noindex
+      access-control-allow-origin: '*'
+      link: <https://www.boe.es/buscar/xml.php?id=BOE-A-2009-100>; rel="canonical"
+      content-security-policy: 'default-src ''none''; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' ; connect-src ''self'' ; img-src ''self'' eur-lex.europa.eu
+        data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ; font-src ''self''
+        ; child-src ''self''  www.youtube.com afirma: ; object-src ''self'' ; media-src
+        ''self'''
+      content-type: application/xml; charset=utf-8
+      x-varnish: '144192969'
+      age: '0'
+      via: 1.1 varnish-v4
+      transfer-encoding: chunked
+      accept-ranges: bytes
+    body:
+      encoding: UTF-8
+      file: no
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <documento fecha_actualizacion="20181023185408">
+          <metadatos>
+            <identificador>BOE-A-2009-100</identificador>
+            <titulo>Resolución de 19 de diciembre de 2008, de la Dirección General de Personal y Centros Docentes, de la Consejería de Educación, Cultura y Deporte, por la que se da publicidad a la convocatoria de procedimiento de acceso a los Cuerpos de Catedráticos de Enseñanza Secundaria, de Artes Plásticas y Diseño y de Escuelas Oficiales de Idiomas.</titulo>
+            <diario codigo="BOE">Boletín Oficial del Estado</diario>
+            <diario_numero>3</diario_numero>
+            <seccion>2</seccion>
+            <subseccion>B</subseccion>
+            <departamento codigo="8110">Comunidad Autónoma de La Rioja</departamento>
+            <rango codigo="1370">Resolución</rango>
+            <numero_oficial/>
+            <fecha_disposicion>20081219</fecha_disposicion>
+            <fecha_publicacion>20090103</fecha_publicacion>
+            <fecha_vigencia/>
+            <fecha_derogacion/>
+            <letra_imagen>A</letra_imagen>
+            <pagina_inicial>362</pagina_inicial>
+            <pagina_final>363</pagina_final>
+            <suplemento_letra_imagen/>
+            <suplemento_pagina_inicial/>
+            <suplemento_pagina_final/>
+            <estatus_legislativo/>
+            <origen_legislativo codigo="2">Autonómico</origen_legislativo>
+            <estado_consolidacion codigo=""/>
+            <judicialmente_anulada>N</judicialmente_anulada>
+            <vigencia_agotada>N</vigencia_agotada>
+            <estatus_derogacion>N</estatus_derogacion>
+            <url_epub/>
+            <url_pdf>/boe/dias/2009/01/03/pdfs/BOE-A-2009-100.pdf</url_pdf>
+            <url_pdf_catalan/>
+            <url_pdf_euskera/>
+            <url_pdf_gallego/>
+            <url_pdf_valenciano/>
+          </metadatos>
+          <analisis>
+            <notas/>
+            <materias/>
+            <alertas/>
+            <referencias>
+              <anteriores/>
+              <posteriores/>
+            </referencias>
+          </analisis>
+          <texto>
+            <p class="parrafo">De conformidad con lo previsto en el artículo 9 del Real Decreto 276/2007, de 23 de febrero («BOE» de 2 de marzo), por el que se aprueba el Reglamento de ingreso, accesos y adquisición de nuevas especialidades en los cuerpos docentes a que se refiere la Ley Orgánica 2/2006, de 3 de mayo, de Educación, y se regula el régimen transitorio de ingreso a que se refiere la disposición transitoria decimoséptima de la citada Ley, esta Dirección General ha resuelto anunciar:</p>
+            <p class="parrafo_2">Que en el «Boletín Oficial de La Rioja», de fecha 29 de diciembre de 2008, se publica la Resolución de 19 de diciembre de 2008, del Consejero de Educación, Cultura y Deporte, por la que se convoca procedimiento de acceso a los Cuerpos de Catedráticos de Enseñanza Secundaria, de Artes Plásticas y Diseño y de Escuelas Oficiales de Idiomas.</p>
+            <p class="parrafo">Que el plazo de presentación de instancias es el comprendido entre los días 30 de diciembre de 2008 y 19 de enero de 2009, ambos inclusive.</p>
+            <p class="parrafo">Que la distribución de las plazas convocadas por turnos y especialidades es la siguiente:</p>
+            <p class="capitulo">Cuerpo de Catedráticos de Enseñanza Secundaria</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="t_cabeza_tabla">Especialidad</p>
+                </td>
+                <td>
+                  <p class="t_cabeza_tabla">Plazas</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">FILOSOFÍA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">3</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">GRIEGO</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">2</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">DIBUJO</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">INGLÉS</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">5</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">MÚSICA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">4</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">EDUCACIÓN FÍSICA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">TECNOLOGÍA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">5</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">ORIENTACIÓN EDUCATIVA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">10</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">ECONOMÍA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">HOSTELERÍA Y TURISMO</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">INFORMÁTICA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">ORGANIZACIÓN Y PROYECTOS DE. FABRICACIÓN MECÁNICA</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">PROCESOS Y DIAGNÓSTICOS CLÍNICOS Y. PRODUCTOS ORTOPROTÉSICOS</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">PROCESOS SANITARIOS</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">SISTEMAS ELECTRÓNICOS</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">SISTEMAS ELECTROTÉCNICOS Y AUTOMÁTICOS</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+            </table>
+            <p class="capitulo"/>
+            <p class="capitulo">Cuerpo de Catedráticos de Escuelas Oficiales de Idiomas</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="t_cabeza_tabla">Especialidad</p>
+                </td>
+                <td>
+                  <p class="t_cabeza_tabla">Plazas</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">FRANCÉS</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">INGLÉS</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">3</p>
+                </td>
+              </tr>
+            </table>
+            <p class="capitulo">Cuerpo de Catedráticos de Artes Plásticas y Diseño</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="t_cabeza_tabla">Especialidad</p>
+                </td>
+                <td>
+                  <p class="t_cabeza_tabla">Plazas</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">DIBUJO ARTÍSTICO Y COLOR</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">HISTORIA DEL ARTE</p>
+                </td>
+                <td>
+                  <p class="t_cuerpo_tabla_normal">1</p>
+                </td>
+              </tr>
+            </table>
+            <p class="parrafo_2">La solicitud se dirigirá al Ilmo. Sr. Consejero de Educación, Cultura y Deporte de la Comunidad Autónoma de La Rioja, conforme al modelo facilitado gratuitamente en la Dirección General de Personal y Centros Docentes, en los Servicios de Atención al Ciudadano de la Comunidad Autónoma de La Rioja y en la página web de la Consejería de Educación www.educarioja.org.</p>
+            <p class="parrafo_2">Logroño, 19 de diciembre de 2008.–El Director General de Personal y Centros Docentes, Pedro César Caceo Barrio.</p>
+          </texto>
+        </documento>
+  recorded_at: 2022-03-26 21:22:58 GMT
+  recorded_with: vcr/1.0.2, webmockr/0.8.0

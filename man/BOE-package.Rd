@@ -12,7 +12,7 @@ Queries the online site of the Boletin Oficial del Estado (BOE) for data.
 Useful links:
 \itemize{
   \item \url{https://github.com/rOpenSpain/BOE}
-  \item Report bugs at \url{https://github.com/llrs/rOpenSpain/issues}
+  \item Report bugs at \url{https://github.com/rOpenSpain/BOE/issues}
 }
 
 }

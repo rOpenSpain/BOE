@@ -53,15 +53,51 @@ test_that("retrieve_docment BORME", {
     expect_s3_class(sumario, "data.frame")
 })
 
-test_that("check dates", {
+test_that("check dates lex 1", {
     vcr::use_cassette("retreive_document_dates", {
         rd <- retrieve_document("BOE-A-2009-100")
     })
     expect_s3_class(rd$fecha_disposicion, "Date")
     expect_s3_class(rd$fecha_publicacion, "Date")
-    expect_equal(rd$fecha_vigencia, "")
-    expect_equal(rd$fecha_derogacion, "")
+    expect_s3_class(rd$fecha_vigencia, "POSIXct")
+    expect_s3_class(rd$fecha_derogacion, "POSIXct")
     expect_s3_class(rd$fecha_actualizacion, "POSIXct")
+})
+
+test_that("check dates lex 2", {
+    vcr::use_cassette("retreive_document_dates2", {
+        rd <- retrieve_document("BOE-A-2009-54")
+    })
+    expect_s3_class(rd$fecha_disposicion, "Date")
+    expect_s3_class(rd$fecha_publicacion, "Date")
+    expect_s3_class(rd$fecha_vigencia, "POSIXct")
+    expect_s3_class(rd$fecha_derogacion, "POSIXct")
+    expect_s3_class(rd$fecha_actualizacion, "POSIXct")
+})
+
+test_that("check dates ads", {
+    vcr::use_cassette("retreive_document_dates3", {
+        rd <- retrieve_document("BOE-B-2009-100")
+    })
+    expect_s3_class(rd$fecha_publicacion, "Date")
+    expect_s3_class(rd$fecha_actualizacion, "POSIXct")
+})
+
+test_that("check dates match", {
+    vcr::use_cassette("retreive_document_dates4", {
+        ad <- retrieve_document("BOE-B-2009-100")
+        lex <- retrieve_document("BOE-A-2009-100")
+    })
+    adi <- sapply(ad, is)
+    lexi <- sapply(lex, is)
+    names_i <- intersect(names(adi), names(lexi))
+    expect_equal(adi[names_i], lexi[names_i])
+
+    adf <- startsWith(names(ad), "fecha")
+    lexf <- startsWith(names(lex), "fecha")
+
+    expect_false(any(vapply(adi[adf], function(x){any(x == "character")}, logical(1L))))
+    expect_false(any(vapply(lexi[lexf], function(x){any(x == "character")}, logical(1L))))
 })
 
 

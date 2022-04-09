@@ -1,0 +1,129 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-B-2009-100
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Tue, 05 Apr 2022 21:48:19 GMT
+      server: Apache
+      x-frame-options: SAMEORIGIN
+      x-robots-tag: noindex
+      access-control-allow-origin: '*'
+      link: <https://www.boe.es/buscar/xml.php?id=BOE-B-2009-100>; rel="canonical"
+      content-security-policy: 'default-src ''none''; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' ; connect-src ''self'' ; img-src ''self'' eur-lex.europa.eu
+        data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ; font-src ''self''
+        ; child-src ''self''  www.youtube.com afirma: ; object-src ''self'' ; media-src
+        ''self'''
+      content-length: '3933'
+      content-type: application/xml; charset=utf-8
+      x-varnish: '163122351'
+      age: '0'
+      via: 1.1 varnish-v4
+      accept-ranges: bytes
+    body:
+      encoding: UTF-8
+      file: no
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <documento fecha_actualizacion="20181023185408">
+          <metadatos>
+            <identificador>BOE-B-2009-100</identificador>
+            <titulo>Resolución de la Dirección de Patrimonio y Contratación del Departamento de Hacienda y Administración Pública por la que se da publicidad a la adjudicación del contrato administrativo de servicios que tiene por objeto Diseño, instalaciones, medios humanos necesarios y las actividades de animación para participación del Gobierno Vasco en la edición 2008-2009 del Parque Infantil de Navidad - Umeen Gabonetako Parkea.</titulo>
+            <diario codigo="BOE">Boletín Oficial del Estado</diario>
+            <diario_numero>4</diario_numero>
+            <seccion>5</seccion>
+            <subseccion>A</subseccion>
+            <departamento codigo="8140">Comunidad Autónoma del País Vasco</departamento>
+            <numero_anuncio>74818</numero_anuncio>
+            <fecha_publicacion>20090105</fecha_publicacion>
+            <letra_imagen>B</letra_imagen>
+            <pagina_inicial>115</pagina_inicial>
+            <pagina_final>115</pagina_final>
+            <suplemento_letra_imagen/>
+            <suplemento_pagina_inicial/>
+            <suplemento_pagina_final/>
+            <url_pdf>/boe/dias/2009/01/05/pdfs/BOE-B-2009-100.pdf</url_pdf>
+          </metadatos>
+          <analisis>
+            <modalidad codigo=""/>
+            <tipo codigo="340">Adjudicación Concurso de Servicios</tipo>
+            <tramitacion codigo=""/>
+            <procedimiento codigo=""/>
+            <fecha_presentacion_ofertas/>
+            <fecha_apertura_ofertas/>
+            <precio codigo="">De 360.607,27 a 841.416,95 Euros</precio>
+            <importe/>
+            <ambito_geografico>País Vasco</ambito_geografico>
+            <materias>207 Cultura, deporte y ocio</materias>
+            <materias_cpv/>
+            <observaciones/>
+          </analisis>
+          <texto>
+            <dl>
+              <dt>1. Entidad adjudicadora. </dt>
+              <dd>
+                <dl>
+                  <dt>a) Organismo: </dt>
+                  <dd>Departamento de Hacienda y Administración Pública.</dd>
+                  <dt>b) Dependencia que tramita el expediente: </dt>
+                  <dd>Comisión Central de Contratación - Dirección de Patrimonio y Contratación.</dd>
+                  <dt>c) Número de expediente: </dt>
+                  <dd>C02/064/2008.</dd>
+                </dl>
+              </dd>
+              <dt>2. Objeto del contrato.</dt>
+              <dd>
+                <dl>
+                  <dt>a) Tipo de contrato: </dt>
+                  <dd>Servicios.</dd>
+                  <dt>b) Descripción del objeto: </dt>
+                  <dd>Diseño, instalaciones, medios humanos necesarios y las actividades de animación para participación del G.V. en la edición 2008-2009 del Parque Infantil de Navidad - Umeen Gabonetako Parkea.</dd>
+                  <dt>c) Lote: </dt>
+                  <dd>No se definen lotes.</dd>
+                  <dt>d) Boletín o Diario Oficial y fecha de publicación del anuncio de licitación: </dt>
+                  <dd>Boletín Oficial del País Vasco nº 194 de fecha 10 de octubre de 2008.</dd>
+                </dl>
+              </dd>
+              <dt>3. Tramitación, procedimiento y forma de adjudicación.</dt>
+              <dd>
+                <dl>
+                  <dt>a) Tramitación: </dt>
+                  <dd>Urgente.</dd>
+                  <dt>b) Procedimiento: </dt>
+                  <dd>Abierto.</dd>
+                  <dt>c) Forma: </dt>
+                  <dd>Oferta económicamente más ventajosa con pluralidad de criterios.</dd>
+                </dl>
+              </dd>
+              <dt>4. Presupuesto base de licitación o canon de explotación. Importe total (euros). </dt>
+              <dd>550.000,00 euros IVA incluido.</dd>
+              <dt>5. Adjudicación.</dt>
+              <dd>
+                <dl>
+                  <dt>a) Fecha: </dt>
+                  <dd>26 de noviembre de 2008.</dd>
+                  <dt>b) Contratista: </dt>
+                  <dd>INNEVENTO COMUNICACIÓN EN VIVO, S.A.</dd>
+                  <dt>c) Nacionalidad: </dt>
+                  <dd>Española.</dd>
+                  <dt>d) Importe de adjudicación: </dt>
+                  <dd>548.975,80 euros.</dd>
+                </dl>
+              </dd>
+            </dl>
+            <p class="parrafo">Vitoria-Gasteiz, 11 de diciembre de 2008.- El Director de Patrimonio y Contratación. Jaime Domínguez-Macaya Laurnaga.</p>
+          </texto>
+        </documento>
+  recorded_at: 2022-04-05 21:48:19 GMT
+  recorded_with: vcr/1.0.2, webmockr/0.8.0

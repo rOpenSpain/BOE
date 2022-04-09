@@ -116,6 +116,10 @@ tidy_disposicion <- function(xml) {
                                       format = "%Y%m%d%H%M%S", tz = "CET")
     metadatos <- tidy_metadatos(xml_child(xml, "metadatos"))
     metadatos$fecha_actualizacion <- fecha_actualizacion
+    metadatos$fecha_vigencia <- as.POSIXct(metadatos$fecha_vigencia,
+               format = "%Y%m%d%H%M%S", tz = "CET")
+    metadatos$fecha_derogacion <- as.POSIXct(metadatos$fecha_derogacion,
+               format = "%Y%m%d%H%M%S", tz = "CET")
     metadatos$analysis <- list(tidy_analysis(xml_child(xml, "analisis")))
     metadatos$text <- xml_text(xml_find_all(xml, "./texto"))
     metadatos$text_xml <- xml_find_all(xml, "./texto")

@@ -109,48 +109,41 @@
 
 <span class="va">sumario_hoy</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/retrieve_sumario.html">retrieve_sumario</a></span><span class="op">(</span><span class="va">today</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">)</span>
-<span class="co">#&gt;         date sumario_nbo  sumario_code section</span>
-<span class="co">#&gt; 1 2022-03-31          77 BOE-S-2022-77       1</span>
-<span class="co">#&gt; 2 2022-03-31          77 BOE-S-2022-77       1</span>
-<span class="co">#&gt; 3 2022-03-31          77 BOE-S-2022-77      2A</span>
-<span class="co">#&gt; 4 2022-03-31          77 BOE-S-2022-77      2A</span>
-<span class="co">#&gt; 5 2022-03-31          77 BOE-S-2022-77      2A</span>
-<span class="co">#&gt; 6 2022-03-31          77 BOE-S-2022-77      2A</span>
-<span class="co">#&gt;                                                              section_number</span>
-<span class="co">#&gt; 1                                                I. Disposiciones generales</span>
-<span class="co">#&gt; 2                                                I. Disposiciones generales</span>
-<span class="co">#&gt; 3 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt; 4 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt; 5 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt; 6 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt;                                                                            departament</span>
-<span class="co">#&gt; 1 MINISTERIO DE LA PRESIDENCIA, RELACIONES CON LAS CORTES Y MEMORIA DEMOCR&lt;U+00C1&gt;TICA</span>
-<span class="co">#&gt; 2   MINISTERIO PARA LA TRANSICI&lt;U+00D3&gt;N ECOL&lt;U+00D3&gt;GICA Y EL RETO DEMOGR&lt;U+00C1&gt;FICO</span>
-<span class="co">#&gt; 3                                                              TRIBUNAL CONSTITUCIONAL</span>
-<span class="co">#&gt; 4          MINISTERIO DE ASUNTOS EXTERIORES, UNI&lt;U+00D3&gt;N EUROPEA Y COOPERACI&lt;U+00D3&gt;N</span>
-<span class="co">#&gt; 5                       MINISTERIO DE INCLUSI&lt;U+00D3&gt;N, SEGURIDAD SOCIAL Y MIGRACIONES</span>
-<span class="co">#&gt; 6                       MINISTERIO DE INCLUSI&lt;U+00D3&gt;N, SEGURIDAD SOCIAL Y MIGRACIONES</span>
-<span class="co">#&gt;   departament_etq             epigraph</span>
-<span class="co">#&gt; 1            9574     Seguridad Social</span>
-<span class="co">#&gt; 2            9575 Gas natural. Precios</span>
-<span class="co">#&gt; 3            1410             Destinos</span>
-<span class="co">#&gt; 4            9562             Destinos</span>
-<span class="co">#&gt; 5            9579                Ceses</span>
-<span class="co">#&gt; 6            9579        Nombramientos</span>
-<span class="co">#&gt;                                                                                                                                                                                                                                                                        text</span>
-<span class="co">#&gt; 1 Orden PCM/244/2022, de 30 de marzo, por la que se desarrollan las normas legales de cotizaci&lt;U+00F3&gt;n a la Seguridad Social, desempleo, protecci&lt;U+00F3&gt;n por cese de actividad, Fondo de Garant&lt;U+00ED&gt;a Salarial y formaci&lt;U+00F3&gt;n profesional para el ejercicio 2022.</span>
-<span class="co">#&gt; 2                                                                           Resoluci&lt;U+00F3&gt;n de 28 de marzo de 2022, de la Direcci&lt;U+00F3&gt;n General de Pol&lt;U+00ED&gt;tica Energ&lt;U+00E9&gt;tica y Minas, por la que se publica la tarifa de &lt;U+00FA&gt;ltimo recurso de gas natural.</span>
-<span class="co">#&gt; 3                  Resoluci&lt;U+00F3&gt;n de 29 de marzo de 2022, de la Presidencia del Tribunal Constitucional, por la que se resuelve el concurso, convocado por Resoluci&lt;U+00F3&gt;n de 27 de enero de 2022, para el Cuerpo de Letrados de la Administraci&lt;U+00F3&gt;n de Justicia.</span>
-<span class="co">#&gt; 4                                                         Resoluci&lt;U+00F3&gt;n de 25 de marzo de 2022, de la Subsecretar&lt;U+00ED&gt;a, por la que se resuelve parcialmente la convocatoria de libre designaci&lt;U+00F3&gt;n, efectuada por Resoluci&lt;U+00F3&gt;n de 9 de diciembre de 2021.</span>
-<span class="co">#&gt; 5                                                         Real Decreto 230/2022, de 30 de marzo, por el que se dispone el cese de do&lt;U+00F1&gt;a Miriam Benterrak Ayensa como Directora General de Programas de Protecci&lt;U+00F3&gt;n Internacional y Atenci&lt;U+00F3&gt;n Humanitaria.</span>
-<span class="co">#&gt; 6                                                                    Real Decreto 231/2022, de 30 de marzo, por el que se nombra Directora General de Atenci&lt;U+00F3&gt;n Humanitaria e Inclusi&lt;U+00F3&gt;n Social de la Inmigraci&lt;U+00F3&gt;n a do&lt;U+00F1&gt;a Miriam Benterrak Ayensa.</span>
+<span class="co">#&gt;         date sumario_nbo  sumario_code section             section_number</span>
+<span class="co">#&gt; 1 2022-04-09          85 BOE-S-2022-85       1 I. Disposiciones generales</span>
+<span class="co">#&gt; 2 2022-04-09          85 BOE-S-2022-85       1 I. Disposiciones generales</span>
+<span class="co">#&gt; 3 2022-04-09          85 BOE-S-2022-85       1 I. Disposiciones generales</span>
+<span class="co">#&gt; 4 2022-04-09          85 BOE-S-2022-85       1 I. Disposiciones generales</span>
+<span class="co">#&gt; 5 2022-04-09          85 BOE-S-2022-85       1 I. Disposiciones generales</span>
+<span class="co">#&gt; 6 2022-04-09          85 BOE-S-2022-85       1 I. Disposiciones generales</span>
+<span class="co">#&gt;                                                               departament</span>
+<span class="co">#&gt; 1                                                     JEFATURA DEL ESTADO</span>
+<span class="co">#&gt; 2                                                        CORTES GENERALES</span>
+<span class="co">#&gt; 3                  MINISTERIO DE HACIENDA Y FUNCI&lt;U+00D3&gt;N P&lt;U+00DA&gt;BLICA</span>
+<span class="co">#&gt; 4                                                 MINISTERIO DEL INTERIOR</span>
+<span class="co">#&gt; 5           MINISTERIO DE EDUCACI&lt;U+00D3&gt;N Y FORMACI&lt;U+00D3&gt;N PROFESIONAL</span>
+<span class="co">#&gt; 6 MINISTERIO DE ASUNTOS ECON&lt;U+00D3&gt;MICOS Y TRANSFORMACI&lt;U+00D3&gt;N DIGITAL</span>
+<span class="co">#&gt;   departament_etq                                        epigraph</span>
+<span class="co">#&gt; 1            7723                  Residuos y suelos contaminados</span>
+<span class="co">#&gt; 2            1220                                Medidas urgentes</span>
+<span class="co">#&gt; 3            9279                                 Tabaco. Precios</span>
+<span class="co">#&gt; 4            7320                                       Fronteras</span>
+<span class="co">#&gt; 5            9563         Educaci&lt;U+00F3&gt;n Secundaria Obligatoria</span>
+<span class="co">#&gt; 6            9576 Moneda met&lt;U+00E1&gt;lica. Acu&lt;U+00F1&gt;aci&lt;U+00F3&gt;n</span>
+<span class="co">#&gt;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   text</span>
+<span class="co">#&gt; 1                                                                                                                                                                                                                                                                                                                                                                                                                      Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una econom&lt;U+00ED&gt;a circular.</span>
+<span class="co">#&gt; 2 Resoluci&lt;U+00F3&gt;n de 7 de abril de 2022, del Congreso de los Diputados, por la que se ordena la publicaci&lt;U+00F3&gt;n del Acuerdo de convalidaci&lt;U+00F3&gt;n del Real Decreto-ley 5/2022, de 22 de marzo, por el que se adapta el r&lt;U+00E9&gt;gimen de la relaci&lt;U+00F3&gt;n laboral de car&lt;U+00E1&gt;cter especial de las personas dedicadas a las actividades art&lt;U+00ED&gt;sticas, as&lt;U+00ED&gt; como a las actividades t&lt;U+00E9&gt;cnicas y auxiliares necesarias para su desarrollo, y se mejoran las condiciones laborales del sector.</span>
+<span class="co">#&gt; 3                                                                                                                                                                                                                                     Resoluci&lt;U+00F3&gt;n de 8 de abril de 2022, de la Presidencia del Comisionado para el Mercado de Tabacos, por la que se publican los precios de venta al p&lt;U+00FA&gt;blico de determinadas labores de tabaco en Expendedur&lt;U+00ED&gt;as de Tabaco y Timbre del &lt;U+00E1&gt;rea del Monopolio.</span>
+<span class="co">#&gt; 4                                                                  Orden INT/296/2022, de 8 de abril, por la que se modifica la Orden INT/657/2020, de 17 de julio, por la que se modifican los criterios para la aplicaci&lt;U+00F3&gt;n de una restricci&lt;U+00F3&gt;n temporal de viajes no imprescindibles desde terceros pa&lt;U+00ED&gt;ses a la Uni&lt;U+00F3&gt;n Europea y pa&lt;U+00ED&gt;ses asociados Schengen por razones de orden p&lt;U+00FA&gt;blico y salud p&lt;U+00FA&gt;blica con motivo de la crisis sanitaria ocasionada por la COVID-19.</span>
+<span class="co">#&gt; 5                                                                                                                                                                                                                                                                                                           Correcci&lt;U+00F3&gt;n de errores del Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenaci&lt;U+00F3&gt;n y las ense&lt;U+00F1&gt;anzas m&lt;U+00ED&gt;nimas de la Educaci&lt;U+00F3&gt;n Secundaria Obligatoria.</span>
+<span class="co">#&gt; 6                                                                                                                                                                                                                                                                                                              Orden ETD/297/2022, de 1 de abril, por la que se acuerda la emisi&lt;U+00F3&gt;n, acu&lt;U+00F1&gt;aci&lt;U+00F3&gt;n y puesta en circulaci&lt;U+00F3&gt;n de monedas de colecci&lt;U+00F3&gt;n "V Centenario de Antonio de Nebrija".</span>
 <span class="co">#&gt;       publication pages</span>
-<span class="co">#&gt; 1 BOE-A-2022-5063    36</span>
-<span class="co">#&gt; 2 BOE-A-2022-5064     4</span>
-<span class="co">#&gt; 3 BOE-A-2022-5065     1</span>
-<span class="co">#&gt; 4 BOE-A-2022-5066     2</span>
-<span class="co">#&gt; 5 BOE-A-2022-5067     1</span>
-<span class="co">#&gt; 6 BOE-A-2022-5068     1</span></code></pre></div>
+<span class="co">#&gt; 1 BOE-A-2022-5809   156</span>
+<span class="co">#&gt; 2 BOE-A-2022-5810     1</span>
+<span class="co">#&gt; 3 BOE-A-2022-5811     3</span>
+<span class="co">#&gt; 4 BOE-A-2022-5812     2</span>
+<span class="co">#&gt; 5 BOE-A-2022-5813     1</span>
+<span class="co">#&gt; 6 BOE-A-2022-5814     3</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="publications">Publications<a class="anchor" aria-label="anchor" href="#publications"></a>
@@ -158,11 +151,11 @@
 <p>Once you select those publications we can obtain the links for the pdf.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/url_publications.html">url_publications</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="op">]</span><span class="op">)</span>
-<span class="co">#&gt; [1] "https://boe.es/boe/dias/2022/03/31/pdfs/BOE-A-2022-5063.pdf"</span>
-<span class="co">#&gt; [2] "https://boe.es/boe/dias/2022/03/31/pdfs/BOE-A-2022-5064.pdf"</span>
-<span class="co">#&gt; [3] "https://boe.es/boe/dias/2022/03/31/pdfs/BOE-A-2022-5065.pdf"</span>
-<span class="co">#&gt; [4] "https://boe.es/boe/dias/2022/03/31/pdfs/BOE-A-2022-5066.pdf"</span>
-<span class="co">#&gt; [5] "https://boe.es/boe/dias/2022/03/31/pdfs/BOE-A-2022-5067.pdf"</span></code></pre></div>
+<span class="co">#&gt; [1] "https://boe.es/boe/dias/2022/04/09/pdfs/BOE-A-2022-5809.pdf"</span>
+<span class="co">#&gt; [2] "https://boe.es/boe/dias/2022/04/09/pdfs/BOE-A-2022-5810.pdf"</span>
+<span class="co">#&gt; [3] "https://boe.es/boe/dias/2022/04/09/pdfs/BOE-A-2022-5811.pdf"</span>
+<span class="co">#&gt; [4] "https://boe.es/boe/dias/2022/04/09/pdfs/BOE-A-2022-5812.pdf"</span>
+<span class="co">#&gt; [5] "https://boe.es/boe/dias/2022/04/09/pdfs/BOE-A-2022-5813.pdf"</span></code></pre></div>
 <p>Or you can also create the CVE and then look them up on the database:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/element.html">anuncio_cve</a></span><span class="op">(</span><span class="st">"2019"</span>, <span class="fl">5</span><span class="op">)</span>
@@ -214,7 +207,7 @@
 <span class="co">#&gt;  [5] ragg_1.2.2        rlang_1.0.2       fastmap_1.1.0     httr_1.4.2       </span>
 <span class="co">#&gt;  [9] stringr_1.4.0     tools_4.1.3       xfun_0.30         cli_3.2.0        </span>
 <span class="co">#&gt; [13] jquerylib_0.1.4   htmltools_0.5.2   systemfonts_1.0.4 yaml_2.3.5       </span>
-<span class="co">#&gt; [17] digest_0.6.29     rprojroot_2.0.2   pkgdown_2.0.2     textshaping_0.3.6</span>
+<span class="co">#&gt; [17] digest_0.6.29     rprojroot_2.0.3   pkgdown_2.0.2     textshaping_0.3.6</span>
 <span class="co">#&gt; [21] purrr_0.3.4       sass_0.4.1        fs_1.5.2          curl_4.3.2       </span>
 <span class="co">#&gt; [25] memoise_2.0.1     cachem_1.0.6      evaluate_0.15     rmarkdown_2.13   </span>
 <span class="co">#&gt; [29] stringi_1.7.6     compiler_4.1.3    bslib_0.3.1       desc_1.4.1       </span>

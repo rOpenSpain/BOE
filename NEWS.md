@@ -1,6 +1,7 @@
 # BOE (development version)
 
-# BOE development
+ * Now `retrieve_sumario` provides informative error if a cve is provided 
+ instead of a date (#17)
 
 ## Breaking changes: 
 

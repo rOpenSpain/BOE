@@ -10,10 +10,16 @@
 #' @examples
 #' \donttest{retrieve_sumario(Sys.Date())}
 retrieve_sumario <- function(date, journal = "BOE") {
-
+    is_cve <- is.character(date) && (startsWith(date, "BOE") || startsWith(date, "BORME"))
+    if (is_cve) {
+        stop("You seem to have provided a cve: use retrieve_docment()",
+             call. = TRUE)
+    }
     check_date(date)
     journal <- match.arg(journal, c("BOE", "BORME"))
-    tidy_sumario(get_xml(query_xml(sumario_nbo(date, journal))))
+    sumario_nbo <- sumario_nbo(date, journal)
+
+    tidy_sumario(get_xml(query_xml(sumario_nbo)))
 }
 
 
@@ -25,10 +31,6 @@ retrieve_sumario <- function(date, journal = "BOE") {
 #' @family functions to retrieve documents
 #' @export
 #' @examples
-#' xml  <- get_xml(query_xml("BOE-B-2017-5"))
-#' xml2 <- get_xml(query_xml("BOE-A-2017-5"))
-#' xml3 <- get_xml(query_xml("BOE-S-2017-5"))
-#' xml4 <- get_xml(query_xml("BORME-S-2020-108"))
 #' cve <- "BOE-A-2020-12109"
 #' df <- retrieve_document(cve)
 retrieve_document <- function(cve) {

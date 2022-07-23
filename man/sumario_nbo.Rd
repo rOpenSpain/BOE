@@ -22,9 +22,9 @@ Creates the id for a \emph{sumario} by the date it was published.
 }
 \section{Functions}{
 \itemize{
-\item \code{sumario_xml}: For compatibility with previous version
-}}
+\item \code{sumario_xml()}: For compatibility with previous version
 
+}}
 \examples{
 sumario_nbo(Sys.Date())
 sumario_nbo(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"), journal = "BORME")

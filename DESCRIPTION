@@ -1,7 +1,7 @@
 Type: Package
 Package: BOE
 Title: Work with the Boletin Oficial del Estado of Spain
-Version: 0.1.8.9002
+Version: 0.1.8.9003
 Authors@R: 
     person(given = "Lluís",
            family = "Revilla Sancho",
@@ -25,7 +25,7 @@ Suggests:
     rmarkdown,
     vcr
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Language: en-US
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)

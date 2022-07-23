@@ -29,15 +29,15 @@ Functions to create CVE codes for the documents published on the BOE.
 }
 \section{Functions}{
 \itemize{
-\item \code{disposicion_cve}: Create the CVE of the diposicion.
+\item \code{disposicion_cve()}: Create the CVE of the diposicion.
 
-\item \code{disposicion}: For compatibility with previous version
+\item \code{disposicion()}: For compatibility with previous version
 
-\item \code{anuncio_cve}: Create the CVE of the anuncio.
+\item \code{anuncio_cve()}: Create the CVE of the anuncio.
 
-\item \code{anuncio}: For compatibility with previous version
+\item \code{anuncio()}: For compatibility with previous version
+
 }}
-
 \examples{
 disposicion_cve(2019, 242)
 anuncio_cve(2019, 242)

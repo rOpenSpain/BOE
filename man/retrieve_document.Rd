@@ -14,10 +14,6 @@ Tidy data from any document published on the BOE and BORME from the
 \href{https://boe.es}{BOE}.
 }
 \examples{
-xml  <- get_xml(query_xml("BOE-B-2017-5"))
-xml2 <- get_xml(query_xml("BOE-A-2017-5"))
-xml3 <- get_xml(query_xml("BOE-S-2017-5"))
-xml4 <- get_xml(query_xml("BORME-S-2020-108"))
 cve <- "BOE-A-2020-12109"
 df <- retrieve_document(cve)
 }

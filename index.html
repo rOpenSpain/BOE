@@ -9,9 +9,9 @@
     for data.">
 <title>Work with the Boletin Oficial del Estado of Spain • BOE</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><link href="deps/_Roboto-0.4.1/font.css" rel="stylesheet">
-<link href="deps/_Roboto%20Mono-0.4.1/font.css" rel="stylesheet">
+<link href="deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><link href="deps/Roboto-0.4.2/font.css" rel="stylesheet">
+<link href="deps/Roboto_Mono-0.4.2/font.css" rel="stylesheet">
 <!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Work with the Boletin Oficial del Estado of Spain">
@@ -37,7 +37,7 @@
     <div>
       <img src="logo.png" alt="BOE-logo" id="ROS-navbar-logo"><a class="navbar-brand me-2" href="index.html">BOE</a>
 
-      <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.8.9001</small>
+      <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.8.9002</small>
     </div>
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,92 +78,90 @@
 <div class="page-header"><h1 id="boe">BOE<a class="anchor" aria-label="anchor" href="#boe"></a>
 </h1></div>
 <!-- badges: start -->
-
-<!-- badges: end -->
-<p>The goal of BOE is to provide tools to retrieve data from <a href="https://boe.es" class="external-link">BOE</a> either from the <strong>Boletín Oficial del Estado</strong> or from the BORME <strong>Boletín Oficial del Registro Mercantil del Estado</strong>.</p>
+<!-- badges: end --><p>The goal of BOE is to provide tools to retrieve data from <a href="https://boe.es" class="external-link">BOE</a> either from the <strong>Boletín Oficial del Estado</strong> or from the BORME <strong>Boletín Oficial del Registro Mercantil del Estado</strong>.</p>
 <p>You can see examples of what is capable on the vignette and with more data this <a href="https://llrs.github.io/BOE_historico/" class="external-link">website</a>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>You can install it from github with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rOpenSpain/BOE"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rOpenSpain/BOE"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
 <p>This is a basic example which shows you how to solve find the identifiers of some elements. The most important data is the sumario (summary) which can be retrieved by the date:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/rOpenSpain/BOE" class="external-link">"BOE"</a></span><span class="op">)</span>
-<span class="va">today</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>
-<span class="va">sumario_hoy</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/retrieve_sumario.html">retrieve_sumario</a></span><span class="op">(</span><span class="va">today</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">)</span>
-<span class="co">#&gt;         date sumario_nbo   sumario_code section</span>
-<span class="co">#&gt; 1 2020-10-29         286 BOE-S-2020-286       1</span>
-<span class="co">#&gt; 2 2020-10-29         286 BOE-S-2020-286       1</span>
-<span class="co">#&gt; 3 2020-10-29         286 BOE-S-2020-286      2A</span>
-<span class="co">#&gt; 4 2020-10-29         286 BOE-S-2020-286      2A</span>
-<span class="co">#&gt; 5 2020-10-29         286 BOE-S-2020-286      2A</span>
-<span class="co">#&gt; 6 2020-10-29         286 BOE-S-2020-286      2A</span>
-<span class="co">#&gt;                                                              section_number</span>
-<span class="co">#&gt; 1                                                I. Disposiciones generales</span>
-<span class="co">#&gt; 2                                                I. Disposiciones generales</span>
-<span class="co">#&gt; 3 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt; 4 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt; 5 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt; 6 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span>
-<span class="co">#&gt;                                                     departament departament_etq</span>
-<span class="co">#&gt; 1          MINISTERIO DE TRANSPORTES, MOVILIDAD Y AGENDA URBANA            9572</span>
-<span class="co">#&gt; 2          MINISTERIO DE POLÍTICA TERRITORIAL Y FUNCIÓN PÚBLICA            9561</span>
-<span class="co">#&gt; 3                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span>
-<span class="co">#&gt; 4                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span>
-<span class="co">#&gt; 5                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span>
-<span class="co">#&gt; 6 MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN            9562</span>
-<span class="co">#&gt;                   epigraph</span>
-<span class="co">#&gt; 1          Red ferroviaria</span>
-<span class="co">#&gt; 2 Oferta de empleo público</span>
-<span class="co">#&gt; 3            Nombramientos</span>
-<span class="co">#&gt; 4            Nombramientos</span>
-<span class="co">#&gt; 5            Nombramientos</span>
-<span class="co">#&gt; 6                 Destinos</span>
-<span class="co">#&gt;                                                                                                                                                                                                                                             text</span>
-<span class="co">#&gt; 1                                                                                                                                         Real Decreto 929/2020, de 27 de octubre, sobre seguridad operacional e interoperabilidad ferroviarias.</span>
-<span class="co">#&gt; 2                                                                                                                                   Real Decreto 936/2020, de 27 de octubre, por el que se aprueba la oferta de empleo público para el año 2020.</span>
-<span class="co">#&gt; 3   Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueces/zas sustitutos/as para el año judicial 2020/2021, en el ámbito del Tribunal Superior de la Región de Murcia.</span>
-<span class="co">#&gt; 4 Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueza sustituta para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Castilla-La Mancha.</span>
-<span class="co">#&gt; 5        Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Magistrado suplente para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Navarra.</span>
-<span class="co">#&gt; 6                                                                        Resolución de 19 de octubre de 2020, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 22 de julio de 2020.</span>
-<span class="co">#&gt;        publication pages</span>
-<span class="co">#&gt; 1 BOE-A-2020-13115   155</span>
-<span class="co">#&gt; 2 BOE-A-2020-13116    21</span>
-<span class="co">#&gt; 3 BOE-A-2020-13117     1</span>
-<span class="co">#&gt; 4 BOE-A-2020-13118     1</span>
-<span class="co">#&gt; 5 BOE-A-2020-13119     1</span>
-<span class="co">#&gt; 6 BOE-A-2020-13120     2</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/rOpenSpain/BOE" class="external-link">"BOE"</a></span><span class="op">)</span></span>
+<span><span class="va">today</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.Date</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">sumario_hoy</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/retrieve_sumario.html">retrieve_sumario</a></span><span class="op">(</span><span class="va">today</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">)</span></span>
+<span><span class="co">#&gt;         date sumario_nbo   sumario_code section</span></span>
+<span><span class="co">#&gt; 1 2020-10-29         286 BOE-S-2020-286       1</span></span>
+<span><span class="co">#&gt; 2 2020-10-29         286 BOE-S-2020-286       1</span></span>
+<span><span class="co">#&gt; 3 2020-10-29         286 BOE-S-2020-286      2A</span></span>
+<span><span class="co">#&gt; 4 2020-10-29         286 BOE-S-2020-286      2A</span></span>
+<span><span class="co">#&gt; 5 2020-10-29         286 BOE-S-2020-286      2A</span></span>
+<span><span class="co">#&gt; 6 2020-10-29         286 BOE-S-2020-286      2A</span></span>
+<span><span class="co">#&gt;                                                              section_number</span></span>
+<span><span class="co">#&gt; 1                                                I. Disposiciones generales</span></span>
+<span><span class="co">#&gt; 2                                                I. Disposiciones generales</span></span>
+<span><span class="co">#&gt; 3 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span></span>
+<span><span class="co">#&gt; 4 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span></span>
+<span><span class="co">#&gt; 5 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span></span>
+<span><span class="co">#&gt; 6 II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias</span></span>
+<span><span class="co">#&gt;                                                     departament departament_etq</span></span>
+<span><span class="co">#&gt; 1          MINISTERIO DE TRANSPORTES, MOVILIDAD Y AGENDA URBANA            9572</span></span>
+<span><span class="co">#&gt; 2          MINISTERIO DE POLÍTICA TERRITORIAL Y FUNCIÓN PÚBLICA            9561</span></span>
+<span><span class="co">#&gt; 3                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span></span>
+<span><span class="co">#&gt; 4                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span></span>
+<span><span class="co">#&gt; 5                            CONSEJO GENERAL DEL PODER JUDICIAL            1820</span></span>
+<span><span class="co">#&gt; 6 MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN            9562</span></span>
+<span><span class="co">#&gt;                   epigraph</span></span>
+<span><span class="co">#&gt; 1          Red ferroviaria</span></span>
+<span><span class="co">#&gt; 2 Oferta de empleo público</span></span>
+<span><span class="co">#&gt; 3            Nombramientos</span></span>
+<span><span class="co">#&gt; 4            Nombramientos</span></span>
+<span><span class="co">#&gt; 5            Nombramientos</span></span>
+<span><span class="co">#&gt; 6                 Destinos</span></span>
+<span><span class="co">#&gt;                                                                                                                                                                                                                                             text</span></span>
+<span><span class="co">#&gt; 1                                                                                                                                         Real Decreto 929/2020, de 27 de octubre, sobre seguridad operacional e interoperabilidad ferroviarias.</span></span>
+<span><span class="co">#&gt; 2                                                                                                                                   Real Decreto 936/2020, de 27 de octubre, por el que se aprueba la oferta de empleo público para el año 2020.</span></span>
+<span><span class="co">#&gt; 3   Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueces/zas sustitutos/as para el año judicial 2020/2021, en el ámbito del Tribunal Superior de la Región de Murcia.</span></span>
+<span><span class="co">#&gt; 4 Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Jueza sustituta para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Castilla-La Mancha.</span></span>
+<span><span class="co">#&gt; 5        Acuerdo de 22 de octubre de 2020, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se nombra Magistrado suplente para el año judicial 2020/2021, en el ámbito del Tribunal Superior de Justicia de Navarra.</span></span>
+<span><span class="co">#&gt; 6                                                                        Resolución de 19 de octubre de 2020, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 22 de julio de 2020.</span></span>
+<span><span class="co">#&gt;        publication pages</span></span>
+<span><span class="co">#&gt; 1 BOE-A-2020-13115   155</span></span>
+<span><span class="co">#&gt; 2 BOE-A-2020-13116    21</span></span>
+<span><span class="co">#&gt; 3 BOE-A-2020-13117     1</span></span>
+<span><span class="co">#&gt; 4 BOE-A-2020-13118     1</span></span>
+<span><span class="co">#&gt; 5 BOE-A-2020-13119     1</span></span>
+<span><span class="co">#&gt; 6 BOE-A-2020-13120     2</span></span></code></pre></div>
 <p>If we are interested on a publication we can obtain the url of the publication with:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Say we are interested on the first result:</span>
-<span class="va">pdfs</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/url_publications.html">url_publications</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span><span class="op">)</span>
-<span class="va">pdfs</span> <span class="co"># And we can download it with download.file(pdfs)</span>
-<span class="co">#&gt; [1] "https://boe.es/boe/dias/2020/10/29/pdfs/BOE-A-2020-13115.pdf"</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Say we are interested on the first result:</span></span>
+<span><span class="va">pdfs</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/url_publications.html">url_publications</a></span><span class="op">(</span><span class="va">sumario_hoy</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">pdfs</span> <span class="co"># And we can download it with download.file(pdfs)</span></span>
+<span><span class="co">#&gt; [1] "https://boe.es/boe/dias/2020/10/29/pdfs/BOE-A-2020-13115.pdf"</span></span></code></pre></div>
 <p>We can open the publication from R with:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/open_publications.html">open_publications</a></span><span class="op">(</span><span class="va">pdfs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/open_publications.html">open_publications</a></span><span class="op">(</span><span class="va">pdfs</span><span class="op">)</span></span></code></pre></div>
 <p>If we need to know the BOE code of a publication we can do so with:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/sumario_nbo.html">sumario_xml</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html" class="external-link">as.Date</a></span><span class="op">(</span><span class="st">"2019/11/15"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; [1] "BOE-S-20191115"</span>
-<span class="fu"><a href="reference/sumario_nbo.html">sumario_xml</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html" class="external-link">as.Date</a></span><span class="op">(</span><span class="st">"2019/11/15"</span><span class="op">)</span>, journal <span class="op">=</span> <span class="st">"BORME"</span><span class="op">)</span>
-<span class="co">#&gt; [1] "BORME-S-20191115"</span>
-<span class="co"># The codes of publication is the year and the number of said publication</span>
-<span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"275"</span><span class="op">)</span> 
-<span class="co">#&gt; [1] "BOE-S-2017-275"</span>
-<span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"275"</span>, journal <span class="op">=</span> <span class="st">"BORME"</span><span class="op">)</span> 
-<span class="co">#&gt; [1] "BORME-S-2017-275"</span>
-<span class="fu"><a href="reference/element.html">anuncio</a></span><span class="op">(</span><span class="st">"2012"</span>, <span class="st">"32498"</span><span class="op">)</span> 
-<span class="co">#&gt; [1] "BOE-B-2012-32498"</span>
-<span class="fu"><a href="reference/element.html">disposicion</a></span><span class="op">(</span><span class="st">"2012"</span>, <span class="st">"32498"</span><span class="op">)</span>
-<span class="co">#&gt; [1] "BOE-A-2012-32498"</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/sumario_nbo.html">sumario_xml</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html" class="external-link">as.Date</a></span><span class="op">(</span><span class="st">"2019/11/15"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "BOE-S-20191115"</span></span>
+<span><span class="fu"><a href="reference/sumario_nbo.html">sumario_xml</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/as.Date.html" class="external-link">as.Date</a></span><span class="op">(</span><span class="st">"2019/11/15"</span><span class="op">)</span>, journal <span class="op">=</span> <span class="st">"BORME"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "BORME-S-20191115"</span></span>
+<span><span class="co"># The codes of publication is the year and the number of said publication</span></span>
+<span><span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"275"</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "BOE-S-2017-275"</span></span>
+<span><span class="fu"><a href="reference/sumario_nbo.html">sumario_nbo</a></span><span class="op">(</span><span class="st">"2017"</span>, <span class="st">"275"</span>, journal <span class="op">=</span> <span class="st">"BORME"</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "BORME-S-2017-275"</span></span>
+<span><span class="fu"><a href="reference/element.html">anuncio</a></span><span class="op">(</span><span class="st">"2012"</span>, <span class="st">"32498"</span><span class="op">)</span> </span>
+<span><span class="co">#&gt; [1] "BOE-B-2012-32498"</span></span>
+<span><span class="fu"><a href="reference/element.html">disposicion</a></span><span class="op">(</span><span class="st">"2012"</span>, <span class="st">"32498"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "BOE-A-2012-32498"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
@@ -257,7 +255,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md text-center text-lg-start">
-        <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+        <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
       </div>
       <div class="col-md offset-md-4 text-center text-lg-start">
       <p>Template <a href="https://github.com/ropenspain/rostemplate/" class="external-link">rostemplate</a> by <a href="https://github.com/dieghernan/" class="external-link">dieghernan</a>, based on <a href="https://bootstrapious.com/" class="external-link">Bootstrapious</a>.

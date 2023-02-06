@@ -21,5 +21,5 @@ Creates the CVE of a supplement, either the judicial or notifications.
 These are only available for 3 months.
 }
 \examples{
-suplemento_cve(1)
+suplemento_cve(number = 1)
 }

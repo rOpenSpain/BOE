@@ -212,7 +212,7 @@ sumario_suplementos <- function(year, number, type = "N") {
 #' @returns A CVE.
 #' @export
 #' @examples
-#' suplemento_cve(1)
+#' suplemento_cve(number = 1)
 suplemento_cve <- function(year = 2023, number, type = "J") {
 
     type <- match.arg(type, c("J", "N"))

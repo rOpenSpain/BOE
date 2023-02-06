@@ -1,7 +1,10 @@
 # BOE (development version)
 
  * Now `retrieve_sumario` provides informative error if a cve is provided 
- instead of a date (#17)
+ instead of a date (#17).
+ 
+ * New functions to access the suplements, `suplemento_cve` and `sumario_suplementos`. 
+  These are only accessible for 3 months.
 
 ## Breaking changes: 
 

@@ -25,7 +25,7 @@ Suggests:
     rmarkdown,
     vcr
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Language: en-US
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)

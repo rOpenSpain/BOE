@@ -94,6 +94,11 @@ anuncio_cve <- function(year, number) {
     elemento(item = "B", year = year, number = number)
 }
 
+#' @describeIn sumario_cve For compatibility with previous version
+#' @export
+sumario <- sumario_cve
+
+
 #' @describeIn element For compatibility with previous version
 #' @export
 anuncio <- anuncio_cve
@@ -176,4 +181,44 @@ check_date <- function(x) {
     }
     stop("That date does not exists, check the day of the month.",
          call. = FALSE)
+}
+
+#' Supplementary summaries
+#'
+#' Creates the CVE of a summary of the supplements, either the judicial or notifications.
+#' These are only available for 3 months.
+#' @inheritParams suplemento_cve
+#'
+#' @returns A CVE of the document
+#' @export
+#' @examples
+#' sumario_suplementos(2023, 1)
+sumario_suplementos <- function(year, number, type = "N") {
+    type <- match.arg(type, c("J", "N"))
+    if (as.numeric(number) < 0 || as.numeric(number) > 1000) {
+        stop("The number should be the in numeric format above 1.",
+             call. = FALSE)
+    }
+    p <- paste("BOE", "S", year, "N", sep = "-")
+    paste0(p, number)
+}
+
+#' Supplement CVE
+#'
+#' Creates the CVE of a supplement, either the judicial or notifications.
+#' These are only available for 3 months.
+#' @inheritParams sumario_cve
+#' @param type Either J or N. J for **judicial** or N for **notificaciones**
+#' @returns A CVE.
+#' @export
+#' @examples
+#' suplemento_cve(1)
+suplemento_cve <- function(year = 2023, number, type = "J") {
+
+    type <- match.arg(type, c("J", "N"))
+    if (as.numeric(number) < 0) {
+        stop("The number should be the in numeric format above 1.",
+             call. = FALSE)
+    }
+    paste("BOE", type, year, number, sep = "-")
 }

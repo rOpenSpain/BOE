@@ -3,12 +3,14 @@
  * Now `retrieve_sumario` provides informative error if a cve is provided 
  instead of a date (#17).
  
- * New functions to access the suplements, `suplemento_cve` and `sumario_suplementos`. 
+ * New functions to access the supplements, `suplemento_cve` and `sumario_suplementos`. 
   These are only accessible for 3 months.
+  
+ * New function `valid_code()` returns a logical value instead of an error.
 
 ## Breaking changes: 
 
- * If a function returns a valid CVE now it has an sufix `_cve`. This affects `anuncio`, `disposicion` and specially `sumario*`.
+ * If a function returns a valid CVE now it has an suffix `_cve`. This affects `anuncio`, `disposicion` and specially `sumario*`.
 
 # BOE 0.1.7
 

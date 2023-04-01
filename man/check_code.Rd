@@ -2,12 +2,19 @@
 % Please edit documentation in R/codes.R
 \name{check_code}
 \alias{check_code}
+\alias{valid_code}
 \title{Check id of documents}
 \usage{
 check_code(id)
+
+valid_code(id, sumario = TRUE, BORME = FALSE)
 }
 \arguments{
 \item{id}{ID or CVE of the document (character).}
+
+\item{sumario}{Logical value if sumarios should be accepted.}
+
+\item{BORME}{Logical value if BORME journal should be accepted.}
 }
 \value{
 A logical value if correct, errors if something is not right.
@@ -15,9 +22,15 @@ A logical value if correct, errors if something is not right.
 \description{
 Given an id check if it is valid.
 }
+\section{Functions}{
+\itemize{
+\item \code{valid_code()}: Returns logic values
+
+}}
 \examples{
 check_code("BOE-S-20141006") # Normal way
 check_code("BOE-S-2014-242") # Also accepted but not documented
 # Will fail:
 # check_code("BOE-S-2014")
+valid_code("BOE-S-2014")
 }

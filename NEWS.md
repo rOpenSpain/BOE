@@ -7,6 +7,8 @@
   These are only accessible for 3 months.
   
  * New function `valid_code()` returns a logical value instead of an error.
+ 
+ * Better handling of dates (new fecha_anulacion)
 
 ## Breaking changes: 
 

@@ -1,7 +1,7 @@
 Type: Package
 Package: BOE
 Title: Work with the Boletin Oficial del Estado of Spain
-Version: 0.1.8.9005
+Version: 0.1.8.9006
 Authors@R: 
     person(given = "Lluís",
            family = "Revilla Sancho",

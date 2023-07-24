@@ -17,11 +17,6 @@ This function opens urls in your browser.
 }
 \examples{
 \dontrun{
-today <- Sys.Date()
-# On Sunday there is not BOE
-if (weekdays(today) == "Sunday") {
-    today <- today - 1
-}
-sumario <- retrieve_sumario(today)
+sumario <- retrieve_sumario(last_date_boe())
 url_publications(sumario[1:10, ])}
 }

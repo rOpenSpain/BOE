@@ -17,7 +17,7 @@ Transform the date and publication code to the urls to the publications on pdf f
 }
 \examples{
 \donttest{
-sumario <- retrieve_sumario(Sys.Date())
+sumario <- retrieve_sumario(last_date_boe())
 url_publications(sumario[1:10, ])
 }
 }

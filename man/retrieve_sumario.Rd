@@ -18,7 +18,7 @@ A data.frame with one line for each publication.
 Obtain a \emph{sumario} and tidy it in a table.
 }
 \examples{
-\donttest{retrieve_sumario(Sys.Date())}
+\donttest{retrieve_sumario(last_date_boe())}
 }
 \seealso{
 \link{tidy_sumario} to learn about the format of the output

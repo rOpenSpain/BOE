@@ -8,7 +8,7 @@
 #' @export
 #' @seealso [tidy_sumario] to learn about the format of the output
 #' @examples
-#' \donttest{retrieve_sumario(Sys.Date())}
+#' \donttest{retrieve_sumario(last_date_boe())}
 retrieve_sumario <- function(date, journal = "BOE") {
     is_cve <- is.character(date) && (startsWith(date, "BOE") || startsWith(date, "BORME"))
     if (is_cve) {
@@ -59,7 +59,7 @@ retrieve_document <- function(cve) {
 #' @return A character vector with the urls to get the publications in pdf format.
 #' @examples
 #' \donttest{
-#' sumario <- retrieve_sumario(Sys.Date())
+#' sumario <- retrieve_sumario(last_date_boe())
 #' url_publications(sumario[1:10, ])
 #' }
 url_publications <- function(sumario) {
@@ -88,12 +88,7 @@ url_publications <- function(sumario) {
 #' @importFrom utils browseURL
 #' @examples
 #' \dontrun{
-#' today <- Sys.Date()
-#' # On Sunday there is not BOE
-#' if (weekdays(today) == "Sunday") {
-#'     today <- today - 1
-#' }
-#' sumario <- retrieve_sumario(today)
+#' sumario <- retrieve_sumario(last_date_boe())
 #' url_publications(sumario[1:10, ])}
 open_publications <- function(sumario) {
     urls <- url_publications(sumario)

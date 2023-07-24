@@ -1,14 +1,16 @@
 # BOE (development version)
 
- * Now `retrieve_sumario` provides informative error if a cve is provided 
+ * Now `retrieve_sumario()` provides informative error if a cve is provided 
  instead of a date (#17).
  
- * New functions to access the supplements, `suplemento_cve` and `sumario_suplementos`. 
+ * New functions to access the supplements, `suplemento_cve()` and `sumario_suplementos()`. 
   These are only accessible for 3 months.
   
  * New function `valid_code()` returns a logical value instead of an error.
  
- * Better handling of dates (new fecha_anulacion)
+ * Better handling of dates (new fecha_anulacion).
+ 
+ * `retrieve_sumario()` keeps all columns even if they are empty.
 
 ## Breaking changes: 
 

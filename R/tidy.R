@@ -51,7 +51,8 @@ tidy_sumario <- function(x) {
     # This prevents a warning of condition has length > 1
     journal <- unique(journal)
     if (journal == "BORME") {
-        col_names[grepl("departament", col_names)] <- c("emisor", "emisor_etq")
+        grep_r <- grepl("departament", col_names, fixed = TRUE)
+        col_names[grep_r] <- c("emisor", "emisor_etq")
     }
 
     Publicaciones <- xml_find_all(x, "//item")
@@ -70,9 +71,9 @@ tidy_sumario <- function(x) {
     m <- as.data.frame(m, stringsAsFactors = FALSE)
     m$pages <- as.numeric(m$pages)
     m$date <- as.Date(m$date, format = "%d/%m/%Y")
-    # For easier documentations
-    remove <- vapply(m, function(x){all(is.na(x))}, logical(1L))
-    m[, !remove]
+    stopifnot("Number of columns retrieved do not match expectations" =
+                  ncol(m) == 11)
+    m
 }
 
 recover_publication <- function(x) {
@@ -90,7 +91,9 @@ recover_publication <- function(x) {
 
     seccion <- xml_parent(parent)
     seccion <- xml_attrs(seccion)
-    c(seccion, departamento, departamento_etq, epigrafe)
+    names(seccion) <- c("section", "section_number")
+    c(seccion, departament = departamento,
+      departament_etq = departamento_etq, epigraph = epigrafe)
 }
 
 # xml  <- get_xml(query_xml("BOE-B-2017-5"))
@@ -169,7 +172,7 @@ tidy_analysis <- function(analysis) {
 
 #' @importFrom xml2 xml_length
 tidy_notas <- function(notas) {
-    if (all(xml_length(notas) == 0 )) {
+    if (all(xml_length(notas) == 0)) {
         return(NA)
     }
     notas <- xml_children(notas)

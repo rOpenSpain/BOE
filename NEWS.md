@@ -8,9 +8,13 @@
   
  * New function `valid_code()` returns a logical value instead of an error.
  
+ * New function `last_date_boe()` returning the date of the last valid publication.
+ 
  * Better handling of dates (new fecha_anulacion).
  
  * `retrieve_sumario()` keeps all columns even if they are empty.
+ 
+ 
 
 ## Breaking changes: 
 

@@ -128,26 +128,27 @@ check_code <- function(id) {
     if (ids[1] == "BOE" && length(ids) > 4) {
         stop("The code should have at most 3 '-' got more.", call. = FALSE)
     }
-    if (ids[1] == "BOE" && !ids[2] %in% c("B", "A", "S")) {
+    if (ids[1] == "BOE" && !ids[[2]] %in% c("B", "A", "S")) {
         stop("The type of document does not match: got ", ids[2],
              " should be either A, B or S.", call. = FALSE)
     }
-    if (ids[1] == "BORME" && !ids[2] %in% c("B", "A", "C", "S")) {
+    if (ids[1] == "BORME" && !ids[[2]] %in% c("B", "A", "C", "S")) {
         stop("The type of document does not match: got ", ids[2],
              " should be either A, B, C or S.", call. = FALSE)
     }
     # BORME-S-2017-188 and BORME-S-20171002 are equivalent
-    if (length(ids) < 4 && ids[2] != "S") {
+    if (length(ids) < 4L && ids[[2]] != "S") {
         stop("The code should have three 3 '-'.", call. = FALSE)
     }
-    if (length(ids) < 4 && ids[2] == "S" && nchar(ids[3]) < 8) {
-        stop("The last number should be a date of format YYYYMMDD.", call. = FALSE)
+    if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) < 8L) {
+        stop("The last number should be a date of format YYYYMMDD.",
+             call. = FALSE)
     }
-    if (length(ids) < 4 && ids[2] == "S" && nchar(ids[3]) >= 8) {
+    if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) >= 8L) {
         check_date(ids[3])
     }
 
-    if (!is_numeric(paste0(ids[3:length(ids)], collapse = ""))) {
+    if (!is_numeric(paste0(ids[3L:length(ids)], collapse = ""))) {
         stop("After journal and type of document there only should be numbers.",
              call. = FALSE)
     }
@@ -155,8 +156,8 @@ check_code <- function(id) {
     #     stop("Got ", ids[3], " should be a year in numerical form.",
     #          call. = FALSE)
     # }
-    if (ids[2] == "A" && ids[1] == "BORME" && length(ids) > 5) {
-        stop("Got ", ids[3], " should be a numerical year.", call. = FALSE)
+    if (ids[[2]] == "A" && ids[[1]] == "BORME" && length(ids) > 5L) {
+        stop("Got ", ids[[3]], " should be a numerical year.", call. = FALSE)
     }
 
     TRUE
@@ -171,38 +172,38 @@ valid_code <- function(id, sumario = TRUE, BORME = FALSE) {
     stopifnot(is_logical(sumario))
     stopifnot(is_logical(BORME))
 
-    if (length(id) > 1) {
+    if (length(id) > 1L) {
         stop("This function is not vectorized. Check the code one by one.",
              call. = FALSE)
     }
     ids <- unlist(strsplit(id, "-", fixed = TRUE), FALSE, FALSE)
     type <- if (BORME) "BORME" else "BOE"
-    if (!ids[1] %in% type) {
+    if (!ids[[1]] %in% type) {
         return(FALSE)
     }
-    if (ids[1] == "BOE" && length(ids) > 4) {
+    if (ids[[1]] == "BOE" && length(ids) > 4L) {
         stop("The code should have at most 3 '-' got more.", call. = FALSE)
     }
 
-    if (type == "BOE" && !ids[2] %in% c("B", "A", "S")) {
+    if (type == "BOE" && !ids[[2]] %in% c("B", "A", "S")) {
         return(FALSE)
     }
-    if (type == "BORME" && !ids[2] %in% c("B", "A", "C", "S")) {
+    if (type == "BORME" && !ids[[2]] %in% c("B", "A", "C", "S")) {
         return(FALSE)
     }
 
-    if (ids[2] == "S" && sumario) {
+    if (ids[[2]] == "S" && sumario) {
         return(FALSE)
     }
     # BORME-S-2017-188 and BORME-S-20171002 are equivalent
-    if (length(ids) < 4 && ids[2] != "S") {
+    if (length(ids) < 4 && ids[[2]] != "S") {
         return(FALSE)
     }
-    if (length(ids) < 4 && ids[2] == "S" && nchar(ids[3]) < 8) {
+    if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) < 8L) {
         return(FALSE)
     }
-    if (length(ids) < 4 && ids[2] == "S" && nchar(ids[3]) >= 8) {
-        return(valid_date(ids[3]))
+    if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) >= 8L) {
+        return(valid_date(ids[[3]]))
     }
 
     if (!is_numeric(paste0(ids[3:length(ids)], collapse = ""))) {
@@ -212,7 +213,7 @@ valid_code <- function(id, sumario = TRUE, BORME = FALSE) {
     #     stop("Got ", ids[3], " should be a year in numerical form.",
     #          call. = FALSE)
     # }
-    if (ids[2] == "A" && ids[1] == "BORME" && length(ids) > 5) {
+    if (ids[[2]] == "A" && ids[[1]] == "BORME" && length(ids) > 5L) {
         return(FALSE)
     }
 
@@ -229,12 +230,12 @@ check_date <- function(x) {
         return(TRUE)
     }
     y <- strsplit(x, "")[[1]]
-    month <- as.numeric(paste0(y[5:6], collapse = ""))
-    day <- as.numeric(paste0(y[7:8], collapse = ""))
+    month <- as.numeric(paste0(y[5L:6L], collapse = ""))
+    day <- as.numeric(paste0(y[7L:8L], collapse = ""))
     if (month >= 13) {
         stop("The month is greater than 12.", call. = FALSE)
     }
-    if (day >= 31) {
+    if (day >= 31L) {
         stop("The day is greater than 31.", call. = FALSE)
     }
     stop("That date does not exists, check the day of the month.",
@@ -250,7 +251,7 @@ valid_date <- function(x) {
     if (!is.na(as.Date(x, format = "%Y%m%d"))) {
         return(TRUE)
     }
-    y <- strsplit(x, "")[[1]]
+    y <- strsplit(x, "", fixed = TRUE)[[1]]
     month <- as.numeric(paste0(y[5:6], collapse = ""))
     day <- as.numeric(paste0(y[7:8], collapse = ""))
     if (month >= 13) {

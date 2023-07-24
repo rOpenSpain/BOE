@@ -2,19 +2,19 @@ test_that("query_pdf works", {
     code <- sumario_cve("2017", "237")
     codes <- c(code, sumario_cve("2017", "238"))
     url <- query_pdf("2017", "10", "02", code)
-    expect_equal(url,
+    expect_identical(url,
                  "https://boe.es/boe/dias/2017/10/02/pdfs/BOE-S-2017-237.pdf")
     expect_true(endsWith(url, ".pdf"))
 
     urls <- query_pdf("2017", "10", "02", codes)
-    expect_length(urls, 2)
+    expect_length(urls, 2L)
 })
 
 
 test_that("query_htm works", {
     code <- sumario_cve("2017", "237")
     url <- query_htm(code)
-    expect_equal(url,
+    expect_identical(url,
                  "https://boe.es/diario_boe/text.php?id=BOE-S-2017-237")
     expect_true(endsWith(url, code))
 })

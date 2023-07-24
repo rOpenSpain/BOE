@@ -105,4 +105,3 @@ test_that("cve instead of date", {
     expect_error(retrieve_sumario("BORME-S-2022-1", journal = "BORME"),
                  "You seem to have provided a cve: use retrieve_docment()")
 })
-

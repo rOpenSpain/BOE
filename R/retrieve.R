@@ -97,6 +97,6 @@ url_publications <- function(sumario) {
 #' url_publications(sumario[1:10, ])}
 open_publications <- function(sumario) {
     urls <- url_publications(sumario)
-    sapply(urls, browseURL)
+    lapply(urls, browseURL)
     invisible(NULL)
 }

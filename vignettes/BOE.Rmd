@@ -44,16 +44,8 @@ It is a summary of the publications of the day with information about the summar
 The easiest way to get a *sumario* is using `retrieve_sumario()`:
 
 ```{r sumario}
-library("BOE")
-today <- Sys.Date()
-time <- as.numeric(format(Sys.time(), format = "%H%I", tz = "Europe/Madrid"))
-# On Sunday there is not BOE unless there is an extraordinary publication
-# Also it is published at 730 local time so we check for it
-if (weekdays(today) == "Sunday" || time < 730L) {
-    today <- today - 1
-}
-
-sumario_hoy <- retrieve_sumario(today)
+(last_boe <- last_date_boe())
+sumario_hoy <- retrieve_sumario(last_boe)
 head(sumario_hoy)
 ```
 

@@ -44,6 +44,7 @@ It is a summary of the publications of the day with information about the summar
 The easiest way to get a *sumario* is using `retrieve_sumario()`:
 
 ```{r sumario}
+library("BOE")
 (last_boe <- last_date_boe())
 sumario_hoy <- retrieve_sumario(last_boe)
 head(sumario_hoy)

@@ -3,29 +3,28 @@ Package: BOE
 Title: Work with the Boletin Oficial del Estado of Spain
 Version: 0.1.8.9007
 Authors@R: 
-    person(given = "Lluís",
-           family = "Revilla Sancho",
-           role = c("aut", "cre"),
-           email = "lluis.revilla@gmail.com",
+    person("Lluís", "Revilla Sancho", , "lluis.revilla@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9747-2570"))
-Description: Queries the online site of the Boletin Oficial del Estado (BOE) 
-    for data.
+Description: Queries the online site of the Boletin Oficial del Estado
+    (BOE) for data.
 License: MIT + file LICENSE
 URL: https://github.com/rOpenSpain/BOE
 BugReports: https://github.com/rOpenSpain/BOE/issues
 Imports: 
     httr (>= 1.4.1),
-    xml2 (>= 1.2.2),
-    methods
+    methods,
+    xml2 (>= 1.2.2)
 Suggests: 
     covr,
-    testthat (>= 2.1.0),
-    spelling,
     knitr,
     rmarkdown,
+    spelling,
+    testthat (>= 2.1.0),
     vcr
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
 Encoding: UTF-8
-RoxygenNote: 7.2.3
 Language: en-US
-VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

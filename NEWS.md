@@ -3,10 +3,12 @@
  * Now `retrieve_sumario()` provides informative error if a cve is provided 
  instead of a date (#17).
  
- * New functions to access the supplements, `suplemento_cve()` and `sumario_suplementos()`. 
+ * New functions to access the supplements, `suplemento_cve()` and 
+  `sumario_suplementos()`. 
   These are only accessible for 3 months.
   
- * New function `valid_code()` returns a logical value instead of an error.
+ * New function `valid_code()` returns a logical value instead of an error as 
+  `check_code()`.
  
  * New function `last_date_boe()` returning the date of the last valid publication.
  
@@ -14,6 +16,7 @@
  
  * `retrieve_sumario()` keeps all columns even if they are empty.
  
+ * `retrieve_document()` works for some documents before 2009. 
  
 
 ## Breaking changes: 

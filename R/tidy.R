@@ -57,7 +57,7 @@ tidy_sumario <- function(x) {
 
     Publicaciones <- xml_find_all(x, "//item")
 
-    pages <- xml_find_all(x, ".//seccion//urlPdf")
+    pages <- xml_find_all(Publicaciones, "./urlPdf")
     pages <- xml_attr(pages, "numPag")
     publications_id <- xml_attr(Publicaciones, "id")
     publications_txt <- xml_text(xml_find_all(Publicaciones, "//item/titulo"))

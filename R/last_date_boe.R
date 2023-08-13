@@ -10,7 +10,7 @@ last_date_boe <- function() {
     time <- as.numeric(format(Sys.time(), format = "%H%I", tz = "Europe/Madrid"))
     # On Sunday there is not BOE unless there is an extraordinary publication
     # Also it is published at 730 local time so we check for it
-    if (weekdays(today) == "Sunday" || time < 730L) {
+    if (format(today, "%u") == "7" || time < 730L) {
         today <- today - 1
     }
     today

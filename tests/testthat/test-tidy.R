@@ -14,4 +14,16 @@ test_that("tidy_sumario works", {
 test_that("tidy_sumario keeps columns", {
     rd <- retrieve_document("BOE-S-20041029")
     expect_identical(ncol(rd), 11L)
+    expect_identical(nrow(rd), 219L)
+})
+
+test_that("tidy_sumario works without warnings", {
+    # This tests for "old" cases before 2009
+    expect_no_warning(rd <- retrieve_document("BOE-S-2005-60"))
+    expect_no_warning(rd1 <- retrieve_document("BOE-S-2009-60"))
+    expect_identical(ncol(rd), ncol(rd1))
+    expect_identical(ncol(rd), 11L)
+    expect_identical(nrow(rd), 202L)
+    expect_identical(nrow(rd1), 231L)
+
 })

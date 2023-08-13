@@ -1,7 +1,7 @@
 Type: Package
 Package: BOE
 Title: Work with the Boletin Oficial del Estado of Spain
-Version: 0.1.8.9007
+Version: 0.1.8.9008
 Authors@R: 
     person("Lluís", "Revilla Sancho", , "lluis.revilla@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9747-2570"))

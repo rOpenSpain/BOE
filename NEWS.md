@@ -1,5 +1,7 @@
 # BOE (development version)
 
+ * Update url to retrieve data from the API.
+
  * Now `retrieve_sumario()` provides informative error if a cve is provided 
  instead of a date (#17).
  

@@ -28,7 +28,13 @@ sumario_nbo <- function(date, journal = "BOE") {
 
 #' @describeIn sumario_nbo For compatibility with previous version
 #' @export
-sumario_xml <- sumario_nbo
+sumario_xml <- function(date) {
+    if (is(date, "Date")) {
+        date <- format(date, "%Y%m%d")
+    }
+    check_date(date)
+    date
+}
 
 #' Create the number of the _sumario_
 #'

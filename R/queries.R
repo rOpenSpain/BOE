@@ -19,6 +19,7 @@ query_xml <- function(id) {
     check_code(id)
     force(BASE_URL)
     force(JOURNAL_URL)
+
     journal <- strsplit(id, split = "-", fixed = TRUE)[[1]][1]
     journal <- match.arg(journal, c("BOE", "BORME"))
     httr::modify_url(BASE_URL,
@@ -27,6 +28,16 @@ query_xml <- function(id) {
 }
 
 
+query_xml_sumario <- function(id, journal = "BOE") {
+    force(BASE_URL)
+    force(JOURNAL_URL)
+
+    # On 2024-10-08
+    # https://boe.es/datosabiertos/api/boe/sumario/20250125
+    journal <- match.arg(journal, c("BOE", "BORME"))
+    path <- paste0("datosabiertos/api/", tolower(journal), "/sumario/", id)
+    httr::modify_url(BASE_URL, path = path)
+}
 
 #' Build a query for the webpage
 #'
@@ -111,7 +122,7 @@ query_pdf <- function(year, month, day, code) {
 #' \donttest{get_xml(url)}
 get_xml <- function(query) {
     user_agent <- user_agent("https://github.com/llrs/BOE")
-    response <- GET(query, user_agent)
+    response <- GET(query, httr::accept_xml(), user_agent)
     httr::stop_for_status(response)
     if (status_code(response) != 200) {
         stop("Could not retrieve the data.", call. = FALSE)
@@ -122,5 +133,5 @@ get_xml <- function(query) {
     if (http_type(response) != "application/xml") {
         stop("API did not find the requested document.", call. = FALSE)
     }
-    content(response)
+    content(response, encoding = "UTF-8")
 }

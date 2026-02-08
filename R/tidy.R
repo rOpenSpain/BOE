@@ -23,7 +23,7 @@
 #' @importFrom xml2 xml_text
 #' @importFrom xml2 xml_attrs
 tidy_sumario <- function(x) {
-
+    x <- xml_child(x, "data")
     fechas <- xml_text(xml_find_all(x,  "./meta/fecha"))
 
     # No content

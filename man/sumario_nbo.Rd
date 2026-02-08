@@ -7,7 +7,7 @@
 \usage{
 sumario_nbo(date, journal = "BOE")
 
-sumario_xml(date, journal = "BOE")
+sumario_xml(date)
 }
 \arguments{
 \item{date}{Date of the \emph{sumario}}

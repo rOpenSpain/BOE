@@ -248,16 +248,16 @@ check_date <- function(x) {
          call. = FALSE)
 }
 
-valid_date <- function(x) {
+valid_date <- function(date) {
 
-    if (is.numeric(x)) {
-        x <- as.character(x)
+    if (is.numeric(date)) {
+        date <- as.character(date)
     }
 
-    if (!is.na(as.Date(x, format = "%Y%m%d"))) {
+    if (!is.na(as.Date(date, format = "%Y%m%d"))) {
         return(TRUE)
     }
-    y <- strsplit(x, "", fixed = TRUE)[[1]]
+    y <- strsplit(date, "", fixed = TRUE)[[1]]
     month <- as.numeric(paste0(y[5:6], collapse = ""))
     day <- as.numeric(paste0(y[7:8], collapse = ""))
     if (month >= 13) {

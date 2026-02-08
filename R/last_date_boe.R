@@ -1,10 +1,10 @@
 #' Last day of BOE
 #'
 #' Returns the date of the last BOE under normal circumstances.
-#' @return A date.
+#' @return A date in character format %Y-%m-%d.
 #' @export
 #' @examples
-#' last_date_boe()
+#' last_boe()
 last_date_boe <- function() {
     today <- Sys.Date()
     time <- as.numeric(format(Sys.time(), format = "%H%I", tz = "Europe/Madrid"))
@@ -15,3 +15,7 @@ last_date_boe <- function() {
     }
     today
 }
+
+#' @export
+#' @rdname last_date_boe
+last_boe <- last_date_boe()

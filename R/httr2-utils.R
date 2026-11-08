@@ -10,5 +10,7 @@ req_api <- function(...) {
     req_user_agent("BOE (https://ropenspain.github.io/BOE)") |>
     req_url_query(...) |>
     req_throttle(capacity = 30) |>
-    req_retry(max_tries = 5, backoff = function(x) { x })
+    req_retry(max_tries = 5, backoff = function(x) {
+      x
+    })
 }

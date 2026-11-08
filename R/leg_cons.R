@@ -20,11 +20,13 @@ lex <- function(query, from, to = Sys.Date(), offset = NULL, limit = -1) {
   check_date(to)
   check_limit(limit)
   check_offset(offset)
-  req <- req_api(query = query,
-                 from = format_date(from),
-                 to = format_date(to),
-                 offset = offset,
-                 limit = limit)  |>
+  req <- req_api(
+    query = query,
+    from = format_date(from),
+    to = format_date(to),
+    offset = offset,
+    limit = limit
+  ) |>
     req_url_path_append(leg_cons)
 
   rr <- req_perform_iterative(req, function(resp, req) {
@@ -45,7 +47,6 @@ lex <- function(query, from, to = Sys.Date(), offset = NULL, limit = -1) {
 }
 
 
-
 #' Download by CVE
 #'
 #' @param id CVE of the document.
@@ -61,43 +62,41 @@ lex <- function(query, from, to = Sys.Date(), offset = NULL, limit = -1) {
 #' lex_id("BOE-A-2000-17579")
 lex_id <- function(id, metadatos = FALSE, analisis = FALSE, ELI = FALSE) {
   xsd <- "https://www.boe.es/datosabiertos/definitions/download_schema.php?id=legislacion-consolidada-by-id"
-  req_id <- req_api()  |>
-      req_url_path_append(leg_cons, "id") |>
-      req_url_path_append(id)
+  req_id <- req_api() |>
+    req_url_path_append(leg_cons, "id") |>
+    req_url_path_append(id)
 
   if (is_logical(metadatos) && isTRUE(metadatos)) {
-      req_metadata <- req_api()  |>
-          req_url_path_append(leg_cons, "id") |>
-          req_url_path_append(id, "metadatadatos")
+    req_metadata <- req_api() |>
+      req_url_path_append(leg_cons, "id") |>
+      req_url_path_append(id, "metadatadatos")
   }
   if (is_logical(analisis) && isTRUE(analisis)) {
-      req_analisis <- req_api()  |>
-          req_url_path_append(leg_cons, "id") |>
-          req_url_path_append(id, "analisis")
+    req_analisis <- req_api() |>
+      req_url_path_append(leg_cons, "id") |>
+      req_url_path_append(id, "analisis")
   }
   if (is_logical(ELI) && isTRUE(ELI)) {
-      req_ELI <- req_api()  |>
-          req_url_path_append(leg_cons, "id") |>
-          req_url_path_append(id, "metadata-eli")
+    req_ELI <- req_api() |>
+      req_url_path_append(leg_cons, "id") |>
+      req_url_path_append(id, "metadata-eli")
   }
-
 }
 
 lex_text <- function(id) {
-      req_ELI <- req_api()  |>
-          req_url_path_append(leg_cons, "id") |>
-          req_url_path_append(id, "metadata-eli")
-
+  req_ELI <- req_api() |>
+    req_url_path_append(leg_cons, "id") |>
+    req_url_path_append(id, "metadata-eli")
 }
 
 sumario_boe <- function(fecha) {
-    check_date(fecha)
-    req_api() |>
-        req_url_path_append("boe", "sumario", fecha)
+  check_date(fecha)
+  req_api() |>
+    req_url_path_append("boe", "sumario", fecha)
 }
 
 sumario_borme <- function(fecha) {
-    check_date(fecha)
-    req_api() |>
-        req_url_path_append("borme", "sumario", fecha)
+  check_date(fecha)
+  req_api() |>
+    req_url_path_append("borme", "sumario", fecha)
 }

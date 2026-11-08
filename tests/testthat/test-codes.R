@@ -1,31 +1,31 @@
 test_that("sumario_nbo works", {
-    s <- sumario_nbo(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"))
-    expect_identical(s, "BOE-S-20090101")
+  s <- sumario_nbo(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"))
+  expect_identical(s, "BOE-S-20090101")
 })
 
 test_that("sumario_cve works", {
-    s <- sumario_cve(2019, 242)
-    expect_identical(s, "BOE-S-2019-242")
-    s <- sumario_cve("2019", "242")
-    expect_identical(s, "BOE-S-2019-242")
+  s <- sumario_cve(2019, 242)
+  expect_identical(s, "BOE-S-2019-242")
+  s <- sumario_cve("2019", "242")
+  expect_identical(s, "BOE-S-2019-242")
 })
 
 test_that("elemento works", {
-    s <- elemento(item = "B", year = 242, number = 242)
-    expect_identical(s, "BOE-B-242-242")
-    s <- elemento(item = "A", year = 242, number = 242)
-    expect_identical(s, "BOE-A-242-242")
+  s <- elemento(item = "B", year = 242, number = 242)
+  expect_identical(s, "BOE-B-242-242")
+  s <- elemento(item = "A", year = 242, number = 242)
+  expect_identical(s, "BOE-A-242-242")
 })
 
 
 test_that("disposicion_cve works", {
-    s <- disposicion_cve(year = 242, number = 242)
-    expect_identical(s, "BOE-A-242-242")
+  s <- disposicion_cve(year = 242, number = 242)
+  expect_identical(s, "BOE-A-242-242")
 })
 
 test_that("anuncio_cve works", {
-    s <- anuncio_cve(year = 242, number = 242)
-    expect_identical(s, "BOE-B-242-242")
+  s <- anuncio_cve(year = 242, number = 242)
+  expect_identical(s, "BOE-B-242-242")
 })
 
 

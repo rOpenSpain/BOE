@@ -8,17 +8,20 @@
 #' @export
 #' @seealso [tidy_sumario] to learn about the format of the output
 #' @examples
-#' \donttest{retrieve_sumario(last_date_boe())}
+#' \donttest{
+#' retrieve_sumario(last_date_boe())
+#' }
 retrieve_sumario <- function(date, journal = "BOE") {
-    is_cve <- is.character(date) && (startsWith(date, "BOE") || startsWith(date, "BORME"))
-    if (is_cve) {
-        stop("You seem to have provided a cve: use retrieve_docment()",
-             call. = TRUE)
-    }
-    check_date(date)
-    journal <- match.arg(journal, c("BOE", "BORME"))
-    sumario_nbo <- sumario_xml(date)
-    tidy_sumario(get_xml(query_xml_sumario(sumario_nbo)))
+  is_cve <- is.character(date) && (startsWith(date, "BOE") || startsWith(date, "BORME"))
+  if (is_cve) {
+    stop("You seem to have provided a cve: use retrieve_docment()",
+      call. = TRUE
+    )
+  }
+  check_date(date)
+  journal <- match.arg(journal, c("BOE", "BORME"))
+  sumario_nbo <- sumario_xml(date)
+  tidy_sumario(get_xml(query_xml_sumario(sumario_nbo)))
 }
 
 
@@ -33,19 +36,20 @@ retrieve_sumario <- function(date, journal = "BOE") {
 #' cve <- "BOE-A-2020-12109"
 #' df <- retrieve_document(cve)
 retrieve_document <- function(cve) {
-    check_code(cve)
-    ids <- strsplit(cve, split = "-", fixed = TRUE)[[1]]
-    xml <- get_xml(query_xml(cve))
+  check_code(cve)
+  ids <- strsplit(cve, split = "-", fixed = TRUE)[[1]]
+  xml <- get_xml(query_xml(cve))
 
-    # Check if is a sumario
-    if (xml_name(xml) == "sumario") {
-        return(tidy_sumario(xml))
-    }
+  # Check if is a sumario
+  if (xml_name(xml) == "sumario") {
+    return(tidy_sumario(xml))
+  }
 
-    # We only have all the elements from the BOE for the moment, not the BORME
-    switch(ids[2],
-           "A" = tidy_disposicion(xml),
-           "B" = tidy_anuncio(xml))
+  # We only have all the elements from the BOE for the moment, not the BORME
+  switch(ids[2],
+    "A" = tidy_disposicion(xml),
+    "B" = tidy_anuncio(xml)
+  )
 }
 
 #' Url to the publications
@@ -62,20 +66,22 @@ retrieve_document <- function(cve) {
 #' url_publications(sumario[1:10, ])
 #' }
 url_publications <- function(sumario) {
+  if (!is(sumario, "data.frame")) {
+    stop("The expected input is a data.frame. See retrieve_sumario")
+  }
 
-    if (!is(sumario, "data.frame")) {
-        stop("The expected input is a data.frame. See retrieve_sumario")
-    }
-
-    if (!all(c("date", "publication") %in% colnames(sumario))) {
-        stop("The data.frame does not have publication and date columns.")
-    }
-    d <- sumario$date
-    pub_code <- sumario$publication
-    year <- format(d, "%Y")
-    month <- format(d, "%m")
-    day <- format(d, "%d")
-    query_pdf(year, month, day, pub_code)
+  if (!all(c("date", "publication") %in% colnames(sumario))) {
+    stop("The data.frame does not have publication and date columns.")
+  }
+  d <- sumario$date
+  if (anyNA(d)) {
+    stop("No NA is accepted")
+  }
+  pub_code <- sumario$publication
+  year <- format(d, "%Y")
+  month <- format(d, "%m")
+  day <- format(d, "%d")
+  query_pdf(year, month, day, pub_code)
 }
 
 #' Open publications on the browser
@@ -88,9 +94,10 @@ url_publications <- function(sumario) {
 #' @examples
 #' \dontrun{
 #' sumario <- retrieve_sumario(last_date_boe())
-#' url_publications(sumario[1:10, ])}
+#' url_publications(sumario[1:10, ])
+#' }
 open_publications <- function(sumario) {
-    urls <- url_publications(sumario)
-    lapply(urls, browseURL)
-    invisible(NULL)
+  urls <- url_publications(sumario)
+  lapply(urls, browseURL)
+  invisible(NULL)
 }

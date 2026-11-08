@@ -32,8 +32,7 @@ sumario_nbo(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"), journal =
 \seealso{
 The id is different from the CVE, which can be created with \code{\link[=sumario_cve]{sumario_cve()}}.
 
-Other code generators: 
-\code{\link{element}},
-\code{\link{sumario_cve}()}
+Other code generators:
+\code{\link[=sumario_cve]{sumario_cve()}}
 }
 \concept{code generators}

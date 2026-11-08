@@ -18,7 +18,7 @@ cve <- "BOE-A-2020-12109"
 df <- retrieve_document(cve)
 }
 \seealso{
-Other functions to retrieve documents: 
-\code{\link{retrieve_sumario}()}
+Other functions to retrieve documents:
+\code{\link[=retrieve_sumario]{retrieve_sumario()}}
 }
 \concept{functions to retrieve documents}

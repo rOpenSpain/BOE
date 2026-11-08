@@ -18,5 +18,6 @@ This function opens urls in your browser.
 \examples{
 \dontrun{
 sumario <- retrieve_sumario(last_date_boe())
-url_publications(sumario[1:10, ])}
+url_publications(sumario[1:10, ])
+}
 }

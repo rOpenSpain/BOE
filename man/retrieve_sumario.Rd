@@ -18,12 +18,14 @@ A data.frame with one line for each publication.
 Obtain a \emph{sumario} and tidy it in a table.
 }
 \examples{
-\donttest{retrieve_sumario(last_date_boe())}
+\donttest{
+retrieve_sumario(last_date_boe())
+}
 }
 \seealso{
 \link{tidy_sumario} to learn about the format of the output
 
-Other functions to retrieve documents: 
-\code{\link{retrieve_document}()}
+Other functions to retrieve documents:
+\code{\link[=retrieve_document]{retrieve_document()}}
 }
 \concept{functions to retrieve documents}

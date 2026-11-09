@@ -3,29 +3,29 @@ is_logical <- function(x) {
 }
 
 check_date <- function(x) {
+  if (is.numeric(x)) {
+    x <- as.character(x)
+  }
 
-    if (is.numeric(x)) {
-        x <- as.character(x)
-    }
+  if (!is.na(format_date(x))) {
+    return(TRUE)
+  }
 
-    if (!is.na(as.Date(x, format = "%Y%m%d"))) {
-        return(TRUE)
-    }
-
-    y <- strsplit(x, "")[[1]]
-    month <- as.numeric(paste0(y[5L:6L], collapse = ""))
-    day <- as.numeric(paste0(y[7L:8L], collapse = ""))
-    if (month >= 13) {
-        stop("The month is greater than 12.", call. = FALSE)
-    }
-    if (day >= 31L) {
-        stop("The day is greater than 31.", call. = FALSE)
-    }
-    out <- strptime(x, "%Y%m%d")
-    if (anyNA(out)) {
-        stop("That date does not exists, check the day of the month.",
-             call. = FALSE)
-    }
+  y <- strsplit(x, "")[[1]]
+  month <- as.numeric(paste0(y[5L:6L], collapse = ""))
+  day <- as.numeric(paste0(y[7L:8L], collapse = ""))
+  if (month >= 13) {
+    stop("The month is greater than 12.", call. = FALSE)
+  }
+  if (day >= 31L) {
+    stop("The day is greater than 31.", call. = FALSE)
+  }
+  out <- strptime(x, "%Y%m%d")
+  if (anyNA(out)) {
+    stop("That date does not exists, check the day of the month.",
+      call. = FALSE
+    )
+  }
 }
 
 format_dates <- function(x) {
@@ -46,11 +46,18 @@ format_dates <- function(x) {
 
 format_date <- function(date) {
   if (is(date, "Date")) {
-    date <- format(date, "%Y%m%d")
+    format(date, "%Y%m%d")
   } else if (is.numeric(date)) {
-    date <- as.character(date)
+    as.character(date)
+  } else if (is.character(date)) {
+    format(
+      as.Date(date,
+        tryFormats = c("%Y%m%d", "%Y-%m-%d", "%Y/%m/%d"),
+        optional = TRUE
+      ),
+      "%Y%m%d"
+    )
   }
-  date
 }
 
 check_limit <- function(limit) {

@@ -4,7 +4,7 @@
 #' @return A date in character format %Y-%m-%d.
 #' @export
 #' @examples
-#' last_boe()
+#' last_date_boe()
 last_date_boe <- function() {
   today <- Sys.Date()
   time <- as.numeric(format(Sys.time(), format = "%H%I", tz = "Europe/Madrid"))

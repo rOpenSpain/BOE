@@ -16,5 +16,5 @@ A date in character format \%Y-\%m-\%d.
 Returns the date of the last BOE under normal circumstances.
 }
 \examples{
-last_boe()
+last_date_boe()
 }

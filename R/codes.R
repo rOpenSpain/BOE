@@ -17,25 +17,16 @@ is_numeric <- function(x) {
 #' @importFrom methods is
 #' @examples
 #' sumario_nbo(Sys.Date())
-#' sumario_nbo(format(as.Date("2009/01/01", "%Y/%m/%d"), "%Y%m%d"), journal = "BORME")
+#' sumario_nbo(as.Date("2009/01/01", "%Y/%m/%d"), journal = "BORME")
 sumario_nbo <- function(date, journal = "BOE") {
-  if (is(date, "Date")) {
-    date <- format(date, "%Y%m%d")
-  }
   check_date(date)
   journal <- match.arg(journal, c("BOE", "BORME"))
-  paste(journal, "S", date, sep = "-")
+  paste(journal, "S", format_date(date), sep = "-")
 }
 
 #' @describeIn sumario_nbo For compatibility with previous version
 #' @export
-sumario_xml <- function(date) {
-  if (is(date, "Date")) {
-    date <- format(date, "%Y%m%d")
-  }
-  check_date(date)
-  date
-}
+sumario_xml <- sumario_nbo
 
 #' Create the number of the _sumario_
 #'
@@ -62,3 +53,161 @@ sumario_cve <- function(year, number, journal = "BOE") {
 }
 
 #' Elements: _disposici
+
+
+
+#' Check id of documents
+#'
+#' Given an id check if it is valid.
+#' @param id ID or CVE of the document (character).
+#' @return A logical value if correct, errors if something is not right.
+#' @export
+#' @examples
+#' check_code("BOE-S-20141006") # Normal way
+#' check_code("BOE-S-2014-242") # Also accepted but not documented
+#' # Will fail:
+#' # check_code("BOE-S-2014")
+#' valid_code("BOE-S-2014")
+check_code <- function(id) {
+  if (length(id) > 1) {
+    stop("This function is not vectorized. Check the code one by one.",
+         call. = FALSE)
+  }
+  ids <- unlist(strsplit(id, "-", fixed = TRUE), FALSE, FALSE)
+  if (!ids[1] %in% c("BORME", "BOE")) {
+    stop("Journal does not match: got ", ids[1],
+         " should be either BORME or BOE.", call. = FALSE)
+  }
+  if (ids[1] == "BOE" && length(ids) > 4) {
+    stop("The code should have at most 3 '-' got more.", call. = FALSE)
+  }
+  if (ids[1] == "BOE" && !ids[[2]] %in% c("B", "A", "S")) {
+    stop("The type of document does not match: got ", ids[2],
+         " should be either A, B or S.", call. = FALSE)
+  }
+  if (ids[1] == "BORME" && !ids[[2]] %in% c("B", "A", "C", "S")) {
+    stop("The type of document does not match: got ", ids[2],
+         " should be either A, B, C or S.", call. = FALSE)
+  }
+  # BORME-S-2017-188 and BORME-S-20171002 are equivalent
+  if (length(ids) < 4L && ids[[2]] != "S") {
+    stop("The code should have three 2 '-'.", call. = FALSE)
+  }
+  if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) < 8L) {
+    stop("The last number should be a date of format YYYYMMDD.",
+         call. = FALSE)
+  }
+  if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) >= 8L) {
+    check_date(ids[3])
+  }
+
+  if (!is_numeric(paste0(ids[3L:length(ids)], collapse = ""))) {
+    stop("After journal and type of document there only should be numbers.",
+         call. = FALSE)
+  }
+  # if (ids[2] == "S" && nchar(ids[3]) > 4) {
+  #     stop("Got ", ids[3], " should be a year in numerical form.",
+  #          call. = FALSE)
+  # }
+  if (ids[[2]] == "A" && ids[[1]] == "BORME" && length(ids) > 5L) {
+    stop("Got ", ids[[3]], " should be a numerical year.", call. = FALSE)
+  }
+
+  TRUE
+}
+
+
+#' Elements: _disposición_ and _anuncio_
+#'
+#' Functions to create CVE codes for the documents published on the BOE.
+#' @name element
+#' @param year Character or numeric value of the year of the element in YYYY format.
+#' @param number Character or numeric value of the element.
+#' @return A character vector
+#' @family code generators
+NULL
+
+#' @describeIn element Create the CVE of the diposicion.
+#' @export
+#' @examples
+#' disposicion_cve(2019, 242)
+disposicion_cve <- function(year, number) {
+  elemento(item = "A", year = year, number = number)
+}
+
+elemento <- function(item = c("B", "A"), year, number) {
+  item <- match.arg(item, c("B", "A"))
+  if (nchar(year) != 4  && !is_numeric(year)) {
+    stop("The year should be in numeric YYYY format", call. = FALSE)
+  }
+  if (nchar(number) > 3  && !is_numeric(number)) {
+    stop("The number should be in numeric XXX format", call. = FALSE)
+  }
+  paste("BOE", item, year, number, sep = "-")
+}
+
+#' @describeIn element Create the CVE of the announcement.
+#' @export
+#' @examples
+#' anuncio_cve(2019, 242)
+anuncio_cve <- function(year, number) {
+  elemento(item = "B", year = year, number = number)
+}
+
+
+#' @param sumario Logical value if sumarios should be accepted.
+#' @param BORME Logical value if BORME journal should be accepted.
+#' @export
+#' @describeIn check_code Returns logic values
+valid_code <- function(id, sumario = TRUE, BORME = FALSE) {
+  stopifnot(is.character(id))
+  stopifnot(is_logical(sumario))
+  stopifnot(is_logical(BORME))
+
+  if (length(id) > 1L) {
+    stop("This function is not vectorized. Check the code one by one.",
+         call. = FALSE)
+  }
+  ids <- unlist(strsplit(id, "-", fixed = TRUE), FALSE, FALSE)
+  type <- if (BORME) "BORME" else "BOE"
+  if (!ids[[1]] %in% type) {
+    return(FALSE)
+  }
+  if (ids[[1]] == "BOE" && length(ids) > 4L) {
+    stop("The code should have at most 3 '-' got more.", call. = FALSE)
+  }
+
+  if (type == "BOE" && !ids[[2]] %in% c("B", "A", "S")) {
+    return(FALSE)
+  }
+  if (type == "BORME" && !ids[[2]] %in% c("B", "A", "C", "S")) {
+    return(FALSE)
+  }
+
+  if (ids[[2]] == "S" && sumario) {
+    return(FALSE)
+  }
+  # BORME-S-2017-188 and BORME-S-20171002 are equivalent
+  if (length(ids) < 4 && ids[[2]] != "S") {
+    return(FALSE)
+  }
+  if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) < 8L) {
+    return(FALSE)
+  }
+  if (length(ids) < 4L && ids[[2]] == "S" && nchar(ids[[3]]) >= 8L) {
+    return(!is.na(format_date(ids[[3]])))
+  }
+
+  if (!is_numeric(paste0(ids[3:length(ids)], collapse = ""))) {
+    return(FALSE)
+  }
+  # if (ids[2] == "S" && nchar(ids[3]) > 4) {
+  #     stop("Got ", ids[3], " should be a year in numerical form.",
+  #          call. = FALSE)
+  # }
+  if (ids[[2]] == "A" && ids[[1]] == "BORME" && length(ids) > 5L) {
+    return(FALSE)
+  }
+
+  TRUE
+}

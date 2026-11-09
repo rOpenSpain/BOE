@@ -13,7 +13,7 @@ get_xml(query)
 Look up on the internet and get the content
 }
 \examples{
-id <- sumario_nbo(format(as.Date("2017/10/02", "\%Y/\%m/\%d"), "\%Y\%m\%d"))
+id <- disposicion_cve("2017", "117")
 url <- query_xml(id)
 \donttest{
 get_xml(url)

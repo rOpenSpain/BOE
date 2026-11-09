@@ -20,8 +20,7 @@ retrieve_sumario <- function(date, journal = "BOE") {
   }
   check_date(date)
   journal <- match.arg(journal, c("BOE", "BORME"))
-  sumario_nbo <- sumario_xml(date)
-  tidy_sumario(get_xml(query_xml_sumario(sumario_nbo)))
+  sumario_boe(date)
 }
 
 

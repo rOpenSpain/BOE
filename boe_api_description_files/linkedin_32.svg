@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="Capa_1">
+	<circle fill="#007ABE" cx="16" cy="16" r="16"/>
+</g>
+<g id="Capa_2">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M6.747,16.22v9.087h4.327V15.48v-2.55H6.747V16.22z
+		 M25.205,16.732c-0.285-2.345-1.355-3.803-4.521-3.803c-1.855,0-3.108,0.683-3.632,1.674h-0.058V12.93h-3.45v2.38v9.997h3.609
+		V19.17c0-1.617,0.319-3.177,2.302-3.177c1.992,0,2.14,1.844,2.14,3.291v6.023h3.712v-6.798
+		C25.307,17.872,25.272,17.279,25.205,16.732L25.205,16.732z M8.91,6.747c-1.195,0-2.163,0.968-2.163,2.164
+		c0,1.196,0.968,2.164,2.163,2.164c1.196,0,2.164-0.968,2.164-2.164C11.074,7.715,10.106,6.747,8.91,6.747L8.91,6.747z"/>
+</g>
+</svg>

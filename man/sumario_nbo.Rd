@@ -7,7 +7,7 @@
 \usage{
 sumario_nbo(date, journal = "BOE")
 
-sumario_xml(date)
+sumario_xml(date, journal = "BOE")
 }
 \arguments{
 \item{date}{Date of the \emph{sumario}}
@@ -27,12 +27,13 @@ Creates the id for a \emph{sumario} by the date it was published.
 }}
 \examples{
 sumario_nbo(Sys.Date())
-sumario_nbo(format(as.Date("2009/01/01", "\%Y/\%m/\%d"), "\%Y\%m\%d"), journal = "BORME")
+sumario_nbo(as.Date("2009/01/01", "\%Y/\%m/\%d"), journal = "BORME")
 }
 \seealso{
 The id is different from the CVE, which can be created with \code{\link[=sumario_cve]{sumario_cve()}}.
 
 Other code generators:
+\code{\link{element}},
 \code{\link[=sumario_cve]{sumario_cve()}}
 }
 \concept{code generators}

@@ -1,0 +1,199 @@
+/*eliminamos aspectos por defecto}*/
+input[type="submit"], input[type="button"]  {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input, select, .boton {
+  border: 1px solid rgba(160,176,192,0.8);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip:padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  box-sizing:border-box; color:#5f5f5f; padding:6px;
+  border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; min-width:10em; background-color:#ffffff;
+}
+select {padding:5px;}
+input[type="image"] {min-width:auto;}
+a.boton {text-decoration:none !important;}
+.botonera {
+	padding: 		1em 0 0.5em 0;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.aviso { padding: 2.5em;}
+.mensaje { text-align: center; color: #912600;}
+
+input[type="checkbox"], input[type="radio"], select {min-width:inherit;}
+input[type="checkbox"], input[type="radio"] {vertical-align:top; box-shadow:none;}
+.boton {
+  border: none; background-color:#e6e6e6; margin:0 auto; text-align:center; color:#123a63;
+  padding:0.5em 1em; max-width:92vw; 
+  -moz-box-shadow:0 1px 1px 0 rgba(0,0,0,0.28), 0 0 0 0.2px rgba(0,0,0,0.28);
+  -webkit-box-shadow:0 1px 1px 0 rgba(0,0,0,0.28), 0 0 0 0.2px rgba(0,0,0,0.28);
+  box-shadow:0 1px 1px 0 rgba(0,0,0,0.28), 0 0 0 0.2px rgba(0,0,0,0.28);
+}
+.boton a {text-decoration:none !important; color:inherit;}
+.boton:hover {cursor:pointer; background-color:#f3f3f3;}
+.sinSombra {box-shadow:none;}
+
+/*----- <focus accesiblidad> -----*/
+input[type="text"]:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="date"]:focus-visible,
+input[type="image"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="password"]:focus-visible,
+select:focus-visible,
+button:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+	outline: 2px solid #f4ad3e !important;
+}
+
+
+input[type="checkbox"]:focus-visible + span{
+	outline: none !important;
+	text-decoration: underline 2px #f4ad3e;
+}
+
+input[type="checkbox"]:focus-visible + span::before{
+	border: 2px solid #f4ad3e !important;
+}
+
+input[type="radio"]:focus-visible + span{
+	outline: none !important;
+	text-decoration: underline 2px #f4ad3e;
+}
+
+input[type="radio"]:focus-visible + span::before{
+	border: 2px solid #f4ad3e !important;
+}
+
+/*----- <dropdown box> -----*/
+div.dropdown {position:relative; display:inline-block; margin-bottom:1em; text-align:left;}
+
+div.dropdown > input[type="checkbox"]:focus-visible + label {
+	outline: 2px solid  #f4ad3e !important;
+}
+
+div.dropdown > input[type="checkbox"] {
+  position:absolute;
+/* 	display:none; */
+  opacity: 0;
+}
+
+div.dropdown > label {
+  display:inline-block; padding:6px 2.5em 6px 15px; color:#333; line-height:1.5em; border:1px solid #eee;
+  background-color:#eee; cursor:pointer; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;
+  box-sizing:border-box; color:#5f5f5f; min-width:27.5em;
+  box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  background:#eee url('/imagenes/down-arrow_64x64.png') 97% center no-repeat;
+  transition:background-position 0.5s; background-size:1em 1em;
+}
+div.dropdown:hover > label {
+  border:1px solid #F29708; background-color:#fff; -webkit-border-radius:3px;
+  -moz-border-radius:3px; border-radius:3px;
+}
+div.dropdown > ul {
+  position:absolute; z-index:900; display:none; border:1px solid #eee; background:#fff;
+  padding:6px 0; margin:0; list-style:none; width:100%; -webkit-border-radius:0 0 3px 3px;
+  -moz-border-radius:0 0 3px 3px; border-radius:0 0 3px 3px; -webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .15);
+  -moz-box-shadow:0 3px 8px rgba(0, 0, 0, .15); box-shadow:0 3px 8px rgba(0, 0, 0, .15); width:27.5em;
+  max-height:24em; overflow:auto;
+}
+div.dropdown >ul a {display:block; padding:6px 15px; text-decoration:none; color:#123a63;}
+div.dropdown>ul a:hover, .dropdown>ul a:focus {background:#ececec;}
+div.dropdown > input[type="checkbox"]:checked ~ ul {display:block;}
+div.dropdown > input[type="checkbox"]:checked + label {background-image:url('/imagenes/up-arrow_64x64.png');}
+/*----- </dropdown box> -----*/
+
+/*checkbox y radio  (input + label dentro de clase formBOE)*/
+.formBOE input[type="radio"],
+.formBOE input[type="checkbox"] {
+  position:absolute; opacity:0; cursor:pointer; height:0; width:0;
+  -webkit-appearance:none; -moz-appearance: none;
+}
+.formBOE fieldset.radio-check label, label.radio-check {margin:0.5em 0; display:inline-block;}
+.formBOE input[type="radio"] + label,
+.formBOE input[type="checkbox"] + label,  
+.formBOE .radio-check span {
+  position:relative; padding-left:1.6em; padding-right:0.6em; cursor:pointer;
+  -webkit-touch-callout: none; /* iOS Safari */ 
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */ 
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */ 
+  user-select: none;
+}
+/* aspecto */
+.formBOE input[type="radio"] + label:before,
+.formBOE input[type="checkbox"] + label:before,
+.formBOE .radio-check span:before{
+  content:''; position:absolute; left:0; top:0; width:1.25em; height:1.25em; 
+  background-color:#fff; border:solid 1px #ccc; box-sizing:border-box;
+}
+/* aspecto radio button */
+.formBOE input[type="radio"] + label:before,
+.formBOE .radio-check input[type="radio"] + span:before {
+  border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%;
+}
+/* aspecto checkbox seleccionado */
+.formBOE input[type="checkbox"] + label:after,
+.formBOE .radio-check input[type="checkbox"] + span:after {
+  position:absolute; content:''; left:0.4em; top:0.13em; width:0.25em; height:0.6em;
+  border:solid white; border-width:0 0.2em 0.2em 0; -webkit-transform:rotate(45deg);
+  -ms-transform:rotate(45deg); transform:rotate(45deg); opacity:0;
+}
+/* aspecto radio seleccionado */
+.formBOE input[type="radio"] + label:after,
+.formBOE .radio-check input[type="radio"] + span:after  {
+  position:absolute; background-color:white; content:''; left:0; top:0; width:1.25em; height:1.25em;
+  border:.4em solid #123a63; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%;
+  opacity:0; box-sizing:border-box;
+}
+/* seleccionado */
+.formBOE input[type="radio"]:checked + label:after,
+.formBOE input[type="checkbox"]:checked + label:after,
+.formBOE .radio-check input:checked + span:after {opacity:1;}
+
+.formBOE input[type="radio"]:checked + label:before,
+.formBOE input[type="checkbox"]:checked + label:before,
+.formBOE .radio-check input:checked + span:before {background-color:#123a63;}
+
+/* disabled  */
+.formBOE input[type="radio"]:disabled + label:before,
+.formBOE input[type="checkbox"]:disabled + label:before,
+.formBOE .radio-check input:disabled + span:before {background-color:#ccc;}
+
+.formBOE input[type="radio"]:disabled:checked + label:after,
+.formBOE input[type="checkbox"]:disabled:checked + label:after,
+.formBOE .radio-check input:disabled + span:after {color: #999;}
+
+.formBOE input[type="radio"]:disabled + label,
+.formBOE input[type="checkbox"]:disabled + label,
+.formBOE .radio-check input:disabled + span {color:#aaa;}
+
+/* hover  */
+.formBOE input[type="radio"]:not(:disabled):not(:checked) + label:hover:before,
+.formBOE input[type="checkbox"]:not(:disabled):not(:checked) + label:hover:before
+.formBOE .radio-check input:not(disabled):not(checked) + span:hover:before {
+  background-color:#eee !important; border:solid 1px #ccc;
+}
+
+.formBOE input[type="date"] {width:11em; padding-right:0;}
+
+/***** ¡¡¡Movil!!! Para pantallas width width < 670px *****/
+@media (max-width:669px) {
+  select, input {max-width:90vw;}
+  select {
+    white-space:nowrap; overflow:hidden; -o-text-overflow:ellipsis; -ms-text-overflow:ellipsis;
+    text-overflow: ellipsis; display:inline-block; white-space:pre-wrap;
+  }
+  div.dropdown > label {display:block; padding:6px 3em 6px 15px; width:90vw; min-width:0;}
+  div.dropdown > ul {width:90vw;}
+}
+
+
+

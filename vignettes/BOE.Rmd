@@ -54,7 +54,7 @@ head(sumario_hoy)
 
 Once you select those publications we can obtain the links for the pdf.
 
-```{r url-publications}
+```{r url-publications, eval=nrow(sumario_hoy)}
 url_publications(sumario_hoy[1:5, ])
 ```
 

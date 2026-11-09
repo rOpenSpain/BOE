@@ -2,12 +2,9 @@
 % Please edit documentation in R/codes.R
 \name{sumario_cve}
 \alias{sumario_cve}
-\alias{sumario}
 \title{Create the number of the \emph{sumario}}
 \usage{
 sumario_cve(year, number, journal = "BOE")
-
-sumario(year, number, journal = "BOE")
 }
 \arguments{
 \item{year}{Character or numeric value of the year of the summary in YYYY format.}
@@ -22,19 +19,14 @@ A character vector with the CVE of the \emph{sumario}.
 \description{
 Create the number of the \emph{sumario}
 }
-\section{Functions}{
-\itemize{
-\item \code{sumario()}: For compatibility with previous version
-
-}}
 \examples{
 sumario_cve(2019, 242)
 }
 \seealso{
 \code{\link[=sumario_nbo]{sumario_nbo()}} if you want to retrieve the \emph{sumario} by date and don't know the CVE.
 
-Other code generators: 
+Other code generators:
 \code{\link{element}},
-\code{\link{sumario_nbo}()}
+\code{\link[=sumario_nbo]{sumario_nbo()}}
 }
 \concept{code generators}

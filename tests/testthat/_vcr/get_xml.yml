@@ -1,0 +1,286 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-A-2019-1
+  response:
+    status: 200
+    headers:
+      Date: Mon, 09 Nov 2026 12:51:15 GMT
+      Content-Type: application/xml; charset=utf-8
+      X-Robots-Tag: noindex
+      Access-Control-Allow-Origin: '*'
+      link: <https://www.boe.es/buscar/xml.php?id=BOE-A-2019-1>; rel="canonical"
+      Content-Security-Policy: 'default-src afirma://* ; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/
+        ; frame-src ''self'' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/  afirma://*
+        ; connect-src https://www.google.com/recaptcha/ ''self'' ; img-src ''self''
+        eur-lex.europa.eu data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ;
+        font-src ''self'' ; child-src ''self''  www.youtube.com afirma://* ; object-src
+        ''self''; media-src ''self'' ; frame-ancestors ''self'' always'
+      X-Frame-Options: SAMEORIGIN
+      Age: '0'
+      Accept-Ranges: bytes
+      Transfer-Encoding: chunked
+      Strict-Transport-Security: max-age=31536000
+    body:
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <documento fecha_actualizacion="20251220122601">
+          <metadatos>
+            <identificador>BOE-A-2019-1</identificador>
+            <origen_legislativo codigo="1">Estatal</origen_legislativo>
+            <departamento codigo="9562">Ministerio de Asuntos Exteriores, Unión Europea y Cooperación</departamento>
+            <rango codigo="1180">Acuerdo Internacional</rango>
+            <fecha_disposicion>20180226</fecha_disposicion>
+            <numero_oficial/>
+            <titulo>Convenio entre el Reino de España y la República de Túnez sobre cooperación en materia de Seguridad y de Lucha contra la Delincuencia, hecho "ad referendum" en Túnez el 26 de febrero de 2018.</titulo>
+            <diario codigo="BOE">Boletín Oficial del Estado</diario>
+            <fecha_publicacion>20190101</fecha_publicacion>
+            <diario_numero>1</diario_numero>
+            <seccion>1</seccion>
+            <subseccion/>
+            <pagina_inicial>1</pagina_inicial>
+            <pagina_final>5</pagina_final>
+            <suplemento_pagina_inicial/>
+            <suplemento_pagina_final/>
+            <url_pdf>https://www.boe.es/boe/dias/2019/01/01/pdfs/BOE-A-2019-1.pdf</url_pdf>
+            <url_epub>
+              <url_epub>https://www.boe.es/diario_boe/epub.php?id=BOE-A-2019-1</url_epub>
+            </url_epub>
+            <url_pdf_catalan/>
+            <url_pdf_euskera/>
+            <url_pdf_gallego/>
+            <url_pdf_valenciano/>
+            <estatus_legislativo>L</estatus_legislativo>
+            <fecha_vigencia>20190131</fecha_vigencia>
+            <estatus_derogacion>N</estatus_derogacion>
+            <fecha_derogacion/>
+            <judicialmente_anulada>N</judicialmente_anulada>
+            <fecha_anulacion/>
+            <vigencia_agotada>N</vigencia_agotada>
+            <estado_consolidacion codigo="0"/>
+            <letra_imagen>A</letra_imagen>
+            <suplemento_letra_imagen/>
+            <url_eli>https://www.boe.es/eli/es/ai/2018/02/26/(1)</url_eli>
+          </metadatos>
+          <metadata-eli>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:eli="http://data.europa.eu/eli/ontology#">
+              <eli:LegalResource rdf:about="https://www.boe.es/eli/es/ai/2018/02/26/(1)">
+                <eli:jurisdiction rdf:resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+                <eli:type_document rdf:resource="http://www.elidata.es/mdr/authority/resource-type/1/ai"/>
+                <eli:id_local rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BOE-A-2019-1</eli:id_local>
+                <eli:date_document rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-26</eli:date_document>
+                <eli:number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)</eli:number>
+                <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/71"/>
+                <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/459"/>
+                <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/1704"/>
+                <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/2339"/>
+                <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6127"/>
+                <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6494"/>
+                <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6875"/>
+                <eli:has_member>
+                  <eli:LegalResource rdf:about="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof">
+                    <eli:jurisdiction rdf:resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+                    <eli:type_document rdf:resource="http://www.elidata.es/mdr/authority/resource-type/1/ai"/>
+                    <eli:id_local rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BOE-A-2019-1</eli:id_local>
+                    <eli:date_document rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-26</eli:date_document>
+                    <eli:number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)</eli:number>
+                    <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/71"/>
+                    <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/459"/>
+                    <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/1704"/>
+                    <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/2339"/>
+                    <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6127"/>
+                    <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6494"/>
+                    <eli:is_about rdf:resource="https://www.boe.es/legislacion/eli/materias/6875"/>
+                    <eli:version rdf:resource="http://www.elidata.es/mdr/authority/version/dof"/>
+                    <eli:is_member_of rdf:resource="https://www.boe.es/eli/es/ai/2018/02/26/(1)"/>
+                    <eli:is_realized_by>
+                      <eli:LegalExpression rdf:about="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa">
+                        <eli:language rdf:resource="http://www.elidata.es/mdr/authority/language/spa"/>
+                        <eli:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convenio entre el Reino de España y la República de Túnez sobre cooperación en materia de Seguridad y de Lucha contra la Delincuencia, hecho "ad referendum" en Túnez el 26 de febrero de 2018.</eli:title>
+                        <eli:publisher_agent rdf:resource="https://www.boe.es"/>
+                        <eli:date_publication rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-01</eli:date_publication>
+                        <eli:realizes rdf:resource="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof"/>
+                        <eli:is_embodied_by>
+                          <eli:Format rdf:about="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa/epub">
+                            <eli:format rdf:resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+                            <eli:embodies rdf:resource="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa"/>
+                          </eli:Format>
+                        </eli:is_embodied_by>
+                        <eli:is_embodied_by>
+                          <eli:Format rdf:about="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa/html">
+                            <eli:format rdf:resource="http://www.iana.org/assignments/media-types/text/html"/>
+                            <eli:embodies rdf:resource="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa"/>
+                          </eli:Format>
+                        </eli:is_embodied_by>
+                        <eli:is_embodied_by>
+                          <eli:Format rdf:about="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa/pdf">
+                            <eli:format rdf:resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+                            <eli:embodies rdf:resource="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa"/>
+                          </eli:Format>
+                        </eli:is_embodied_by>
+                        <eli:is_embodied_by>
+                          <eli:Format rdf:about="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa/xml">
+                            <eli:format rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+                            <eli:embodies rdf:resource="https://www.boe.es/eli/es/ai/2018/02/26/(1)/dof/spa"/>
+                          </eli:Format>
+                        </eli:is_embodied_by>
+                      </eli:LegalExpression>
+                    </eli:is_realized_by>
+                  </eli:LegalResource>
+                </eli:has_member>
+              </eli:LegalResource>
+            </rdf:RDF>
+          </metadata-eli>
+          <analisis>
+            <materias>
+              <materia codigo="71" orden="">Acuerdos internacionales</materia>
+              <materia codigo="1704" orden="">Cooperación internacional</materia>
+              <materia codigo="459" orden="">Delincuencia organizada</materia>
+              <materia codigo="2339" orden="">Delitos</materia>
+              <materia codigo="6494" orden="">Seguridad ciudadana</materia>
+              <materia codigo="6875" orden="">Terrorismo</materia>
+              <materia codigo="6127" orden="">Túnez</materia>
+            </materias>
+            <notas>
+              <nota codigo="11" orden="360">Fecha Resolución Ministerio de Asuntos Exteriores: 13 de diciembre de 2018.</nota>
+            </notas>
+            <referencias>
+              <anteriores>
+                <anterior referencia="BOE-A-1997-409" orden="3060">
+                  <palabra codigo="440">DE CONFORMIDAD con</palabra>
+                  <texto>el Tratado de 26 de octubre de 1995</texto>
+                </anterior>
+              </anteriores>
+              <posteriores/>
+            </referencias>
+            <alertas>
+              <alerta codigo="113" orden="">Derecho Penal</alerta>
+              <alerta codigo="123" orden="">Relaciones internacionales</alerta>
+              <alerta codigo="126" orden="">Seguridad y Defensa</alerta>
+            </alertas>
+          </analisis>
+          <texto>
+            <p class="centro_redonda">CONVENIO ENTRE EL REINO DE ESPAÑA Y LA REPÚBLICA DE TÚNEZ SOBRE COOPERACIÓN EN MATERIA DE SEGURIDAD Y DE LUCHA CONTRA LA DELINCUENCIA</p>
+            <p class="parrafo_2">El Reino de España y la República de Túnez, en adelante denominadas «las Partes»;</p>
+            <p class="parrafo">Reconociendo la importancia de desarrollar y profundizar su cooperación en el ámbito de la lucha contra la delincuencia en sus distintas manifestaciones;</p>
+            <p class="parrafo">Reafirmando lo establecido por el memorándum de entendimiento entre el Ministerio del Interior del Reino de España y el Ministerio del Interior de la República de Túnez sobre cooperación en materia de seguridad interior hecho en Túnez el 27 de julio de 2011;</p>
+            <p class="parrafo">Deseando contribuir al desarrollo de las relaciones bilaterales, sobre la base del Tratado de Amistad y Cooperación entre el Reino de España y la República de Túnez, hecho en Túnez el 26 de octubre de 1995;</p>
+            <p class="parrafo">Guiadas por los principios de igualdad, reciprocidad y asistencia mutua, han convenido en lo siguiente:</p>
+            <p class="articulo">Artículo I.</p>
+            <p class="parrafo">Las Partes, de conformidad con sus respectivas legislaciones y con el presente Convenio, cooperarán en el ámbito de la lucha contra la delincuencia, en particular:</p>
+            <p class="parrafo_2">a. el terrorismo, incluida su financiación, a través de la organización de seminarios, cursos y ejercicios prácticos, el envío de expertos para intercambiar experiencias, así como a través de la elaboración de programas de formación específicos;</p>
+            <p class="parrafo">b. los delitos contra la vida y la integridad física;</p>
+            <p class="parrafo">c. la detención ilegal y el secuestro;</p>
+            <p class="parrafo">d. los delitos contra los bienes;</p>
+            <p class="parrafo">e. los delitos vinculados con la fabricación de estupefacientes y el tráfico de drogas ilícitas, sustancias psicotrópicas y sus precursores;</p>
+            <p class="parrafo">f. la trata de seres humanos y la inmigración ilegal;</p>
+            <p class="parrafo">g. las formas organizadas de delincuencia focalizada, especialmente las relativas a la explotación sexual de menores, así como a la producción, difusión y facilitación de contenidos pornográficos con la participación de menores;</p>
+            <p class="parrafo">h. la extorsión;</p>
+            <p class="parrafo">i. el robo, el tráfico y el comercio ilegal de armas, municiones, explosivos, sustancias radioactivas, materiales biológicos y nucleares y otras sustancias peligrosas;</p>
+            <p class="parrafo">j. las transacciones financieras ilegales, los delitos económicos y fiscales, así como el blanqueo de capitales;</p>
+            <p class="parrafo">k. la falsificación de moneda y la fabricación, alteración, modificación y distribución de otros medios de pago, así como de cheques y otros títulos;</p>
+            <p class="parrafo">l. los delitos contra objetos culturales con valor histórico, así como el robo y el tráfico ilegal de obras de arte y antigüedades;</p>
+            <p class="parrafo">m. el robo, comercio ilícito y tráfico de vehículos de motor y la falsificación y utilización fraudulenta de documentación de vehículos a motor;</p>
+            <p class="parrafo">n. la falsificación y utilización ilegal de documentos de identidad y viaje;</p>
+            <p class="parrafo">o. los delitos cometidos utilizando medios informáticos, Internet y otros medios de telecomunicación;</p>
+            <p class="parrafo">p. los delitos contra los recursos naturales y el medio ambiente.</p>
+            <p class="parrafo_2">2. Las Partes cooperarán también en la lucha contra todo delito cuya prevención, detección e investigación requieran la cooperación de las autoridades competentes de los dos Estados;</p>
+            <p class="parrafo">3. Asimismo, de común acuerdo, las Partes podrán cooperar en cualquier otro ámbito en materia de seguridad, siempre que sea compatible con las disposiciones del presente Convenio.</p>
+            <p class="articulo">Artículo II.</p>
+            <p class="parrafo">1. La cooperación entre las Partes comprenderá, en el marco de la lucha contra la delincuencia a que se refiere el artículo 1, el intercambio de información y la asistencia en las actividades operativas de investigación para:</p>
+            <p class="parrafo_2">a. la identificación y búsqueda de personas desaparecidas;</p>
+            <p class="parrafo">b. la investigación y búsqueda de personas que hubieran cometido o fueran sospechosas de haber cometido delitos en el territorio de una u otra de las Partes responsable de su investigación, o de sus cómplices;</p>
+            <p class="parrafo">c. la identificación de cadáveres y de personas de interés policial;</p>
+            <p class="parrafo">d. la búsqueda en el territorio de una de las Partes de objetos, efectos o instrumentos fruto del delito o empleados en la comisión de delitos, a petición de la otra Parte contratante;</p>
+            <p class="parrafo">e. la financiación de actividades ilegales.</p>
+            <p class="parrafo_2">2. Las Partes contratantes cooperarán también, a través del intercambio de información, ayuda y mutua colaboración en:</p>
+            <p class="parrafo_2">a. el traslado de sustancias radioactivas, explosivas y tóxicas, y de armas;</p>
+            <p class="parrafo">b. el traslado o el tránsito de personas repatriadas o expulsadas.</p>
+            <p class="articulo">Artículo III.</p>
+            <p class="parrafo">Con el fin de cumplir los objetivos de la cooperación, las Partes:</p>
+            <p class="parrafo_2">a. se informarán mutuamente de las investigaciones en curso sobre las distintas formas de delincuencia organizada, incluido el terrorismo, sus relaciones, estructura, funcionamiento y métodos;</p>
+            <p class="parrafo">b. pondrán en práctica acciones coordinadas y de asistencia mutua, en virtud de acuerdos adicionales firmados por los órganos competentes;</p>
+            <p class="parrafo">c. intercambiarán información sobre los métodos y las nuevas formas de manifestación de la delincuencia internacional;</p>
+            <p class="parrafo">d. intercambiarán los resultados de las investigaciones criminalísticas y criminológicas realizadas, así como información sobre técnicas de información y métodos de lucha contra la delincuencia organizada;</p>
+            <p class="parrafo">e. organizarán reuniones de trabajo, en caso necesario, para la preparación y asistencia en la puesta en práctica de medidas coordinadas;</p>
+            <p class="parrafo">f. intercambiarán información sobre la situación general y las tendencias delictivas en sus respectivos Estados;</p>
+            <p class="parrafo">g. intercambiarán sus experiencias en el uso de tecnologías criminales, así como en métodos y medios de investigación criminal, folletos y publicaciones, así como resultados de investigaciones científicas en los ámbitos que abarca el presente Convenio;</p>
+            <p class="parrafo">h. intercambiarán información en los ámbitos de competencia de los servicios de protección de la igualdad penal y de otros servicios encargados de la defensa de la seguridad nacional, el orden público y la lucha contra la delincuencia;</p>
+            <p class="parrafo">i. prestarán asistencia técnica y científica y conocimientos técnicos y cederán equipos técnicos especializados;</p>
+            <p class="parrafo">j. intercambiarán experiencias, expertos y consultas;</p>
+            <p class="parrafo">k. cooperarán en el ámbito del aprendizaje profesional.</p>
+            <p class="articulo">Artículo IV.</p>
+            <p class="parrafo">En el marco del presente Convenio, la Parte anfitriona se hará cargo de los gastos de instrucción, formación, alojamiento, manutención y desplazamientos internos del personal, sobre la base del principio de reciprocidad. La Parte remitente se hará cargo de los gastos de transporte internacional. Las autoridades de las Partes podrán decidir otra cosa, caso por caso, de mutuo acuerdo.</p>
+            <p class="articulo">Artículo V.</p>
+            <p class="parrafo">El presente Convenio no afecta a cuestiones relativas a la asistencia judicial en materia penal ni en materia de extradición.</p>
+            <p class="articulo">Artículo VI.</p>
+            <p class="parrafo">Los órganos competentes para la aplicación del presente Convenio serán:</p>
+            <p class="parrafo_2">– Por el Reino de España: el Ministerio del Interior, sin perjuicio de las competencias que correspondan a otros ministerios;</p>
+            <p class="parrafo">– Por la República de Túnez: el Ministerio del Interior.</p>
+            <p class="articulo">Artículo VII.</p>
+            <p class="parrafo">1. El intercambio de información y las peticiones de realización de las actividades previstas en el presente Convenio se remitirán por escrito directamente a los órganos competentes o por medio de los oficiales de enlace de cada Parte. A tal fin, las Partes se comunicarán mutuamente el nombramiento de estos últimos.</p>
+            <p class="parrafo">En caso de urgencia, los órganos competentes podrán adelantar verbalmente las comunicaciones para asegurar el cumplimiento de las disposiciones del presente Convenio, e inmediatamente después confirmarán los procedimientos por escrito.</p>
+            <p class="parrafo">2. Las solicitudes de intercambio de información o de ejecución de una acción serán realizadas por los órganos competentes a la mayor brevedad posible.</p>
+            <p class="parrafo">3. Los gastos relacionados con la ejecución de una solicitud o con la realización de una acción serán a cargo de la Parte requirente. Las autoridades de las Partes podrán decidir otra cosa en cada caso y de mutuo acuerdo.</p>
+            <p class="articulo">Artículo VIII.</p>
+            <p class="parrafo">1. Cada Parte podrá denegar, total o parcialmente, o imponer condiciones para la ejecución de una solicitud de asistencia o de información, si estima que la ejecución de esa solicitud constituye una amenaza a la soberanía o a la seguridad nacionales o contradice los principios fundamentales de su ordenamiento jurídico u otros intereses esenciales de su Estado.</p>
+            <p class="parrafo">2. La Parte requirente será informada de los motivos del rechazo.</p>
+            <p class="articulo">Artículo IX.</p>
+            <p class="parrafo">1. El intercambio de información entre las Partes de conformidad con el presente Convenio se realizará en las siguientes condiciones:</p>
+            <p class="parrafo_2">La Parte requirente sólo podrá utilizar los datos para los fines y según las condiciones definidas por la Parte requerida, teniendo en cuenta el plazo pasado el cual deben ser destruidos, de acuerdo a su legislación nacional;</p>
+            <p class="parrafo">A petición de la Parte requerida, la Parte requirente dará información sobre la utilización de los datos que le han sido suministrados y sobre los resultados obtenidos;</p>
+            <p class="parrafo">En caso de suministro de datos inexactos o incompletos, la Parte requerida informará inmediatamente a la Parte requirente;</p>
+            <p class="parrafo">Cada Parte mantendrá un registro de los informes sobre los datos suministrados y sobre su destrucción.</p>
+            <p class="parrafo_2">2. Las Partes garantizarán la protección de los datos suministrados para impedir todo acceso, modificación o divulgación no autorizados conforme a su legislación nacional.</p>
+            <p class="parrafo">Las Partes se comprometen asimismo a no ceder los datos personales citados en el presente artículo a ningún tercero distinto del órgano requirente de la Parte requirente o, a petición de ésta, se los podrán suministrar únicamente a alguno de los órganos previstos en el artículo 6, previa autorización del órgano requerido.</p>
+            <p class="parrafo">3. Una Parte podrá en todo momento invocar el incumplimiento por la Parte requirente de las disposiciones del presente artículo como causa de suspensión inmediata de la aplicación del presente Convenio y, en su caso, su anulación sin demora.</p>
+            <p class="articulo">Artículo X.</p>
+            <p class="parrafo">1. Las Partes podrán crear una Comisión Mixta para el desarrollo y el examen de la cooperación que regula el presente Convenio. Los órganos competentes se comunicarán mutuamente por escrito la designación de su representante como miembro de la Comisión Mixta.</p>
+            <p class="parrafo">2. La Comisión Mixta podrá reunirse en sesión ordinaria una vez al año y en sesión extraordinaria, a petición de una de las dos Partes, en la fecha y lugar y con el orden del día que se determinen por vía diplomática.</p>
+            <p class="parrafo">3. Salvo acuerdo especial entre ambas Partes, las reuniones tendrán lugar alternativamente en España y en Túnez. Los trabajos estarán presididos por el jefe de Delegación de la Parte en cuyo territorio tengan lugar.</p>
+            <p class="articulo">Artículo XI.</p>
+            <p class="parrafo">Las controversias que se deriven de la aplicación e interpretación del presente Convenio se resolverán mediante negociación entre las Partes.</p>
+            <p class="articulo">Artículo XII.</p>
+            <p class="parrafo">Las disposiciones del presente Convenio no modificarán las disposiciones de otros acuerdos o compromisos internacionales bilaterales o multilaterales, adoptados por el Reino de España y por la República de Túnez.</p>
+            <p class="articulo">Artículo XIII.</p>
+            <p class="parrafo">El presente Convenio entrará en vigor el último día del mes siguiente a la fecha de recepción de la última notificación transmitida por vía diplomática del cumplimiento por cada una de las Partes de los procedimientos internos requeridos en cada caso para la entrada en vigor del presente Convenio.</p>
+            <p class="articulo">Artículo XIV.</p>
+            <p class="parrafo">El presente Convenio se celebra por una duración indeterminada y permanecerá en vigor hasta que una de las Partes la denuncie por vía diplomática. En ese caso el Convenio dejará de ser aplicable seis meses después de la fecha de recepción de la notificación de la denuncia por una de las Partes, entendiéndose que se aplicará sin perjuicio del cumplimiento de las obligaciones adquiridas por las Partes hasta la fecha de su finalización, salvo acuerdo en contrario.</p>
+            <p class="parrafo">El presente Convenio podrá revisarse de común acuerdo a petición de una de las Partes contratantes. Las modificaciones adoptadas entrarán en vigor de conformidad con el procedimiento previsto en el artículo 13 del presente Convenio.</p>
+            <p class="parrafo_2">En fe de lo cual, los representantes de los dos Estados, debidamente autorizados a tal efecto por sus respectivos Gobiernos, firman el presente Convenio.</p>
+            <p class="parrafo_2">Hecho en Túnez el 26 de febrero de 2018, en dos ejemplares originales en español, árabe y francés. En caso de divergencia, prevalecerá el texto francés.</p>
+            <table class="sinbordes">
+              <tbody>
+                <tr>
+                  <td class="cuerpo_tabla_centro">Por el Reino de España<em> </em></td>
+                  <td class="cuerpo_tabla_centro" rowspan="2">Por la República de Túnez</td>
+                </tr>
+                <tr>
+                  <td class="cuerpo_tabla_centro">
+                    <p class="cuerpo_tabla_centro">
+                      <em>Ad referéndum</em>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cuerpo_tabla_centro">El Ministro del Interior</td>
+                  <td class="cuerpo_tabla_centro">El Ministro de Asuntos Exteriores</td>
+                </tr>
+                <tr>
+                  <td class="cuerpo_tabla_centro">
+                    <em>Juan Ignacio</em>
+                  </td>
+                  <td class="cuerpo_tabla_centro">
+                    <em>Zoido Khemaies Jhinaoui</em>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="centro_redonda">* * *</p>
+            <p class="parrafo">El presente Convenio entrará en vigor el 31 de enero de 2019, último día del mes siguiente a la fecha de recepción de la última notificación transmitida por vía diplomática del cumplimiento por cada una de las Partes de los procedimientos internos requeridos, según se establece en su artículo XIII.</p>
+            <p class="parrafo_2">Madrid, 13 de diciembre de 2018.–El Secretario General Técnico, José María Muriel Palomino.</p>
+          </texto>
+        </documento>
+  recorded_at: 2026-11-09 12:51:15
+recorded_with: VCR-vcr/2.1.0

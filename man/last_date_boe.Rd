@@ -2,12 +2,15 @@
 % Please edit documentation in R/last_date_boe.R
 \name{last_date_boe}
 \alias{last_date_boe}
+\alias{last_boe}
 \title{Last day of BOE}
 \usage{
 last_date_boe()
+
+last_boe
 }
 \value{
-A date.
+A date in character format \%Y-\%m-\%d.
 }
 \description{
 Returns the date of the last BOE under normal circumstances.

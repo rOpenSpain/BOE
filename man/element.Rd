@@ -3,18 +3,12 @@
 \name{element}
 \alias{element}
 \alias{disposicion_cve}
-\alias{disposicion}
 \alias{anuncio_cve}
-\alias{anuncio}
 \title{Elements: \emph{disposición} and \emph{anuncio}}
 \usage{
 disposicion_cve(year, number)
 
-disposicion(year, number)
-
 anuncio_cve(year, number)
-
-anuncio(year, number)
 }
 \arguments{
 \item{year}{Character or numeric value of the year of the element in YYYY format.}
@@ -31,11 +25,7 @@ Functions to create CVE codes for the documents published on the BOE.
 \itemize{
 \item \code{disposicion_cve()}: Create the CVE of the diposicion.
 
-\item \code{disposicion()}: For compatibility with previous version
-
-\item \code{anuncio_cve()}: Create the CVE of the anuncio.
-
-\item \code{anuncio()}: For compatibility with previous version
+\item \code{anuncio_cve()}: Create the CVE of the announcement.
 
 }}
 \examples{
@@ -43,8 +33,8 @@ disposicion_cve(2019, 242)
 anuncio_cve(2019, 242)
 }
 \seealso{
-Other code generators: 
-\code{\link{sumario_cve}()},
-\code{\link{sumario_nbo}()}
+Other code generators:
+\code{\link[=sumario_cve]{sumario_cve()}},
+\code{\link[=sumario_nbo]{sumario_nbo()}}
 }
 \concept{code generators}

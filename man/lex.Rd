@@ -21,5 +21,5 @@ lex(query, from, to = Sys.Date(), offset = NULL, limit = -1)
 Search consolidated legislature.
 }
 \examples{
-lex("inteligencia artificial", Sys.Date() - 365)
+# lex("inteligencia artificial", Sys.Date() - 365)
 }

@@ -13,10 +13,10 @@ leg_cons <- "legislacion-consolidada"
 #' @importFrom httr2 resp_body_xml
 #' @importFrom httr2 resp_url_query
 #' @importFrom httr2 req_perform
-#' @export
 #' @examples
-#' lex("inteligencia artificial", Sys.Date() - 365)
+#' # lex("inteligencia artificial", Sys.Date() - 365)
 lex <- function(query, from, to = Sys.Date(), offset = NULL, limit = -1) {
+  # at current date is not working 2026/11/09
   check_date(from)
   check_date(to)
   check_limit(limit)

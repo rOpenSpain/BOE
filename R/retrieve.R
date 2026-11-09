@@ -6,7 +6,7 @@
 #' @return A data.frame with one line for each publication.
 #' @family functions to retrieve documents
 #' @export
-#' @seealso [tidy_sumario] to learn about the format of the output
+# @seealso [tidy_sumario] to learn about the format of the output
 #' @examples
 #' \donttest{
 #' retrieve_sumario(last_date_boe())

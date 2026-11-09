@@ -23,8 +23,6 @@ retrieve_sumario(last_date_boe())
 }
 }
 \seealso{
-\link{tidy_sumario} to learn about the format of the output
-
 Other functions to retrieve documents:
 \code{\link[=retrieve_document]{retrieve_document()}}
 }

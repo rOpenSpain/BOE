@@ -6,7 +6,8 @@
 #'  Including date, _sumario_ number, section, section text,
 #'  departament, departament number, epigraph, brief text,
 #'  publication code and number of pages of the pdf.
-#' @export
+#' @note Doesn't work
+#' @noRd
 #' @examples
 #' id <- sumario_nbo(format(as.Date("2017/10/02", "%Y/%m/%d"), "%Y%m%d"))
 #' sumario_file <- get_xml(query_xml(id))

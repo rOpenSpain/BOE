@@ -52,9 +52,6 @@ sumario_cve <- function(year, number, journal = "BOE") {
   code
 }
 
-#' Elements: _disposici
-
-
 
 #' Check id of documents
 #'

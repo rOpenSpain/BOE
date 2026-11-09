@@ -3,8 +3,7 @@
 \name{check_code}
 \alias{check_code}
 \alias{valid_code}
-\title{Elements: _disposici
-Check id of documents}
+\title{Check id of documents}
 \usage{
 check_code(id)
 

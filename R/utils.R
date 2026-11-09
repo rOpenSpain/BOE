@@ -76,6 +76,9 @@ check_limit <- function(limit) {
 }
 
 check_offset <- function(offset) {
+  if (is.null(offset)) {
+    return(TRUE)
+  }
   if (!is.numeric(offset)) {
     stop("Offset must be a numeric number higher than 1.", call. = FALSE)
   }

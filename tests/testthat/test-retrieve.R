@@ -103,3 +103,4 @@ test_that("cve instead of date", {
     "You seem to have provided a cve: use retrieve_docment()"
   )
 })
+

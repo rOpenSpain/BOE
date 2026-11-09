@@ -1,0 +1,51 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://boe.es/diario_boe/xml.php?id=BOE-B-2017-5
+  response:
+    status: 200
+    headers:
+      Date: Mon, 09 Nov 2026 15:41:34 GMT
+      Content-Type: application/xml; charset=utf-8
+      X-Robots-Tag: noindex
+      Access-Control-Allow-Origin: '*'
+      link: <https://www.boe.es/buscar/xml.php?id=BOE-B-2017-5>; rel="canonical"
+      Content-Security-Policy: 'default-src afirma://* ; script-src ''unsafe-inline''
+        ''unsafe-eval'' ''self'' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/
+        ; frame-src ''self'' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/  afirma://*
+        ; connect-src https://www.google.com/recaptcha/ ''self'' ; img-src ''self''
+        eur-lex.europa.eu data: ; style-src ''unsafe-inline'' ''self'' *.boe.es ;
+        font-src ''self'' ; child-src ''self''  www.youtube.com afirma://* ; object-src
+        ''self''; media-src ''self'' ; frame-ancestors ''self'' always'
+      X-Frame-Options: SAMEORIGIN
+      Age: '0'
+      Accept-Ranges: bytes
+      Content-Length: '1118'
+      Strict-Transport-Security: max-age=31536000
+    body:
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <documento fecha_actualizacion="20231111131152">
+          <metadatos>
+            <identificador>BOE-B-2017-5</identificador>
+            <departamento codigo="9546">JUZGADOS DE PRIMERA INSTANCIA E INSTRUCCIÓN</departamento>
+            <titulo>ALCOBENDAS</titulo>
+            <diario codigo="BOE">Boletín Oficial del Estado</diario>
+            <fecha_publicacion>20170102</fecha_publicacion>
+            <diario_numero>1</diario_numero>
+            <seccion>4</seccion>
+            <numero_anuncio>A160094945</numero_anuncio>
+            <pagina_inicial>5</pagina_inicial>
+            <pagina_final>5</pagina_final>
+            <url_pdf>https://www.boe.es/boe/dias/2017/01/02/pdfs/BOE-B-2017-5.pdf</url_pdf>
+            <letra_imagen>B</letra_imagen>
+          </metadatos>
+          <analisis/>
+          <texto>
+            <p class="parrafo">JUZGADO 1ª INSTANCIA 4.- Anuncio de subasta judicial en vía de apremio con número de identificación 2348000000054614. </p>
+            <p class="parrafo">Dirección electrónica: https://subastas.boe.es/ds.php?id=SUB-JA-2016-35773</p>
+            <p class="parrafo_2">Alcobendas, 26 de octubre de 2016.- El Letrado de la Administración de Justicia</p>
+          </texto>
+        </documento>
+  recorded_at: 2026-11-09 15:41:33
+recorded_with: VCR-vcr/2.1.0

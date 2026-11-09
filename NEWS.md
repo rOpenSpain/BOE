@@ -1,4 +1,4 @@
-# BOE (development version)
+# BOE 0.2.0
 
  * Update url to retrieve data from the API.
 

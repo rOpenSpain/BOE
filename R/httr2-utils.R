@@ -4,6 +4,7 @@
 #' @importFrom httr2 req_url_query
 #' @importFrom httr2 req_throttle
 #' @importFrom httr2 req_retry
+#' @importFrom httr2 req_error
 req_api <- function(...) {
   force(BASE_URL)
   request(BASE_URL) |>

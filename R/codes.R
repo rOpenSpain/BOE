@@ -128,6 +128,7 @@ check_code <- function(id) {
 NULL
 
 #' @describeIn element Create the CVE of the diposicion.
+#' @aliases disposicion_cve
 #' @export
 #' @examples
 #' disposicion_cve(2019, 242)
@@ -147,6 +148,7 @@ elemento <- function(item = c("B", "A"), year, number) {
 }
 
 #' @describeIn element Create the CVE of the announcement.
+#' @aliases anuncio_cve
 #' @export
 #' @examples
 #' anuncio_cve(2019, 242)

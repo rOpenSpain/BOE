@@ -11,29 +11,35 @@ check_date <- function(x) {
     return(TRUE)
   }
 
+  # For years without month and day
+  if (nchar(x) == 4L && as.numeric(x) > 1) {
+    return(TRUE)
+  }
+
   y <- strsplit(x, "")[[1]]
   month <- as.numeric(paste0(y[5L:6L], collapse = ""))
   day <- as.numeric(paste0(y[7L:8L], collapse = ""))
-  if (month >= 13) {
+  if (!is.na(month) && month >= 13 ) {
     stop("The month is greater than 12.", call. = FALSE)
   }
-  if (day >= 31L) {
+  if (!is.na(month) && day >= 31L) {
     stop("The day is greater than 31.", call. = FALSE)
   }
   out <- strptime(x, "%Y%m%d")
   if (anyNA(out)) {
     stop("That date does not exists, check the day of the month.",
-      call. = FALSE
+         call. = FALSE
     )
   }
+  FALSE
 }
 
 format_dates <- function(x) {
   fechas_metadatos <- startsWith(colnames(x), "fecha_")
   x[fechas_metadatos] <- lapply(x[fechas_metadatos],
-    as.POSIXct,
-    format = "%Y%m%d%H%M%S",
-    tz = "CET"
+                                as.POSIXct,
+                                format = "%Y%m%d%H%M%S",
+                                tz = "CET"
   )
   if (!is.null(x$fecha_disposicion)) {
     x$fecha_disposicion <- as.Date(x$fecha_disposicion)
@@ -52,8 +58,8 @@ format_date <- function(date) {
   } else if (is.character(date)) {
     format(
       as.Date(date,
-        tryFormats = c("%Y%m%d", "%Y-%m-%d", "%Y/%m/%d"),
-        optional = TRUE
+              tryFormats = c("%Y%m%d", "%Y-%m-%d", "%Y/%m/%d"),
+              optional = TRUE
       ),
       "%Y%m%d"
     )

@@ -3,9 +3,12 @@
 \name{element}
 \alias{element}
 \alias{disposicion_cve}
+\alias{anuncio_cve}
 \title{Elements: \emph{disposición} and \emph{anuncio}}
 \usage{
 disposicion_cve(year, number)
+
+anuncio_cve(year, number)
 }
 \arguments{
 \item{year}{Character or numeric value of the year of the element in YYYY format.}
@@ -22,9 +25,12 @@ Functions to create CVE codes for the documents published on the BOE.
 \itemize{
 \item \code{disposicion_cve()}: Create the CVE of the diposicion.
 
+\item \code{anuncio_cve()}: Create the CVE of the announcement.
+
 }}
 \examples{
 disposicion_cve(2019, 242)
+anuncio_cve(2019, 242)
 }
 \seealso{
 Other code generators:

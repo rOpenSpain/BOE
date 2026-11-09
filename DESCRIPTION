@@ -10,6 +10,8 @@ Description: Queries the online site of the Boletin Oficial del Estado
 License: MIT + file LICENSE
 URL: https://github.com/rOpenSpain/BOE
 BugReports: https://github.com/rOpenSpain/BOE/issues
+Depends: 
+    R (>= 4.1)
 Imports: 
     httr2,
     methods,
@@ -23,8 +25,8 @@ Suggests:
     vcr
 VignetteBuilder: 
     knitr
+Config/roxygen2/version: 8.1.1
 Config/testthat/edition: 3
 Encoding: UTF-8
 Language: en-US
 Roxygen: list(markdown = TRUE)
-Config/roxygen2/version: 8.1.1
